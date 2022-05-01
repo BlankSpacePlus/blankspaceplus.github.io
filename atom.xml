@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>空白格</title>
+  
+  <subtitle>空白格</subtitle>
+  <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://blankspaceplus.github.io/"/>
+  <updated>2022-05-01T10:45:37.895Z</updated>
+  <id>https://blankspaceplus.github.io/</id>
+  
+  <author>
+    <name>BlankSpacePlus</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL从入门到精通</title>
+    <link href="https://blankspaceplus.github.io/2022/05/01/mysql-cong-ru-men-dao-jing-tong/"/>
+    <id>https://blankspaceplus.github.io/2022/05/01/mysql-cong-ru-men-dao-jing-tong/</id>
+    <published>2022-05-01T10:42:19.000Z</published>
+    <updated>2022-05-01T10:45:37.895Z</updated>
+    
+    
+    
+    
+    <category term="MySQL" scheme="https://blankspaceplus.github.io/categories/MySQL/"/>
+    
+    
+    <category term="SQL" scheme="https://blankspaceplus.github.io/tags/SQL/"/>
+    
+    <category term="MySQL" scheme="https://blankspaceplus.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎使用Hexo</title>
+    <link href="https://blankspaceplus.github.io/2022/05/01/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2022/05/01/huan-ying-shi-yong-hexo/</id>
+    <published>2022-05-01T10:34:40.130Z</published>
+    <updated>2022-05-01T10:43:52.765Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
