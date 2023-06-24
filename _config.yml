@@ -100,6 +100,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: fluid
 theme: matery
+remote_theme: hydecorp/hydejack
 
 # Search
 search:
