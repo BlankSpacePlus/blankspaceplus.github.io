@@ -1,0 +1,51 @@
+[
+  {
+  "avatar": "../medias/friends/csdn.png",
+  "name": "星拱北辰",
+  "introduction": "我的CSDN博客",
+  "url": "https://blankspace.blog.csdn.net",
+  "title": "拍拍鼠鼠"
+}, {
+  "avatar": "../medias/friends/juejin.jpg",
+  "name": "星拱北辰",
+  "introduction": "我的掘金博客",
+  "url": "https://juejin.cn/user/550187475149342",
+  "title": "拍拍鼠鼠"
+}, {
+  "avatar": "../medias/friends/guagua.jpg",
+  "name": "昊○",
+  "introduction": "昊○我の昊○",
+  "url": "https://blog.csdn.net/all23333333",
+  "title": "膜拜大佬"
+}, {
+  "avatar": "../medias/friends/hang.jpg",
+  "name": "航神",
+  "introduction": "我超，我の航哥",
+  "url": "https://www.cnblogs.com/iamiron-man",
+  "title": "膜拜大佬"
+}, {
+  "avatar": "../medias/friends/md.jpg",
+  "name": "铎神",
+  "introduction": "我超，我の铎哥",
+  "url": "https://blog.csdn.net/qq_51392112",
+  "title": "膜拜大佬"
+}, {
+  "avatar": "../medias/friends/funforever.png",
+  "name": "涛哥",
+  "introduction": "我の涛giegie♂",
+  "url": "https://www.cnblogs.com/jacobfun",
+  "title": "膜拜大佬"
+}, {
+  "avatar": "../medias/friends/ffffrance.jpg",
+  "name": "FFFfrance",
+  "introduction": "我的优秀学弟",
+  "url": "https://ffffrance.github.io",
+  "title": "围观成长"
+}, {
+  "avatar": "../medias/friends/next.jpg",
+  "name": "NextOne...",
+  "introduction": "期待你的到来！",
+  "url": "https://blankspaceplus.github.io",
+  "title": "敬请期待"
+}
+]
