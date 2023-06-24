@@ -5,8 +5,12 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ pages-build-deployment }}
+  cancel-in-progress: true
+
 jobs:
-  pages:
+  deploy_pages:
     runs-on: ubuntu-latest
     permissions:
       contents: write
