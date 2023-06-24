@@ -99,8 +99,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: fluid
-theme: matery
-remote_theme: hydecorp/hydejack
+# theme: matery
+theme: hexo-theme-matery
 
 # Search
 search:
