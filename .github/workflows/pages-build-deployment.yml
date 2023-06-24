@@ -1,13 +1,9 @@
-name: deploy_pages
+name: pages-build-deployment
 
 on:
   push:
     branches:
       - master
-
-concurrency:
-  group: ${{ pages-build-deployment }}
-  cancel-in-progress: true
 
 jobs:
   deploy_pages:
