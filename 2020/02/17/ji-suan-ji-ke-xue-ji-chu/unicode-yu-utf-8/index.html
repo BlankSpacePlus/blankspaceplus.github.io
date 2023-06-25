@@ -474,7 +474,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-25
+                    2023-06-26
                 </div>
                 
 
@@ -675,7 +675,7 @@ ax<span class="token punctuation">.</span>set_title<span class="token punctuatio
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>接下来就会出现异常情况，绘图如下：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/1.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/1.png"></p>
 <p>修复方法：加上utf-8题头的注释。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding:utf-8 -*-</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -684,25 +684,25 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">"axes.unicode_minus"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>修复结果：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/2.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/2.png"></p>
 <h2 id="CLion乱码"><a href="#CLion乱码" class="headerlink" title="CLion乱码"></a>CLion乱码</h2><p>乱码情况：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/3.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/3.png"></p>
 <h3 id="修改编辑器编码类型"><a href="#修改编辑器编码类型" class="headerlink" title="修改编辑器编码类型"></a>修改编辑器编码类型</h3><p>打开 File → Settings…：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/4.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/4.png"></p>
 <p>选择 Editor，再选中 File Encodings：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/5.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/5.png"></p>
 <p>调为UTF-8，完成设置，然后点OK：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/6.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/6.png"></p>
 <p>底部还有UTF-8：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/7.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/7.png"></p>
 <p>改成GBK：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/8.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/8.png"></p>
 <p>还有个弹窗，点Convert即可完成设置。</p>
 <p>重新运行：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/9.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/9.png"></p>
 <p>该方法适用于其他JetBrains公司的IDE。</p>
 <h3 id="修改Registry配置"><a href="#修改Registry配置" class="headerlink" title="修改Registry配置"></a>修改Registry配置</h3><p>文件是UTF-8格式，对于CLion命令行输出中文乱码的问题，解决方法是输入<code>Ctrl+Shift+Alt+/</code>：</p>
-<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/10.png" alt="在这里插入图片描述"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/Unicode%E4%B8%8EUTF-8/10.png"></p>
 <p>修改后即可在命令行看到正确不乱码的输出！</p>
 
                 
