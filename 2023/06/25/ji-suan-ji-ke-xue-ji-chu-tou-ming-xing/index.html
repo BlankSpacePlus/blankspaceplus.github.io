@@ -513,9 +513,25 @@
 <p>在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务。要实现本层协议，还需要使用下层所提供的服务。<br>本层的服务用户只能看见服务而无法看见下层的协议。下层的协议对上层的服务用户是透明的。</p>
 <p>数据链路层支持<strong>透明传输</strong>：不管所传输数据是什么样的比特组合，都能在链路上传输（哪怕数据中恰好出现了与帧定界符相同的比特组合）。</p>
 <h2 id="计算机体系结构"><a href="#计算机体系结构" class="headerlink" title="计算机体系结构"></a>计算机体系结构</h2><p><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113634653">电子计算机的分层抽象</a>，可以将计算机分为九层：应用程序层、操作系统层、体系结构层、微结构层、逻辑层、数字电路层、模拟电路层、器件层、物理层。</p>
-<p><img src="https://img-blog.csdnimg.cn/20210204115106552.png" alt="在这里插入图片描述"></p>
-<p><strong>自底向上</strong>各层情况是：<br>物理层关注的是电子运动，由麦克斯韦方程组、量子力学等支持。<br>器件层关注的是晶体管、真空管等电子元器件，这些器件都有明确的外部连接点terminal，建立起了每个terminal上电压与电流之间的关系模型。<br>模拟电路层关注的是器件组合在一起构成的放大器等组件，输入输出都是连续的电压值。<br>数字电路层关注的是逻辑门，电压被控制为离散的值表示为0和1。<br>逻辑层关注的是由数字电路层的逻辑门构成的逻辑组件，如加法器等。<br>微结构层将逻辑组件组合在一起以实现体系结构中定义的指令。<br>体系结构描述的是程序员观点的计算机抽象。<br>操作系统是和硬件最为密切的程序，既是资源分配器，又控制各着种I/O设备和用户程序的需求。<br>应用软件基于操作系统实现多种多样的应用功能。</p>
-<p>例如：<br>对于器件层，物理层的电子运动是透明的，不可见。<br>对于操作系统层，体系结构的内容是透明的，不可见。<br>……</p>
+<p><img src="/1.png" alt="电子计算机的分层抽象"></p>
+<p><strong>自底向上</strong>各层情况是：</p>
+<ul>
+<li>物理层关注的是电子运动，由麦克斯韦方程组、量子力学等支持。 </li>
+<li>器件层关注的是晶体管、真空管等电子元器件，这些器件都有明确的外部连接点terminal，建立起了每个terminal上电压与电流之间的关系模型。 </li>
+<li>模拟电路层关注的是器件组合在一起构成的放大器等组件，输入输出都是连续的电压值。 </li>
+<li>数字电路层关注的是逻辑门，电压被控制为离散的值表示为0和1。 </li>
+<li>逻辑层关注的是由数字电路层的逻辑门构成的逻辑组件，如加法器等。 </li>
+<li>微结构层将逻辑组件组合在一起以实现体系结构中定义的指令。 </li>
+<li>体系结构描述的是程序员观点的计算机抽象。 </li>
+<li>操作系统是和硬件最为密切的程序，既是资源分配器，又控制各着种I/O设备和用户程序的需求。 </li>
+<li>应用软件基于操作系统实现多种多样的应用功能。</li>
+</ul>
+<p>例如：</p>
+<ul>
+<li>对于器件层，物理层的电子运动是透明的，不可见。 </li>
+<li>对于操作系统层，体系结构的内容是透明的，不可见。</li>
+<li>……</li>
+</ul>
 
                 
             </div>
@@ -626,13 +642,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/">
+                <a href="/2023/06/25/ji-suan-ji-ke-xue-ji-chu-jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="VonNeumann体系结构和存储程序原理">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="进制、进制转换和数据运算">
                         
-                        <span class="card-title">VonNeumann体系结构和存储程序原理</span>
+                        <span class="card-title">进制、进制转换和数据运算</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -660,8 +676,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
-                        <span class="chip bg-color">计算机组成原理</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">计算机科学基础</span>
                     </a>
                     
                 </div>
@@ -672,16 +688,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/25/fen-ceng-chou-xiang/">
+                <a href="/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分层抽象">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="透明性">
                         
-                        <span class="card-title">分层抽象</span>
+                        <span class="card-title">透明性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -706,6 +722,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="VonNeumann体系结构和存储程序原理, 空白格">
+    <meta name="keywords" content="图灵机, 空白格">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>VonNeumann体系结构和存储程序原理 | 空白格</title>
+    <title>图灵机 | 空白格</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">VonNeumann体系结构和存储程序原理</h1>
+                    <h1 class="description center-align post-title">图灵机</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
-                                <span class="chip bg-color">计算机组成原理</span>
+                            <a href="/tags/%E5%9B%BE%E7%81%B5%E6%9C%BA/">
+                                <span class="chip bg-color">图灵机</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/">
+                                <span class="chip bg-color">计算理论</span>
                             </a>
                         
                     </div>
@@ -473,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    973
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    3 分
                 </div>
                 
 
@@ -503,75 +507,81 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="VonNeumann体系结构"><a href="#VonNeumann体系结构" class="headerlink" title="VonNeumann体系结构"></a>VonNeumann体系结构</h1><p>直到现在，几乎所有的通用计算机都遵循冯诺依曼的设计，即一个具有CPU、存储器和I/O设备组成的架构，把指令和数据放在一个存储器中，取指令和传送数据使用一个总线。</p>
-<p><img src="https://img-blog.csdnimg.cn/20210329214424362.png" alt="在这里插入图片描述"></p>
-<p><strong>冯诺依曼体系结构</strong>的特点：</p>
-<ul>
-<li>由三部分硬件组成：一个带有控制单元、算术逻辑单元ALU、寄存器和程序计数器的CPU，一个主存储器系统，一个I/O系统。</li>
-<li>执行顺序指令处理的能力。</li>
-<li>在主存储器系统和CPU的控制单元之间包含一条单一路径，既可以是物理上的也可以是逻辑上的，强制交替指令周期和执行周期。这一单一路径被称为冯诺依曼瓶颈。</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210329213907276.png" alt="在这里插入图片描述"></p>
-<p>下图为现代通用计算机组成所包含的组件：</p>
-<p><img src="https://img-blog.csdnimg.cn/1e322513b5ce421e87ad3eaf67b90631.png" alt="在这里插入图片描述"></p>
-<p>冯诺依曼执行周期：</p>
-<ol>
-<li>控制单元从存储器中取下一条程序指令，使用程序计数器确定指令所在的位置。</li>
-<li>指令解码为ALU能理解的语言。</li>
-<li>从存储器取出执行这条指令所需要的任何操作数，并且放到CPU的寄存器中。</li>
-<li>ALU执行这条指令并且把结果放到寄存器或存储器中。</li>
-</ol>
-<p>即<kbd>取址$→$译码$→$执行</kbd>：</p>
-<ul>
-<li>取指  <pre class="line-numbers language-none"><code class="language-none">(PC)-&gt;MAR;
-M(MAR)-&gt;MDR;
-(MDR)-&gt;IR;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li>分析指令  <pre class="line-numbers language-none"><code class="language-none">OP(IR)-&gt;CU;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>执行指令  <pre class="line-numbers language-none"><code class="language-none">Ad(IR)-&gt;MAR;
-M(MAR)-&gt;MDR;
-(MDR)-&gt;ACC;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-<p>可以将存储在访问速度慢的存储介质中的程序和数据复制到访问速度快、易失性的存储介质执行。据此，冯诺依曼体系结构可以简化为<strong>系统总线模型</strong>。</p>
-<p>系统总线可以响应计算机内部的所有数据传送。</p>
-<ul>
-<li>数据总线：把数据在主存储器和CPU寄存器之间移动。</li>
-<li>地址总线：保存数据总线正在访问数据的地址。</li>
-<li>控制总线：传送信息传输时必要的控制信号。</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/2021032921412281.png" alt="在这里插入图片描述"></p>
-<p>冯诺依曼体系结构的其他增强方法包括使用索引寄存器寻址、增加浮点数据、使用中断和异步I/O、增加虚拟存储器以及增加通用寄存器等。</p>
-<p>早期冯诺依曼体系结构要点：</p>
-<ol>
-<li>计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备组成。</li>
-<li>指令和数据以同等地位存于存储器内，并可按地址寻址。</li>
-<li>指令和数据均用二进制代码表示。</li>
-<li>指令由操作码和地址码组成。<ul>
-<li>操作码表示操作的性质。</li>
-<li>地址码表示操作数在存储器中的位置。</li>
+                <h1 id="图灵机的组成"><a href="#图灵机的组成" class="headerlink" title="图灵机的组成"></a>图灵机的组成</h1><ul>
+<li>一条存储带<ul>
+<li>双向无限延长上有一个个小方格</li>
+<li>每个小方格可存储一个数字/字母</li>
 </ul>
 </li>
-<li>指令在存储器内按顺序存放。</li>
-<li>早期的冯诺伊曼以运算器为中心，输入/输出设备通过运算器与存储器传送数据。</li>
-</ol>
-<p>现代计算机的组织结构：以存储器为中心。</p>
-<p>补充：</p>
-<ul>
-<li>冯诺依曼体系结构的基本工作方式是<strong>控制流驱动方式</strong>。</li>
-<li>冯诺依曼体系结构中，CPU区分指令和数据的依据是<strong>指令周期的不同阶段</strong>。</li>
+<li>一个控制器<ul>
+<li>包含一个读写头，可以读、写、更改存储带上每一格的数字/字母</li>
+<li>可以接受设定好的程序语句</li>
+<li>可以存储当前自身的状态</li>
+<li>可以根据读到的字母/数字变换自身的状态</li>
+<li>可以沿着存储带一格一格地左移/右移</li>
 </ul>
-<h1 id="存储程序原理"><a href="#存储程序原理" class="headerlink" title="存储程序原理"></a>存储程序原理</h1><p>存储程序原理是冯·诺依曼于1946年提出的将程序像数据一样存储到计算机内部存储器中的一种设计原理。</p>
-<p>存储程序原理：将为解决特定问题而编写的程序存放在计算机存储器中，然后按存储器存储程序的首地址执行程序的第一条指令。以后就按照该程序的规定顺序执行其他指令，直至程序结束执行。</p>
-<p>存储程序思想：多种类型的指令和数据均以数字形式存在于存储器中，存储器中既可以存放编辑器程序的源代码，也可以存放相应的编译后的机器码、编译后的程序需要使用的文本，甚至生成机器码的编译器。</p>
-<p>只需将程序和数据加载到存储器中并告诉计算机从给定的存储器地址开始执行即可。将指令和数据以相同的方式处理，极大地简化了计算机系统的存储器硬件和软件。</p>
-<p>该思想导致了存储程序型计算机的诞生。</p>
-<p>计算机采取事先编制程序、存储程序、自动连续运行程序的工作方式，称为存储程序方式。</p>
-<h1 id="突破VonNeumann体系结构"><a href="#突破VonNeumann体系结构" class="headerlink" title="突破VonNeumann体系结构"></a>突破VonNeumann体系结构</h1><p>毫无疑问，冯诺依曼体系结构的提出对计算机科学的发展是跨时代的。时至今日，几乎所有的通用计算机都遵循冯诺依曼体系结构，它们由CPU、存储器和I/O设备组成，它们具有用于指令和数据的单一存储，以及用于获取指令和传输数据的单一总线。遵循冯诺依曼体系结构的计算机顺序执行指令，因此非常适合顺序处理。</p>
-<p>然而，冯诺依曼瓶颈继续困扰着工程师寻找方法来构建快速系统，这些系统既便宜又与大量商用软件兼容。当工程师不必须考虑兼容冯诺依曼体系结构时，他们可以自由使用许多不同的计算模型来完成预期目标。<strong>非冯诺依曼体系结构</strong>是指计算模型与冯诺依曼体系结构所列特征不同的架构。例如，不在内存中存储程序和数据，不按顺序处理程序，具有多条总线。</p>
-<p><strong>哈佛体系结构</strong>是经典的非冯诺依曼体系结构。此类计算机有两条总线，一条用于数据，一条单独用于指令，因此允许数据和指令同时传输。此外，它们的数据和指令也单独存储。许多现代通用计算机使用哈佛体系结构的修改版本，它们具有单独的数据和指令路径但没有单独的存储。纯哈佛体系结构通常用于微控制器(芯片上的完整计算机系统)，例如嵌入式系统、电器、玩具和汽车中的微控制器。</p>
-<p><img src="https://img-blog.csdnimg.cn/20210329215022693.png" alt="在这里插入图片描述"></p>
-<p>许多非冯诺依曼体系结构的计算机都是为特殊目的而设计的。第一个公认的非冯诺依曼体系结构处理芯片专为图像处理而设计。规约机也是不遵循冯诺依曼体系结构的代表，它是一种面向函数式语言的非冯诺依曼体系结构的计算机。数字信号处理器DSP和媒体处理器也不遵循冯诺依曼体系结构，它们可以对一组(多个)数据执行单个指令，而不是对单个数据执行单个指令。</p>
-<p>许多不同的子领域属于非冯诺依曼类别，包括在硅中实现的神经网络、元胞自动机、认知计算机(通过经验而不是通过编程学习的机器、量子计算机、数据流计算机、并行计算机。它们的共同特点是：计算分布在并行运行的不同处理单元中。它们的不同之处在于：各个组件之间的连接强弱程度并不相同。其中，并行计算机目前最为流行。</p>
-<h1 id="对VonNeumann体系结构的认识"><a href="#对VonNeumann体系结构的认识" class="headerlink" title="对VonNeumann体系结构的认识"></a>对VonNeumann体系结构的认识</h1><p>计算机出现早期，计算机只是辅助计算的机器。随着计算机变得越来越复杂，计算机变成了通用机器，这就需要将每个系统视为一个层次结构，而不是一个巨大的机器。这样层次结构中，每一层都有特定的用途，所有级别都有助于最大限度地减少高级编程语言或应用程序与构成物理硬件的门和线之间的语义差距。作为程序员，对我们影响最为深远的还是冯诺依曼体系结构下的存储程序原理。尽管还有许多其他的体系结构模型，但冯诺依曼体系结构在当今的通用计算机中仍然稳居主导地位。因此，理解冯诺依曼体系结构和冯诺依曼提出的存储程序原理，是入门计算机的必修课。</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/202102070017208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="图灵机的工作步骤"><a href="#图灵机的工作步骤" class="headerlink" title="图灵机的工作步骤"></a>图灵机的工作步骤</h1><ul>
+<li>准备<ul>
+<li>存储带上符号初始化</li>
+<li>控制器设置好自身当前状态（初始化状态）</li>
+<li>读写头置于起始位置</li>
+<li>准备好工作程序;</li>
+</ul>
+</li>
+<li>反复执行以下工作直到停机<ul>
+<li>读写头读出存储带上当前方格中的字母/数字</li>
+<li>根据自身当前状态和所读到的字符，找到相应的程序语句</li>
+<li>根据相应程序语句，做三个动作<ul>
+<li>在当前存储带方格上写入一个相应的字母/数字</li>
+<li>变更自身状态至新状态</li>
+<li>读写头向左或向右移一步</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="图灵机的运行机理示例"><a href="#图灵机的运行机理示例" class="headerlink" title="图灵机的运行机理示例"></a>图灵机的运行机理示例</h1><p><img src="https://img-blog.csdnimg.cn/202102062222166.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206222239653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206222334100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206222913686.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223102317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223309939.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223407850.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223443738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223514774.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223545190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223613732.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210206223639418.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021020622373757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>至此，成功停机。</p>
+<p>整个过程，完成了一个4+3=7的过程。</p>
+<h1 id="图灵机的停机"><a href="#图灵机的停机" class="headerlink" title="图灵机的停机"></a>图灵机的停机</h1><p>图灵机的停机问题：判断任意一个程序是否会在有限的步骤之内结束运行的程序是否存在?</p>
+<p>图灵机的停机意味着：</p>
+<ul>
+<li>给定符号序列$A$，如果能找到一个图灵机，得出对应的符号序列$B$，那么从$A$到$B$就是可计算的。</li>
+<li>也就是说：<ul>
+<li>对于一个问题的输入$A$，问：$A$能否推证出$B$？</li>
+<li>如果能找到一个图灵机，得出对应的符号序列$B$，那么从$A$到$B$就是可计算的。</li>
+<li>否则，该问题不可计算。</li>
+</ul>
+</li>
+</ul>
+<p>图灵认为：不存在这样的程序。</p>
+<p>证明：采用<strong>反证法</strong><br>假设存在这样的程序，即，存在程序$H(P,I)$可以给出程序$P$在输入$I$时是否停机的判断：若$P$在输入$I$时可停机，$H$输出“停机”，反之输出“不停机（死循环）”（注：停机与死循环是对立的），即可导出下面的矛盾：<br>根据假设，可以设计一个调用程序$H$的主程序$K$如下：<br>首先，它调用$H(P,P)$，如果$H(P,P)$，输出“死循环”，则$K(P)$停机，反之$K(P)$死循环。即$K(P)$做与$H(P,P)$的输出相反的动作。<br>$K(P)$的程序如下：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">H</span><span class="token punctuation">(</span>P<span class="token punctuation">,</span>I<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 这里的H函数有两种返回值：死循环或停机</span>
+
+<span class="token keyword">int</span> <span class="token function">K</span><span class="token punctuation">(</span>P<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">H</span><span class="token punctuation">(</span>P<span class="token punctuation">,</span>P<span class="token punctuation">)</span> <span class="token operator">==</span> 死循环<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 程序本身可以被视作数据</span>
+        <span class="token keyword">return</span> 停机<span class="token punctuation">;</span>  <span class="token comment">// 主程序K停机</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// H(P,P) == 停机</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 这里K会死循环</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>视$K$程序为参数$P$，观察$K(K)$的运行：若$H(K , K)$输出死循环，实际观察到$K(K)$停机，但由$H$的定义知二者矛盾。反之，$H(K, K)$输出停机，$K(K)$实际死循环，两者仍然矛盾。<br>因此，假设程序$H$存在引发不可避免的矛盾，表明开始的假设不成立。<br>结论是：不存在这样的程序。<br>证明结束。<br>又称：“$H$是不可计算函数”、“停机问题不可解”。</p>
+<p>以停机问题为基础，发现了大量不可计算问题，如“铺砖问题”等。</p>
+<h1 id="图灵机的优势"><a href="#图灵机的优势" class="headerlink" title="图灵机的优势"></a>图灵机的优势</h1><ul>
+<li>强大</li>
+<li>简单</li>
+<li>可实现</li>
+</ul>
+<h1 id="图灵机的理论意义"><a href="#图灵机的理论意义" class="headerlink" title="图灵机的理论意义"></a>图灵机的理论意义</h1><ul>
+<li>给出了一个可实现的通用计算模型</li>
+<li>引入了通过“读写符号”和“状态改变”进行运算的思想</li>
+<li>证实了基于简单字母表完成复杂运算的能力</li>
+<li>引入了存储区、程序、控制器等概念的原型</li>
+</ul>
+<h1 id="图灵机模拟器"><a href="#图灵机模拟器" class="headerlink" title="图灵机模拟器"></a>图灵机模拟器</h1><p><a target="_blank" rel="noopener" href="http://morphett.info/turing/turing.html">图灵机模拟器网址</a></p>
 
                 
             </div>
@@ -598,7 +608,7 @@ M(MAR)-&gt;MDR;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blankspaceplus.github.io/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/">https://blankspaceplus.github.io/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/</a>
+                    <a href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tu-ling-ji/">https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tu-ling-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -636,8 +646,12 @@ M(MAR)-&gt;MDR;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
-                                    <span class="chip bg-color">计算机组成原理</span>
+                                <a href="/tags/%E5%9B%BE%E7%81%B5%E6%9C%BA/">
+                                    <span class="chip bg-color">图灵机</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/">
+                                    <span class="chip bg-color">计算理论</span>
                                 </a>
                             
                         </div>
@@ -682,13 +696,13 @@ M(MAR)-&gt;MDR;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/25/unicode-yu-utf-8/">
+                <a href="/2023/06/25/ji-suan-ji-ke-xue-ji-chu-fen-ceng-chou-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Unicode与UTF-8">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分层抽象">
                         
-                        <span class="card-title">Unicode与UTF-8</span>
+                        <span class="card-title">分层抽象</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -716,16 +730,8 @@ M(MAR)-&gt;MDR;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F/">
-                        <span class="chip bg-color">编码格式</span>
-                    </a>
-                    
-                    <a href="/tags/Unicode/">
-                        <span class="chip bg-color">Unicode</span>
-                    </a>
-                    
-                    <a href="/tags/UTF-8/">
-                        <span class="chip bg-color">UTF-8</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">计算机科学基础</span>
                     </a>
                     
                 </div>
@@ -739,13 +745,13 @@ M(MAR)-&gt;MDR;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/">
+                <a href="/2023/06/25/ji-suan-ji-ke-xue-ji-chu-du-liang-qian-zhui-yu-xing-neng-zhi-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="透明性">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="度量前缀与性能指标">
                         
-                        <span class="card-title">透明性</span>
+                        <span class="card-title">度量前缀与性能指标</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -773,8 +779,8 @@ M(MAR)-&gt;MDR;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">计算机科学基础</span>
+                    <a href="/tags/%E6%80%A7%E8%83%BD/">
+                        <span class="chip bg-color">性能</span>
                     </a>
                     
                 </div>

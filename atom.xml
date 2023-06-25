@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-06-25T10:12:10.511Z</updated>
+  <updated>2023-06-25T10:20:25.616Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>欢迎使用Hexo</title>
     <link href="https://blankspaceplus.github.io/2023/06/25/huan-ying-shi-yong-hexo/"/>
     <id>https://blankspaceplus.github.io/2023/06/25/huan-ying-shi-yong-hexo/</id>
-    <published>2023-06-25T10:12:10.511Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <published>2023-06-25T10:20:25.616Z</published>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -39,10 +39,10 @@
   
   <entry>
     <title>ASCII码表</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ascii-ma-biao/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ascii-ma-biao/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ascii-ma-biao/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ascii-ma-biao/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -65,10 +65,10 @@
   
   <entry>
     <title>Unicode与UTF-8</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/unicode-yu-utf-8/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/unicode-yu-utf-8/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-unicode-yu-utf-8/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-unicode-yu-utf-8/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -94,10 +94,10 @@
   
   <entry>
     <title>VonNeumann体系结构和存储程序原理</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -118,36 +118,11 @@
   </entry>
   
   <entry>
-    <title>透明性</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/</id>
-    <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;透明性&quot;&gt;&lt;a href=&quot;#透明性&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>分层抽象</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/fen-ceng-chou-xiang/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/fen-ceng-chou-xiang/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-fen-ceng-chou-xiang/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-fen-ceng-chou-xiang/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -169,10 +144,10 @@
   
   <entry>
     <title>图灵机</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/tu-ling-ji/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/tu-ling-ji/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tu-ling-ji/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tu-ling-ji/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -196,10 +171,10 @@
   
   <entry>
     <title>度量前缀与性能指标</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -221,10 +196,10 @@
   
   <entry>
     <title>电子计算机的分层抽象</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -246,10 +221,10 @@
   
   <entry>
     <title>程序的编译与运行</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/cheng-xu-de-bian-yi-yu-yun-xing/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/cheng-xu-de-bian-yi-yu-yun-xing/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-cheng-xu-de-bian-yi-yu-yun-xing/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-cheng-xu-de-bian-yi-yu-yun-xing/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -271,10 +246,10 @@
   
   <entry>
     <title>策略和机制分离</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ce-lue-he-ji-zhi-fen-chi/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ce-lue-he-ji-zhi-fen-chi/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ce-lue-he-ji-zhi-fen-chi/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ce-lue-he-ji-zhi-fen-chi/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -296,10 +271,10 @@
   
   <entry>
     <title>翻译、编译、解释、汇编</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/fan-yi-bian-yi-jie-shi-hui-bian/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/fan-yi-bian-yi-jie-shi-hui-bian/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-fan-yi-bian-yi-jie-shi-hui-bian/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-fan-yi-bian-yi-jie-shi-hui-bian/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -321,10 +296,10 @@
   
   <entry>
     <title>计算机系统</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-xi-tong/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-xi-tong/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ji-suan-ji-xi-tong/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ji-suan-ji-xi-tong/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -346,10 +321,10 @@
   
   <entry>
     <title>计算理论基础</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-li-lun-ji-chu/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-li-lun-ji-chu/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ji-suan-li-lun-ji-chu/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-ji-suan-li-lun-ji-chu/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -373,10 +348,10 @@
   
   <entry>
     <title>进制、进制转换和数据运算</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/</id>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/</id>
     <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-06-25T10:12:10.511Z</updated>
+    <updated>2023-06-25T10:20:25.616Z</updated>
     
     
       
@@ -384,6 +359,31 @@
         
         
     <summary type="html">&lt;h1 id=&quot;二进制&quot;&gt;&lt;a href=&quot;#二进制&quot; class=&quot;headerlink&quot; title=&quot;二进制&quot;&gt;&lt;/a&gt;二进制&lt;/h1&gt;&lt;h2 id=&quot;进制规则&quot;&gt;&lt;a href=&quot;#进制规则&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>透明性</title>
+    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/"/>
+    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu-tou-ming-xing/</id>
+    <published>2023-06-25T09:00:00.000Z</published>
+    <updated>2023-06-25T10:20:25.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;透明性&quot;&gt;&lt;a href=&quot;#透明性&quot; class=&quot;headerlink&quot;</summary>
         
       
     
