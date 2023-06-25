@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎使用Hexo, 空白格">
+    <meta name="keywords" content="Unicode与UTF-8, 空白格">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎使用Hexo | 空白格</title>
+    <title>Unicode与UTF-8 | 空白格</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎使用Hexo</h1>
+                    <h1 class="description center-align post-title">Unicode与UTF-8</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F/">
+                                <span class="chip bg-color">编码格式</span>
+                            </a>
+                        
+                            <a href="/tags/Unicode/">
+                                <span class="chip bg-color">Unicode</span>
+                            </a>
+                        
+                            <a href="/tags/UTF-8/">
+                                <span class="chip bg-color">UTF-8</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机科学基础
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -460,14 +481,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -490,19 +511,197 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h1><p>Unicode 联盟开发了 Unicode 标准，并与领先的标准开发组织（如 ISO、W3C 和 ECMA）开展了合作。。他们的目标是用标准的 Unicode 转换格式（UTF）替换现有的字符集。</p>
+<p>由于 ISO-8859 中的字符集大小有限，在多语言环境中不兼容，因此 Unicode 联盟制定了 Unicode 标准。Unicode 标准涵盖了（几乎）世界上所有的字符、标点和符号。</p>
+<p>Unicode 支持独立于平台和语言的文本处理、存储和传输。</p>
+<p>Unicode 标准已经成功实现，并且以 HTML、XML、Java、JavaScript、电子邮件、ASP、PHP 等实现。在许多操作系统和所有现代浏览器中也支持 Unicode 标准。</p>
+<h1 id="Unicode字符集"><a href="#Unicode字符集" class="headerlink" title="Unicode字符集"></a>Unicode字符集</h1><p>Unicode 可以通过不同的字符集来实现。最常用的编码是 UTF-8 和 UTF-16：</p>
+<table>
+<thead>
+<tr>
+<th>字符集</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UTF-8</td>
+<td>UTF8 中的字符长度可以是 1 到 4 个字节。 UTF-8 可以代表 Unicode 标准中的任何字符。 UTF-8 向后兼容ASCII。</td>
+</tr>
+<tr>
+<td>UTF-16</td>
+<td>16 位 Unicode 转换格式是 Unicode 的可变长度字符编码，能够编码整个 Unicode 编码。 UTF-16 用于主要的操作系统和环境，如 Microsoft Windows、Java 和 .NET。</td>
+</tr>
+</tbody></table>
+<p>提示：Unicode 的前 128 个字符（与 ASCII 一一对应）使用与 ASCII 相同的二进制值的单个八位字节进行编码，使得有效的 ASCII 文本使用有效的 UTF-8 编码 Unicode。</p>
+<p>如上所述，在存储和网络传输中，通常使用更为节省空间的变长编码方式 UTF-8，UTF-8 代表 8 位一组表示 Unicode 字符的格式，使用 1 - 4 个字节来表示字符。</p>
+<p>其实还有UTF-32，我们让一个字符使用四个字节存储，也就是 32 位，这样就能涵盖现有 Unicode 包含的所有字符。但UTF-32浪费空间，比如使用 UTF-32 和 ASCII 分别对一个只有西文字母的文档编码，前者需要花费的空间是后者的四倍（ASCII 每个字符只需要一个字节存储，而UTF-32是四个字节）。</p>
+<h1 id="Unicode和UTF-8的区别"><a href="#Unicode和UTF-8的区别" class="headerlink" title="Unicode和UTF-8的区别"></a>Unicode和UTF-8的区别</h1><p>Unicode 是一个字符集。 UTF-8 属于编码。<br>Unicode 是具有唯一十进制数字（代码点）的字符列表。 A = 65，B = 66，C = 67，….<br>这个十进制数字表示字符串“hello”：104 101 108 108 111<br>编码指的是如何将这些数字转换成存储在计算机中的二进制数字：<br>UTF-8 编码将像这样存储“hello”（二进制）：01101000 01100101 01101100 01101100 01101111<br>编码将数字转换为二进制。字符集将字符转换为数字。</p>
+<h1 id="UTF-8的编码规则"><a href="#UTF-8的编码规则" class="headerlink" title="UTF-8的编码规则"></a>UTF-8的编码规则</h1><p>UTF-8 的编码规则如下（U+ 后面的数字代表 Unicode 字符代码）：</p>
+<p>U+&amp;nbsp;&amp;nbsp;0000 ~ U+&amp;nbsp;&amp;nbsp;007F: <code>0XXXXXXX</code><br>U+&amp;nbsp;&amp;nbsp;0080 ~ U+&amp;nbsp;&amp;nbsp;07FF: <code>110XXXXX 10XXXXXX</code><br>U+&amp;nbsp;&amp;nbsp;0800 ~ U+&amp;nbsp;&amp;nbsp;FFFF: <code>1110XXXX 10XXXXXX 10XXXXXX</code><br>U+10000 ~ U+1FFFF: <code>11110XXX 10XXXXXX 10XXXXXX 10XXXXXX</code></p>
+<p>可以看到，UTF-8 通过开头的标志位位数实现了变长。对于单字节字符，只占用一个字节，实现了向下兼容 ASCII，并且能和 UTF-32 一样，包含 Unicode 中的所有字符，又能有效减少存储传输过程中占用的空间。</p>
+<h1 id="HTML中的Unicode编码"><a href="#HTML中的Unicode编码" class="headerlink" title="HTML中的Unicode编码"></a>HTML中的Unicode编码</h1><p>HTML4只支持UTF-8，而HTML5支持UTF-8和UTF-16。</p>
+<table>
+<thead>
+<tr>
+<th>字符码</th>
+<th>十进制</th>
+<th>十六进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C0 控制和基本拉丁语</td>
+<td>0-127</td>
+<td>0000-007F</td>
+</tr>
+<tr>
+<td>C1 控制和 Latin-1</td>
+<td>补充</td>
+<td>128-255 	0080-00FF</td>
+</tr>
+<tr>
+<td>拉丁文扩展-A</td>
+<td>256-383</td>
+<td>0100-017F</td>
+</tr>
+<tr>
+<td>拉丁文扩展-B</td>
+<td>384-591</td>
+<td>0180-024F</td>
+</tr>
+<tr>
+<td>间距修饰符</td>
+<td>688-767</td>
+<td>02B0-02FF</td>
+</tr>
+<tr>
+<td>变音符号</td>
+<td>768-879</td>
+<td>0300-036F</td>
+</tr>
+<tr>
+<td>希腊和科普特</td>
+<td>880-1023</td>
+<td>0370-03FF</td>
+</tr>
+<tr>
+<td>西里尔文基本</td>
+<td>1024-1279</td>
+<td>0400-04FF</td>
+</tr>
+<tr>
+<td>西里尔文补充</td>
+<td>1280-1327</td>
+<td>0500-052F</td>
+</tr>
+<tr>
+<td>一般标点符号</td>
+<td>8192-8303</td>
+<td>2000-206F</td>
+</tr>
+<tr>
+<td>货币符号</td>
+<td>8352-8399</td>
+<td>20A0-20CF</td>
+</tr>
+<tr>
+<td>类字母符号</td>
+<td>8448-8527</td>
+<td>2100-214F</td>
+</tr>
+<tr>
+<td>箭头</td>
+<td>8592-8703</td>
+<td>2190-21FF</td>
+</tr>
+<tr>
+<td>数学运算符</td>
+<td>8704-8959</td>
+<td>2200-22FF</td>
+</tr>
+<tr>
+<td>框绘制</td>
+<td>9472-9599</td>
+<td>2500-257F</td>
+</tr>
+<tr>
+<td>块元素</td>
+<td>9600-9631</td>
+<td>2580-259F</td>
+</tr>
+<tr>
+<td>几何形状</td>
+<td>9632-9727</td>
+<td>25A0-25FF</td>
+</tr>
+<tr>
+<td>杂项符号</td>
+<td>9728-9983</td>
+<td>2600-26FF</td>
+</tr>
+<tr>
+<td>装饰符号</td>
+<td>9984-10175</td>
+<td>2700-27BF</td>
+</tr>
+</tbody></table>
+<h1 id="Unicode编码与乱码"><a href="#Unicode编码与乱码" class="headerlink" title="Unicode编码与乱码"></a>Unicode编码与乱码</h1><h2 id="Servlet乱码"><a href="#Servlet乱码" class="headerlink" title="Servlet乱码"></a>Servlet乱码</h2><p>在进行请求参数传递时，经常会遇到请求数据为中文时的乱码问题，当Form表单的文本域中输入中文时会产生乱码问题，出现乱码的原因与客户端的请求编码方式（GET请求或POST请求）以及服务器的处理编码方式有关。</p>
+<h3 id="POST请求乱码"><a href="#POST请求乱码" class="headerlink" title="POST请求乱码"></a>POST请求乱码</h3><p>浏览器会按当前显示页面所采用的字符集对请求的中文数据进行编码，而后再以报文体的形式传送给服务器，Servlet在调用getParameter()方法获取参数时，会以HttpServletRequest对象的getCharacterEncoding()方法返回的字符集对其进行解码，而该方法的返回值在未经过setCharacterEncoding(charset)方法设置编码的情况下为null，这时getParameter()方法将以服务器默认的“ISO-8859-1”字符集对参数进行解码，而“ISO-8859-1”字符集并不包含中文，于是造成中文参数的乱码问题。</p>
+<p>解决办法：<br>在调用getParameter()方法前先调用setCharacterEncoding(charset)方法设定与页面请求编码相同的解码字符集。</p>
+<h3 id="GET请求乱码"><a href="#GET请求乱码" class="headerlink" title="GET请求乱码"></a>GET请求乱码</h3><p>GET请求参数以“?”或“&amp;”为连接字符附加在URL地址后，根据网络标准RFC1738规定，只有字母和数字以及一些特殊符号和某些保留字才可以不经过编码直接用于URL，因此在请求参数为中文时必须先由浏览器进行编码后才能发送给服务器，服务器端对GET请求参数依照服务器本身默认的字符集进行解码。</p>
+<p>在服务器端，由于GET请求参数是作为请求行发送给服务器的，因此Servlet在通过getParameter()获取请求参数时，并不能使用setCharacterEncoding(charset)方法指定的字符集进行解码，而是依照服务器本身默认的字符集进行解码。</p>
+<p>Tomcat服务器各版本中默认的URIEncoding字符集并不完全相同，例如，Tomcat6和Tomcat7都默认为“ISO-8859-1”，这类版本中，对于GET请求的中文参数必须经处理后才会避免乱码问题，因此在实际开发中尽量避免使用GET请求来传递中文参数。</p>
+<h2 id="Matplotlib乱码"><a href="#Matplotlib乱码" class="headerlink" title="Matplotlib乱码"></a>Matplotlib乱码</h2><p>原版代码如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> matplotlib <span class="token keyword">as</span> mpl
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+mu <span class="token operator">=</span> <span class="token number">60.0</span>
+sigma <span class="token operator">=</span> <span class="token number">2.0</span>
+x <span class="token operator">=</span> mu <span class="token operator">+</span> sigma<span class="token operator">*</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span>
+bins <span class="token operator">=</span> <span class="token number">50</span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+n<span class="token punctuation">,</span> bins<span class="token punctuation">,</span> patches <span class="token operator">=</span> ax<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>x<span class="token punctuation">,</span> bins<span class="token punctuation">,</span> density<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> histtype<span class="token operator">=</span><span class="token string">"bar"</span><span class="token punctuation">,</span> facecolor<span class="token operator">=</span><span class="token string">"#99FF33"</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">"#00FF99"</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.75</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token operator">*</span>sigma<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">*</span>np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">0.5</span><span class="token operator">*</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>bins<span class="token operator">-</span>mu<span class="token punctuation">)</span><span class="token operator">/</span>sigma<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>bins<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"#7744FF"</span><span class="token punctuation">,</span> ls<span class="token operator">=</span><span class="token string">"--"</span><span class="token punctuation">,</span> lw<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>grid<span class="token punctuation">(</span>ls<span class="token operator">=</span><span class="token string">":"</span><span class="token punctuation">,</span> lw<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"gray"</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token number">54</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token string">r"$y=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">"color"</span><span class="token punctuation">:</span><span class="token string">"#FF5511"</span><span class="token punctuation">,</span> <span class="token string">"fontsize"</span><span class="token punctuation">:</span><span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">"体重"</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">"概率密度"</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">r"体重的直方图：$\mu=60.0$, $\sigma=2.0$"</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">16</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>接下来就会出现异常情况，绘图如下：<br><img src="https://img-blog.csdnimg.cn/20200215191334412.PNG" alt="在这里插入图片描述"></p>
+<p>修复方法：加上utf-8题头的注释。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding:utf-8 -*-</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>随后，加入如下两行代码：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">"font.sans-serif"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"KaiTi"</span><span class="token punctuation">]</span>
+mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">"axes.unicode_minus"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>修复结果：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200215191610561.PNG" alt="在这里插入图片描述"></p>
+<h2 id="CLion乱码"><a href="#CLion乱码" class="headerlink" title="CLion乱码"></a>CLion乱码</h2><p>乱码情况：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200306172102629.PNG" alt="在这里插入图片描述"></p>
+<h3 id="修改编辑器编码类型"><a href="#修改编辑器编码类型" class="headerlink" title="修改编辑器编码类型"></a>修改编辑器编码类型</h3><p>打开 File → Settings…：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200306172114786.png" alt="在这里插入图片描述"></p>
+<p>选择 Editor，再选中 File Encodings：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200306172124618.PNG" alt="在这里插入图片描述"></p>
+<p>调为UTF-8，完成设置，然后点OK：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200306172405783.PNG" alt="在这里插入图片描述"></p>
+<p>底部还有UTF-8：<br><img src="https://img-blog.csdnimg.cn/20200306172139952.PNG" alt="在这里插入图片描述"></p>
+<p>改成GBK：</p>
+<p><img src="https://img-blog.csdnimg.cn/202003061721496.png" alt="在这里插入图片描述"></p>
+<p>还有个弹窗，点Convert即可完成设置。</p>
+<p>重新运行：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200306172155848.PNG" alt="在这里插入图片描述"></p>
+<p>该方法适用于其他JetBrains公司的IDE。</p>
+<h3 id="修改Registry配置"><a href="#修改Registry配置" class="headerlink" title="修改Registry配置"></a>修改Registry配置</h3><p>文件是UTF-8格式，对于CLion命令行输出中文乱码的问题，解决方法是输入<code>Ctrl+Shift+Alt+/</code>：</p>
+<p><img src="https://img-blog.csdnimg.cn/2db2458678b4479ebd513901f8174167.png" alt="在这里插入图片描述"></p>
+<p>修改后即可在命令行看到正确不乱码的输出！</p>
 
                 
             </div>
@@ -529,7 +728,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blankspaceplus.github.io/2023/06/25/huan-ying-shi-yong-hexo/">https://blankspaceplus.github.io/2023/06/25/huan-ying-shi-yong-hexo/</a>
+                    <a href="https://blankspaceplus.github.io/2023/06/25/unicode-yu-utf-8/">https://blankspaceplus.github.io/2023/06/25/unicode-yu-utf-8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -566,7 +765,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F/">
+                                    <span class="chip bg-color">编码格式</span>
+                                </a>
+                            
+                                <a href="/tags/Unicode/">
+                                    <span class="chip bg-color">Unicode</span>
+                                </a>
+                            
+                                <a href="/tags/UTF-8/">
+                                    <span class="chip bg-color">UTF-8</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -605,18 +816,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/25/huan-ying-shi-yong-hexo/">
+                <a href="/2023/06/25/ascii-ma-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="欢迎使用Hexo">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="ASCII码表">
                         
-                        <span class="card-title">欢迎使用Hexo</span>
+                        <span class="card-title">ASCII码表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -626,18 +836,29 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-25
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-25
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            BlankSpacePlus
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学基础
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/ASCII/">
+                        <span class="chip bg-color">ASCII</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -648,13 +869,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/25/ascii-ma-biao/">
+                <a href="/2023/06/25/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="ASCII码表">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="VonNeumann体系结构和存储程序原理">
                         
-                        <span class="card-title">ASCII码表</span>
+                        <span class="card-title">VonNeumann体系结构和存储程序原理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -682,8 +903,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ASCII/">
-                        <span class="chip bg-color">ASCII</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">计算机组成原理</span>
                     </a>
                     
                 </div>
