@@ -17,4 +17,5 @@ hexo s
 - [搭建方法](https://blog.csdn.net/yaorongke/article/details/119089190)
 - [Fluid用户指南](https://hexo.fluid-dev.com/docs/guide)
 - [闪烁之狐](https://github.com/blinkfox/hexo-theme-matery)
-- [brackets cannot be displayed correctly in hexo blog](https://stackoverflow.com/questions/63476271/brackets-cannot-be-displayed-correctly-in-hexo-blog)
+- [Stackoverflow: brackets cannot be displayed correctly in hexo blog](https://stackoverflow.com/questions/63476271/brackets-cannot-be-displayed-correctly-in-hexo-blog)
+- [Hexo Configuration](https://hexo.io/zh-cn/docs/configuration.html)
