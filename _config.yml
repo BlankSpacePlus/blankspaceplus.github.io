@@ -101,7 +101,7 @@ ignore:
 # theme: fluid
 # theme: matery
 # theme: hexo-theme-matery
-remote_theme: themes/matery
+remote_theme: blinkfox/hexo-theme-matery
 
 # Search
 search:
