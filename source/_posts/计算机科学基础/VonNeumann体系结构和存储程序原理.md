@@ -1,7 +1,7 @@
 ﻿---
 title: VonNeumann体系结构和存储程序原理
 date: 2021-03-30 11:18:51
-description: 本文介绍冯诺依曼体系结构和存储程序原理。
+summary: 本文介绍冯诺依曼体系结构和存储程序原理。
 tags:
 - 计算机组成原理
 categories:
