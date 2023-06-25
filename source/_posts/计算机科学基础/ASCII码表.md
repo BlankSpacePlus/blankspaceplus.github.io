@@ -1,6 +1,7 @@
 ﻿---
 title: ASCII码表
 date: 2019-10-20 19:44:19
+description: 本文总结分享ASCII码的用法。
 tags:
 - ASCII
 categories:

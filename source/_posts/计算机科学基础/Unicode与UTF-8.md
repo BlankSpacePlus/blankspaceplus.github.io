@@ -1,6 +1,7 @@
 ﻿---
 title: Unicode与UTF-8
 date: 2020-02-17 22:58:37
+description: 本文介绍Unicode与UTF-8的相关内容，顺便分享一些乱码问题的解决方法。
 tags:
 - 编码格式
 - Unicode
@@ -131,7 +132,7 @@ plt.show()
 
 接下来就会出现异常情况，绘图如下：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/1.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/1.png)
 
 修复方法：加上utf-8题头的注释。
 
@@ -148,41 +149,41 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 修复结果：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/2.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/2.png)
 
 ## CLion乱码
 
 乱码情况：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/3.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/3.png)
 
 ### 修改编辑器编码类型
 
 打开 File → Settings...：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/4.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/4.png)
 
 选择 Editor，再选中 File Encodings：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/5.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/5.png)
 
 调为UTF-8，完成设置，然后点OK：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/6.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/6.png)
 
 底部还有UTF-8：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/7.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/7.png)
 
 改成GBK：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/8.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/8.png)
 
 还有个弹窗，点Convert即可完成设置。
 
 重新运行：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/9.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/9.png)
 
 该方法适用于其他JetBrains公司的IDE。
 
@@ -190,7 +191,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 文件是UTF-8格式，对于CLion命令行输出中文乱码的问题，解决方法是输入`Ctrl+Shift+Alt+/`：
 
-![在这里插入图片描述](../../images/计算机科学基础/Unicode与UTF-8/10.png)
+![](../../images/计算机科学基础/Unicode与UTF-8/10.png)
 
 修改后即可在命令行看到正确不乱码的输出！
 
