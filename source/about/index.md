@@ -7,6 +7,8 @@ layout: "about"
 
 # Welcome to my Blank Space! 👋👋👋
 
+{% raw %}
+
 <table border = "1" align="center">
   <tr>
     <td colspan="2" align="center">
@@ -39,3 +41,5 @@ layout: "about"
     <td colspan="2" align="center"><a href="https://github.com/blankspaceplus" target="_blank"><img src="https://github.com/BlankSpacePlus/BlankSpacePlus/blob/output/github-contribution-grid-snake.svg" alt="Contribution贪吃蛇"></a></td>
   </tr>
 </table>
+
+{% endraw %}
