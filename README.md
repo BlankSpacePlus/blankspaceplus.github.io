@@ -25,6 +25,7 @@ hexo s
 # Hexo模板
 
 - [GitHub: blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)
+    - [文章摘要的问题](https://github.com/blinkfox/hexo-theme-matery/issues/99)
 - [GitHub: fluid-dev/hexo-theme-fluid](https://github.com/fluid-dev/hexo-theme-fluid)
     - [Fluid用户指南](https://hexo.fluid-dev.com/docs/guide)
 
