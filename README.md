@@ -32,6 +32,7 @@ hexo s
 # Hexo配置
 
 - [Hexo Configuration](https://hexo.io/zh-cn/docs/configuration.html)
+- [Hexo支持LaTeX公式](https://blog.xiangfa.org/2020/09/let-hexo-support-latex-formulas/)
 
 # Hexo的GitHub部署方法
 
