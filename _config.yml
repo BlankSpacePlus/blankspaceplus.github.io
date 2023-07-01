@@ -145,3 +145,8 @@ feed:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Math
+math:
+  mathjax:
+    enable: true
