@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-07-01T15:29:08.047Z</updated>
+  <updated>2023-07-02T05:53:28.416Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2023/07/01/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2023/07/01/huan-ying-shi-yong-hexo/</id>
-    <published>2023-07-01T15:29:08.047Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <link href="https://blankspaceplus.github.io/2023/07/02/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2023/07/02/huan-ying-shi-yong-hexo/</id>
+    <published>2023-07-02T05:53:28.416Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -38,18 +38,19 @@
   </entry>
   
   <entry>
-    <title>电子计算机的分层抽象</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu/dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu/dian-zi-ji-suan-ji-de-fen-ceng-chou-xiang/</id>
-    <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <title>加密算法</title>
+    <link href="https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/"/>
+    <id>https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/</id>
+    <published>2023-03-25T08:26:34.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;控制复杂性的方法&quot;&gt;&lt;a href=&quot;#控制复杂性的方法&quot; class=&quot;headerlink&quot; title=&quot;控制复杂性的方法&quot;&gt;&lt;/a&gt;控制复杂性的方法&lt;/h1&gt;&lt;p&gt;电子计算机有着比较复杂的结构，而&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;常见加密算法&quot;&gt;&lt;a href=&quot;#常见加密算法&quot; class=&quot;headerlink&quot; title=&quot;常见加密算法&quot;&gt;&lt;/a&gt;常见加密算法&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;AES算法（Advanced Encryption Standard</summary>
         
       
     
@@ -58,23 +59,23 @@
     <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="信息安全" scheme="https://blankspaceplus.github.io/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
   <entry>
-    <title>策略和机制分离</title>
-    <link href="https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/"/>
-    <id>https://blankspaceplus.github.io/2023/06/25/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/</id>
-    <published>2023-06-25T09:00:00.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <title>基于搜索引擎的信息检索</title>
+    <link href="https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/"/>
+    <id>https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/</id>
+    <published>2023-02-21T15:25:37.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;策略和机制&quot;&gt;&lt;a href=&quot;#策略和机制&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;搜索引擎&quot;&gt;&lt;a href=&quot;#搜索引擎&quot; class=&quot;headerlink&quot; title=&quot;搜索引擎&quot;&gt;&lt;/a&gt;搜索引擎&lt;/h1&gt;&lt;p&gt;搜索引擎(Search</summary>
         
       
     
@@ -83,7 +84,7 @@
     <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="信息检索" scheme="https://blankspaceplus.github.io/tags/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
     
   </entry>
   
@@ -92,7 +93,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/"/>
     <id>https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/</id>
     <published>2023-01-25T16:39:11.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -113,11 +114,62 @@
   </entry>
   
   <entry>
+    <title>Markdown核心语法</title>
+    <link href="https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/"/>
+    <id>https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/</id>
+    <published>2023-01-23T06:27:05.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Markdown</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Markdown" scheme="https://blankspaceplus.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>策略和机制分离</title>
+    <link href="https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/"/>
+    <id>https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/</id>
+    <published>2023-01-22T10:19:53.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;策略和机制&quot;&gt;&lt;a href=&quot;#策略和机制&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>度量前缀与性能指标</title>
     <link href="https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
     <id>https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
     <published>2023-01-18T18:09:11.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -138,11 +190,89 @@
   </entry>
   
   <entry>
+    <title>计算机专业实用网站</title>
+    <link href="https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/"/>
+    <id>https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/</id>
+    <published>2022-06-25T13:50:11.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;算法OJ&quot;&gt;&lt;a href=&quot;#算法OJ&quot; class=&quot;headerlink&quot; title=&quot;算法OJ&quot;&gt;&lt;/a&gt;算法OJ&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="工具" scheme="https://blankspaceplus.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习</title>
+    <link href="https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/"/>
+    <id>https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/</id>
+    <published>2022-05-04T09:52:32.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深度学习用到的常用术语&quot;&gt;&lt;a href=&quot;#深度学习用到的常用术语&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="人工智能" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="深度学习" scheme="https://blankspaceplus.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元宇宙的最新技术、应用和挑战</title>
+    <link href="https://blankspaceplus.github.io/2022/01/04/ji-suan-ji-ke-xue-ji-chu/yuan-yu-zhou-de-zui-xin-ji-zhu-ying-yong-he-tiao-zhan/"/>
+    <id>https://blankspaceplus.github.io/2022/01/04/ji-suan-ji-ke-xue-ji-chu/yuan-yu-zhou-de-zui-xin-ji-zhu-ying-yong-he-tiao-zhan/</id>
+    <published>2022-01-04T08:48:43.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;0-摘要&quot;&gt;&lt;a href=&quot;#0-摘要&quot; class=&quot;headerlink&quot; title=&quot;0 摘要&quot;&gt;&lt;/a&gt;0 摘要&lt;/h1&gt;&lt;p&gt;元宇宙是一种融合多种新技术的新型互联网应用和社交形态。 它具有多技术性、社会性、超时空性等特点。</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="元宇宙" scheme="https://blankspaceplus.github.io/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>翻译、编译、解释、汇编</title>
     <link href="https://blankspaceplus.github.io/2021/08/17/ji-suan-ji-ke-xue-ji-chu/fan-yi-bian-yi-jie-shi-hui-bian/"/>
     <id>https://blankspaceplus.github.io/2021/08/17/ji-suan-ji-ke-xue-ji-chu/fan-yi-bian-yi-jie-shi-hui-bian/</id>
     <published>2021-08-17T02:03:06.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -167,7 +297,7 @@
     <link href="https://blankspaceplus.github.io/2021/08/16/ji-suan-ji-ke-xue-ji-chu/tou-ming-xing/"/>
     <id>https://blankspaceplus.github.io/2021/08/16/ji-suan-ji-ke-xue-ji-chu/tou-ming-xing/</id>
     <published>2021-08-16T02:51:46.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -188,11 +318,36 @@
   </entry>
   
   <entry>
+    <title>XaaS</title>
+    <link href="https://blankspaceplus.github.io/2021/08/11/ji-suan-ji-ke-xue-ji-chu/xaas/"/>
+    <id>https://blankspaceplus.github.io/2021/08/11/ji-suan-ji-ke-xue-ji-chu/xaas/</id>
+    <published>2021-08-11T02:32:57.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;云计算&quot;&gt;&lt;a href=&quot;#云计算&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="云计算" scheme="https://blankspaceplus.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机系统</title>
     <link href="https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-xi-tong/"/>
     <id>https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-xi-tong/</id>
     <published>2021-03-30T04:14:34.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -217,7 +372,7 @@
     <link href="https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/"/>
     <id>https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/</id>
     <published>2021-03-30T03:18:51.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -242,7 +397,7 @@
     <link href="https://blankspaceplus.github.io/2021/03/21/ji-suan-ji-ke-xue-ji-chu/ji-suan-li-lun-ji-chu/"/>
     <id>https://blankspaceplus.github.io/2021/03/21/ji-suan-ji-ke-xue-ji-chu/ji-suan-li-lun-ji-chu/</id>
     <published>2021-03-21T16:30:12.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -269,7 +424,7 @@
     <link href="https://blankspaceplus.github.io/2021/03/21/ji-suan-ji-ke-xue-ji-chu/tu-ling-ji/"/>
     <id>https://blankspaceplus.github.io/2021/03/21/ji-suan-ji-ke-xue-ji-chu/tu-ling-ji/</id>
     <published>2021-03-21T16:19:10.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -292,11 +447,36 @@
   </entry>
   
   <entry>
+    <title>云服务案例分析Quiz</title>
+    <link href="https://blankspaceplus.github.io/2021/03/19/ji-suan-ji-ke-xue-ji-chu/yun-fu-wu-an-li-fen-xi-quiz/"/>
+    <id>https://blankspaceplus.github.io/2021/03/19/ji-suan-ji-ke-xue-ji-chu/yun-fu-wu-an-li-fen-xi-quiz/</id>
+    <published>2021-03-19T09:39:45.000Z</published>
+    <updated>2023-07-02T05:53:28.416Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Quiz1&quot;&gt;&lt;a href=&quot;#Quiz1&quot; class=&quot;headerlink&quot; title=&quot;Quiz1&quot;&gt;&lt;/a&gt;Quiz1&lt;/h1&gt;&lt;p&gt;1.In IT service management, what is NOT the benefit in</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="云计算" scheme="https://blankspaceplus.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>迭代和增量的开发周期</title>
     <link href="https://blankspaceplus.github.io/2021/03/11/ruan-jian-gong-cheng/die-dai-he-zeng-liang-de-kai-fa-zhou-qi/"/>
     <id>https://blankspaceplus.github.io/2021/03/11/ruan-jian-gong-cheng/die-dai-he-zeng-liang-de-kai-fa-zhou-qi/</id>
     <published>2021-03-11T13:09:21.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.420Z</updated>
     
     
       
@@ -321,7 +501,7 @@
     <link href="https://blankspaceplus.github.io/2021/03/09/ruan-jian-gong-cheng/xin-xi-xi-tong/"/>
     <id>https://blankspaceplus.github.io/2021/03/09/ruan-jian-gong-cheng/xin-xi-xi-tong/</id>
     <published>2021-03-09T15:54:23.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
+    <updated>2023-07-02T05:53:28.416Z</updated>
     
     
       
@@ -329,181 +509,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;系统管理&quot;&gt;&lt;a href=&quot;#系统管理&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件项目中的用户</title>
-    <link href="https://blankspaceplus.github.io/2021/02/25/ruan-jian-gong-cheng/ruan-jian-xiang-mu-zhong-de-yong-hu/"/>
-    <id>https://blankspaceplus.github.io/2021/02/25/ruan-jian-gong-cheng/ruan-jian-xiang-mu-zhong-de-yong-hu/</id>
-    <published>2021-02-25T03:47:47.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;终端用户&quot;&gt;&lt;a href=&quot;#终端用户&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件生命周期</title>
-    <link href="https://blankspaceplus.github.io/2021/02/19/ruan-jian-gong-cheng/ruan-jian-sheng-ming-zhou-qi/"/>
-    <id>https://blankspaceplus.github.io/2021/02/19/ruan-jian-gong-cheng/ruan-jian-sheng-ming-zhou-qi/</id>
-    <published>2021-02-19T05:41:39.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;生命周期的主要阶段&quot;&gt;&lt;a href=&quot;#生命周期的主要阶段&quot; class=&quot;headerlink&quot; title=&quot;生命周期的主要阶段&quot;&gt;&lt;/a&gt;生命周期的主要阶段&lt;/h1&gt;&lt;h2 id=&quot;需求分析&quot;&gt;&lt;a href=&quot;#需求分析&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件开发</title>
-    <link href="https://blankspaceplus.github.io/2021/02/19/ruan-jian-gong-cheng/ruan-jian-kai-fa/"/>
-    <id>https://blankspaceplus.github.io/2021/02/19/ruan-jian-gong-cheng/ruan-jian-kai-fa/</id>
-    <published>2021-02-19T02:11:11.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;软件开发的本质&quot;&gt;&lt;a href=&quot;#软件开发的本质&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件项目的利益相关者与系统相关人员</title>
-    <link href="https://blankspaceplus.github.io/2021/02/18/ruan-jian-gong-cheng/ruan-jian-xiang-mu-de-li-yi-xiang-guan-zhe-yu-xi-tong-xiang-guan-ren-yuan/"/>
-    <id>https://blankspaceplus.github.io/2021/02/18/ruan-jian-gong-cheng/ruan-jian-xiang-mu-de-li-yi-xiang-guan-zhe-yu-xi-tong-xiang-guan-ren-yuan/</id>
-    <published>2021-02-18T14:45:17.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;利益相关者&quot;&gt;&lt;a href=&quot;#利益相关者&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分层抽象</title>
-    <link href="https://blankspaceplus.github.io/2021/02/06/ji-suan-ji-ke-xue-ji-chu/fen-ceng-chou-xiang/"/>
-    <id>https://blankspaceplus.github.io/2021/02/06/ji-suan-ji-ke-xue-ji-chu/fen-ceng-chou-xiang/</id>
-    <published>2021-02-06T17:55:37.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;分层抽象&quot;&gt;&lt;a href=&quot;#分层抽象&quot; class=&quot;headerlink&quot; title=&quot;分层抽象&quot;&gt;&lt;/a&gt;分层抽象&lt;/h1&gt;&lt;p&gt;分层抽象是计算机科学和软件工程的重要思想，是&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>进制、进制转换和数据运算</title>
-    <link href="https://blankspaceplus.github.io/2021/02/04/ji-suan-ji-ke-xue-ji-chu/jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/"/>
-    <id>https://blankspaceplus.github.io/2021/02/04/ji-suan-ji-ke-xue-ji-chu/jin-zhi-jin-zhi-zhuan-huan-he-shu-ju-yun-suan/</id>
-    <published>2021-02-04T05:00:12.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;二进制&quot;&gt;&lt;a href=&quot;#二进制&quot; class=&quot;headerlink&quot; title=&quot;二进制&quot;&gt;&lt;/a&gt;二进制&lt;/h1&gt;&lt;h2 id=&quot;进制规则&quot;&gt;&lt;a href=&quot;#进制规则&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件过程</title>
-    <link href="https://blankspaceplus.github.io/2020/09/16/ruan-jian-gong-cheng/ruan-jian-guo-cheng/"/>
-    <id>https://blankspaceplus.github.io/2020/09/16/ruan-jian-gong-cheng/ruan-jian-guo-cheng/</id>
-    <published>2020-09-16T13:10:01.000Z</published>
-    <updated>2023-07-01T15:29:08.047Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;软件工程&quot;&gt;&lt;a href=&quot;#软件工程&quot; class=&quot;headerlink&quot; title=&quot;软件工程&quot;&gt;&lt;/a&gt;软件工程&lt;/h1&gt;&lt;h2 id=&quot;软件&quot;&gt;&lt;a href=&quot;#软件&quot; class=&quot;headerlink&quot;</summary>
         
       
     
