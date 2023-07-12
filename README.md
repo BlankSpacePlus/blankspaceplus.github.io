@@ -45,3 +45,4 @@ hexo s
 
 - [Stackoverflow: brackets cannot be displayed correctly in hexo blog](https://stackoverflow.com/questions/63476271/brackets-cannot-be-displayed-correctly-in-hexo-blog)
 - [Stackoverflow: Problem with GitHub Pages Jekyll Template](https://stackoverflow.com/questions/75212400/problem-with-github-pages-jekyll-template)
+- [lingzhicheng: Nunjucks Errors](https://www.lingzhicheng.cn/2021/08/26/NunjucksErrors/)
