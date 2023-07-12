@@ -1,0 +1,1546 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="线性代数基础理论归纳, 空白格">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>线性代数基础理论归纳 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">线性代数基础理论归纳</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                <span class="chip bg-color">线性代数</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机科学的数学基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-25
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    21 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><ol>
+<li>行列式的性质：<ul>
+<li>行列互换，行列式的值不变。</li>
+<li>行列式中某行/列元素全为$0$，则行列式为$0$。</li>
+<li>行列式中某行/列元素有公因子$k$，则$k$可提到行列式外面。</li>
+<li>行列式中某行/列元素均是两个元素之和，则可拆成两个行列式之和。</li>
+<li>行列式中两行/列互换，行列式的值取反。</li>
+<li>行列式中的两行/列元素相等或对应成比例，则行列式为零。</li>
+<li>行列式中某行/列的$k$倍加到另一行/列，行列式的值不变。</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114387043">解行列式的方法</a></li>
+<li>线性方程组的常数项不全为零时，称为<strong>非齐次线性方程组</strong>，而常数项全为零的线性方程组称为<strong>齐次线性方程组</strong>。$x_{1}=x_{2}=\cdots=x_{n}=0$，一定是齐次线性方程组的解，此解也叫做齐次线性方程组的零解。</li>
+<li><strong>Cramer法则</strong>只适用于解方程个数与变量个数相等而且系数行列式不等于零的那些线性方程组。由于应用Cramer法则求解$n$元线性方程组，需要计算$n＋1$个$n$阶行列式。因此，当$n$比较大时，求解的计算量是很大的。所以在实际求解线性方程组时，很少采用此法。</li>
+<li>通俗地讲，从行列式的第一条性质就能看出：行列式的行和列是等价的！</li>
+<li>行列式实际上就是一个数值！</li>
+</ol>
+<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><ol>
+<li>矩阵实际上就是一个数据元素组成的矩形数据表！</li>
+<li>线性代数研究的是实矩阵，即所有元素均为实数。</li>
+<li>只有一行的矩阵称为行矩阵也称为行向量，只有一列的矩阵称为列矩阵也称为列向量。</li>
+<li>特殊矩阵：<ul>
+<li>零矩阵：每个元素均为$0$的矩阵，$O_{m\times{n}}$。</li>
+<li>对角矩阵：非主对角元素均为$0$的矩阵称为对角矩阵，$diag(\lambda_{1},\lambda_{2},\cdots,\lambda_{n})$。</li>
+<li>单位矩阵：主对角元素均为$1$，其余元素均为$0$的$n$阶方阵，称为$n$阶单位矩阵，$I_{n}$或$E_{n}$。</li>
+<li>数量矩阵：数$k$和单位矩阵的乘积称为数量矩阵。</li>
+<li>上/下三角矩阵</li>
+<li>对称矩阵：一个矩阵等于其转置，则称它为对称矩阵，$A=A^{T}$。</li>
+<li>反对称矩阵：一个矩阵加上其转置等于零矩阵，则称它为反对称矩阵，$A=-A^{T}$。</li>
+<li>正交矩阵：矩阵的转置等同于其逆矩阵，换言之，矩阵与其转置的乘积等于单位矩阵，则称该矩阵为正交矩阵，$A=A^{-1}$。$n$阶实矩阵$A$是正交矩阵$\Leftrightarrow$$A$的行(列)向量组是规范正交向量组。</li>
+</ul>
+</li>
+<li>矩阵的基本运算<ul>
+<li>相等</li>
+<li>加法（有加法就有减法）<ul>
+<li>交换律：$A+B=B+A$</li>
+<li>结合律:  $(A+B)+C=A+(B+C)$</li>
+<li>$A+O=A$</li>
+<li>$A+(-A)=O$</li>
+</ul>
+</li>
+<li>数乘矩阵<ul>
+<li>$1A= A$</li>
+<li>结合律：$(kl)A=k(lA)$</li>
+<li>数的分配律：$(k+l) A=kA+lA$</li>
+<li>矩阵的分配律： $k(A+B)=kA+kB$</li>
+</ul>
+</li>
+<li>矩阵乘法<ul>
+<li>矩阵$A$、$B$能够乘积的条件是：矩阵$A$的列数等于矩阵$B$的行数,  且乘积矩阵与$A$行数相同，与$B$列数相同。</li>
+<li>在一般情况下，$AB≠BA$。</li>
+<li>虽然$A≠O$，$B≠O$，但是$BA=O$。从而，由$AB=O$，不能推出$A$和$B$中有一个是零矩阵的结论。</li>
+<li>若$A≠O$，由$AX=AY$也不能得到$X=Y$的结论。</li>
+<li>结合律：$(AB)C= A(BC)$</li>
+<li>分配律：$A(B+C)= AB+AC$、$(B+C)A= BA+CA$</li>
+<li>数的结合律：$k(AB)=(kA)B=A(kB)$</li>
+<li>$A_{m\times{n}}E_{n}= A_{m\times{n}}$、$E_{m}A_{m\times{n}}= A_{m\times{n}}$</li>
+<li>矩阵的幂<ul>
+<li>$A^{0}=E,A^{1}=A,A^{2}= A^{1}A^{1},\cdots,A^{k+1}=A^{k}A^{1}$</li>
+<li>$A^{k}A^{l}=A^{k+l}$</li>
+<li>$(A^{k})^{l}=A^{kl}$</li>
+<li>$AB=BA$时有$(AB)^{k}=A^{k}B^{k}$，反之不一定成立。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>转置矩阵<ul>
+<li>$(A^{T})^{T}=A$</li>
+<li>$(A+B)^{T}=A^{T}+B^{T}$</li>
+<li>$(kA)^{T}=kA^{T}$</li>
+<li>$(AB)^{T}=B^{T}A^{T}$</li>
+</ul>
+</li>
+<li>方阵行列式<ul>
+<li>$\det{A}=|A|=|a_{ij}|_{n}$</li>
+<li>$\det(A^{T})=\det{A}$</li>
+<li>$\det(kA)=k^{n}\det{A}$</li>
+<li>$\det (AB)=\det{A}\cdot\det{B}$</li>
+<li>两个矩阵和的行列式$\det(A+B)$没有可行运算规律。</li>
+<li>非方阵没有对应行列式。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>逆矩阵<ul>
+<li>对$n$阶方阵$A$，如果存在$n$阶方阵$B$，使$AB=BA=E$，则称方阵$A$是可逆的，且称$B$是$A$的逆矩阵，记为$B=A^{-1}$。可逆矩阵又称为非异阵或非奇异阵。</li>
+<li>若矩阵$A$是可逆矩阵，则由$BA=C$可得$B=CA^{-1}$；由$AB=C$可得$B=A^{-1}C$，这就解决了矩阵乘法运算的逆运算问题。</li>
+<li>如果$A$不是可逆矩阵,  一般由$AB=C$或$BA=C$不能唯一确定矩阵$B$。</li>
+<li>若矩阵A可逆，则A的逆矩阵是唯一的。</li>
+<li>运算性质：<ul>
+<li>$(A^{-1})^{-1}=A$</li>
+<li>$(kA)^{-1}=\frac{1}{k}{A^{-1}}$</li>
+<li>$(A^{T})^{-1}=(A^{-1})^{T}$</li>
+<li>$(AB)^{-1}=B^{-1}A^{-1}$</li>
+<li>两个矩阵和的逆矩阵$(A+B)^{-1}$没有可行运算规律。</li>
+</ul>
+</li>
+<li>伴随矩阵$adj(A)=A^{*}=\begin{bmatrix} A_{11} &amp; A_{21} &amp; \ldots &amp; A_{n1} \ A_{12} &amp; A_{22} &amp; \ldots &amp; A_{n2} \ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \ A_{1n} &amp; A_{2n} &amp; \ldots &amp; A_{nn} \end{bmatrix}$<ul>
+<li>$AA^{<em>}=A^{</em>}A=|A|E$</li>
+<li>矩阵$A$可逆$\Leftrightarrow$$|A|\neq0$且$A^{-1}=\frac{1}{|A|}A^{*}$</li>
+<li>$|A^{*}|=|A|^{n-1}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>矩阵初等变换<ul>
+<li>三种矩阵初等变换：<ul>
+<li>倍乘：一个非零常数乘矩阵的某一行/列。</li>
+<li>互换：互换矩阵中某两行/列的位置。</li>
+<li>倍加：将矩阵的某一行/列的$k$倍加到另一行/列。</li>
+</ul>
+</li>
+<li>矩阵的初等行变换和初等列变换统称为初等变换。</li>
+<li>如果矩阵$A$可以经过有限次的初等变换变成矩阵$B$，则称矩阵$A$与$B$<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113792569">等价</a>，记为$A\sim{B}$。<ul>
+<li>自反性</li>
+<li>对称性</li>
+<li>传递性</li>
+</ul>
+</li>
+<li>各种初等变换都是可逆的,  且逆变换也是同类型的初等变换。</li>
+<li>任何矩阵都可以经过初等行变换化为行阶梯形矩阵和行最简形矩阵。<ul>
+<li>如果一个矩阵的每行第一个非零元素的左下方元素都是$0$，且零行都排在最下面，则称矩阵为行阶梯形矩阵。 </li>
+<li>任何矩阵都可以经过初等行变换化为行阶梯形矩阵和行最简形矩阵。</li>
+</ul>
+</li>
+<li>初等矩阵：对单位矩阵作一次初等变换得到的矩阵。<ul>
+<li>$E\stackrel{c_{i}\leftrightarrow{c_{j}}}{\sim}{E(i,j)}$</li>
+<li>$E\stackrel{kc_{i}}{\sim}{E(i(k))}$</li>
+<li>$E\stackrel{c_{j}+{kc_{i}}}{\sim}{E(i+j(k))}$</li>
+</ul>
+</li>
+<li>矩阵$A$与$B$等价的充分必要条件是存在有限个初等矩阵$P_{1},P_{2},\cdots,P_{l}$和$Q_{1}, Q_{2},\cdots,Q_{t}$，使得$A=P_{l}\cdots{}P_{2}P_{1}BQ_{1}Q_{2}\cdots{}Q_{t}$</li>
+<li>矩阵$A$可逆的充分必要条件是$A$可表示为有限个初等矩阵的乘积。</li>
+<li>矩阵$A$与$B$等价的充分必要条件是存在可逆矩阵$P$和$Q$，使得$PAQ=B$</li>
+</ul>
+</li>
+<li>分块矩阵<ul>
+<li>分块矩阵初等变换：<ul>
+<li>三种初等变换<ul>
+<li>互换分块矩阵的某两个行(列)块。</li>
+<li>某个行/列块左/右乘一个可逆方阵。</li>
+<li>某个行/列块左/右乘一矩阵后加到另一行/列块。</li>
+</ul>
+</li>
+<li>由于矩阵乘法没有交换律，所以分块矩阵做行变换一律是左乘矩阵，做列变换一律是右乘矩阵。</li>
+<li>初等矩阵是可逆的，且其逆矩阵仍然是初等矩阵。</li>
+<li>对矩阵$A$作一次初等行变换所得到的矩阵等于对$A$左乘一个相应的初等矩阵；对矩阵$A$作一次初等列变换所得到的矩阵等于对$A$右乘一个相应的初等矩阵。</li>
+<li>初等分块矩阵</li>
+<li>对分块矩阵做分块矩阵的初等变换不改变分块矩阵的秩。</li>
+</ul>
+</li>
+<li>单位分块矩阵</li>
+</ul>
+</li>
+<li>任意$m\times{n}$矩阵$A$都与形为$\begin{bmatrix} E_{r} &amp; O \ O &amp; O \end{bmatrix}$的矩阵等价，其中$E_{r}$为$r$阶单位矩阵，$0≤r≤\min{m, n}$，并且$r$是唯一的（$r$就是矩阵$A$的秩，仅当$A=O$时，$r=0$，$E_{0}为数0$），该矩阵称为$A$的等价标准形。<br>等价标准型是唯一的。</li>
+<li>矩阵的秩 <ul>
+<li>矩阵中最大的非零的子行列式的阶数称为矩阵的秩。</li>
+<li>初等变换不改变矩阵的秩。</li>
+<li>矩阵的秩不超过矩阵的行数或列数。</li>
+<li>三秩相等：矩阵的秩$=$矩阵的行向量组的秩$=$矩阵的列向量组的秩</li>
+<li>经过初等行变换的两矩阵<ul>
+<li>它们的行向量组是等价向量组</li>
+<li>它们的任何相应的部分列向量组具有相同的线性相关性</li>
+</ul>
+</li>
+<li>矩阵的秩等于其最高阶非零子式$D$的阶数。</li>
+<li>性质：<ul>
+<li>某个$s$阶子式不为0，则$R(A)≥s$</li>
+<li>所有$t$阶子式都为0，则$R(A)&lt;t$</li>
+<li>对任意$m\times{n}$矩阵$A$均有$0≤R(A)≤\min{m,n}$</li>
+<li>$R(A^{T})=R(A)$</li>
+</ul>
+</li>
+<li>可逆矩阵也称满秩矩阵，不可逆矩阵也称降秩矩阵。</li>
+</ul>
+</li>
+<li>矩阵的特征方程、特征值、特征向量<ul>
+<li>特征值的研究对象是方阵。</li>
+<li>实对称矩阵的特征值都是实数，实对称矩阵的特征向量都可以取为实向量。</li>
+<li>$A\xi=\lambda_{0}\xi$</li>
+<li>特征方程$\det(\lambda_{0}{E}-A)=0$的解就是特征值，$n$阶方程有$n$个特征值。</li>
+<li>$(\lambda_{i}E-A)x=0$的所有非零解是特征值$\lambda_{i}$对应的特征向量。</li>
+<li>特征值的和等于矩阵对角线元素的和，即迹$tr$。</li>
+<li>特征值的积等于方阵行列式$\det{A}$。</li>
+<li>$k$重特征值$\lambda_{0}$至多只有$k$个线性无关的特征向量。</li>
+<li>属于不同特征值的特征向量是线性无关的。</li>
+<li>属于同一特征值的特征向量的线性组合，仍然是属于该特征值的特征向量。</li>
+<li>属于不同特征值的特征向量的线性组合，不是原矩阵的特征向量。</li>
+<li>矩阵属于单根特征值有且仅有一个线性无关的特征向量。</li>
+<li>实对称矩阵的属于不同特征值的特征向量是正交的。</li>
+</ul>
+</li>
+<li>矩阵相似$A\sim{B}$要求$P^{-1}AP=B$，这种关系具有自反性、对称性和传递性，所以是一种<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113792569">等价关系</a>（并不是矩阵等价的意思）。<ul>
+<li>相似矩阵有相同的特征多项式，因此也有相同的特征值。</li>
+<li>若$n$阶方阵$A$与对角矩阵$diag(\lambda_{1},\lambda_{2},\cdots,\lambda_{n})$相似，则$\lambda_{1},\lambda_{2},\cdots,\lambda_{n}$是矩阵的$n$个特征值。</li>
+<li>如果不计主对角线上元素的顺序，则与A相似的对角矩阵是唯一的。</li>
+<li>$n$阶矩阵$A$与对角矩阵相似的充分必要条件是矩阵$A$有$n$个线性无关的特征向量。</li>
+<li>若$n$阶矩阵$A$有$n$个互异特征值，则$A$与对角矩阵相似。</li>
+<li>实对称矩阵正交相似对角化的方法步骤：<ul>
+<li>求出A的全部特征值。</li>
+<li>对每个特征值,  若其重数为k,  求出其k个线性无关的特征向量。</li>
+<li>将求出的k个线性无关的特征向量规范正交化。</li>
+<li>用求出的n个规范正交的特征向量构造正交矩阵。</li>
+<li>写出对角矩阵。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>共轭矩阵<ul>
+<li>$A$为实矩阵时，$\overline{A}=A$</li>
+<li>共轭矩阵的性质：<ul>
+<li>$\overline{A+B}=\overline{A}+\overline{B}$</li>
+<li>$\overline{\lambda{A}}=\bar{\lambda}\bar{A}$</li>
+<li>$\overline{AB}=\bar{A}\bar{B}$</li>
+<li>$\overline{A^{T}}=\bar{A}^{T}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114709217">矩阵微积分学</a></li>
+</ol>
+<h1 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h1><ol>
+<li>向量只有行向量和列向量两种，行向量$\alpha^{T}$是$1\times{n}$的矩阵，列向量$\alpha$是$n\times{1}$的矩阵。</li>
+<li>线性代数研究的是实向量，即所有元素均为实数。</li>
+<li>向量的运算性质<ul>
+<li>交换律：$\alpha+\beta=\beta+\alpha$</li>
+<li>结合律：$(\alpha+\beta)+\gamma=\alpha+(\beta+\gamma)$</li>
+<li>$\alpha+0=\alpha$</li>
+<li>$\alpha+(-\alpha)=0$</li>
+<li>$1\alpha=\alpha$</li>
+<li>结合律：$(kl)\alpha=k(l\alpha)$</li>
+<li>数的分配律：$(k+l)\alpha=k\alpha+l\alpha$</li>
+<li>向量的分配律：$k(\alpha+\beta)=k\alpha+k\beta$</li>
+</ul>
+</li>
+<li>向量空间：所有$n$维列/行向量的全体，对其上所定义的加法和乘数两种运算，构成了一个$n$维线性空间，或称向量空间。</li>
+<li>向量的运算：<ul>
+<li>内积：$[\alpha,\beta]=\alpha\cdot\beta=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n}=\alpha^{T}\beta=\beta^{T}\alpha=|a||b|\cos\theta$<ul>
+<li>$[\alpha,\beta]=[\beta,\alpha]$</li>
+<li>$[\alpha+\beta,\gamma]=[\alpha,\gamma]+[\beta,\gamma]$</li>
+<li>$[k\alpha,\beta]=k[\alpha,\beta]$</li>
+<li>$[\alpha,\alpha]≥0$</li>
+<li>$\theta=&lt;\alpha,\beta&gt;=\frac{[\alpha,\beta]}{|\alpha||\beta|}$</li>
+</ul>
+</li>
+<li>长度：$|\alpha|=||\alpha||=[\alpha,\alpha]=\sqrt{a_{1}^{2}+a_{2}^{2}+\cdots+a_{n}^{2}}$<ul>
+<li>$|\alpha|=1$则$\alpha$是单位向量</li>
+<li>$|\alpha|\neq{0}$时，$\frac{1}{|\alpha|}\alpha$是与$\alpha$同方向的单位向量</li>
+<li>$|\frac{[\alpha,\beta]}{|\alpha||\beta|}|≤1$，要求非零向量</li>
+</ul>
+</li>
+<li>外积：$\alpha\times\beta=|a||b|\sin\theta$<ul>
+<li>$\alpha\times\alpha=0$</li>
+<li>$\alpha\times\beta=-\beta\times\alpha$</li>
+<li>$(\alpha+\beta)\times\gamma=\alpha\times\gamma+\beta\times\gamma$</li>
+<li>$(\lambda\alpha)\times\beta=\alpha\times(\lambda\beta)=\lambda(\alpha\times\beta)$</li>
+</ul>
+</li>
+<li>混合积：$[\alpha,\beta,\gamma]=(\alpha\times\beta)\cdot\gamma$</li>
+</ul>
+</li>
+<li>向量组的线性相关性<ul>
+<li>线性组合：向量组通过一组系数相加所得的向量是该组向量的线性组合。</li>
+<li>线性表出：向量能表示成向量组的各线性组合。</li>
+<li>向量与向量之间的关系，是线性相关或线性无关的.</li>
+<li>线性相关：对一组向量，存在一组不全为$0$的系数使它们的和为零向量，则称该组向量线性相关。</li>
+<li>线性无关：只有当一组向量的系数全为$0$时，才有它们的和向量为零向量，则称这组向量为线性无关。</li>
+<li>若向量组有一个部分组线性相关,  则此向量组线性相关。<ul>
+<li>含有零向量的向量组必线性相关。</li>
+<li>线性无关向量组的任一部分组也线性无关。</li>
+</ul>
+</li>
+<li>向量组线性相关的充分必要条件是其中至少有一个向量可被其余向量线性表示。</li>
+<li>两个向量线性相关的几何意义是这两向量共线，三个向量线性相关的几何意义是这三向量共面，$n$个向量线性相关的几何意义是它们在同一个$n-1$维空间。</li>
+<li>设向量组$\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$线性无关,  而向量组$\alpha_{1},\alpha_{2},\cdots,\alpha_{r},\beta$线性相关,  则$\beta$可由$\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$线性表示,且表示式唯一。</li>
+<li>线性无关向量组的加长向量组也线性无关。</li>
+<li>向量组$1$中的每个向量都可由向量组$2$线性表出，则称向量组$1$可由向量组$2$线性表出。若向量组$1$和向量组$2$可互相线性表出，则称向量组$1$和向量组$2$是等价向量组。</li>
+<li>如果向量组$\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$线性无关, 则有规范正交向量组$e_{1},e_{2},\cdots,e_{m}$与之等价。</li>
+<li>由线性无关向量组得到正交向量组的过程被称为施密特(Schimidt)正交化过程。</li>
+<li>任意$n+1$个$n$维向量线性相关。</li>
+</ul>
+</li>
+<li>向量组的秩<ul>
+<li>向量组的秩等于极大线性无关向量组中的向量个数。</li>
+<li>向量组的极大线性无关组是线性无关的，且向量组中的任意向量可由极大线性无关组的向量线性表出。</li>
+<li>向量组的极大线性无关组一般不唯一。</li>
+<li>含有非零向量的向量组都存在极大线性无关组，只含有零向量的向量组不存在极大线性无关组，一个线性无关的向量组的极大线性无关组就是该向量组本身。</li>
+<li>三秩相等：矩阵的秩$=$矩阵的行向量组的秩$=$矩阵的列向量组的秩</li>
+<li>向量组$2$被向量组$1$线性表出，则向量组$2$的秩不超过向量组$1$。</li>
+<li>等价向量组同秩。</li>
+</ul>
+</li>
+<li>向量组等价和矩阵等价是不同的概念。矩阵等价要同型，行数和列数都要相等；向量组等价要同维，但向量个数可以不同。</li>
+<li>一组两两正交的非零向量称为正交向量组，由单位向量构成的正交向量组称为规范正交向量组。</li>
+<li>加长向量组增加的分量不仅仅可以是一个，也可以是多个；不仅仅可以加在末尾，也可以在任何其他位置。</li>
+</ol>
+<h1 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h1><ol>
+<li>将线性方程组写成向量的形式可见，方程组的未知数是向量组各成员的系数。方程组问题就是向量组问题，方程组和向量组是同一个问题的两种表现形式，其本质和解决方案相同。</li>
+<li>齐次线性方程组$Ax=0$<ul>
+<li>系数矩阵满秩时，$r(A)=n$，方程组有唯一零解。</li>
+<li>系数矩阵不满秩时，$r(A)=r&lt;n$，方程组有非零解，且有$n-r$个线性无关解。</li>
+<li>解的结构：<ul>
+<li>$n$元齐次线性方程组$Ax=0$的解向量集合$S$对向量的线性运算是封闭的。</li>
+<li>$n$元齐次线性方程组$Ax=0$的基础解系，就是将解集合$S$看成向量组的极大无关组。所以，基础解系是不唯一的。</li>
+<li>$r(A)=r&lt;n$则它有基础解系，且基础解系含有$n-r$个解向量。</li>
+<li>方程组的任意解可由基础解系线性表出。</li>
+<li>通解即为基础解系的线性组合。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非齐次线性方程组$Ax=\beta$<ul>
+<li>$Ax=\beta$是$Ax=0$的导出组。</li>
+<li>系数矩阵的秩不等于增广矩阵的秩，方程组无解。</li>
+<li>系数矩阵的秩等于增广矩阵的秩等于解向量维度，方程有唯一解。</li>
+<li>系数矩阵的秩等于增广矩阵的秩小于解向量维度，方程有无穷多解。</li>
+<li>解的结构：<ul>
+<li>非齐次线性方程组的任意两个解的差是它的导出组的解。</li>
+<li>非齐次线性方程组的一个解与其导出组的一个解之和仍是非齐次线性方程组的解。</li>
+<li>如果$\eta_{0}$是非齐次线性方程组的某个解, 那么非齐次线性方程组的任意解$\eta$都可以表示为$\eta=\eta_{0}+\xi$</li>
+<li>通解即为基础解系的线性组合+特解$\eta_{0}$。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>向量空间<ul>
+<li>对加法和数乘运算封闭。</li>
+<li>子空间</li>
+<li>$r$维向量空间有$r$个彼此线性无关的基向量。如果没有基，则维度为$0$，即仅含一个零向量。</li>
+<li>基下坐标</li>
+<li>基变换公式：$(\beta_{1},\beta_{2},\beta_{3})=(\alpha_{1},\alpha_{2},\alpha_{3})C$，$C$为过渡矩阵。</li>
+</ul>
+</li>
+</ol>
+<h1 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h1><ol>
+<li>$n$元二次型：$f(x_{1},x_{2},\cdots,x_{n})=a_{11}x_{1}^{2}+a_{22}x_{2}^{2}+\cdots+a_{nn}x_{n}^{2}+2a_{12}x_{1}x_{2}+2a_{13}x_{1}x_{3}+…+2a_{n-1,n}x_{n-1}x_{n}$</li>
+<li>线性代数研究的是实二次型，即所有系数均为实数。</li>
+<li>将$2a_{ij}x_{i}x_{j}$写成$a_{ij}x_{i}x_{j}+a_{ji}x_{j}x_{i}$，其中$a_{ij}=a_{ji}$，则有$f(x_{1},x_{2},\cdots,x_{n})=a_{11}x_{1}^{2}+a_{12}x_{1}x_{2}+\cdots+a_{1n}x_{1}x_{n}+a_{21}x_{2}x_{1}+a_{22}x_{2}^{2}+\cdots+a_{2n}x_{2}x_{n}+\cdots+a_{nn}x_{n}^{2}=\sum\limits_{i,j=1}^{n}a_{ij}x_{i}x_{j}=x^{T}Ax$</li>
+<li>标准型：仅含平方项的二次型。</li>
+<li>规范型：系数在${-1,0,1}$中取值的标准型。</li>
+<li>二次型的秩等于矩阵$A$的秩。</li>
+<li>线性变换$x=Cy$下，二次型仍变为二次型。可逆线性变换下，二次型的秩不变。</li>
+<li>合同变换<ul>
+<li>$B=C^{T}AC$，$C$可逆。</li>
+<li>合同关系具有自反性、对称性和传递性，所以是一种<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113792569">等价关系</a>。</li>
+<li>合同必等价，等价不必合同。</li>
+<li>相似必正交相似，则必合同。</li>
+</ul>
+</li>
+<li>化二次型为标准形<ul>
+<li>正交变换法<ul>
+<li>$C$为正交矩阵时，$x=Cy$为正交变换。</li>
+<li>任意二次型$f=x^{T}Ax$都可以通过正交变换$x=Qy$化为标准型$f=y^{T}\Lambda{y}$，$\Lambda$对角线的元素恰好是$A$的特征值。</li>
+<li>用正交变换化二次型为标准形与实对称矩阵正交相似对角化的步骤几乎是一致的。</li>
+<li>化二次型为标准形所用的正交变换以及标准形都不是唯一的。但是，在正交变换对应的标准形中，各项系数恰是矩阵A的所有特征值，因此不考虑顺序的情况下是唯一的。</li>
+<li>由于正交变换具有保范性，所以正交变换具有保持几何图形不变的优点。</li>
+</ul>
+</li>
+<li>配方法<ul>
+<li>如果含有平方项，则把所有含对应$x_{i}$的项集中配方。</li>
+<li>如果不含平方项，先作可逆线性变换$x_{i}=y_{i}-y_{j}$、$x_{j}=y_{i}+y_{j}$、$x_{k}=y_{k}$，把二次型转化为含有平方项，再配方。</li>
+<li>随着配方的方法不同，二次型的标准形和所用的可逆变换也不是唯一的。</li>
+</ul>
+</li>
+<li>矩阵的合同对角化</li>
+</ul>
+</li>
+<li>任意实二次型都可以经过$x=Cz$化为规范型。</li>
+<li>惯性定理<ul>
+<li>实二次型在不同的线性变换下化为的标准型系数$\lambda_{1},\lambda_{2},\cdots,\lambda_{n}$中正数个数与$\mu_{1},\mu_{2},\cdots,\mu_{n}$中正数个数相同。</li>
+<li>其中正系数个数被称为正惯性指数，负系数个数被称为负惯性指数。</li>
+<li>惯性定理指出，对二次型做任意实可逆变换其惯性指数都不变。</li>
+<li>合同的充要条件是惯性指数相同（正负惯性指数都相同）。</li>
+</ul>
+</li>
+<li>二次型的正定性<ul>
+<li>正定二次型 $&gt;0$，正惯性指数等于$n$，矩阵全是正特征值，矩阵所有顺序主子式都大于0</li>
+<li>负定二次型 $&lt;0$，负惯性指数等于$n$，矩阵全是负特征值，矩阵所有奇数阶顺序主子式都小于0且偶数阶顺序主子式都大于0</li>
+<li>半正定二次型 $≥0$，负惯性指数等于$0$，矩阵没有负特征值</li>
+<li>半负定二次型 $≤0$，正惯性指数等于$0$，矩阵没有正特征值</li>
+</ul>
+</li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2021/03/25/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/xian-xing-dai-shu-ji-chu-li-lun-gui-na/">https://blankspaceplus.github.io/2021/03/25/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/xian-xing-dai-shu-ji-chu-li-lun-gui-na/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                    <span class="chip bg-color">线性代数</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/26/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/shu-zhi-fen-xi-ji-chu-li-lun-gui-na/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="数值分析基础理论归纳">
+                        
+                        <span class="card-title">数值分析基础理论归纳</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文归纳数值分析基础理论。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-26
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">数值分析</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/23/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/shu-li-tong-ji-ji-chu-li-lun-gui-na/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="数理统计基础理论归纳">
+                        
+                        <span class="card-title">数理统计基础理论归纳</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文归纳数理统计基础理论。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">
+                        <span class="chip bg-color">数理统计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">107.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

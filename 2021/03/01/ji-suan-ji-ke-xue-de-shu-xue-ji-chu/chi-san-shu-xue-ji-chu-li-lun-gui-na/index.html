@@ -1,0 +1,1499 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="离散数学基础理论归纳, 空白格">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>离散数学基础理论归纳 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">离散数学基础理论归纳</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">离散数学</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机科学的数学基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="离散数学"><a href="#离散数学" class="headerlink" title="离散数学"></a>离散数学</h1><p>离散数学是现代数学的一个重要分支，是计算机科学与技术的理论基础。如果说“高科技本质上是数学技术”的话，计算机科学与技术基本上是离散数学技术。所以离散数学又称为计算机数学，是计算机科学与技术专业的核心、骨干课程。</p>
+<p>本课程结合计算机学科的特点，主要研究离散对象的代数结构及相互关系。通过该课程的教学，使学生了解并掌握计算机科学中普遍地采用离散数学中的一些基本概念、基本思想和基本方法。通过本课程的学习将使学生得到良好的数学训练，从而进一步提高学生的抽象思维能力和逻辑推理能力，为其学习计算机专业各门后续课程做好必要的知识准备，并为从事计算机的应用提供理论基础。</p>
+<p>离散数学应着重掌握数理逻辑、集合与关系、代数系统的一般性质、图论初步等方面的基本概念和简单应用，特别应注意体会书中的典型例题，以促进对主要内容的掌握。</p>
+<h1 id="第一篇-数理逻辑"><a href="#第一篇-数理逻辑" class="headerlink" title="第一篇 数理逻辑"></a>第一篇 数理逻辑</h1><p>用数学方法来研究推理的规律称为数理逻辑。这里所指的数学方法，就是引进一套严格定义的符号体系的方法，即建立一套形式语言，来研究形式逻辑。所以数理逻辑又称作符号逻辑，它是从量的侧面来研究思维规律的。</p>
+<p>现代数理逻辑可分为逻辑演算，证明论，模型论，递归函数论，公理化集合论。这里介绍的是数理逻辑基本的内容：逻辑演算中的命题逻辑和谓词逻辑。数理逻辑与数学的其它分支、计算机科学、人工智能、语言学等学科均有密切联系。</p>
+<h2 id="第一章-命题逻辑"><a href="#第一章-命题逻辑" class="headerlink" title="第一章 命题逻辑"></a>第一章 命题逻辑</h2><p>本章是以<strong>命题</strong>为中心，主要讨论的内容有：</p>
+<ul>
+<li>命题的表示、命题的演算</li>
+<li>命题演算中的公式，及其应用</li>
+<li>命题逻辑推理的方法</li>
+</ul>
+<h3 id="学习要求"><a href="#学习要求" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握逻辑联结词，要熟练掌握联结词的真值表定义以及它们在自然语言中的含义。其中特别要注意$\vee$和$→$的用法。</li>
+<li>会命题符号化。</li>
+<li>掌握永真式的证明方法：<ol>
+<li>真值表</li>
+<li>等价变换，化简成$T$</li>
+<li>主析取范式</li>
+</ol>
+</li>
+<li>掌握永真蕴含式的证明方法，熟练记忆并会应用重要的永真蕴含式。</li>
+<li>掌握等价公式的证明方法，熟练记忆并会应用重要的等价公式。</li>
+<li>熟练掌握范式的写法及其应用：<ol>
+<li>析取范式与主析取范式</li>
+<li>合取范式与主合取范式</li>
+</ol>
+</li>
+<li>熟练掌握三种推理方法：<ol>
+<li>直接推理$P$</li>
+<li>条件论证$CP$，写附加前提</li>
+<li>反证法$T$，写假设前提</li>
+</ol>
+</li>
+</ol>
+<h3 id="章节内容"><a href="#章节内容" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>命题及其表示法</li>
+<li>联结词 </li>
+<li>命题公式及命题符号化</li>
+<li>重言式与重言蕴含式</li>
+<li>等价公式</li>
+<li>范式</li>
+<li>命题逻辑推理</li>
+</ol>
+<h3 id="学习重难点"><a href="#学习重难点" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>联结词在自然语言中的含义，命题符号化</li>
+<li>永真式、永真蕴含式、等价公式的证明方法，相关公式的熟练应用</li>
+<li>范式的写法及其应用</li>
+<li>命题逻辑的三种推理方法</li>
+</ul>
+<h3 id="我的博客"><a href="#我的博客" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113765513">命题逻辑联结词的自然语言表述</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113765518">逻辑蕴含的充分条件和必要条件</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113774321">命题逻辑符号化例题</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113780527">基本重言蕴含式总结</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113780786">基本等价公式总结</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113782581">浅析小项与主析取范式和大项与主合取范式</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113782725">极小全功能集</a></li>
+</ol>
+<h2 id="第二章-谓词逻辑"><a href="#第二章-谓词逻辑" class="headerlink" title="第二章 谓词逻辑"></a>第二章 谓词逻辑</h2><p>在第一章命题逻辑中，把命题作为演算的基本单位，一个原子命题只用一个字母表示，而不再对命题中的句子成分及其内部结构进行分析。这样就无法研究命题的更深层次的结构与意义，鉴于上述局限性，使得我们对于一些常见而又简单的命题无法进行解释与推理。所以就要考虑解决这个问题的方法：在表示命题时，既表示出主语（主词），也表示出谓语（谓词），就可以解决上述问题。这就提出了谓词的概念。</p>
+<p>本章将从<strong>谓词的相关基本概念</strong>出发，主要讨论：</p>
+<ul>
+<li>谓词公式及命题符号化、谓词的演算</li>
+<li>谓词演算中的公式，及其应用</li>
+<li>谓词逻辑推理的方法</li>
+</ul>
+<h3 id="学习要求-1"><a href="#学习要求-1" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>准确掌握有关概念。</li>
+<li>会命题符号化。</li>
+<li>掌握常用的谓词演算等价公式和永真蕴涵式，包括:<ol>
+<li>带量词的公式在论域内展开式</li>
+<li>量词否定公式</li>
+<li>量词辖域扩充公式</li>
+<li>量词分配公式</li>
+</ol>
+</li>
+<li>会用等价公式求谓词公式的真值。</li>
+<li>会写前束范式。</li>
+<li>熟练掌握谓词逻辑推理的四种推理方法：<ol>
+<li>全称特指规则$US$</li>
+<li>存在特指规则$ES$</li>
+<li>全称推广规则$UG$</li>
+<li>存在推广规则$EG$</li>
+</ol>
+</li>
+</ol>
+<h3 id="章节内容-1"><a href="#章节内容-1" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>基本概念</li>
+<li>谓词公式及命题符号化</li>
+<li>谓词演算的等价式与蕴涵式</li>
+<li>前束范式</li>
+<li>谓词演算的推理理论</li>
+</ol>
+<h3 id="学习重难点-1"><a href="#学习重难点-1" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>谓词公式及命题符号化</li>
+<li>谓词演算的等价公式和永真蕴涵式的证明方法，相关公式的熟练应用</li>
+<li>谓词逻辑的三种推理方法</li>
+</ul>
+<h3 id="我的博客-1"><a href="#我的博客-1" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113782390">论域和客体函数的区别</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113786592">含有两个量词的谓词逻辑公式</a></li>
+</ol>
+<h1 id="第二篇-集合论"><a href="#第二篇-集合论" class="headerlink" title="第二篇 集合论"></a>第二篇 集合论</h1><p>集合是数学中最基本的概念，又是数学各分支、自然科学及社会科学各领域的最普遍采用的描述工具。集合论是离散数学的重要组成部分，是现代数学中占有独特地位的一个分支。</p>
+<p>本部分主要介绍朴素集合论的主要内容，其中包括集合论基础（第三章）、二元关系（第四章）、函数（第五章）。</p>
+<h2 id="第三章-集合论基础"><a href="#第三章-集合论基础" class="headerlink" title="第三章 集合论基础"></a>第三章 集合论基础</h2><p>集合是一个不能精确定义的基本概念。一般地说把具有共同性质的东西，汇集成一个整体，就形成了一个集合。</p>
+<p>本章主要介绍<strong>朴素集合论</strong>的基本内容，包括：</p>
+<ul>
+<li>什么是集合以及有关子集、空集、全集、补集等概念</li>
+<li>集合的基本运算和集合代数的有关公式</li>
+<li>在组合计数的有关公式</li>
+<li>在组合计数中有着广泛应用的包含排斥原理</li>
+</ul>
+<h3 id="学习要求-2"><a href="#学习要求-2" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握集合间三种关系的定义、谓词定义、证明方法：<ol>
+<li>包含关系$⊆$</li>
+<li>相等关系$=$</li>
+<li>真包含关系$⫋$</li>
+</ol>
+</li>
+<li>掌握三个特殊集合，会求集合的幂集：<ol>
+<li>全集$E$</li>
+<li>空集$\Phi$</li>
+<li>幂集$P(A)$</li>
+</ol>
+</li>
+<li>掌握集合的五种运算定义、计算方法及性质：<ol>
+<li>交运算$\cap$</li>
+<li>并运算$\cup$</li>
+<li>差运算$-$</li>
+<li>绝对补运算$\sim$</li>
+<li>对称差$\oplus$</li>
+</ol>
+</li>
+<li>会用包含排斥原理解决集合计数问题。</li>
+</ol>
+<h3 id="章节内容-2"><a href="#章节内容-2" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>集合的概念和表示法</li>
+<li>集合间的关系</li>
+<li>三个特殊集合</li>
+<li>集合的运算</li>
+<li>包含排斥原理</li>
+</ol>
+<h3 id="学习重难点-2"><a href="#学习重难点-2" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>集合间三种关系的证明方法</li>
+<li>集合的幂集</li>
+<li>集合五种运算的计算方法及性质</li>
+</ul>
+<h3 id="我的博客-2"><a href="#我的博客-2" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113787511">幂集的求解</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113787645">集合的包含排斥原理</a></li>
+</ol>
+<h2 id="第四章-二元关系"><a href="#第四章-二元关系" class="headerlink" title="第四章 二元关系"></a>第四章 二元关系</h2><p>现实世界中，任何两个或多个事物之间总是存在这样或那样的联系，在逻辑学中我们称这种联系为关系。</p>
+<p>关系以集合理论为基础，是关系型数据库的理论基础。</p>
+<p>本章主要讨论有关<strong>二元关系的定义</strong>和<strong>二元关系的运算及各种性质</strong>，其中包含的复合关系和逆关系，等价关系及相容关系都是本章学习的重点。</p>
+<h3 id="学习要求-3"><a href="#学习要求-3" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>关系的概念，表示方法。</li>
+<li>二元关系的性质的定义，熟练掌握性质的判断及证明。</li>
+<li>掌握关系的复合、求逆运算(计算方法及有关性质)，了解关系的闭包运算。</li>
+<li>掌握等价关系的判断，证明，求等价类和商集。</li>
+<li>掌握相容关系定义，简化图和简化矩阵，相容类，最大相容类，完全覆盖。</li>
+<li>偏序关系的判断，会画Hasse图，会求一个子集的极小(大)元、最小(大)元、上界与下界、最小上界及最大下界。</li>
+</ol>
+<h3 id="章节内容-3"><a href="#章节内容-3" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>序偶与笛卡尔定理</li>
+<li>关系及其表示</li>
+<li>关系的性质</li>
+<li>复合关系</li>
+<li>逆关系</li>
+<li>关系的闭包运算</li>
+<li>集合的划分和覆盖</li>
+<li>等价关系与等价类</li>
+<li>相容关系</li>
+<li>次序关系</li>
+</ol>
+<h3 id="学习重难点-3"><a href="#学习重难点-3" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>二元关系性质的判断及证明</li>
+<li>关系的运算：关系的复合, 逆关系</li>
+<li>等价关系、等价类的划分和商集</li>
+<li>偏序关系</li>
+</ul>
+<h3 id="我的博客-3"><a href="#我的博客-3" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113788981">序偶的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113789378">二元关系的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113791108">二元关系复合运算的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113791171">二元关系逆关系的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113791915">求解传递闭包的Warshall算法</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113792237">二元关系的闭包</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113794710">偏序集Hasse图的画法和重要元素</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113792569">等价关系、相容关系、偏序关系</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114016145">集合的划分与覆盖</a></li>
+</ol>
+<h2 id="第五章-函数"><a href="#第五章-函数" class="headerlink" title="第五章 函数"></a>第五章 函数</h2><p>函数是数学中的一个基本概念，也是一个重要概念，它广泛应用在数学的多个分支中，在数学的应用和发展中起着十分重要的作用。</p>
+<p><strong>函数</strong>在计算机领域内有很多应用。如开关理论、自动机理论和可计算性理论等。</p>
+<h3 id="学习要求-4"><a href="#学习要求-4" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握函数的定义。</li>
+<li>掌握函数的类型, 会判断、会证明：<ol>
+<li>满射函数</li>
+<li>映内函数</li>
+<li>入射函数</li>
+<li>双射函数</li>
+</ol>
+</li>
+<li>会计算函数的复合(左复合)，求逆函数，知道有关性质。</li>
+<li>了解集合的特征函数，了解集合的基数、可数集合。</li>
+</ol>
+<h3 id="章节内容-4"><a href="#章节内容-4" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>函数的概念</li>
+<li>函数的复合函数</li>
+<li>逆函数</li>
+<li>集合特征函数与模糊子集</li>
+<li>集合的基数</li>
+</ol>
+<h3 id="学习重难点-4"><a href="#学习重难点-4" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>函数及函数类型的判断和证明</li>
+<li>函数的复合、求逆</li>
+</ul>
+<h3 id="我的博客-4"><a href="#我的博客-4" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/113795563">满射函数、入射函数、双射函数</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114155996">函数复合的性质和逆函数的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114159678">集合的特征函数</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114169833">集合的基数</a></li>
+</ol>
+<h1 id="第三篇-代数系统"><a href="#第三篇-代数系统" class="headerlink" title="第三篇 代数系统"></a>第三篇 代数系统</h1><p>通常所说的“系统”，是在一定情况下，指对某一相对独立或封闭的环境中的集合的元素间的性质、行为和联系。现实世界中存在各种各样的系统。例如：商品交易、军事指挥系统、计算机系统、管理系统等等。</p>
+<p>而在数学中所说的系统是指具有某种性质的数学结构。也就是在一个非空集合上，定义了元素间的算法法则和运算所满足的运算律，把这个集合及其上的定义的算法法则叫做一个代数系统。数学中所研究的是抽象的代数系统，它的元素暂时不必代表任何具体对象，而是一个集合中的元素，并且抽象代数系统上的运算也是抽象的函数。</p>
+<p>代数系统是数学的一个重要分支，在计算机科学中有广泛的应用，而且计算机科学的发展，也促进了代数学的进一步发展。</p>
+<h2 id="第六章-代数系统"><a href="#第六章-代数系统" class="headerlink" title="第六章 代数系统"></a>第六章 代数系统</h2><p>针对某个具体问题选用适宜的数学结构去进行较为确切的描述，这就是所谓的“数学模型”。可见，数学结构在数学模型中占有极为重要的位置。我们这里所要研究的是一类特殊的数学结构——由集合上定义若干个运算而组成的系统。我们通常称它为代数系统。它在计算机科学中有着广泛的应用。</p>
+<p>本章将从一般代数系统的引入出发，研究一些<strong>特殊的代数系统</strong>，而这些代数系统中的运算具有某些性质，从而确定了这些代数系统的数学结构。</p>
+<h3 id="学习要求-5"><a href="#学习要求-5" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握二元运算的定义。</li>
+<li>熟练掌握二元运算的性质的判断及证明。</li>
+<li>掌握代数系统的同态、同构定义，会证明。了解同构性质的保持。</li>
+<li>熟练掌握半群、独异点、群、子群、交换群(会证明)，了解循环群。</li>
+<li>了解子群的陪集，Lagrange定理及其推论。</li>
+<li>了解环、域的概念。</li>
+</ol>
+<h3 id="章节内容-5"><a href="#章节内容-5" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>代数系统的概念</li>
+<li>二元运算及其性质</li>
+<li>同态与同构</li>
+<li>同余关系</li>
+<li>半群与独异点</li>
+<li>群与子群</li>
+<li>循环群与置换群</li>
+<li>陪集与拉格朗日定理</li>
+<li>环与域</li>
+</ol>
+<h3 id="学习重难点-5"><a href="#学习重难点-5" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>二元运算及其性质</li>
+<li>同态与同构的证明</li>
+<li>群与子群的性质及证明</li>
+</ul>
+<h3 id="我的博客-5"><a href="#我的博客-5" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114112478">二元运算的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114188967">代数系统的同态(同构)</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114199255">群的性质</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114199046">代数系统分类</a></li>
+</ol>
+<h2 id="第七章-格与布尔代数"><a href="#第七章-格与布尔代数" class="headerlink" title="第七章 格与布尔代数"></a>第七章 格与布尔代数</h2><p>从代数的观点出发，我们是否能对一种更为抽象的代数系统进行研究，而这种抽象的代数系统又具有象集合代数，命题代数那样具体的代数系统所具的一些最本质的性质？回答是肯定的，这种抽象的代数系统就是格（Lattice）和布尔代数（Boolean  Algebra）。</p>
+<p><strong>格和布尔代数</strong>的理论成为计算机硬件设计和通讯系统设计中的重要工具。在保密学、开关理论、计算机理论和逻辑设计以及其他一些科学和工程领域中，都直接应用了格与布尔代数。</p>
+<h3 id="学习要求-6"><a href="#学习要求-6" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握格的定义，格的性质，格的同构。</li>
+<li>会判断格、分配格、有补格和布尔格。</li>
+<li>重点掌握两个元素的布尔代数的性质(10个)。</li>
+<li>会写两个元素的布尔表达式的范式(实质是第一章的主析取和主合取范式)。</li>
+</ol>
+<h3 id="章节内容-6"><a href="#章节内容-6" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>格的概念</li>
+<li>几个特殊格</li>
+<li>布尔代数</li>
+<li>布尔表达式与布尔函数</li>
+</ol>
+<h3 id="学习重难点-6"><a href="#学习重难点-6" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>格的性质、判断，格的同构</li>
+<li>分配格、有界格、有补格、布尔格的判断、性质</li>
+</ul>
+<h3 id="我的博客-6"><a href="#我的博客-6" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114205690">格</a></li>
+</ol>
+<h1 id="第四篇-图论"><a href="#第四篇-图论" class="headerlink" title="第四篇 图论"></a>第四篇 图论</h1><h2 id="第八章-图论"><a href="#第八章-图论" class="headerlink" title="第八章 图论"></a>第八章 图论</h2><p><strong>图论</strong>是个应用十分广泛而又极其有趣数学分支, 物理、学、生物、经济、管理科学、信息论、计算机等各个领域都可以找到图论的足迹。</p>
+<h3 id="学习要求-7"><a href="#学习要求-7" class="headerlink" title="学习要求"></a>学习要求</h3><ol>
+<li>掌握图的基本概念(特别注意相似的概念)。</li>
+<li>熟练掌握图中关于结点度数的定理 (会应用)。</li>
+<li>无向图的连通性的判定，连通分支及连通分支数的概念。</li>
+<li>有向图的可达性、强连通、单侧连通和弱连通的判定，求强分图、单侧分图和弱分图。</li>
+<li>会求图的矩阵。</li>
+<li>会判定欧拉图和汉密尔顿图。</li>
+<li>了解平面图。</li>
+<li>了解着色与对偶图。</li>
+<li>掌握树的基本定义，$v$和$e$间的关系式。会画生成树，会求最小生成树。</li>
+<li>掌握根树的概念，完全$m$叉树的公式，会画最优树，会设计前缀码。</li>
+</ol>
+<h3 id="章节内容-7"><a href="#章节内容-7" class="headerlink" title="章节内容"></a>章节内容</h3><ol>
+<li>图的基本概念 </li>
+<li>路与回路</li>
+<li>图的矩阵表示 </li>
+<li>赋权图的最短路与关键路</li>
+<li>欧拉图与汉密尔顿图</li>
+<li>二部图</li>
+<li>平面图 </li>
+<li>对偶图与着色</li>
+<li>树与生成树 </li>
+<li>根树及其应用</li>
+</ol>
+<h3 id="学习重难点-7"><a href="#学习重难点-7" class="headerlink" title="学习重难点"></a>学习重难点</h3><ul>
+<li>图的若干基本概念及相关定理</li>
+<li>路与回路</li>
+<li>欧拉图和汉密尔顿图的判定及应用</li>
+<li>树的等价定义，树与生成树的应用</li>
+<li>根树及其应用</li>
+</ul>
+<h3 id="我的博客-7"><a href="#我的博客-7" class="headerlink" title="我的博客"></a>我的博客</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114257431">图的基本概念和结论</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114275195">欧拉图与汉密尔顿图</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114281799">二部图</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114285228">平面图</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114285877">图的着色与对偶图</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114295093">树的基本概念和结论</a></li>
+</ol>
+<h1 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h1><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/102466436">一个简单的自动逻辑推理问题</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/102466332">编写一个简单的三人表决器</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104938780">旅行路线规划问题</a></li>
+</ol>
+<h1 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h1><p>此课的特点：内容较杂，概念多，定理多，比较抽象，给学习带来一定难度。</p>
+<p>离散数学是计算机科学系所有专业的基础数学课程。一方面有其实用性（应用数学的特征），另一方面有其本身作为数学基础课的理论的严谨性。所以，学习任何一个专题时：</p>
+<p>首先，要精确严格地掌握好概念和术语，正确理解他们的内涵和外延。因为公理、定理或定律的基石都是概念。只有正确的理解概念，才能把握定理的实质，熟练地将公理、定理应用于解决问题。完全的，精确的掌握一个概念的好主意是首先要深刻理解概念的内涵，然后举一些属于和不属于该概念外延的正反两方面的实例。如果对一些似是而非的例子也能辨别的话，应该说这个概念真正理解了。对一些重要的概念，能记住一两个的实例也很管用。这对牢固掌握一个概念是很有好处的。 千万不要在完全理解某些概念，基本定理之前就匆忙去做相应的习题。几乎可以肯定的说，这样做是不能学懂离散数学的。 </p>
+<p>其次，养成一种自觉的学习习惯。在掌握好基本概念和术语基础上，理解每一基本定理的本质，通过学习和借鉴书中提供的例题，多做些习题，从而进一步加深理解所学内容。尤其注意要独立的完成每一次作业，并且在每次作业完成之后，能自觉地归纳出其中用到的基本解题方法。 </p>
+<p>第三，要有刻苦钻研精神,不断总结经验，注意培养自己分析问题和解决问题的能力。</p>
+<p>最后，必须树立正确的学习目的，端正学习态度，刻苦学习从入学开始。</p>
+<h1 id="其他内容"><a href="#其他内容" class="headerlink" title="其他内容"></a>其他内容</h1><ol>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114580869">两类有限状态自动机</a></li>
+<li><a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/114578024">纠错码基本理论</a></li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/chi-san-shu-xue-ji-chu-li-lun-gui-na/">https://blankspaceplus.github.io/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/chi-san-shu-xue-ji-chu-li-lun-gui-na/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">离散数学</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/03/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/jia-she-jian-yan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="假设检验">
+                        
+                        <span class="card-title">假设检验</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文介绍假设检验的基本理论。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">
+                        <span class="chip bg-color">数理统计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/ju-zhen-de-te-zheng-zhi-he-te-zheng-xiang-liang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="矩阵的特征值和特征向量">
+                        
+                        <span class="card-title">矩阵的特征值和特征向量</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文介绍矩阵的特征值和特征向量，并用numpy实现和验证。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                        <span class="chip bg-color">线性代数</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">107.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
