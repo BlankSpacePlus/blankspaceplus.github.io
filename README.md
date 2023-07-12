@@ -40,6 +40,7 @@ hexo s
 - [GitHub Action - Hexo CI/CD](https://github.com/marketplace/actions/hexo-action)
 - [GitHub Action - Hexo Deploy](https://github.com/marketplace/actions/hexo-deploy)
 - [Hexo: 部署到GitHub Pages](https://hexo.io/docs/github-pages.html)
+- [稀土掘金: github pages 404怎么解决](https://juejin.cn/s/github%20pages%20404%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3)
 
 # Hexo异常解决
 
