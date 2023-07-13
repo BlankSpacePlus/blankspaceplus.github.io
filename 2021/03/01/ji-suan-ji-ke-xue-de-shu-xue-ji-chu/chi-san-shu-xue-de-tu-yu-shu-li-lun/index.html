@@ -1,0 +1,1416 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="离散数学的图与树理论, 空白格">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>离散数学的图与树理论 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">离散数学的图与树理论</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">离散数学</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机科学的数学基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-13
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    23 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p><strong>图</strong>可以定义为$G=V(G),E(G)$，其中$V(G)$是G的<strong>结点的非空集合</strong>，可简记成$V$；$E(G)$是G的<strong>边的集合</strong>，可简记成$E$。</p>
+<p>图的<strong>结点</strong>(Vertices)用$\circ$表示，旁边表明该结点的名称。</p>
+<p>图的<strong>边</strong>(Edges)可以分为有向边和无向边。</p>
+<p><strong>有向边</strong>用带箭头的弧线表示，从$u$到$v$的边可表示为$&lt;u,v&gt;$。</p>
+<p><strong>无向边</strong>用不带箭头的弧线表示，从$u$到$v$的边可表示为$(u,v)$。</p>
+<p>图中结点相对位置不同不重要，边的区直和长短也不重要。</p>
+<p>图的<strong>邻接点</strong>是与一条边关联的两个结点。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/1.png"></p>
+<p>图的<strong>邻接边</strong>是关联同一个结点的两条边。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/2.png"></p>
+<p>图的<strong>环</strong>是只关联一个结点的边。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/3.png"></p>
+<p>图的<strong>平行边</strong>是关联于同一对接点的若干条边。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/4.png"></p>
+<p>图可分为有向图和无向图。</p>
+<p><strong>有向图</strong>是只有有向边的图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/5.png"></p>
+<p><strong>无向图</strong>是只有无向边的图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/6.png"></p>
+<p>图的<strong>孤立结点</strong>是不与任何边关联的结点。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/7.png"></p>
+<p><strong>零图</strong>是仅有一些孤立结点构成的图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/8.png"></p>
+<p><strong>平凡图</strong>是仅有一个孤立结点构成的零图，$|V(G)=1$，$|E(G)=0|$。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/9.png"></p>
+<p><strong>简单图</strong>是不含有环和平行边的图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/10.png"></p>
+<p><strong>多重图</strong>是含有平行边的图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/11.png"></p>
+<p>无向图中结点$v$的<strong>度</strong>是结点$v$所关联的边数，记作$deg(v)$或$d(v)$。<br>一个环带给结点的度是2。</p>
+<p>无向图的<strong>结点度序列</strong>表示为$V={deg(v_{1}),deg(v_{2}),…,deg(v_{n})}$。</p>
+<p>无向图的<strong>最大度</strong>表示为$\Delta(G)=\max{deg(v)|v\in{G}}$。</p>
+<p>无向图的<strong>最小度</strong>表示为$\delta(G)=\min{deg(v)|v\in{G}}$</p>
+<p>每个无向图所有结点度的总和等于边数的2倍，即$\sum\limits_{v\in{V}}deg(v)=2|E|$。</p>
+<p><strong>握手定理</strong>：每个无向图中，奇数度的结点必为偶数个。</p>
+<p><strong>K-正则图</strong>是$\Delta(G)=\delta(G)=k$的无向简单图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/12.png"></p>
+<p>有向图的<strong>出度</strong>是从结点$v$射出的边数，记作$deg^{+}(v)$或$dego(v)$。</p>
+<p>有向图的<strong>入度</strong>是射入结点$v$的边数，记作$deg^{-}(v)$或$degi(v)$。</p>
+<p>有向图所有结点的出度之和等于入度之和。</p>
+<p><strong>无向完全图</strong>是每对结点之间都有边相连的无向简单图，如果此图有$n$个结点则记作$K_{n}$。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/14.png"></p>
+<p>无向完全图$K_{n}$的边数为$\frac{n(n-1)}{2}$。</p>
+<p><strong>有向简单完全图</strong>是任何两个不同结点之间都有相互可达的边的有向简单图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/15.png"></p>
+<p>有向简单完全图$K_{n}$的边数为$n(n-1)$。</p>
+<p><strong>有向完全图</strong>是任何两个结点之间都有相互可达的边的有向图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/16.png"></p>
+<p>设$G=&lt;V,E&gt;$是图，如果$G’=&lt;V’,E’&gt;$，$V’⊆V$，$V’=\Phi$，$E’⊆E$，则称$G’$是$G$的<strong>子图</strong>。</p>
+<p>设$G=&lt;V,E&gt;$是图，$G’=&lt;V’,E’&gt;$，$G’$是$G$的<strong>子图</strong>，如果$V’=V$，则称$G’$是$G$的<strong>生成子图</strong>。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/17.png"></p>
+<p>图$G$的<strong>补图</strong>是由$G$的所有结点和为使$G$变成完全图所需要添加的所有边组成的图，记作$\overline{G}$。</p>
+<p>设$G_{1}=&lt;V_{1},E_{1}&gt;$是图$G=&lt;V,E&gt;$的子图，如果有$G_{2}=&lt;V_{2},E_{2}&gt;$使得$E_{2}=E-E_{1}$且$V_{2}$中仅包含$E_{2}$中的边所关联的结点，则称$G_{2}$是$G_{1}$相对$G$的补图。<br>相对补图没有相互性。<br>下图中$G_{2}$是$G_{3}$相对$G$的补图，$G_{3}$是$G_{1}$相对$G$的补图，$G_{1}$不是$G_{3}$相对$G$的补图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/18.png"></p>
+<p>$G=&lt;V,E&gt;$和$G’=&lt;V’,E’&gt;$是图，如果存在双射$f:V→V’$，对于任意$v_{i},v_{j}\in{V}$，若$(v_{i},v_{j})\in{E}$当且仅当$(f(v_{i}),f(v_{j}))\in{E’}$，或$&lt;v_{i},v_{j}&gt;\in{E}$当且仅当$&lt;f(v_{i}),f(v_{j})&gt;\in{E’}$，则称$G$与$G’$同构，记作$G\cong{G’}$。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/19.png"></p>
+<p>两个图同构的必要条件：</p>
+<ol>
+<li>结点个数相等</li>
+<li>边数相等</li>
+<li>度数相同的结点数相等</li>
+<li>对应的结点的度数相等</li>
+</ol>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/20.png"></p>
+<p>图中结点和边的交叉序列$v_{0}e_{1}v_{1}e_{2}v_{2}…e_{n}v_{n}$是连接$v_{0}$到$v_{n}$的<strong>路</strong>，$v_{0}$是此<strong>路的起点</strong>，$v_{n}$是此<strong>路的终点</strong>，路中含有的边数$n$称为此<strong>路的长度</strong>。<br>如果图是简单图，则路可以只用结点序列表示，如$abcd$。<br>如果图是有向图，则路可以只用边序列表示，如$e_{1}e_{3}e_{5}e_{6}$。</p>
+<p>图中的<strong>回路</strong>是起点和终点重合的路。</p>
+<p>图中的<strong>迹</strong>是所有边都不同的路。</p>
+<p>图中的<strong>闭迹</strong>是所有边都不同的回路。</p>
+<p>图中的<strong>通路</strong>是所有结点都不同的路。</p>
+<p>图中的<strong>圈</strong>是除起点和终点外其余结点都不同的回路。</p>
+<p>在一个有$n$个结点的图中，如果结点$v_{i}$到$v_{j}$存在一条路，则从$v_{i}$到$v_{j}$必存在一条长度不多于$n-1$的路。</p>
+<p>在无向图中，如果结点$u$和$v$之间存在一条路，则称$u$和$v$是<strong>连通</strong>的。<br>规定，对于任意结点$u$，$u$和$u$是连通的。<br>图中结点间的连通关系是一个等价关系。</p>
+<p>令$G=&lt;G,V&gt;$是无向图，$R$是$V$上的连通关系，设$R$对$V$的商集中有等价类$V_{1},V_{2},V_{3},…,V_{n}$，这$n$个类构成的$n$个子图分别记作$G(V_{1}),G(V_{2}),G(V_{3}),…,G(V_{n})$，并称它们为$G$的<strong>连通分支</strong>，并用$W(G)$表示$G$中连通分支数。</p>
+<p><strong>连通图</strong>是只有一个连通分支的图，$W(G)=1$。</p>
+<p>图$G=&lt;G,V&gt;$是连通图，当且仅当对$V$的任何分成$V_{1}$和$V_{2}$的划分，恒存在一条边，使得它的两个端点分别属于$V_{1}$和$V_{2}$。</p>
+<p>$G=&lt;G,V&gt;$是无向连通图，结点集合$V_{1}⊆V$，如果删去$V_{1}$所有的结点后，$G$就不再连通，而删去$V_{1}$的任何真子集中的所有结点后得到的子图仍然连通，则称$V_{1}$是$G$的一个<strong>点割集</strong>。<br>若点割集$V_{1}$中只有一个结点，则称此结点为<strong>割点</strong>。</p>
+<p>一个连通图中结点$v$是割点的充分必要条件是存在两个结点$u$和$w$，使得从$u$到$w$的任何路都通过$v$。</p>
+<p><strong>点连通度</strong>$k(G)=\min{|V_{1}||V_{1}是G的点割集}$，$G$不是完全图。<br>点连通度表示的是使$G$不连通至少要删去的结点数。<br>具有割点的图的点连通度$k(G)=1$。</p>
+<p>$G=&lt;G,V&gt;$是无向连通图，边集合$E_{1},E_{2}⊆E$，如果删去$E_{1}$所有的边后，$G$就不再连通，而删去$E_{1}$的任何真子集中的所有边后得到的子图仍然连通，则称$E_{1}$是$G$的一个<strong>边割集</strong>。<br>若边割集$E_{1}$中只有一条边，则称此边为<strong>割边</strong>，也称<strong>桥</strong>。</p>
+<p><strong>边连通度</strong>$\lambda(G)=\min{|E_{1}||E_{1}是G的边集}$，$G$不是平凡图。<br>边连通度表示的是使$G$不连通至少要删去的边数。<br>如果$G$不是连通图，则$k(G)=\lambda(G)=0$。</p>
+<p>$G$是无向图，则$k(G)≤\lambda(G)≤\delta(G)$。</p>
+<p>在有向图中，如果结点$u$和$v$之间存在一条路，则称从$u$到$v$是<strong>可达</strong>的。<br>显然，结点间的可达关系具有自反性和传递性。</p>
+<p>在有向图中，如果从$u$到$v$是<strong>可达</strong>的，则可能存在多条路，其中最短路的长度被称作从$u$到$v$的<strong>距离</strong>。记作$d&lt;u,v&gt;$。</p>
+<p>可达性的性质：</p>
+<ol>
+<li>$d&lt;u,v&gt;≥0$</li>
+<li>$d&lt;u,u&gt;=0$</li>
+<li>$d&lt;u,v&gt;+d&lt;v,w&gt;≥d&lt;u,w&gt;$</li>
+<li>如果从$u$到$v$是不可达的，则$d&lt;u,u&gt;=∞$</li>
+<li>即使从$u$到$v$是可达的，从$v$到$u$也是可达的，$d&lt;u,v&gt;$也不一定等于$d&lt;v,u&gt;$。</li>
+</ol>
+<p>有向图的<strong>直径</strong>$D=\max\limits_{u,v\in{V}}{d&lt;u,v&gt;}$。</p>
+<p>简单有向图中，如果任意两个结点间互相可达，则称此图为<strong>强联通图</strong>。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/21.png"></p>
+<p>简单有向图中，如果任意一对结点间至少有一个结点到另一个结点可达，则称此图为<strong>单侧联通图</strong>。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/22.png"></p>
+<p>简单有向图中，如果将此图看做无向图后是连通的，则称此图为<strong>弱联通图</strong>。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/23.png"></p>
+<p>有向图是强联通的，当且仅当此图中有一条至少包含每个结点一次的回路。</p>
+<p>简单有向图的<strong>强分图</strong>是具有强联通的最大子图。</p>
+<p>简单有向图的<strong>单侧分图</strong>是具有单侧联通的最大子图。</p>
+<p>简单有向图的<strong>弱分图</strong>是具有弱联通的最大子图。</p>
+<p>强分图、单侧分图、弱分图用结点的集合表示。</p>
+<p>在有向图中，每个结点必位于一个且只位于一个强分图中。</p>
+<p>设$G=&lt;V,E,W&gt;$是图，如果$G$的每条边$e$上都标有实数$c(e)$，$c(e)\in{W}$，则称这个数为边$e$的<strong>权</strong>，称此图为<strong>带权图</strong>。<br>带权图的性质：</p>
+<ol>
+<li>$c(u,u)=0$</li>
+<li>如果结点$u$与$v$间无边相连，则$c(u,v)=∞$</li>
+</ol>
+<p>带权图结点$u$和$v$之间的<strong>路长</strong>是指该路所包含的各边权的总和。</p>
+<p>带权图结点$u$和$v$的<strong>两点间距离</strong>是指两结点之间的最短路的路长，记作$d(u,v)$或d&lt;u,v&gt;。</p>
+<p>求带权图一个结点到另一个结点的最短路径算法有：<strong>Dijkstra算法</strong>、SPFA算法/Bellman-Ford算法、Floyd算法/Floyd-Warshall算法、Johnson算法、A*算法等。</p>
+<h2 id="欧拉图"><a href="#欧拉图" class="headerlink" title="欧拉图"></a>欧拉图</h2><p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/24.png"></p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/25.png"></p>
+<p>在无孤立结点的图$G$中，如果存在一条经过图中每条边一次且仅一次的路，则称此路为<strong>欧拉路</strong>。</p>
+<p>在无孤立结点的图$G$中，如果存在一条经过图中每条边一次且仅一次的回路，则称此路为<strong>欧拉回路</strong>。</p>
+<p><strong>欧拉图</strong>是含有欧拉回路的图。</p>
+<p>欧拉路的判定：无向图$G$具有欧拉路，当且仅当$G$是连通的且有<strong>零个或两个奇数度</strong>的结点。</p>
+<p>欧拉回路的判定：无向图$G$具有欧拉回路，当且仅当$G$是连通的且所有结点的度都是<strong>偶数</strong>。</p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/26.png"></p>
+<p>求下图的欧拉回路：<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/27.png"></p>
+<ol>
+<li>判定所有结点度均为偶数，此图具有欧拉回路。</li>
+<li>以1位起点，选择闭迹$E_{1}=1261$。</li>
+<li>$E_{1}$不包含所有边。</li>
+<li>在$G-E_{1}$中找新闭迹$E_{2}=6356$。</li>
+<li>以公共结点6为起点，对$E_{1}\cup{E_{2}}$中的边排序：$C=6356126$。</li>
+<li>$E_{1}:=C$，$E_{1}=6356126$。</li>
+<li>$E_{1}$不包含所有边。</li>
+<li>在$G-E_{1}$中找新闭迹$E_{2}=52345$。</li>
+<li>以公共结点5为起点，对$E_{1}\cup{E_{2}}$中的边排序：$C=52345612635$。</li>
+<li>$E_{1}:=C$，$E_{1}=52345612635$。</li>
+<li>$E_{1}$包含所有边。</li>
+<li>打印$E_{1}=52345612635$。</li>
+<li>结束。</li>
+</ol>
+<h2 id="汉密尔顿图"><a href="#汉密尔顿图" class="headerlink" title="汉密尔顿图"></a>汉密尔顿图</h2><p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/28.png"></p>
+<p>在无向有限图$G$中，如果存在一条经过图中每个结点一次且仅一次的路，则称此路为<strong>汉密尔顿路</strong>。</p>
+<p>在无向有限图$G$中，如果存在一条经过图中每个结点一次且仅一次的回路，则称此路为<strong>汉密尔顿回路</strong>。</p>
+<p><strong>汉密尔顿图</strong>是含有汉密尔顿回路的图。</p>
+<p>目前尚无判定汉密尔顿图的充要条件。</p>
+<p>充分条件1：$G$是完全图。</p>
+<p>充分条件2：$G$是有$n$个结点的简单图，且$G$中每对结点度数之和大于等于$(n-1)$。<br>下图则是其不具有必要性的例子：<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/29.png"></p>
+<p>必要条件1：若图$G=&lt;V,E&gt;$有汉密尔顿回路，则对$V$的任何非空有限子集$S$，均有$W(G-S)≤|S|$，其中$W(G-S)$是从$G$中删去$S$中所有结点及与这些结点关联的边所得到的子图的连通分支数。</p>
+<p>已确定存在汉密尔顿回路的情况下，使用<strong>最邻近法</strong>求解汉密尔顿回路：</p>
+<ol>
+<li>任选任意结点$u$，找一个最近邻（边的权最小）的结点$x$。</li>
+<li>设$x$是新加到这条路中的结点，再从不在此路上的结点中找到一个$x$邻近的（边的权最小）的结点，加到此路中。</li>
+<li>重复第2步，直到$G$中所有结点都在此路上。</li>
+<li>回到起点，构成回路，找到汉密尔顿回路。</li>
+</ol>
+<h2 id="二部图"><a href="#二部图" class="headerlink" title="二部图"></a>二部图</h2><p>$G=&lt;V,E&gt;$是无向图，如果可以将$V$划分成两个子集$V_{1}$和$V_{2}$，使得任何边$(v_{i},v_{j})\in{E}$，$v_{i}\in{V_{1}}$，$v_{j}\in{V_{2}}$，则称$G$是<strong>二部图</strong>，也称<strong>二分图</strong>，并称$V_{1}$和$V_{2}$是$G$的互补的结点子集。</p>
+<p>$G=&lt;V,E&gt;$是以$V_{1}$和$V_{2}$为互补的结点子集的二部图，如果$V_{1}$中的每个结点都与$V_{2}$中的每个结点相邻接，则称$G$是<strong>完全二部图</strong>，$|V_{1}|=m$，$|V_{2}|=n$，则$G$记作$K_{m,n}$。</p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/30.png"></p>
+<p>二部图的判定定理：$G=&lt;V,E&gt;$是二部图，当且仅当它的所有回路的长度都是偶数。</p>
+<p>$G=&lt;V,E&gt;$是以$V_{1}$和$V_{2}$为互补的结点子集的二部图，令$V_{1}={v_{1},v_{2},…,v_{k}}$，$V_{1}$对$V_{2}$的一个<strong>匹配</strong>是$G$的一个子图，它由$k$条边$(v_{1},v_{1}’),(v_{2},v_{2}’),…,(v_{k},v_{k}’)$组成，其中$v_{1}’,v_{2}’,…,v_{k}’$是$V_{2}$中$k$个不同元素。</p>
+<p>如果$|V_{1}|=|V_{2}|$时，此匹配称为<strong>完全匹配</strong>。</p>
+<p>匹配相当于一个入射，完全匹配相当于一个双射。</p>
+<p>设$G_(0)=&lt;V_{0},E_{0}&gt;$是二部图，求一个匹配的算法：</p>
+<ol>
+<li>置初值，$V_{1}=V_{0}$，$E_{1}=\Phi$，$G_{1}=G_{0}$。</li>
+<li>如果$G_{1}$是零图，则结束，得$E_{1}$；否则在$V_{1}$中选取度最小的结点。设此节点为$u$，与之相邻接的一个结点为$v$，取边$(u,v)$，$E_{1}=E_{1}\cup{(u,v)}$。</li>
+<li>从图$G_{1}$中删去结点$u$和$v$，即$V_{1}=V_{1}-{u,v}$，更新图$G_{1}$</li>
+<li>转到第2步</li>
+</ol>
+<p>在下面的二部图中验证该算法：<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/31.png"></p>
+<ol>
+<li>置初值，$V_{1}=V_{0}$，$E_{1}=\Phi$，$G_{1}=G_{0}$。</li>
+<li>$G_{1}$不是零图，在$V_{1}$中选取度最小的结点$c$，$E_{1}=E_{1}\cup{(B,c)}={(B,c)}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/32.png"></li>
+<li>$V_{1}=V_{1}-{B,c}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/33.png"></li>
+<li>$G_{1}$不是零图，在$V_{1}$中选取度最小的结点$d$，$E_{1}=E_{1}\cup{(A,d)}={(B,c),(A,d)}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/34.png"></li>
+<li>$V_{1}=V_{1}-{A,d}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/35.png"></li>
+<li>$G_{1}$不是零图，在$V_{1}$中选取度最小的结点$a$，$E_{1}=E_{1}\cup{(C,a)}={(B,c),(A,d),(C,a)}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/36.png"></li>
+<li>$V_{1}=V_{1}-{C,a}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/37.png"></li>
+<li>$G_{1}$不是零图，在$V_{1}$中选取度最小的结点$b$，$E_{1}=E_{1}\cup{(D,b)}={(B,c),(A,d),(C,a),(D,b)}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/38.png"></li>
+<li>$V_{1}=V_{1}-{D,b}$。<br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/39.png"></li>
+<li>$G_{1}$是零图，结束匹配，得$E_{1}={(B,c),(A,d),(C,a),(D,b)}$是一个匹配。</li>
+</ol>
+<p>此算法可能得不到所有匹配，比如下图也是匹配：<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/40.png"></p>
+<h2 id="平面图"><a href="#平面图" class="headerlink" title="平面图"></a>平面图</h2><p>设$G$是无向图，如果能将$G$的所有结点和边都画在一个平面上，且使得任何两条边除了端点外没有其它交点，则称$G$是个<strong>平面图</strong>。</p>
+<p>如果一个图表面上是个非平面图，通过改变边的位置就变成平面图，则称此图是<strong>可平面化</strong>的。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/41.png"></p>
+<p>两个重要的非平面图是$K_{5}$和$K_{3,3}$：<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/42.png"><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/43.png"></p>
+<p>设$G$是个平面图，图中边围成的区域，其内部不含有结点，也不含有边，称这样区域为$G$的一个<strong>面</strong>。</p>
+<p>围成一个面$r$的所有边构成的回路，称之为这个$r$面的<strong>边界</strong>。此回路中的边数，称之为$r$面的<strong>次数</strong>，记作$deg(r)$。</p>
+<p>面的面积有限称为<strong>有限面</strong>，反之称为<strong>无限面</strong>。<br>所有平面图的外侧都有一个无限面。</p>
+<p><strong>欧拉公式</strong>：$G$是个连通的平面图，设$v$、$e$、$r$分别表示$G$中结点数、边数、面数，则有$v-e+r=2$。</p>
+<p>一个图是平面图的必要条件：若$v≥3$，$则 e≤3v-6$。</p>
+<p>如果$G_{1}$和$G_{2}$是同构的,或者通过反复插入或删去度数为2的结点，使得它们变成同构的图，称$G_{1}$和$G_{2}$是<strong>在2度结点内同构</strong>（同胚）。</p>
+<p><strong>Kuratowski定理</strong>：一个图是平面图的充要条件是它不含有任何与$K_{5}$、$K_{3,3}$在2度结点内同构的子图。</p>
+<p>设$G$是个简单图，令$u$、$v$是不邻接的结点，如果不能在$u$、$v$之间增加一条边而不破坏图的平面性时，则称$G$是极大平面图。<br><em>理解：此时，如果再加一条边，就恰好不是平面图了。</em></p>
+<p>极大平面图的每个面都是由三条边围成。<br>这是因为如果含有四条或者四条以上的边围成的面，那么至少可以增加一条边，而不改变可平面性。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/44.png"></p>
+<p>设$G$是个极大平面图，且有$v$个结点，$e$条边，$r$个面，则$e=3v-6$，$r=2v-4$。</p>
+<h2 id="对偶图"><a href="#对偶图" class="headerlink" title="对偶图"></a>对偶图</h2><p>着色问题起源于对地图着色。问题是使得相邻国家用不同颜色，需要多少种不同的颜色?</p>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/45.png"></p>
+<p>Guthrie提出四色猜想，最终于1976年被K.Appel和W.Haken归结为2000个不同的组合结构图形，利用计算机进行了证明，变成了四色定理。</p>
+<p>给定平面图$G=&lt;V,E&gt;$, 具有平面$F_{1},F_{2},F_{3},…,F_{n}$。如果有图$G^{*}=&lt;V^{*},E^{*}&gt;$, 满足下面条件：</p>
+<ol>
+<li>对于$G$的任意平面$F_{i}$的内部有且仅有一个结点$v_{i}^{<em>}∈V^{</em>}$。</li>
+<li>对于图$G$的面$F_{i}$与$F_{j}$的公共边界$e_{k}$，有且仅有一条边$e_{k}^{<em>}\in{E^{</em>}}$，使得$e_{k}^{<em>}=(v_{i}^{</em>},v_{j}^{<em>})$，且$e_{k}^{</em>}$与$e_{k}$相交。（$v_{i}^{<em>}$在$F_{i}$内,$v_{j}^{</em>}$在$F_{j}$内）</li>
+<li>当且仅当$e_{k}$只是一个面$F_{i}$的边界 时，$v_{i}^{<em>}$上有一个环$e_{k}^{</em>}$与$e_{k}$相交。</li>
+</ol>
+<p>则称图$G^{*}$是$G$的<strong>对偶图</strong>。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/46.png"></p>
+<p>$G^{*}$中的结点数等于$G$中的面数。</p>
+<p>如果图$G$的对偶图$G^{*}$与$G$同构，则称$G$是自对偶图。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/47.png"></p>
+<p>对平面图的相邻面用不同颜色的着色问题，可以归结到对其对偶图的相邻接的结点着不同颜色。</p>
+<p>对$G$的每个结点指定一种颜色，使得相邻接的两个结点着不同颜色。如果$G$着色用了$n$种颜色，称$G$是$n-色$的。</p>
+<p>对$G$着色时，需要的最少颜色数，称为$G$的<strong>着色数</strong>,记作$\chi(G)$。</p>
+<p>图的着色方法（韦尔奇.鲍威尔法）：</p>
+<ol>
+<li>将$G$中的结点按度数递减依次排序。</li>
+<li>用第一种颜色对第一个结点上色，并按照排序，对与前面着色点不相邻的每一个点着上相同颜色。此时需要注意同时与当前结点不相邻的结点中如果有相邻的，也要避免冲突。</li>
+<li>用另一种颜色对尚未着色的点重复执行第2步和第3步，直到所有结点都着上颜色为止。</li>
+</ol>
+<p><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/48.png"></p>
+<p>色数的计算：</p>
+<ol>
+<li>如果$G$只有一个孤立结点，则$\chi(G)=1$。</li>
+<li>$\chi(K_{n})=n$。</li>
+<li>如果$G$有偶数个结点的回路，则$\chi(G)=2$。</li>
+<li>如果$G$有奇数个结点的回路，则$\chi(G)=3$。</li>
+<li>如果$G$是结点数超过1的树，则$\chi(G)=2$。</li>
+<li>如果$G$是二部图，则$\chi(G)=2$。</li>
+<li>一般求法：设$v_{i}$和$v_{j}$不是邻接点，定义$\hat{G_{ij}}$为$G$上加边$(v_{i},v_{j})$所得到的图、$\dot{G_{ij}}$为把$v_{i}$和$v_{j}$缩为一点$z$所得到的图（即$G$图中反是与$v_{i}$、$v_{j}$关联的边都与$z$关联），$\chi(G)=\min{\chi(\hat{G_{ij}}),\chi(\dot{G_{ij}})}$。</li>
+</ol>
+<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><p><strong>树</strong>的定义：</p>
+<ol>
+<li>连通无回路的无向图。</li>
+<li>无回路且$e=v-1$。</li>
+<li>连通且$e=v-1$。</li>
+<li>无回路，但添加一条新边则得到唯一的一条回路。</li>
+<li>连通，但删去任意一条边就不连通。</li>
+<li>每对结点之间有且仅有一条路。</li>
+</ol>
+<p><strong>叶结点</strong>是树中度数为1的结点。</p>
+<p><strong>分支结点</strong>是树中度数大于1的结点。</p>
+<p><strong>森林</strong>是每个连通分支都是树的无向图。</p>
+<p>如果图的生成子图是树，则称此树为此图的<strong>生成树</strong>。</p>
+<p><strong>弦</strong>：不在图的生成树里边的边。</p>
+<p><strong>生成树的补</strong>：所有弦的集合。</p>
+<p>连通图至少有一棵生成树。<br><br><img src="/../../images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%9B%BE%E4%B8%8E%E6%A0%91%E7%90%86%E8%AE%BA/49.png"></p>
+<p>$B_{k}$是连通图$G$的基本关联矩阵，则$G$的生成树的个数为$det(B_{k}B_{k}^{T})$。</p>
+<p>$G$是一个连通图，$e\in{E(G)}$，则$\tau(G)=\tau(G-e)+\tau(G.e)$。<br>$\tau(G)$是生成树的个数，$\tau(G-e)$是不含边$e$的生成树个数，$\tau(G.e)$是含边$e$的生成树个数。</p>
+<p>完全图$K_{n}$的生成树个数$\tau(K_{n})=n^{n-2}$。</p>
+<p>一棵生成树的所有边的权之和称为该<strong>生成树的权</strong>。<br>具有最小权的生成树，称为<strong>最小生成树</strong>。</p>
+<p>求解最小生成树的经典算法有Prim算法和Kruskal算法等。</p>
+<h2 id="根树"><a href="#根树" class="headerlink" title="根树"></a>根树</h2><p>如果$G$是个有向图，在不考虑边的方向时是一棵树，则称$G$是<strong>有向树</strong>。</p>
+<p><strong>根树</strong>是恰有一个入度为0的结点且其他结点入度均为1的有向树。</p>
+<p>根树中，<strong>树根</strong>是入度为0的结点。</p>
+<p>根树中，<strong>叶</strong>是出度为0的结点。</p>
+<p>根树中，<strong>分支结点</strong>是出度不为0的结点。</p>
+<p>根树中，如果$&lt;v_{i},v_{j}&gt;$是根树中的一条边，则称$v_{i}$是$v_{j}$的<strong>父结点</strong>，$v_{j}$是$v_{i}$的<strong>子结点</strong>。</p>
+<p>根树中，如果从$v_{i}$到$v_{j}$有路，则称$v_{i}$是$v_{j}$的<strong>祖先结点</strong>，$v_{j}$是$v_{i}$的<strong>后裔结点</strong>。</p>
+<p>根树中，从根结点到某个结点的路径长度称为该结点的<strong>层次</strong>，同一层次的结点称为<strong>兄弟结点</strong>。</p>
+<p>根树中，从树根到各个叶结点的路径中，最长路径的长度称为该树的<strong>高度</strong>。</p>
+<p><strong>有序树</strong>是规定了每一层上的结点的次序的有向树。</p>
+<p><strong>m叉树</strong>是每个结点出度最大为$m$的根树。</p>
+<p><strong>完全m叉树</strong>是每个结点出度都为$m$或$0$的根树。</p>
+<p><strong>正则m叉树</strong>是所有树叶层次相同的完全m叉树。</p>
+<p>$T$是一棵完全m叉树，有$t$个叶结点和$i$个分支结点，则$(m-1)i=t-1$。</p>
+<p>遍历二叉树可以有<strong>先序遍历</strong>、<strong>中序遍历</strong>、<strong>后序遍历</strong>、<strong>层序遍历</strong>的方式。</p>
+<p><strong>最优二叉树</strong>也称<strong>哈夫曼树</strong>，是带权树中权数最小的二叉树。<br>生成最优二叉树的算法是哈夫曼算法，这是一种贪心算法。</p>
+<h1 id="图与树"><a href="#图与树" class="headerlink" title="图与树"></a>图与树</h1><ol>
+<li>不难看出，数据结构中的树并不是离散数学中的树，我认为二者的区别有两个方面：<ol>
+<li>数据结构的树指的是离散数学中的根树</li>
+<li>数据结构的树考虑的是结点一对多的逻辑关系，图则是多对多的逻辑关系；离散数学的树则是图的一种特殊情况。当然，从这个角度深入思考其实二者没有本质矛盾。</li>
+</ol>
+</li>
+<li>树本身就是递归定义的，与树相关的算法多为递归算法。鉴于递归的时空性能可能较差，可以使用栈和队列等数据结构辅助实现非递归的算法。</li>
+<li>如果实在记不住树里面边和结点的个数关系，那就画个简单的图，轻松易懂。</li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/chi-san-shu-xue-de-tu-yu-shu-li-lun/">https://blankspaceplus.github.io/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/chi-san-shu-xue-de-tu-yu-shu-li-lun/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">离散数学</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/chi-san-shu-xue-ji-chu-li-lun-gui-na/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="离散数学基础理论归纳">
+                        
+                        <span class="card-title">离散数学基础理论归纳</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文归纳离散数学的基础理论。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                        <span class="chip bg-color">离散数学</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/01/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/ju-zhen-de-te-zheng-zhi-he-te-zheng-xiang-liang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="矩阵的特征值和特征向量">
+                        
+                        <span class="card-title">矩阵的特征值和特征向量</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文介绍矩阵的特征值和特征向量，并用numpy实现和验证。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学的数学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                        <span class="chip bg-color">线性代数</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">190.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
