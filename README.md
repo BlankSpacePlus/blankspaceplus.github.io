@@ -10,9 +10,25 @@
 
 项目基于`Node.js`构建，博客框架为`Hexo`，最终定下的模板为`Matery`。
 
-构建项目：
+安装hexo库：
+```shell
+npm install -g hexo-cli
+```
+
+查看hexo版本：
+```shell
+hexo -v
+```
+
+构建hexo项目：
 ```shell
 hexo init hexo-blog
+npm install
+```
+
+修改`_config.yml`配置主题：
+```shell
+theme: matery
 ```
 
 更新后运行项目：
@@ -36,7 +52,7 @@ hexo s
 
 # Hexo的GitHub部署方法
 
-- [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
+- [GitHub: peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
 - [GitHub Action - Hexo CI/CD](https://github.com/marketplace/actions/hexo-action)
 - [GitHub Action - Hexo Deploy](https://github.com/marketplace/actions/hexo-deploy)
 - [Hexo: 部署到GitHub Pages](https://hexo.io/docs/github-pages.html)
