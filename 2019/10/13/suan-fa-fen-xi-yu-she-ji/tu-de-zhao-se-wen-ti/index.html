@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎使用Hexo, 空白格">
+    <meta name="keywords" content="图的着色问题, 空白格">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎使用Hexo | 空白格</title>
+    <title>图的着色问题 | 空白格</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎使用Hexo</h1>
+                    <h1 class="description center-align post-title">图的着色问题</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
+                            </a>
+                        
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                算法分析与设计
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -446,28 +463,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-13
+                    2019-10-13
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-13
+                    2023-07-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    490
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -490,19 +507,56 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="图的字典表示"><a href="#图的字典表示" class="headerlink" title="图的字典表示"></a>图的字典表示</h1><p>下面的字典代表一个图：<br><img src="/../../images/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E5%9B%BE%E7%9A%84%E7%9D%80%E8%89%B2%E9%97%AE%E9%A2%98/1.png"></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">graph <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'B'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'D'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'E'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'E'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'D'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'F'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">,</span> <span class="token string">'I'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'G'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'F'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'H'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'F'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">'I'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'F'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>字典代表图的顶点和边。字符串表示图的顶点，B就是’B’。<br>每个顶点都是图graph的一个键。每一行对应一个键值对，值就是顶点连接的边的列表。<br>每条边都可以简单地用其目标顶点表示。<br>当然，我们这里构造的是无向图。</p>
+<h1 id="图的着色算法及实现代码"><a href="#图的着色算法及实现代码" class="headerlink" title="图的着色算法及实现代码"></a>图的着色算法及实现代码</h1><p>如果是二分图则遵守“邻接约束”，或者明确其不是二分图。<br>一种颜色对应集合U，另一种颜色对应集合V。<br>下面是一种运用了“深度优先遍历”技术的实现算法的描述：</p>
+<ol>
+<li>color = 阴影， vertex = 起始顶点w</li>
+<li>如果w尚未着色，用color对w进行着色</li>
+<li>如果w已用不同color的颜色进行着色，则不是二分图。返回False</li>
+<li>如果w已经正确着色，则返回True和其未作改动的着色结果</li>
+<li>反转color的值，阴影变为网格线，网格线则变为阴影</li>
+<li>对w的所有相邻顶点v递归调用过程，参数是v和color，也就是让w=v并跳转到第2步。只要有一次递归返回False，就返回False</li>
+<li>当前图为二分图，返回True和着色结果</li>
+</ol>
+<p>下面是Python的具体实现：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">bipartiteGraphColor</span><span class="token punctuation">(</span>graph<span class="token punctuation">,</span> start<span class="token punctuation">,</span> coloring<span class="token punctuation">,</span> color<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> start <span class="token keyword">not</span> <span class="token keyword">in</span> graph<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>    
+    <span class="token keyword">if</span> start <span class="token keyword">not</span> <span class="token keyword">in</span> coloring<span class="token punctuation">:</span>
+        coloring<span class="token punctuation">[</span>start<span class="token punctuation">]</span> <span class="token operator">=</span> color
+    <span class="token keyword">elif</span> coloring<span class="token punctuation">[</span>start<span class="token punctuation">]</span> <span class="token operator">!=</span> color<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span><span class="token punctuation">,</span> coloring
+    <span class="token keyword">if</span> color <span class="token operator">==</span> <span class="token string">'Sha'</span><span class="token punctuation">:</span>
+        newcolor <span class="token operator">=</span> <span class="token string">'Hat'</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        newcolor <span class="token operator">=</span> <span class="token string">'Sha'</span>
+    <span class="token keyword">for</span> vertex <span class="token keyword">in</span> graph<span class="token punctuation">[</span>start<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        val<span class="token punctuation">,</span> coloring <span class="token operator">=</span> bipartiteGraphColor<span class="token punctuation">(</span>graph<span class="token punctuation">,</span> vertex<span class="token punctuation">,</span> coloring<span class="token punctuation">,</span> newcolor<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> val <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">True</span><span class="token punctuation">,</span> coloring<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span> <span class="token punctuation">(</span>bipartiteGraphColor<span class="token punctuation">(</span>gra3<span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'Sha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>bipartiteGraphColor<span class="token punctuation">(</span>graph<span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'Sha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>bipartiteGraphColor<span class="token punctuation">(</span>graph2<span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'Sha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>bipartiteGraphColor<span class="token punctuation">(</span>grap<span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'Sha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>结果：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'B'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'E'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'I'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'B'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'E'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'I'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'A'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token string">'Sha'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">:</span> <span class="token string">'Hat'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -529,7 +583,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blankspaceplus.github.io/2023/07/13/huan-ying-shi-yong-hexo/">https://blankspaceplus.github.io/2023/07/13/huan-ying-shi-yong-hexo/</a>
+                    <a href="https://blankspaceplus.github.io/2019/10/13/suan-fa-fen-xi-yu-she-ji/tu-de-zhao-se-wen-ti/">https://blankspaceplus.github.io/2019/10/13/suan-fa-fen-xi-yu-she-ji/tu-de-zhao-se-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -566,7 +620,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
+                                </a>
+                            
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -605,68 +667,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2023/07/13/huan-ying-shi-yong-hexo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="欢迎使用Hexo">
-                        
-                        <span class="card-title">欢迎使用Hexo</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            BlankSpacePlus
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/">
+                <a href="/2019/10/20/ji-suan-ji-ke-xue-ji-chu/ascii-ma-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="加密算法">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="ASCII码表">
                         
-                        <span class="card-title">加密算法</span>
+                        <span class="card-title">ASCII码表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享经典加密算法的基础理论及其实现案例。
+                            本文总结分享ASCII码的用法。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-25
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -682,8 +705,61 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
-                        <span class="chip bg-color">信息安全</span>
+                    <a href="/tags/ASCII/">
+                        <span class="chip bg-color">ASCII</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/10/11/suan-fa-fen-xi-yu-she-ji/shun-xu-cun-chu-jie-gou-de-sou-suo-suan-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="顺序存储结构的搜索算法">
+                        
+                        <span class="card-title">顺序存储结构的搜索算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分享顺序存储结构的搜索算法：顺序查找、二分查找、分块查找、插值查找，用Java编程实现。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    算法分析与设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>
@@ -854,6 +930,13 @@
 </main>
 
 
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
@@ -925,7 +1008,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">190.5k</span>&nbsp;字
+                class="white-color">239.8k</span>&nbsp;字
             
             
             

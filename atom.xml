@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-07-13T13:09:36.695Z</updated>
+  <updated>2023-07-14T07:16:45.773Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2023/07/13/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2023/07/13/huan-ying-shi-yong-hexo/</id>
-    <published>2023-07-13T13:09:36.695Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
+    <link href="https://blankspaceplus.github.io/2023/07/14/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2023/07/14/huan-ying-shi-yong-hexo/</id>
+    <published>2023-07-14T07:16:45.773Z</published>
+    <updated>2023-07-14T07:16:45.773Z</updated>
     
     
       
@@ -38,11 +38,38 @@
   </entry>
   
   <entry>
+    <title>回溯算法解决矩阵中的路径问题</title>
+    <link href="https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/"/>
+    <id>https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/</id>
+    <published>2023-03-30T12:09:26.000Z</published>
+    <updated>2023-07-14T07:16:45.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true</summary>
+        
+      
+    
+    
+    
+    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>加密算法</title>
     <link href="https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/"/>
     <id>https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/</id>
     <published>2023-03-25T08:26:34.000Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -68,7 +95,7 @@
     <link href="https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/"/>
     <id>https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/</id>
     <published>2023-02-21T15:25:37.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -93,7 +120,7 @@
     <link href="https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/"/>
     <id>https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/</id>
     <published>2023-02-04T07:43:32.000Z</published>
-    <updated>2023-07-13T13:09:36.703Z</updated>
+    <updated>2023-07-14T07:16:45.785Z</updated>
     
     
       
@@ -120,7 +147,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/"/>
     <id>https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/</id>
     <published>2023-01-25T16:39:11.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -145,7 +172,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/"/>
     <id>https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/</id>
     <published>2023-01-23T06:27:05.000Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -171,7 +198,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/"/>
     <id>https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/</id>
     <published>2023-01-22T10:19:53.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.781Z</updated>
     
     
       
@@ -196,7 +223,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
     <id>https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
     <published>2023-01-18T18:09:11.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -217,11 +244,117 @@
   </entry>
   
   <entry>
+    <title>分治算法解决树的遍历问题</title>
+    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/"/>
+    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/</id>
+    <published>2023-01-14T11:44:33.000Z</published>
+    <updated>2023-07-14T07:16:45.773Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;树的遍历&quot;&gt;&lt;a href=&quot;#树的遍历&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>贪心算法解决合并果子问题</title>
+    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/"/>
+    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/</id>
+    <published>2023-01-14T10:58:21.000Z</published>
+    <updated>2023-07-14T07:16:45.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>贪心算法解决部分背包问题</title>
+    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/"/>
+    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/</id>
+    <published>2023-01-14T03:38:28.000Z</published>
+    <updated>2023-07-14T07:16:45.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 $N(N &#92;le 100)$ 堆金币，第 $i$</summary>
+        
+      
+    
+    
+    
+    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正确利用Java解决OJ题目</title>
+    <link href="https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/"/>
+    <id>https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/</id>
+    <published>2023-01-13T13:35:09.000Z</published>
+    <updated>2023-07-14T07:16:45.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机专业实用网站</title>
     <link href="https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/"/>
     <id>https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/</id>
     <published>2022-06-25T13:50:11.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.781Z</updated>
     
     
       
@@ -247,7 +380,7 @@
     <link href="https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/"/>
     <id>https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/</id>
     <published>2022-05-04T09:52:32.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -274,7 +407,7 @@
     <link href="https://blankspaceplus.github.io/2022/02/27/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chou-xiang-lei-yu-mo-ban-mo-shi/"/>
     <id>https://blankspaceplus.github.io/2022/02/27/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chou-xiang-lei-yu-mo-ban-mo-shi/</id>
     <published>2022-02-27T15:45:35.000Z</published>
-    <updated>2023-07-13T13:09:36.703Z</updated>
+    <updated>2023-07-14T07:16:45.785Z</updated>
     
     
       
@@ -301,7 +434,7 @@
     <link href="https://blankspaceplus.github.io/2022/01/04/ji-suan-ji-ke-xue-ji-chu/yuan-yu-zhou-de-zui-xin-ji-zhu-ying-yong-he-tiao-zhan/"/>
     <id>https://blankspaceplus.github.io/2022/01/04/ji-suan-ji-ke-xue-ji-chu/yuan-yu-zhou-de-zui-xin-ji-zhu-ying-yong-he-tiao-zhan/</id>
     <published>2022-01-04T08:48:43.000Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -326,7 +459,7 @@
     <link href="https://blankspaceplus.github.io/2021/08/17/ji-suan-ji-ke-xue-ji-chu/fan-yi-bian-yi-jie-shi-hui-bian/"/>
     <id>https://blankspaceplus.github.io/2021/08/17/ji-suan-ji-ke-xue-ji-chu/fan-yi-bian-yi-jie-shi-hui-bian/</id>
     <published>2021-08-17T02:03:06.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.781Z</updated>
     
     
       
@@ -351,7 +484,7 @@
     <link href="https://blankspaceplus.github.io/2021/08/16/ji-suan-ji-ke-xue-ji-chu/tou-ming-xing/"/>
     <id>https://blankspaceplus.github.io/2021/08/16/ji-suan-ji-ke-xue-ji-chu/tou-ming-xing/</id>
     <published>2021-08-16T02:51:46.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
+    <updated>2023-07-14T07:16:45.781Z</updated>
     
     
       
@@ -376,7 +509,7 @@
     <link href="https://blankspaceplus.github.io/2021/08/11/ji-suan-ji-ke-xue-ji-chu/xaas/"/>
     <id>https://blankspaceplus.github.io/2021/08/11/ji-suan-ji-ke-xue-ji-chu/xaas/</id>
     <published>2021-08-11T02:32:57.000Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
+    <updated>2023-07-14T07:16:45.777Z</updated>
     
     
       
@@ -393,131 +526,6 @@
     
     
     <category term="云计算" scheme="https://blankspaceplus.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机系统</title>
-    <link href="https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-xi-tong/"/>
-    <id>https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-xi-tong/</id>
-    <published>2021-03-30T04:14:34.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;计算机系统的组成&quot;&gt;&lt;a href=&quot;#计算机系统的组成&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机组成原理" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概率论经典问题</title>
-    <link href="https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/gai-lu-lun-jing-dian-wen-ti/"/>
-    <id>https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/gai-lu-lun-jing-dian-wen-ti/</id>
-    <published>2021-03-30T04:14:34.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;蒙提霍尔问题&quot;&gt;&lt;a href=&quot;#蒙提霍尔问题&quot; class=&quot;headerlink&quot; title=&quot;蒙提霍尔问题&quot;&gt;&lt;/a&gt;蒙提霍尔问题&lt;/h1&gt;&lt;p&gt;三门问题（Monty Hall</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学的数学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="概率论" scheme="https://blankspaceplus.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VonNeumann体系结构和存储程序原理</title>
-    <link href="https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/"/>
-    <id>https://blankspaceplus.github.io/2021/03/30/ji-suan-ji-ke-xue-ji-chu/vonneumann-ti-xi-jie-gou-he-cun-chu-cheng-xu-yuan-li/</id>
-    <published>2021-03-30T03:18:51.000Z</published>
-    <updated>2023-07-13T13:09:36.695Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;VonNeumann体系结构&quot;&gt;&lt;a href=&quot;#VonNeumann体系结构&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机组成原理" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数值分析基础理论归纳</title>
-    <link href="https://blankspaceplus.github.io/2021/03/26/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/shu-zhi-fen-xi-ji-chu-li-lun-gui-na/"/>
-    <id>https://blankspaceplus.github.io/2021/03/26/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/shu-zhi-fen-xi-ji-chu-li-lun-gui-na/</id>
-    <published>2021-03-26T11:09:34.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;绪论&quot;&gt;&lt;a href=&quot;#绪论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学的数学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="数值分析" scheme="https://blankspaceplus.github.io/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性代数基础理论归纳</title>
-    <link href="https://blankspaceplus.github.io/2021/03/25/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/xian-xing-dai-shu-ji-chu-li-lun-gui-na/"/>
-    <id>https://blankspaceplus.github.io/2021/03/25/ji-suan-ji-ke-xue-de-shu-xue-ji-chu/xian-xing-dai-shu-ji-chu-li-lun-gui-na/</id>
-    <published>2021-03-25T05:09:40.000Z</published>
-    <updated>2023-07-13T13:09:36.699Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;行列式&quot;&gt;&lt;a href=&quot;#行列式&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学的数学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="线性代数" scheme="https://blankspaceplus.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   
