@@ -1,0 +1,1370 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="迭代和增量的开发周期, 空白格">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>迭代和增量的开发周期 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">迭代和增量的开发周期</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
+                                <span class="chip bg-color">软件项目管理</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                软件工程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-01-31
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    48 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="选择题-字典序"><a href="#选择题-字典序" class="headerlink" title="选择题(字典序)"></a>选择题(字典序)</h1><p>A difference between strategic and tactical goals is:<br>a.strategic goals are more specific than tactical goals.<br>b.tactical goals encompass broader dimensions than strategic goals.<br>c.tactical goals are more important for a project than strategic goals.<br>d.strategic goals are long-term in nature whereas tactical goals are short-term.<br>ANSWER:d</p>
+<p>Administrative activities, such as archiving project files, closing out contracts, documenting lessons learned, and receiving formal acceptance of the delivered work as part of the phase or project, are often involved in which processes?<br>a.monitoring and controlling<br>b.executing<br>c.initiating<br>d.closing<br>ANSWER:d</p>
+<p>After working with key stakeholders to define activities and calculate their resources, what is the next process in project schedule management?<br>a.develop the schedule.<br>b.control the schedule.<br>c.determine their dependencies.<br>d.estimate the duration of activities.<br>ANSWER:d</p>
+<p>A Gantt chart is a standard format for displaying project schedule information by listing project activities and their corresponding start and finish dates in a ____ format.<br>a.calendar<br>b.line graph<br>c.bar graph<br>d.pie chart<br>ANSWER:a</p>
+<p>A ____ is an organizational group responsible for coordinating the project management function throughout an organization.<br>a.Project Management Office<br>b.Project Management Professional<br>c.Project Management Center<br>d.Portfolio Group<br>ANSWER:a</p>
+<p>A ____ is a tool used in quality management.<br>a.probability matrix<br>b.checklist<br>c.request for proposal<br>d.critical path analysis<br>ANSWER:b</p>
+<p>A ____ is a tool used in risk management.<br>a.work breakdown structure<br>b.project organizational chart<br>c.critical path analysis<br>d.probability matrix<br>ANSWER:d</p>
+<p>A ____ is usually not necessary to the Scrum method, because Scrum implies that team members work as a self-directed group.<br>a.team charter<br>b.velocity estimate<br>c.Gantt chart<br>d.product backlog<br>ANSWER:a</p>
+<p>An important tool for project scope management is ____.<br>a.fast tracking<br>b.a kickoff meeting<br>c.a Gantt chart<br>d.a work breakdown structure<br>ANSWER:d</p>
+<p>An organizational process assets update is the output of which closing process?<br>a.project integration management<br>b.project quality management<br>c.project procurement management<br>d.project time management<br>ANSWER:a</p>
+<p>Creating the WBS is a subprocess associated with which process in project scope management?<br>a.planning<br>b.monitoring and controlling<br>c.closing<br>d.executing<br>ANSWER:a</p>
+<p>During which approach do team members first identify as many specific tasks related to the project as possible and then aggregate the specific tasks and organize them into summary activities, or higher levels in the WBS?<br>a.analogy<br>b.bottom-up<br>c.top-down<br>d.mind mapping<br>ANSWER:b</p>
+<p>During which relationship is the “from” activity unable start until the “to” activity is started?<br>a.start-to-start<br>b.finish-to-finish<br>c.finish-to-start<br>d.start-to-finish<br>ANSWER:a</p>
+<p>Enterprise project management software is also known as a ____ tool of project management software.<br>a.baseline<br>b.midrange<br>c.low-end<br>d.high-end<br>ANSWER:d</p>
+<p>Fast tracking is an example of a tool used in ____ management.<br>a.schedule<br>b.quality<br>c.communication<br>d.risk<br>ANSWER:a</p>
+<p>Galaxy, a construction company, buys a particular brand of tiles manufactured by Tiles and Floors, an eco-friendly tile manufacturing company. However, Tiles and Floors has declared bankruptcy and closed down. At present, Galaxy is facing a crisis because there are no other manufacturers in the market that supplies eco-friendly tiles. Which constraint is Galaxy currently facing?<br>a.Resources<br>b.Time<br>c.Scope<br>d.Cost<br>ANSWER:a</p>
+<p>Good Earth, a company manufacturing packaged food products, sets up its stores in Baltonia.However, a year later, the company closes the store down due to high operating costs. In such a scenario, the money spent in paying for the rent of the store in Baltonia would be an example of which costs?<br>a.recurring<br>b.direct<br>c.sunk<br>d.intangible<br>ANSWER:c</p>
+<p>Grey’s Infotech sells customized hardware and software solutions for businesses. The salespeople for Grey’s have a strict dress code when meeting clients. They are required to wear dark business suits, in order to convey the company’s dedication to quality. The meaning conveyed to the clients’ through the salespeople’s clothing is part of the ____ frame of the organization.<br>a.political<br>b.symbolic<br>c.structural<br>d.human resources<br>ANSWER:b</p>
+<p>How are profits best defined?<br>a.expenses plus net income<br>b.costs plus revenues<br>c.revenues plus expenses<br>d.revenues minus expenditures<br>ANSWER:d</p>
+<p>How does critical chain scheduling protect tasks on the critical chain from being delayed?<br>a.critical paths<br>b.feeding buffers<br>c.dummy activities<br>d.fast tracking<br>ANSWER:b</p>
+<p>In a ____organizational structure, program managers, rather than functional managers or vice presidents, report to the CEO. Their staffs have a variety of skills needed to complete all required tasks within their programs.<br>a.project<br>b.symbolic<br>c.matrix<br>d.functional<br>ANSWER:a</p>
+<p>In an AOA network diagram, what occurs when two or more activities follow a single node?<br>a.combinations<br>b.buffers<br>c.mergers<br>d.bursts<br>ANSWER:d</p>
+<p>In a ____ organizational structure, personnel often report to both a functional manager and one or more project managers.<br>a.project<br>b.symbolic<br>c.matrix<br>d.functional<br>ANSWER:c</p>
+<p>In organizational culture, what does control refer to?<br>a.The degree to which the organization monitors and responds to changes in the external environment<br>b.The degree to which rules, policies, and direct supervision are used to oversee employee behavior<br>c.The degree to which management focuses on outcomes rather than on techniques and processes used to achieve results<br>d.The degree to which employees are encouraged to be aggressive, innovative, and risk seeking<br>ANSWER:b</p>
+<p>In organizational culture, what does means-end orientation refer to?<br>a.The degree to which the organization monitors and responds to changes in the external environment<br>b.The degree to which rules, policies, and direct supervision are used to oversee and control employee behavior<br>c.The degree to which management focuses on outcomes rather than on techniques and processes used to achieve results<br>d.The degree to which employees are encouraged to be aggressive, innovative, and risk seeking<br>ANSWER:c</p>
+<p>In organizational culture, what does people focus refer to?<br>a.The degree to which the organization monitors and responds to changes in the external environment<br>b.The degree to which rules, policies, and direct supervision are used to oversee and control employee behavior<br>c.The degree to which management’s decisions take into account the effect of outcomes on employees within the organization<br>d.The degree to which employees are encouraged to be aggressive, innovative, and risk seeking<br>ANSWER:c</p>
+<p>In project schedule management, the main goal of which process is to ensure that the project team has complete understanding of all the work they must do as part of the project scope so they can start scheduling the work?<br>a.defining activities<br>b.estimating activity durations<br>c.estimating activity resources<br>d.controlling the schedule<br>ANSWER:a</p>
+<p>In project schedule management, the ultimate goal of which process is to provide a basis for monitoring project progress for the time dimension of the project?<br>a.defining activities<br>b.sequencing activities<br>c.developing a schedule<br>d.estimating activity resources<br>ANSWER:c</p>
+<p>In project schedule management, what is the next step after defining project activities?<br>a.planning schedule management<br>b.determining their dependencies<br>c.controlling the schedule<br>d.estimating activity duration<br>ANSWER:b</p>
+<p>In project schedule management, which is an output of controlling the schedule?<br>a.activity duration estimate<br>b.project management plan update<br>c.activity attribute<br>d.milestones list<br>ANSWER:b</p>
+<p>In project schedule management, which process generates the main outputs of an activity list, activity attributes, and a milestone list?<br>a.sequencing activities<br>b.defining activities<br>c.resource estimating activities<br>d.estimating activity durations<br>ANSWER:b</p>
+<p>In project schedule management, which process involves analyzing activity sequences, activity resource estimates, and activity duration estimates to create the project schedule?<br>a.planning schedule management<br>b.developing the schedule<br>c.controlling the schedule<br>d.defining activities<br>ANSWER:b</p>
+<p>In project schedule management, which process involves estimating the number of work periods that are needed to complete individual activities?<br>a.defining activities<br>b.sequencing activities<br>c.planning schedule management<br>d.estimating activity durations<br>ANSWER:d</p>
+<p>In project schedule management, which process primarily involve identifying and documenting the relationships between project activities?<br>a.defining activities<br>b.sequencing activities<br>c.planning schedule management<br>d.estimating activity durations<br>ANSWER:b</p>
+<p>In project schedule management, which process primarily involves checking and managing changes to the project schedule?<br>a.estimating activity durations<br>b.developing the schedule<br>c.controlling the schedule<br>d.estimating activity resources<br>ANSWER:c</p>
+<p>In Rizzati Corp, vice presidents in departments such as engineering, manufacturing, IT, and human resources report directly to the chief executive officer and undertake their tasks independently of each other. The staffs of these departments have specialized skills in their respective disciplines. Which type of organizational structure does Rizatti Corp have?<br>a.Project<br>b.Symbolic<br>c.Matrix<br>d.Functional<br>ANSWER:d</p>
+<p>In the Scrum method, during which meeting is the improvement of the product and process discussed?<br>a.sprint retrospective<br>b.sprint review<br>c.kick-off<br>d.daily Scrum<br>ANSWER:a</p>
+<p>In what type of organizational structure do project managers have the least amount of authority?<br>a.Functional<br>b.Project<br>c.Matrix<br>d.Circular<br>ANSWER:a</p>
+<p>In what type of organizational structure do project managers have the most authority?<br>a.Functional<br>b.Project<br>c.Matrix<br>d.Circular<br>ANSWER:b</p>
+<p>In which development life cycle do stakeholders define and approve the detailed scope before the start on an iteration?<br>a.Adaptive<br>b.Hybrid<br>c.Incremental<br>d.Iterative<br>ANSWER:a</p>
+<p>In which of the following areas of management is payback analysis most likely to be used?<br>a.Resource<br>b.Communication<br>c.Cost<br>d.Quality<br>ANSWER:c</p>
+<p>In which product life cycle the scope, schedule, and cost are determined early, and changes to scope are carefully managed?<br>a.Iterative<br>b.Incremental<br>c.Predictive<br>d.Adaptive<br>ANSWER:c</p>
+<p>In which systems development life cycle do model developers use a model to generate functional requirements and physical design specifications simultaneously?<br>a.RAD life cycle<br>b.Prototyping life cycle<br>c.Spiral life cycle<br>d.Waterfall life cycle<br>ANSWER:b</p>
+<p>Joe is a project manager in an IT company and has over the years, gained substantial knowledge in his area of work. However, while managing his team, he often loses his temper. In addition, he fails to be an active listener when his team members approach him with work related challenges. In which of the following areas does Joe need to develop his skills in?<br>a.Application area knowledge<br>b.Project environment knowledge<br>c.Standards and regulations<br>d.Human relations skills<br>ANSWER:d</p>
+<p>Martha works as a project manager at a bank. Due to certain changes in external factors, Martha needs to make a few alterations in the tactical goals of her project. In such a scenario, which of the following will best help Martha cope with the change?<br>a.Negotiation<br>b.Project environment knowledge<br>c.Motivation<br>d.Soft skills<br>ANSWER:b</p>
+<p>Mind mapping can be used for developing WBSs using which approach?<br>a.analogy approach only<br>b.bottom-up or analogy approach<br>c.top-down or bottom-up approach<br>d.any approach<br>ANSWER:c</p>
+<p>Newtech Inc.hires John for the position of a software programmer to work on their new project. Salary paid to John by Newtech Inc.would be an example of which type of costs?<br>a.direct<br>b.indirect<br>c.sunk<br>d.intangible<br>ANSWER:a</p>
+<p>Project procurement management mainly involves:<br>a.making effective use of the people involved with the project.<br>b.buying goods and services for a project from outside the performing organization.<br>c.generating, collecting, disseminating, and storing project information.<br>d.identifying and analyzing stakeholderneeds while managing and controlling their engagement.<br>ANSWER:b</p>
+<p>Projects must operate in a broad organizational environment, and project managers need to consider projects within the greater organizational context. Which approach describes the holistic view of carrying out projects within the context of the organization?<br>a.Linear analysis<br>b.Systems thinking<br>c.Reductionism<br>d.The silo approach<br>ANSWER:b</p>
+<p>____ refers to a set of shared assumptions, values, and behaviors that characterize the functioning of an organization.<br>a.Chain of command<br>b.Line of control<br>c.Organizational culture<br>d.Organizational structure<br>ANSWER:c</p>
+<p>Reporting performance, where project stakeholders can identify any necessary changes that may be required to keep the project on track, is a common part of which process?<br>a.executing<br>b.closing<br>c.monitoring and controlling<br>d.planning<br>ANSWER:c</p>
+<p>Select an example of external stakeholders for an organization.<br>a.Top managers<br>b.Functional managers<br>c.Employees<br>d.Competitors<br>ANSWER:d</p>
+<p>Soles is a footwear company which has recently set up its store in Ambrosia.To manufacture its products, Soles incurs a range of different costs. Which would be an example of an indirect cost?<br>a.Cost of machines to produce shoes<br>b.Salary paid to factory workers<br>c.Electricity used to run its factories<br>d.Cost of leather used to manufacture shoes<br>ANSWER:c</p>
+<p>Steve, an engineer in a construction company, is at present working on a home construction project. The home is being built for the Robinson family, the owners of the home. Steve is working with his project team and support staff to ensure the project is completed on time. In such a scenario, the project sponsor is ____.<br>a.Steve<br>b.the support staff<br>c.the project team<br>d.the Robinson family<br>ANSWER:d</p>
+<p>Team building exercises and motivation techniques are tools used in ____ management.<br>a.procurement<br>b.scope<br>c.resource<br>d.cost<br>ANSWER:c</p>
+<p>The critical path is the ____ path through a network diagram, and it represents the ____ amount of slack or float.<br>a.longest; longest<br>b.longest; shortest<br>c.shortest; longest<br>d.shortest; shortest<br>ANSWER:b</p>
+<p>The ____ frame of an organization focuses on providing harmony between the needs of the organization and the needs of people.<br>a.structural<br>b.human resources<br>c.political<br>d.symbolic<br>ANSWER:b</p>
+<p>The main goal of which process is to produce a cost baseline for measuring project performance and project funding requirements?<br>a.cost budgeting<br>b.cost planning<br>c.cost controlling<br>d.cost estimating<br>ANSWER:a</p>
+<p>The ____ model uses an approach in which developers work with an evolving prototype, using tools such as computer-aided software engineering, joint requirements planning, and joint application design to facilitate rapid prototyping and code generation.<br>a.prototyping life cycle<br>b.waterfall life cycle<br>c.RAD life cycle<br>d.spiral life cycle<br>ANSWER:c</p>
+<p>The organization recognizes that a new project exists and completes a project charter during which processes for a new project?<br>a.initiating<br>b.planning<br>c.opening<br>d.controlling<br>ANSWER:a</p>
+<p>The project cost management knowledge area maps to which process group through the activities of estimating costs and budget determination?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:b</p>
+<p>The project management plan is the output of which project planning process?<br>a.integration management<br>b.quality management<br>c.scope management<br>d.procurement management<br>ANSWER:a</p>
+<p>The project schedule management knowledge area maps to which process group through the activity of schedule control?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:d</p>
+<p>The project scope management knowledge area maps to which process group through the activities of scope validation and scope control?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:d</p>
+<p>The project stakeholder management knowledge area maps to which process group by identifying stakeholders?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:a</p>
+<p>The role of a ____ is to provide direction and funding for a project.<br>a.project sponsor<br>b.project manager<br>c.support staff member<br>d.project team<br>ANSWER:a</p>
+<p>The symbolic perspective of an organization:<br>a.focuses on different groups’ roles and responsibilities to meet the goals and policies set by top management.<br>b.views the organization as coalitions composed of varied individuals and interest groups.<br>c.focuses on providing harmony between the needs of the organization and the needs of people.<br>d.focuses on the meanings of the culture, language, traditions, and image of the organization.<br>ANSWER:d</p>
+<p>Variances are calculated by subtracting the actual cost from which value?<br>a.earned value<br>b.schedule variance<br>c.planned value<br>d.rate of performance<br>ANSWER:a</p>
+<p>What does the process of controlling costs primarily involve?<br>a.determining the policies for project costs<br>b.managing changes to the project budget<br>c.finalising the procedures for project costs<br>d.determining a basis for estimates<br>ANSWER:b</p>
+<p>What important Scrum artifact is used to graphically display progress on each sprint during the monitoring and controlling process?<br>a.WBS<br>b.sprint backlog<br>c.burndown chart<br>d.product backlog<br>ANSWER:c</p>
+<p>What is a difference between low-end and midrange tools of the project management software?<br>a.Low-end tools are designed to handle primarily multiple users whereas midrange tools are created to handle single users.<br>b.Low-end tools provide robust capabilities to handle dispersed workgroups whereas midrange tools do not.<br>c.Midrange tools provide basic project management features whereas low-end tools offer enterprise and portfolio management functions.<br>d.Midrange tools are designed to handle larger projects than low-end tools.<br>ANSWER:d</p>
+<p>What is an accurate difference between the Program Evaluation and Review Technique (PERT) and critical path method (CPM)?<br>a.CPM addresses the risk associated with duration estimates whereas PERT does not.<br>b.Unlike CPM, PERT estimates only when there is no risk of uncertainty.<br>c.CPM involves more work than PERT because it requires several duration estimates.<br>d.PERT uses different duration estimates whereas CPM uses one specific duration estimate.<br>ANSWER:d</p>
+<p>What is another term used for budget?<br>a.earned value<br>b.actual cost<br>c.indirect cost<br>d.planned value<br>ANSWER:d</p>
+<p>What is a rough order of magnitude estimate also referred to as?<br>a.definitive<br>b.budgetary<br>c.final<br>d.ballpark<br>ANSWER:d</p>
+<p>What is a table that lists requirements, their various attributes, and the status of the requirements to ensure that all are addressed referred to as?<br>a.requirements traceability matrix<br>b.Gantt chart<br>c.state transition table<br>d.entity-attribute-value model<br>ANSWER:a</p>
+<p>What is developed in the Project Integration Management knowledge area?<br>a.schedule management plan<br>b.project management plan<br>c.WBS<br>d.quality management<br>ANSWER:b</p>
+<p>What is often the most difficult and unappreciated process in project management?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:b</p>
+<p>What is one of the main outputs of the initiation process?<br>a.creating the work breakdown structure<br>b.selecting the project manager<br>c.developing the project charter<br>d.identifying the project sponsor<br>ANSWER:c</p>
+<p>What is scope creep?<br>a.the tendency for project scope to keep getting bigger and bigger<br>b.subdividing project deliverables into smaller pieces<br>c.the approved project scope statement and its associated WBS.<br>d.a task at the lowest level of the WBS<br>ANSWER:a</p>
+<p>What is the first process involved in project schedule management?<br>a.defining activities<br>b.estimating activity durations<br>c.planning schedule management<br>d.sequencing activities<br>ANSWER:c</p>
+<p>What is the first step in project cost management?<br>a.allocate project cost estimates to individual material resources<br>b.plan how costs will be managed<br>c.control project costs and monitor cost performance<br>d.develop several estimates of costs for different types of resources<br>ANSWER:b</p>
+<p>What is the latest possible time an activity might begin without delaying the project finish date?<br>a.early finish date<br>b.late finish date<br>c.late start date<br>d.early start date<br>ANSWER:c</p>
+<p>What is the main purpose of project plans?<br>a.schedule management plans<br>b.define project scope<br>c.estimate activity resources<br>d.guide project execution<br>ANSWER:d</p>
+<p>What is the main technique used in creating a WBS, which involves subdividing project deliverables into smaller pieces?<br>a.conglomeration<br>b.accumulation<br>c.decomposition<br>d.catalyzation<br>ANSWER:c</p>
+<p>What is the purpose of a cost performance index (CPI)?<br>a.indicate that a project is under budget if CPI is less than one<br>b.estimate the projected cost of completing the project<br>c.indicate that the planned and actual costs are equal if CPI is more than one<br>d.estimate the ratio of earned value to planned value<br>ANSWER:b</p>
+<p>What processes include defining and authorizing a project or project phase?<br>a.Initiating<br>b.Planning<br>c.Executing<br>d.Monitoring and controlling<br>ANSWER:a</p>
+<p>What processes include devising and maintaining a workable scheme to ensure that the project addresses the organization’s needs?<br>a.Initiating<br>b.Planning<br>c.Executing<br>d.Monitoring and controlling<br>ANSWER:b</p>
+<p>What process group does the project integration management knowledge area map to through the activities of developing project charters?<br>a.initiating<br>b.planning<br>c.executing<br>d.monitoring and controlling<br>ANSWER:a</p>
+<p>What process involves formal acceptance of the completed project scope by the stakeholders?<br>a.Scope validation<br>b.Scope planning<br>c.Scope control<br>d.Scope baseline<br>ANSWER:a</p>
+<p>What process provides enterprise environmental factors as an output?<br>a.project integration management<br>b.project quality management<br>c.project human resource management<br>d.project procurement management<br>ANSWER:c</p>
+<p>What term is used for analogous estimates?<br>a.bottom-up<br>b.top-down<br>c.parametric<br>d.budgetary<br>ANSWER:b</p>
+<p>What term is used for the amount of time an activity can be delayed from its early start without delaying the planned project finish date?<br>a.total slack<br>b.free float<br>c.backward pass<br>d.forward pass<br>ANSWER:a</p>
+<p>What term is used for the amount of time an activity can be delayed without delaying the early start date of any immediately following activities?<br>a.forward pass<br>b.backward pass<br>c.fast tracking<br>d.free slack<br>ANSWER:d</p>
+<p>What tool provides a basis for creating the project schedule and performing earned value management for measuring and forecasting project performance?<br>a.scope statement<br>b.cost management plan<br>c.work breakdown structure<br>d.project charter<br>ANSWER:c</p>
+<p>What type of estimate is a cost estimation tool that involves estimating individual work items or activities and summing them to get a project total?<br>a.budgetary<br>b.parametric<br>c.bottom-up<br>d.analogous<br>ANSWER:c</p>
+<p>What type of estimate is a cost estimation tool used to allocate money into an organization’s budget?<br>a.budgetary<br>b.definitive<br>c.rough order of magnitude<br>d.ballpark<br>ANSWER:a</p>
+<p>What type of estimate is used for making many purchasing decisions for which accurate estimates are required and for estimating final project costs?<br>a.budgetary<br>b.definitive<br>c.rough order of magnitude<br>d.final<br>ANSWER:b</p>
+<p>What type of management includes the processes required to ensure that a project team completes a project within an approved budget?<br>a.project scope management<br>b.project quality management<br>c.project time management<br>d.project cost management<br>ANSWER:d</p>
+<p>Where would a draft schedule for a project most likely be found?<br>a.project buffer<br>b.project charter<br>c.resource breakdown structure<br>d.project’s dummy activities list<br>ANSWER:b</p>
+<p>Which action involves defining and documenting the features and functions of the products produced during the project as well as the processes used for creating them?<br>a.Collecting requirements<br>b.Defining scope<br>c.Controlling scope<br>d.Validating scope<br>ANSWER:a</p>
+<p>Which action involves normalizing acceptance of the project deliverables and during this phase the key project stakeholders, such as the customer and sponsor for the project, inspect and then formally accept the deliverables?<br>a.Creating scope<br>b.Defining scope<br>c.Controlling scope<br>d.Validating scope<br>ANSWER:d</p>
+<p>Which action involves reviewing the project charter, requirements documents, and organizational process assets to create a scope statement, adding more information as requirements are developed and change requests are approved?<br>a.Creating scope<br>b.Defining scope<br>c.Controlling scope<br>d.Validating scope<br>ANSWER:b</p>
+<p>Which activity is a part of the Scrum planning process?<br>a.Determining how many sprints will compose each release<br>b.Demonstrating the product during a sprint review meeting<br>c.Completing tasks each day during sprints<br>d.Creating sprint backlog<br>ANSWER:d</p>
+<p>Which approach for constructing a WBS involves refining the work into greater and greater levels of detail?<br>a.analogy<br>b.bottom-up<br>c.top-down<br>d.mind mapping<br>ANSWER:c</p>
+<p>Which approach for constructing a WBS starts with the largest items of the project and breaks them into subordinate items?<br>a.analogy<br>b.bottom-up<br>c.top-down<br>d.mind mapping<br>ANSWER:c</p>
+<p>Which approach for constructing a WBS uses a similar project’s WBS as a starting point?<br>a.top-down<br>b.bottom-up<br>c.mind-mapping<br>d.analogy<br>ANSWER:d</p>
+<p>Which approach to product development is currently used by many organizations so a predictive set of steps is used as an overall means to coordinate more detailed steps that are adaptively managed?<br>a.Adaptive<br>b.Hybrid<br>c.Predictive<br>d.Incremental<br>ANSWER:b</p>
+<p>Which are outputs of the executing process of project integration management?<br>a.Deliverables<br>b.Issue logs<br>c.Resource calendars<br>d.Enterprise environmental factor updates<br>ANSWER:a</p>
+<p>Which attribute best defines the role of leaders?<br>a.They focus on short-term objectives.<br>b.They work on achieving primarily tactical goals.<br>c.They work solely toward day-to-day details of meeting specific tasks.<br>d.They inspire people to reach goals.<br>ANSWER:d</p>
+<p>Which attribute is true of low-end tools of project management software?<br>a.They are designed for especially large projects with multiple users.<br>b.Their main advantage is that they have unlimited functionality.<br>c.They provide basic project management features.<br>d.They are referred to as enterprise project management software.<br>ANSWER:c</p>
+<p>Which characteristic highlights a difference between projects and operations?<br>a.Projects are undertaken to sustain an organization’s business whereas operations are not.<br>b.Operations are undertaken to create unique products, services, or results whereas projects are not.<br>c.Projects are temporary endeavors whereas an organization’s operations are ongoing in nature.<br>d.Operations have well-defined objectives whereas projects do not need to have a unique purpose.<br>ANSWER:c</p>
+<p>Which characteristic is true of virtual teams?<br>a.It is easier for a virtual team to build relationships and trust.<br>b.Negative incentives do not impact virtual team members.<br>c.It is important to select team members carefully.<br>d.As they never meet, virtual teams do not have conflicts.<br>ANSWER:c</p>
+<p>Which characteristic of organizational culture describes the degree to which management’s decisions take into account the effect of outcomes on people within the organization?<br>a.Member identity<br>b.Group emphasis<br>c.People focus<br>d.Unit integration<br>ANSWER:c</p>
+<p>Which characteristic of organizational culture describes the degree to which management’s decisions take into account the effect of outcomes on people within the organization?<br>a.Member identity<br>b.Group emphasis<br>c.People focus<br>d.Unit integration<br>ANSWER:c</p>
+<p>Which characteristic of organizational culture refers to the degree to which departments within an organization are encouraged to coordinate with each other?<br>a.Member identity<br>b.People focus<br>c.Group emphasis<br>d.Unit integration<br>ANSWER:d</p>
+<p>Which characteristic of organizational culture refers to the degree to which departments within an organization are encouraged to coordinate with each other?<br>a.Member identity<br>b.People focus<br>c.Group emphasis<br>d.Unit integration<br>ANSWER:d</p>
+<p>Which characteristic of organizational culture refers to the degree to which employees identify with the organization as a whole, rather than with their types of job or profession?<br>a.Member identity<br>b.People focus<br>c.Group emphasis<br>d.Unit integration<br>ANSWER:a</p>
+<p>Which characteristic of organizational culture refers to the degree to which employees identify with the organization as a whole, rather than with their types of job or profession?<br>a.Member identity<br>b.People focus<br>c.Group emphasis<br>d.Unit integration<br>ANSWER:a</p>
+<p>Which characteristic of organizational culture refers to the degree to which the organization monitors and responds to changes in the external environment?<br>a.Means-ends orientation<br>b.Open-systems focus<br>c.Conflict tolerance<br>d.Risk tolerance<br>ANSWER:b</p>
+<p>Which costs are difficult to measure in monetary terms?<br>a.Intangible costs<br>b.Direct costs<br>c.Tangible costs<br>d.Fixed costs<br>ANSWER:a</p>
+<p>Which dependencies are sometimes referred to as soft logic and should be used with care because they may limit later scheduling options?<br>a.mandatory<br>b.discretionary<br>c.external<br>d.inherent<br>ANSWER:b</p>
+<p>Which dependencies do AOA network diagrams use?<br>a.start-to-start<br>b.finish-to-start<br>c.finish-to-finish<br>d.start-to-finish<br>ANSWER:b</p>
+<p>Which dependencies involve relationships between project and non-project activities?<br>a.mandatory<br>b.discretionary<br>c.external<br>d.inherent<br>ANSWER:c</p>
+<p>Which document contains a deliverable-oriented grouping of the work involved in a project that defines the total scope of the project?<br>a.project charter<br>b.business case<br>c.project scope statement<br>d.work breakdown structure<br>ANSWER:d</p>
+<p>Which document is most likely to include planned project start and end dates which serve as the starting points for a detailed schedule?<br>a.resource breakdown structure<br>b.milestones list<br>c.organizational process assets update<br>d.project charter<br>ANSWER:d</p>
+<p>Which document should list and describe all of the deliverables required for the project?<br>a.project charter<br>b.scope statement<br>c.WBS<br>d.Gantt chart<br>ANSWER:b</p>
+<p>Which framework is an iterative software development process that focuses on team productivity and delivers software best practices to all team members?<br>a.Agile Unified Process<br>b.Dynamic Systems Development Method<br>c.Rational Unified Process<br>d.Six Sigma<br>ANSWER:c</p>
+<p>Which goal distinguishes project management and portfolio management?<br>a.Project management involves making wise investment decisions whereas portfolio management does not.<br>b.Portfolio management is an easy task whereas project management is a more difficult task.<br>c.Portfolio management asks questions like, “Are we carrying out projects efficiently?” whereas project management asks questions such as “Are we investing in the right areas?”<br>d.Project management addresses specific, short-term goals whereas portfolio management focuses on long-term goals.<br>ANSWER:d</p>
+<p>Which is a disadvantage for virtual teams compared to traditional teams?<br>a.Increased costs for office space and support<br>b.Reduced opportunities for informal transfer of information<br>c.Limited flexibility in team working hours<br>d.Reduced dependence on technology and processes for accomplishing work<br>ANSWER:b</p>
+<p>Which is an example of a pre-initiation task?<br>a.Drawing up a work breakdown structure<br>b.Developing a business case for a project<br>c.Drafting the project charter<br>d.Identifying stakeholders<br>ANSWER:b</p>
+<p>Which is an input of the process of controlling costs?<br>a.cost forecasts<br>b.work performance data<br>c.change requests<br>d.scope baseline<br>ANSWER:b</p>
+<p>Which is an output of schedule control?<br>a.change requests<br>b.activity attributes<br>c.resource requirements<br>d.milestones lists<br>ANSWER:a</p>
+<p>Which is an output of the process of controlling costs?<br>a.cost forecasts<br>b.project funding requirements<br>c.basis of estimates<br>d.scope baselines<br>ANSWER:a</p>
+<p>Which is a similarity between scope control and schedule control?<br>a.Both are initial processes of project time management.<br>b.Both of their primary goals is to define project goals and milestones.<br>c.Both are portions of the integrated change control process under project integration management.<br>d.Both of these processes should occur before estimating activity durations.<br>ANSWER:c</p>
+<p>Which is a similarity between the crashing and fast tracking?<br>a.both spread out tasks over a long period of time to ensure the quality of work is maintained<br>b.both invariably result in increases in total project costs<br>c.both can shorten the time needed to finish a project<br>d.both are network diagramming techniques used primarily to predict total project duration<br>ANSWER:c</p>
+<p>Which is most likely to be a reason for inaccuracies in information technology cost estimates?<br>a.Estimates take a long time to be worked out.<br>b.People lack estimating experience.<br>c.Human beings are biased toward overestimation.<br>d.Only software development provides the scope for estimates to be accurate.<br>ANSWER:b</p>
+<p>Which is one of the main outputs of estimating activity resources process?<br>a.project documents update<br>b.milestone list<br>c.breakdown structure<br>d.activity duration estimate<br>ANSWER:a</p>
+<p>Which is recommended for the creation of a good WBS?<br>a.Any WBS item should be the responsibility of all the people working on it.<br>b.A unit of work should appear at only one place in the WBS.<br>c.Each WBS item should be created assuming that the requirements are inflexible.<br>d.The work content of a WBS item is independent of the WBS items below it.<br>ANSWER:b</p>
+<p>Which is true about the agile method?<br>a.It is often used when a project team can express the scope early in the product life cycle.<br>b.It is used when a project team wants to provide a potentially shippable product earlier rather than later.<br>c.It uses several iterations or deliveries of software instead of waiting until the end of the project to provide a product.<br>d.It is used when project teams want to use the predicative approach to a project.<br>ANSWER:c</p>
+<p>Which is true of a finish-to-finish dependency?<br>a.It is a dependency in which the “from” activity cannot start until the “to” activity or successor is started.<br>b.It is a dependency in which in which the “from” activity must finish before the “to” activity or successor can start.<br>c.It is a dependency in which the “from” activity must be finished before the “to” activity can be finished.<br>d.It is a dependency in which the “from” activity must start before the “to” activity can be finished.<br>ANSWER:c</p>
+<p>Which is true of dummy activities?<br>a.They have long durations.<br>b.They show logical relationships between activities.<br>c.They have a large range of resources.<br>d.They have limited time periods.<br>ANSWER:a</p>
+<p>Which is true of earned value?<br>a.It is the actual cost plus the planned cost.<br>b.It is based solely on the total cost estimate to be spent on an activity.<br>c.It is an estimate of the value of the physical work actually completed.<br>d.It is also known as the planned value.<br>ANSWER:c</p>
+<p>Which is true of the schedule performance index (SPI)?<br>a.It can be used to estimate the projected time to complete the project.<br>b.It means that a project is behind schedule if an SPI is greater than one.<br>c.It means that a project is ahead of schedule if SPI is lesser than one or hundred percent.<br>d.It is the ratio of planned value to actual costs.<br>ANSWER:a</p>
+<p>Which knowledge area involves defining and managing all the work required to complete the project successfully?<br>a.Project resource management<br>b.Project scope management<br>c.Project time management<br>d.Project cost management<br>ANSWER:b</p>
+<p>Which law states that work expands to fill the time allowed?<br>a.Murphy’s Law<br>b.Miller’s Law<br>c.Parkinson’s Law<br>d.Einstein’s Law<br>ANSWER:c</p>
+<p>Which method is used for determining the estimated annual costs and benefits for a project?<br>a.Critical path analysis<br>b.Cash flow analysis<br>c.Present value analysis<br>d.Requirements analysis<br>ANSWER:b</p>
+<p>Which network diagramming technique uses boxes to represent activities?<br>a.PDM<br>b.CPM<br>c.ADM<br>d.PERT<br>ANSWER:a</p>
+<p>Which objective is true of projects?<br>a.They have an indefinite beginning and end.<br>b.They have a unique purpose.<br>c.They are developed using regressive elaboration.<br>d.They are permanent in nature.<br>ANSWER:b</p>
+<p>Which observation is true of the agile approach to software development?<br>a.In the agile method, requirements and solutions evolve through collaboration.<br>b.An agile approach sets scope goals, but leaves time and cost goals flexible.<br>c.Agile is a predictive model of software development.<br>d.In the agile approach, requirements must be clearly expressed early in the life cycle.<br>ANSWER:a</p>
+<p>Which of the following best describes a kill point in the project life cycle?<br>a.The period of time given to managers during the feasibility phases to decide on the cost, quality, and time constraints for the project<br>b.A review of the status of a project at each phase of development to determine if it should be continued, redirected, or terminated<br>c.The point of time in the project lifecycle after which it is impossible to terminate a running project<br>d.The final submission of the project deliverables after which the project is terminated<br>ANSWER:b</p>
+<p>Which of the following is true of a matrix organizational structure?<br>a.In a matrix organizational structure, employees are organized into departments according to their skills, and there is little interaction between employees from different departments.<br>b.Project managers in matrix organizations have staff from only a single functional area working on their projects.<br>c.In a strong matrix organizational structure, the project manager controls the project budget and has moderate to high authority.<br>d.A matrix organizational structure is hierarchical, but instead of functional managers reporting to the CEO, program managers report to the CEO.<br>ANSWER:c</p>
+<p>Which of the following is true of program managers?<br>a.They report to project managers who represent the next level in the hierarchy.<br>b.They recognize that managing a program is simpler than managing a project.<br>c.They provide leadership and direction for project managers heading the projects within a program.<br>d.They are responsible solely for the delivery of project results.<br>ANSWER:c</p>
+<p>Which of the following is true of the project life cycle?<br>a.In the early phases of a project life cycle, resource needs are usually lowest.<br>b.In the later phases of the project life cycle, the level of uncertainty is usually the highest.<br>c.It is much more expensive to make major changes to a project during the earlier phases than the latter phases.<br>d.More resources are usually needed during the initial phases of a project than during the middle or final phases.<br>ANSWER:a</p>
+<p>Which of the following questions reflects the strategic goals of project portfolio management?<br>a.Are we carrying out projects well?<br>b.Are projects on time and on budget?<br>c.Are we investing in the right areas?<br>d.Do stakeholders know what they should be doing?<br>ANSWER:c</p>
+<p>Which of the following refers to a set of principles that guides decision making based on personal values of what is considered right and wrong?<br>a.Ethics<br>b.Civics<br>c.Laws<br>d.Politics<br>ANSWER:a</p>
+<p>Which organization provides certification as a Project Management Professional?<br>a.PMS<br>b.PMC<br>c.PMI<br>d.PMP<br>ANSWER:c</p>
+<p>Which output documents how project needs will be analyzed, documented, and managed?<br>a.requirements traceability matrix<br>b.requirements management plan<br>c.WBS<br>d.project scope statement<br>ANSWER:b</p>
+<p>Which perspective of an organization focuses on different groups’ roles and responsibilities in order to meet the goals and policies set by top management?<br>a.Structural frame<br>b.Human resources frame<br>c.Political frame<br>d.Symbolic frame<br>ANSWER:a</p>
+<p>Which perspective on organizations assumes that organizations are coalitions composed of varied individuals and interest groups?<br>a.Political frame<br>b.Symbolic frame<br>c.Structural frame<br>d.Human resources frame<br>ANSWER:a</p>
+<p>Which planning process is associated with project scope management?<br>a.Collecting requirements<br>b.Performing qualitative risk analysis<br>c.Planning schedule management<br>d.Estimating costs<br>ANSWER:a</p>
+<p>Which planning process is within the Project Scope Management knowledge area?<br>a.Schedule development<br>b.Developing a project management plan<br>c.Creation of a WBS<br>d.Quality planning<br>ANSWER:c</p>
+<p>Which problem-solving approach requires defining the scope of a system, dividing it into its components, and then identifying and evaluating its problems, opportunities, constraints, and needs?<br>a.Linear programming<br>b.Independent component analysis<br>c.Principal component analysis<br>d.Systems analysis<br>ANSWER:d</p>
+<p>Which processes include acquiring and developing the project team, performing quality assurance, distributing information, managing stakeholder expectations, and conducting procurements?<br>a.monitoring and controlling<br>b.executing<br>c.planning<br>d.initiating<br>ANSWER:b</p>
+<p>Which process helps develop an accurate projection of a project’s financial expenses and benefits?<br>a.critical path analysis<br>b.fast tracking<br>c.life cycle costing<br>d.crashing<br>ANSWER:c</p>
+<p>Which process includes measuring progress toward project objectives and taking corrective action to match progress with the plan?<br>a.Planning<br>b.Monitoring and controlling<br>c.Executing<br>d.Initiating<br>ANSWER:b</p>
+<p>Which process in project schedule management involves identifying the specific tasks that the project team members and stakeholders must perform to produce the project deliverables?<br>a.defining activities<br>b.sequencing activities<br>c.developing the schedule<br>d.estimating activity durations<br>ANSWER:a</p>
+<p>Which process involves allocating the overall cost estimate to individual work items to establish a baseline for measuring performance?<br>a.determining the budget<br>b.finalizing policies for project costs<br>c.controlling costs<br>d.estimating costs<br>ANSWER:a</p>
+<p>Which process involves developing an approximation of the costs of resources needed to complete a project?<br>a.determining the budget<br>b.finalising the cost baseline<br>c.controlling costs<br>d.estimating costs<br>ANSWER:d</p>
+<p>Which process involves developing a working replica of the system or some aspect of the system?<br>a.Prototyping<br>b.Variance<br>c.Decomposition<br>d.Use case modeling<br>ANSWER:a</p>
+<p>Which process involves gaining stakeholder and customer acceptance of the final products and services and bringing the project, or project phase, to an orderly end?<br>a.executing<br>b.closing<br>c.planning<br>d.monitoring<br>ANSWER:b</p>
+<p>Which process involves generating ideas by comparing specific project practices or product characteristics to those of other projects or products inside or outside the performing organization?<br>a.variance<br>b.benchmarking<br>c.prototyping<br>d.decomposition<br>ANSWER:b</p>
+<p>Which process involves identifying and modeling business events, who initiated them, and how the system should respond to them?<br>a.Prototyping<br>b.JAD<br>c.RAD<br>d.Use case modeling<br>ANSWER:d</p>
+<p>Which process results in a cost baseline as a main output?<br>a.cost controlling<br>b.cost estimating<br>c.cost budgeting<br>d.cost planning<br>ANSWER:c</p>
+<p>Which process uses highly organized and intensive workshops to bring together project stakeholders—the sponsor, users, business analysts, programmers, and so on—to jointly define and design information systems?<br>a.Prototyping<br>b.JAD<br>c.RAD<br>d.Use case modeling<br>ANSWER:b</p>
+<p>Which project management knowledge area ensures that the project will satisfy the stated or implied needs for which it was undertaken?<br>a.Project cost management<br>b.Project time management<br>c.Project risk management<br>d.Project quality management<br>ANSWER:d</p>
+<p>Which project management knowledge area is an overarching function that affects and is affected by the different knowledge areas?<br>a.Project cost management<br>b.Project stakeholder management<br>c.Project integration management<br>d.Project communications management<br>ANSWER:c</p>
+<p>Which project management knowledge area primarily involves generating, collecting, disseminating, and storing project information?<br>a.Project cost management<br>b.Project procurement management<br>c.Project time management<br>d.Project communications management<br>ANSWER:d</p>
+<p>Which project would be compatible with the use of the agile approach?<br>a.Projects with inexperienced and dispersed teams<br>b.Projects that have a fairly rigid completion date<br>c.Projects with clear-up front requirements<br>d.Projects that have more flexible scheduling<br>ANSWER:d</p>
+<p>Which provide a standard format for displaying project schedule information by listing project activities and their corresponding start and finish dates in a calendar format?<br>a.Gantt charts<br>b.Critical path analysis<br>c.Arrow diagramming method<br>d.PERT analysis<br>ANSWER:a</p>
+<p>Which reserves allow for future situations that are unpredictable?<br>a.Contingency reserves<br>b.Management reserves<br>c.Known unknowns<br>d.Cost baseline reserves<br>ANSWER:b</p>
+<p>Which statement best defines cost variance?<br>a.planned value plus actual costs<br>b.earned value minus the actual cost<br>c.rate of performance minus earned value<br>d.planned value minus the rate of performance<br>ANSWER:b</p>
+<p>Which statement best defines schedule variance?<br>a.earned value minus the planned value<br>b.earned value minus the actual cost<br>c.planned value plus the earned value<br>d.planned value plus the rate of performance<br>ANSWER:a</p>
+<p>Which statement best describes outsourcing?<br>a.An organization selling its products in a market outside its domestic market<br>b.An organization’s acquisition of goods and services from an outside source<br>c.An organization setting up manufacturing and retailing facilities in a new country<br>d.An organization’s use of virtual teams with employees located in different countries<br>ANSWER:b</p>
+<p>Which statement best describes scope?<br>a.each level of work that is outlined in a work breakdown structure<br>b.end product created as part of a project that is delivered to the client<br>c.tasks that are decomposed into smaller tasks in a work breakdown structure<br>d.work involved in creating the products and the processes used to create them<br>ANSWER:d</p>
+<p>Which statement best describes the difference between an activity list and an activity attribute?<br>a.As opposed to an activity attribute, an activity list provides resource requirements and constraints related to activities.<br>b.An activity list provides a more concrete list of milestones for a project than an activity attribute.<br>c.An activity attribute is a tabulation of activities to be included on a project schedule whereas an activity list is not.<br>d.An activity attribute provides more schedule-related information about each activity than an activity list.<br>ANSWER:d</p>
+<p>Which statement is true of analogous estimates?<br>a.Their main disadvantage is that they cost more than other techniques.<br>b.They are the only technique which do not require expert judgement.<br>c.They are most reliable when previous projects are similar in fact with current projects.<br>d.They use project characteristics in a mathematical model to estimate project costs.<br>ANSWER:c</p>
+<p>Which statement is true of a order of magnitude estimate?<br>a.It is used to allocate money into an organization’s budget.<br>b.It provides an estimate of what a project will cost.<br>c.Its timeframe is always less than a year prior to project completion.<br>d.It is a type of estimate that is done in the final stages of a project.<br>ANSWER:b</p>
+<p>Which statement is true of bottom-up estimates?<br>a.They are based on the actual cost of a previous, similar project.<br>b.They are also known as parametric estimating.<br>c.They are most accurate when they involve large, extensive work items.<br>d.They are time-intensive and expensive to develop.<br>ANSWER:d</p>
+<p>Which statement is true of contingency reserves?<br>a.They allow for future situations that can be partially planned for.<br>b.They are also known as unknown unknowns.<br>c.They are not included in a cost baseline.<br>d.They allow for dollar amounts to be used to cover existing, fixed costs.<br>ANSWER:a</p>
+<p>Which statement is true of project management?<br>a.It is a simple discipline with a limited scope.<br>b.It has specific tools which work universally across all kinds of projects.<br>c.It does not guarantee successes for all projects.<br>d.Its framework consists solely of project management knowledge areas.<br>ANSWER:c</p>
+<p>Which statement is true of tangible costs?<br>a.They cannot be calculated in monetary terms.<br>b.They can be easily measured.<br>c.They are difficult to quantify.<br>d.Their examples include goodwill and prestige.<br>ANSWER:b</p>
+<p>Which statement is true regarding indirect costs?<br>a.directly related to performing the project.<br>b.those that cannot be allocated to projects.<br>c.those that can be easily controlled by managers.<br>d.not directly related to the products or services of a project.<br>ANSWER:d</p>
+<p>Which systems development life cycle model assumes that requirements will remain stable after they are defined?<br>a.Spiral life cycle<br>b.Waterfall life cycle<br>c.Prototyping life cycle<br>d.RAD life cycle<br>ANSWER:b</p>
+<p>Which task is at the lowest level of the WBS?<br>a.variance<br>b.objective<br>c.deliverable<br>d.work package<br>ANSWER:d</p>
+<p>Which technique involves doing activities in parallel that one would normally do in sequence?<br>a.Critical chain scheduling<br>b.Crashing<br>c.Fast tracking<br>d.PERT analysis<br>ANSWER:c</p>
+<p>Which technique involves network diagramming and is used primarily to predict total project duration?<br>a.Gantt chart<br>b.critical path analysis<br>c.resource breakdown structure<br>d.arrow diagramming method<br>ANSWER:b</p>
+<p>Which technique is used for creating a WBS uses branches radiating from a core idea to structure thoughts and ideas instead of writing down tasks in a list or immediately trying to create a structure for tasks?<br>a.analogy<br>b.bottom-up<br>c.top-down<br>d.mind mapping<br>ANSWER:d</p>
+<p>Which technique is used for making cost and schedule trade-offs to obtain the greatest amount of schedule compression for the least incremental cost?<br>a.dependency<br>b.crashing<br>c.critical chain scheduling<br>d.feeding buffers<br>ANSWER:b</p>
+<p>Which term describes a product produced as part of a project?<br>a.variance<br>b.scope<br>c.deliverable<br>d.work package<br>ANSWER:c</p>
+<p>Which term is used for a significant event on a project that normally has no duration?<br>a.milestone<br>b.activity attribute<br>c.activity sequence<br>d.schedule baseline<br>ANSWER:a</p>
+<p>Which term refers to a product or service, such as a technical report, a training session, a piece of hardware, or a segment of software code, produced or provided as part of a project?<br>a.Deliverable<br>b.Input<br>c.System<br>d.Resource<br>ANSWER:a</p>
+<p>Which term refers to the difference between planned and actual performance?<br>a.Decomposition<br>b.Variance<br>c.Scope validation<br>d.Scope creep<br>ANSWER:b</p>
+<p>Which tool can best help in efficient communication management?<br>a.Kick-off meetings<br>b.Impact matrices<br>c.Requests for quotes<br>d.Fast tracking<br>ANSWER:a</p>
+<p>Which tool is most likely to be used in project schedule management?<br>a.Payback analysis<br>b.Impact matrices<br>c.Gantt charts<br>d.Fishbone diagrams<br>ANSWER:c</p>
+<p>Which type of dependencies are inherent in the nature of work being performed on a project?<br>a.mandatory<br>b.discretionary<br>c.external<br>d.random<br>ANSWER:a</p>
+<p>Which type of estimate should be used if the cost estimate for a project is used a basis for contract awards and performance reporting?<br>a.budgetary<br>b.definitive<br>c.rough order of magnitude<br>d.analogous<br>ANSWER:b</p>
+<p>Which type of estimate uses the actual cost of a previous, similar project as the basis for estimating the cost of the current project?<br>a.definitive estimates<br>b.parametric estimates<br>c.bottom-up estimates<br>d.analogous estimates<br>ANSWER:d</p>
+<p>Which type of estimating uses project characteristics in a mathematical model to estimate project costs?<br>a.rough order of magnitude estimating<br>b.parametric<br>c.bottom-up<br>d.analogous<br>ANSWER:b</p>
+<p>Which type of tool is usually recommended for small projects and single users?<br>a.Low-end<br>b.Midrange<br>c.High-end<br>d.Upper range<br>ANSWER:a</p>
+<p>Work performance information and cost forecasts are main outputs of which process?<br>a.cost budgeting<br>b.cost estimating<br>c.cost control<br>d.cost pricing<br>ANSWER:c</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/">https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
+                                    <span class="chip bg-color">软件项目管理</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="重载与重写">
+                        
+                        <span class="card-title">重载与重写</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文深入浅出地对比了重载（Overload）和重写（Override）。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                    软件工程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">面向对象</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="程序的编译与运行">
+                        
+                        <span class="card-title">程序的编译与运行</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文以C语言源程序的编译与运行为例，分析从源程序到获得输出的全过程。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机科学基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BC%96%E8%AF%91/">
+                        <span class="chip bg-color">编译</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">276.3k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
