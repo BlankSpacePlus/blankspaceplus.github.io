@@ -5,12 +5,37 @@
     
     <entry>
       <title>欢迎使用Hexo</title>
-      <link href="/2023/07/14/huan-ying-shi-yong-hexo/"/>
-      <url>/2023/07/14/huan-ying-shi-yong-hexo/</url>
+      <link href="/2023/07/24/huan-ying-shi-yong-hexo/"/>
+      <url>/2023/07/24/huan-ying-shi-yong-hexo/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>知识图谱入门路线</title>
+      <link href="/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/"/>
+      <url>/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="知识图谱"><a href="#知识图谱" class="headerlink" title="知识图谱"></a>知识图谱</h1><p><a href="#%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1">目录</a></p><ul><li><a href="#%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA">基础理论</a></li><li><a href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99">学习资料</a></li><li><a href="#%E8%BF%9B%E9%98%B6%E8%B7%AF%E7%BA%BF">进阶路线</a></li><li><a href="#%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86">知识图谱与自然语言处理</a></li></ul><h2 id="基础理论"><a href="#基础理论" class="headerlink" title="基础理论"></a>基础理论</h2><p>知识图谱本质上是一种大规模语义网络，它包含了各种各样的实体，概念以及语义关系。</p><p>知识图谱本质上只是一种知识表示的方式，它侧重在用一种关联方式来表达实体与概念之间的语义关系。必须强调的是，知识图谱只是知识表示的一种，并不是全部。</p><p>知识图谱作为一种语义网络，是大数据时代知识表示的重要方式；知识图谱作为一种技术体系，是大数据时代知识工程的代表性进展。<br><br>从技术层次来看，狭义上讲，知识图谱本质上就是一种语义网络，是大数据时代知识表示最重要的一种方式，可以说是大数据的出现造就了知识图谱。<br><br>从技术体系来看，广义上讲，知识图谱是一种技术体系，就跟深度学习一样，它不是指某一特定的模型，是指一类模型，一类技术。</p><h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><ul><li>开源项目<ul><li>用户和组织<ul><li><a href="https://github.com/liuhuanyong">liuhuanyong</a></li><li><a href="https://github.com/zjunlp">zjunlp</a></li></ul></li><li>实战项目<ul><li><a href="https://github.com/myhhub/zero_knowledge_graph">从零开始构建知识图谱</a></li><li><a href="https://github.com/Pelhans/Z_knowledge_graph">百科知识图谱</a></li><li><a href="https://github.com/chizhu/KGQA_HLM">红楼梦人物关系知识图谱</a>→<a href="https://blog.csdn.net/RHJlife/article/details/108586578">配套博客</a>→<a href="https://github.com/Htring/KGQAHLM">项目重构</a>→<a href="https://pelhans.com/tags">专栏文章</a></li><li><a href="https://github.com/lemonhu/stock-knowledge-graph">证券知识图谱</a></li><li><a href="https://github.com/vivianLL/QASystemOnHepatopathyKG">肝病知识图谱</a></li><li><a href="https://github.com/coderLCJ/NlpPractice/tree/main/KG_demo">花卉知识图谱</a></li><li><a href="https://github.com/qq547276542/Agriculture_KnowledgeGraph">农业知识图谱</a></li><li><a href="https://github.com/kyzhouhzau/Clinical-NER">面向中文电子病历的命名实体识别</a></li><li><a href="https://github.com/liuhuanyong/TextGrapher">文章语义信息知识图谱</a>→<a href="https://mp.weixin.qq.com/s/gwj7LfSxfZRvehI_LMhOAA">代码解读</a></li><li><a href="https://github.com/mr-csj/neo4j-prediction">基于知识图谱的NBA季后赛预测</a></li></ul></li><li>技术归纳总结<ul><li><a href="https://github.com/husthuke/awesome-knowledge-graph">awesome-knowledge-graph</a></li><li><a href="https://github.com/shengyp/Specified_KG_Construction">Specified_KG_Construction</a></li><li><a href="https://github.com/npubird/KnowledgeGraphCourse">东南大学研究生知识图谱课程</a></li></ul></li><li>实用工具<ul><li><a href="https://github.com/eisman/neo4jd3">neo4jd3</a>：用D3.js可视化Neo4j的图数据</li><li><a href="https://github.com/MiracleTanC/Neo4j-KGBuilder">Neo4j-KGBuilder</a>：知识图谱可视化</li><li><a href="https://github.com/zjunlp/DeepKE">DeepKE</a>：实体关系抽取</li><li><a href="https://github.com/stanfordnlp/CoreNLP">CoreNLP</a>：Stanford推出的NLP工具库</li><li><a href="https://github.com/ownthink/KnowledgeGraph">知思知识图谱</a>：百科知识图谱数据免费下载</li><li><a href="https://github.com/smoothnlp">SmoothNLP</a>：中文自然语言处理工具</li></ul></li></ul></li><li>社区论坛<ul><li><a href="http://blog.openkg.cn/">OpenKG社区</a></li></ul></li><li>图数据库产品<ul><li><a href="https://neo4j.com/">Neo4j</a><ul><li><a href="https://neo4j.com/developer/get-started/">Neo4j官方入门指南</a></li><li><a href="https://console.neo4j.io/?product=aura-db#databases">AuraDB资源</a></li></ul></li></ul></li><li>博客教程<ul><li>用户<ul><li><a href="https://www.zhihu.com/column/AIandKG">人工智能遇上知识图谱</a></li><li><a href="https://www.zhihu.com/people/knowledgeworks">知识工场</a>：复旦大学知识工厂实验室</li><li><a href="https://www.zhihu.com/people/qi-gui-lin-26">漆桂林</a>：东南大学计算机学院教授</li><li><a href="https://blog.csdn.net/meiqi0538/category_11901623.html">科皮子菊</a>的CSDN专栏</li></ul></li><li>文章<ul><li><a href="https://neo4j.com/case-studies">官方案例教程</a></li><li><a href="https://zhuanlan.zhihu.com/p/268625650">面向中文的命名实体识别和关系抽取工具</a></li><li><a href="https://zhuanlan.zhihu.com/p/453713847">知识图谱入门必读书目推荐</a></li><li><a href="https://www.zhihu.com/question/475474018/answer/2029351116">知识图谱需要的微知识点</a></li><li><a href="https://zhuanlan.zhihu.com/p/577547484">知识图谱从0级到10级简化版</a></li><li><a href="https://www.zhihu.com/question/267242467/answer/1818188810">知识图谱是否是NLP的未来</a></li></ul></li></ul></li><li>视频教程</li><li>出版书籍<ul><li>&lt;知识图谱&gt;：赵军等著</li><li>&lt;知识图谱：概念与技术&gt;：肖仰华等著</li><li>&lt;知识图谱：方法、实践与应用&gt;：邵浩、张凯、李方圆、张云柯、戴锡强著</li><li>&lt;从零构建知识图谱：技术、方法与案例&gt;：王昊奋、漆桂林、陈华钧编</li><li>&lt;知识图谱与深度学习&gt;：刘知远、韩旭、孙茂松著</li><li>&lt;人工智能：知识图谱前沿技术&gt;</li><li>&lt;图表示学习&gt;：[美] 威廉·汉密尔顿 (William Hamilton) 著</li><li>&lt;深入浅出图神经网络&gt;：刘忠雨、李彦霖、周洋著</li><li>&lt;深入浅出神经网络与深度学习&gt;：迈克尔·尼尔森 (Michael Nielsen) 著，朱小虎译</li><li>&lt;工业级知识图谱：方法与实践&gt;：张伟、陈华钧、张亦弛著</li><li>&lt;知识图谱导论&gt;：陈华钧著</li><li>&lt;金融科技知识图谱&gt;：金融科技理论与应用研究小组著</li></ul></li></ul><h2 id="微知识点"><a href="#微知识点" class="headerlink" title="微知识点"></a>微知识点</h2><p>参考文章：<a href="https://www.zhihu.com/question/475474018/answer/2029351116">知识图谱需要的微知识点</a></p><ol><li>机器学习(NLP相关)<ol><li>逻辑回归：了解文本分类的应用</li><li>TF-IDF：了解特征工程</li><li>N-gram：了解特征工程</li><li>朴素贝叶斯：了解文本分类的应用</li><li>SVM：了解文本分类的应用</li><li>K-Means：了解词性标注的应用</li><li>HMM：了解词性标注的应用</li><li>CRF：了解词性标注的应用</li></ol></li><li>深度学习(基础&amp;容易落地)<ol><li>DNN</li><li>word2vec</li><li>fastText</li><li>RNN</li></ol></li><li>自然语言处理(基础&amp;经典)<ol><li>文本分类</li><li>文本聚类</li><li>文本分词</li><li>序列标注</li><li>LSA/PLSA/LDA</li><li>语言模型</li><li>正则表达式</li><li>TF-INF</li><li>依存句法分析</li></ol></li><li>知识图谱<ol><li>实体识别</li><li>关系抽取</li><li>网络爬虫</li><li>查询语句解析</li><li>图数据库</li></ol></li><li>实战工具(基于Python语言)<ol><li>flask</li><li>requests</li><li>bs4</li><li>jieba</li><li>sklearn</li><li>pytorch</li><li>hanlp</li><li>fasttext</li><li>gensim</li><li>mysql</li><li>elasticsearch</li></ol></li></ol><h2 id="进阶路线"><a href="#进阶路线" class="headerlink" title="进阶路线"></a>进阶路线</h2><p>参考文章：<a href="https://zhuanlan.zhihu.com/p/577547484">知识图谱从0级到10级简化版</a></p><p>入门路线：</p><ol><li>通过书籍、博客、视频等途径，大致掌握知识图谱的概况</li><li>挑选合适的工具，跑通网上的案例和项目来练手</li><li>通过实践发现自己的兴趣点或不足点，重新回到书籍或教程深耕相关特定领域，系统学习</li><li>找到一个正式的项目开展工作</li></ol><p>知识储备：</p><ol><li>正则表达式、SQL、JSON、至少一门支持if-then-else的高级编程语言</li><li>ER建模、更复杂的SQL、至少一种主流的关系数据库、至少一种编程语言的数据库访问操作</li><li>用图数据库(Neo4j)/键值数据库(PostgreSQL)表达E-R和表达分类树</li><li>查询语言SPARQL/Cypher/Gremlin</li><li>OWL推理机</li><li>逻辑语言</li><li>具体逻辑语言RIF-BLD/RIF-PRD/SWRL/RuleML/JESS/DLV/XSB/Prolog、推理机的性能、各种知识建模流程</li><li>完整的语义或知识应用的工程实践</li><li>知识和知识系统的深入思考</li><li>设计出自己的知识表现语言</li></ol><h2 id="知识图谱与自然语言处理"><a href="#知识图谱与自然语言处理" class="headerlink" title="知识图谱与自然语言处理"></a>知识图谱与自然语言处理</h2><p>参考文章：<a href="https://www.zhihu.com/question/267242467/answer/1818188810">知识图谱是否是NLP的未来</a></p><ul><li>KG赋能NLP<ul><li>预训练中引入知识<ul><li>ERNIE</li><li>K-BERT</li></ul></li><li>信息抽取中做远程监督</li><li>实体链接中引入实体信息</li><li>文本生成中融合知识</li><li>语义匹配中引入关键词信息</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机科学基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识图谱 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -344,6 +369,33 @@
         <tags>
             
             <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法</title>
+      <link href="/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/"/>
+      <url>/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>Linux执行<code>curl</code>命令报错：<code>curl: (23) Failure writing output to destination</code></p><p>系统：Ubuntu 20.04 LTS</p><p>解决方法：<code>snap curl</code>没用，应该卸载并用<code>apt</code>重装：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> snap remove <span class="token function">curl</span><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">curl</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>至此，问题解决。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 异常修复 </tag>
             
         </tags>
       

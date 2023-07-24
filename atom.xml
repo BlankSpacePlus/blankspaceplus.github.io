@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-07-14T16:53:28.137Z</updated>
+  <updated>2023-07-24T08:53:44.763Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2023/07/14/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2023/07/14/huan-ying-shi-yong-hexo/</id>
-    <published>2023-07-14T16:53:28.137Z</published>
-    <updated>2023-07-14T16:53:28.137Z</updated>
+    <link href="https://blankspaceplus.github.io/2023/07/24/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2023/07/24/huan-ying-shi-yong-hexo/</id>
+    <published>2023-07-24T08:53:44.763Z</published>
+    <updated>2023-07-24T08:53:44.763Z</updated>
     
     
       
@@ -38,11 +38,36 @@
   </entry>
   
   <entry>
+    <title>知识图谱入门路线</title>
+    <link href="https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/"/>
+    <id>https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/</id>
+    <published>2023-07-24T08:51:15.000Z</published>
+    <updated>2023-07-24T08:53:44.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;知识图谱&quot;&gt;&lt;a href=&quot;#知识图谱&quot; class=&quot;headerlink&quot; title=&quot;知识图谱&quot;&gt;&lt;/a&gt;知识图谱&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="知识图谱" scheme="https://blankspaceplus.github.io/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>回溯算法解决矩阵中的路径问题</title>
     <link href="https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/"/>
     <id>https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/</id>
     <published>2023-03-30T12:09:26.000Z</published>
-    <updated>2023-07-14T16:53:28.137Z</updated>
+    <updated>2023-07-24T08:53:44.767Z</updated>
     
     
       
@@ -69,7 +94,7 @@
     <link href="https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/"/>
     <id>https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/</id>
     <published>2023-03-25T08:26:34.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -95,7 +120,7 @@
     <link href="https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/"/>
     <id>https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/</id>
     <published>2023-02-21T15:25:37.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -120,7 +145,7 @@
     <link href="https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/"/>
     <id>https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/</id>
     <published>2023-02-04T07:43:32.000Z</published>
-    <updated>2023-07-14T16:53:28.149Z</updated>
+    <updated>2023-07-24T08:53:44.779Z</updated>
     
     
       
@@ -147,7 +172,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/"/>
     <id>https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/</id>
     <published>2023-01-31T07:29:48.000Z</published>
-    <updated>2023-07-14T16:53:28.145Z</updated>
+    <updated>2023-07-24T08:53:44.775Z</updated>
     
     
       
@@ -172,7 +197,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/"/>
     <id>https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/</id>
     <published>2023-01-25T16:39:11.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -197,7 +222,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/"/>
     <id>https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/</id>
     <published>2023-01-23T06:27:05.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.767Z</updated>
     
     
       
@@ -223,7 +248,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/"/>
     <id>https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/</id>
     <published>2023-01-22T10:19:53.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -248,7 +273,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
     <id>https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
     <published>2023-01-18T18:09:11.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -273,7 +298,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/"/>
     <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/</id>
     <published>2023-01-14T11:44:33.000Z</published>
-    <updated>2023-07-14T16:53:28.137Z</updated>
+    <updated>2023-07-24T08:53:44.763Z</updated>
     
     
       
@@ -300,7 +325,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/"/>
     <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/</id>
     <published>2023-01-14T10:58:21.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.767Z</updated>
     
     
       
@@ -327,7 +352,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/"/>
     <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/</id>
     <published>2023-01-14T03:38:28.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.767Z</updated>
     
     
       
@@ -354,7 +379,7 @@
     <link href="https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/"/>
     <id>https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/</id>
     <published>2023-01-13T13:35:09.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.767Z</updated>
     
     
       
@@ -375,11 +400,39 @@
   </entry>
   
   <entry>
+    <title>Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法</title>
+    <link href="https://blankspaceplus.github.io/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/"/>
+    <id>https://blankspaceplus.github.io/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/</id>
+    <published>2022-10-04T13:53:11.000Z</published>
+    <updated>2023-07-24T08:53:44.779Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Linux执行&lt;code&gt;curl&lt;/code&gt;命令报错：&lt;code&gt;curl: (23) Failure writing output to destination&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;系统：Ubuntu 20.04</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="Linux" scheme="https://blankspaceplus.github.io/tags/Linux/"/>
+    
+    <category term="异常修复" scheme="https://blankspaceplus.github.io/tags/%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机专业实用网站</title>
     <link href="https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/"/>
     <id>https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/</id>
     <published>2022-06-25T13:50:11.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -405,7 +458,7 @@
     <link href="https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/"/>
     <id>https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/</id>
     <published>2022-05-04T09:52:32.000Z</published>
-    <updated>2023-07-14T16:53:28.141Z</updated>
+    <updated>2023-07-24T08:53:44.771Z</updated>
     
     
       
@@ -432,7 +485,7 @@
     <link href="https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-cheng-ben-guan-li/"/>
     <id>https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-cheng-ben-guan-li/</id>
     <published>2022-03-17T19:36:06.000Z</published>
-    <updated>2023-07-14T16:53:28.145Z</updated>
+    <updated>2023-07-24T08:53:44.775Z</updated>
     
     
       
@@ -457,7 +510,7 @@
     <link href="https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-jin-du-guan-li/"/>
     <id>https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-jin-du-guan-li/</id>
     <published>2022-03-17T19:34:49.000Z</published>
-    <updated>2023-07-14T16:53:28.145Z</updated>
+    <updated>2023-07-24T08:53:44.775Z</updated>
     
     
       
@@ -465,56 +518,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;甘特图&quot;&gt;&lt;a href=&quot;#甘特图&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件项目管理" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目风险分析</title>
-    <link href="https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-feng-xian-fen-xi/"/>
-    <id>https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-feng-xian-fen-xi/</id>
-    <published>2022-03-17T09:29:51.000Z</published>
-    <updated>2023-07-14T16:53:28.149Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;风险定性分析&quot;&gt;&lt;a href=&quot;#风险定性分析&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件项目管理" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迭代和增量的开发周期</title>
-    <link href="https://blankspaceplus.github.io/2022/03/16/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/ren-li-zi-yuan-guan-li/"/>
-    <id>https://blankspaceplus.github.io/2022/03/16/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/ren-li-zi-yuan-guan-li/</id>
-    <published>2022-03-16T13:58:44.000Z</published>
-    <updated>2023-07-14T16:53:28.145Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;虚拟团队&quot;&gt;&lt;a href=&quot;#虚拟团队&quot; class=&quot;headerlink&quot;</summary>
         
       
     
