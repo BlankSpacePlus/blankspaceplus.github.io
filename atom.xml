@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-07-24T08:53:44.763Z</updated>
+  <updated>2023-07-25T02:48:02.595Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2023/07/24/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2023/07/24/huan-ying-shi-yong-hexo/</id>
-    <published>2023-07-24T08:53:44.763Z</published>
-    <updated>2023-07-24T08:53:44.763Z</updated>
+    <link href="https://blankspaceplus.github.io/2023/07/25/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2023/07/25/huan-ying-shi-yong-hexo/</id>
+    <published>2023-07-25T02:48:02.595Z</published>
+    <updated>2023-07-25T02:48:02.595Z</updated>
     
     
       
@@ -42,7 +42,7 @@
     <link href="https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/"/>
     <id>https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/</id>
     <published>2023-07-24T08:51:15.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
+    <updated>2023-07-25T02:48:02.599Z</updated>
     
     
       
@@ -67,7 +67,7 @@
     <link href="https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/"/>
     <id>https://blankspaceplus.github.io/2023/03/30/suan-fa-fen-xi-yu-she-ji/hui-su-suan-fa-jie-jue-ju-zhen-zhong-de-lu-jing-wen-ti/</id>
     <published>2023-03-30T12:09:26.000Z</published>
-    <updated>2023-07-24T08:53:44.767Z</updated>
+    <updated>2023-07-25T02:48:02.595Z</updated>
     
     
       
@@ -90,11 +90,63 @@
   </entry>
   
   <entry>
+    <title>部署软件打包产物</title>
+    <link href="https://blankspaceplus.github.io/2023/03/25/ruan-jian-gong-cheng/bu-shu-ruan-jian-da-bao-chan-wu/"/>
+    <id>https://blankspaceplus.github.io/2023/03/25/ruan-jian-gong-cheng/bu-shu-ruan-jian-da-bao-chan-wu/</id>
+    <published>2023-03-25T17:14:57.000Z</published>
+    <updated>2023-07-25T02:48:02.607Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;部署打包产物&quot;&gt;&lt;a href=&quot;#部署打包产物&quot; class=&quot;headerlink&quot; title=&quot;部署打包产物&quot;&gt;&lt;/a&gt;部署打包产物&lt;/h1&gt;&lt;p&gt;应用程序部署打包产物有以下几种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JAR包（Java</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元数据</title>
+    <link href="https://blankspaceplus.github.io/2023/03/25/ruan-jian-gong-cheng/yuan-shu-ju/"/>
+    <id>https://blankspaceplus.github.io/2023/03/25/ruan-jian-gong-cheng/yuan-shu-ju/</id>
+    <published>2023-03-25T14:41:37.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;元数据&quot;&gt;&lt;a href=&quot;#元数据&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>加密算法</title>
     <link href="https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/"/>
     <id>https://blankspaceplus.github.io/2023/03/25/ji-suan-ji-ke-xue-ji-chu/jia-mi-suan-fa/</id>
     <published>2023-03-25T08:26:34.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
+    <updated>2023-07-25T02:48:02.599Z</updated>
     
     
       
@@ -116,11 +168,176 @@
   </entry>
   
   <entry>
+    <title>人机交互</title>
+    <link href="https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/ren-ji-jiao-hu/"/>
+    <id>https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/ren-ji-jiao-hu/</id>
+    <published>2023-03-23T06:59:24.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;人机交互&quot;&gt;&lt;a href=&quot;#人机交互&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UAR报告</title>
+    <link href="https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/uar-bao-gao/"/>
+    <id>https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/uar-bao-gao/</id>
+    <published>2023-03-23T06:59:06.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;UAR首页&quot;&gt;&lt;a href=&quot;#UAR首页&quot; class=&quot;headerlink&quot; title=&quot;UAR首页&quot;&gt;&lt;/a&gt;UAR首页&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>启发式评估</title>
+    <link href="https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/qi-fa-shi-ping-gu/"/>
+    <id>https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/qi-fa-shi-ping-gu/</id>
+    <published>2023-03-23T06:58:50.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;启发式评估&quot;&gt;&lt;a href=&quot;#启发式评估&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>故事板</title>
+    <link href="https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/gu-shi-ban/"/>
+    <id>https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/gu-shi-ban/</id>
+    <published>2023-03-23T06:58:24.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;顺序故事板&quot;&gt;&lt;a href=&quot;#顺序故事板&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人机交互组件</title>
+    <link href="https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/ren-ji-jiao-hu-zu-jian/"/>
+    <id>https://blankspaceplus.github.io/2023/03/23/ruan-jian-gong-cheng/ren-ji-jiao-hu-zu-jian/</id>
+    <published>2023-03-23T06:57:52.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;窗口和菜单&quot;&gt;&lt;a href=&quot;#窗口和菜单&quot; class=&quot;headerlink&quot; title=&quot;窗口和菜单&quot;&gt;&lt;/a&gt;窗口和菜单&lt;/h1&gt;&lt;h2 id=&quot;窗口&quot;&gt;&lt;a href=&quot;#窗口&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站UI设计批评案例</title>
+    <link href="https://blankspaceplus.github.io/2023/02/23/ruan-jian-gong-cheng/wang-zhan-ui-she-ji-pi-ping-an-li/"/>
+    <id>https://blankspaceplus.github.io/2023/02/23/ruan-jian-gong-cheng/wang-zhan-ui-she-ji-pi-ping-an-li/</id>
+    <published>2023-02-23T18:18:15.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;题目要求&quot;&gt;&lt;a href=&quot;#题目要求&quot; class=&quot;headerlink&quot; title=&quot;题目要求&quot;&gt;&lt;/a&gt;题目要求&lt;/h1&gt;&lt;p&gt;What you must do:&lt;br&gt;1.	Choose an application to observe.</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="人机交互" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/"/>
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基于搜索引擎的信息检索</title>
     <link href="https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/"/>
     <id>https://blankspaceplus.github.io/2023/02/21/ji-suan-ji-ke-xue-ji-chu/ji-yu-sou-suo-yin-qing-de-xin-xi-jian-suo/</id>
     <published>2023-02-21T15:25:37.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
+    <updated>2023-07-25T02:48:02.599Z</updated>
     
     
       
@@ -141,11 +358,165 @@
   </entry>
   
   <entry>
+    <title>开源许可证</title>
+    <link href="https://blankspaceplus.github.io/2023/02/16/ruan-jian-gong-cheng/kai-yuan-xu-ke-zheng/"/>
+    <id>https://blankspaceplus.github.io/2023/02/16/ruan-jian-gong-cheng/kai-yuan-xu-ke-zheng/</id>
+    <published>2023-02-16T16:48:53.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;开源许可证&quot;&gt;&lt;a href=&quot;#开源许可证&quot; class=&quot;headerlink&quot; title=&quot;开源许可证&quot;&gt;&lt;/a&gt;开源许可证&lt;/h1&gt;&lt;p&gt;推荐阅读：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="开源软件" scheme="https://blankspaceplus.github.io/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源软件</title>
+    <link href="https://blankspaceplus.github.io/2023/02/16/ruan-jian-gong-cheng/kai-yuan-ruan-jian/"/>
+    <id>https://blankspaceplus.github.io/2023/02/16/ruan-jian-gong-cheng/kai-yuan-ruan-jian/</id>
+    <published>2023-02-16T15:31:46.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Debian自由软件指导方针&quot;&gt;&lt;a href=&quot;#Debian自由软件指导方针&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="开源软件" scheme="https://blankspaceplus.github.io/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>居家办公对软件生产效率的影响</title>
+    <link href="https://blankspaceplus.github.io/2023/02/14/ruan-jian-gong-cheng/ju-jia-ban-gong-dui-ruan-jian-sheng-chan-xiao-lu-de-ying-xiang/"/>
+    <id>https://blankspaceplus.github.io/2023/02/14/ruan-jian-gong-cheng/ju-jia-ban-gong-dui-ruan-jian-sheng-chan-xiao-lu-de-ying-xiang/</id>
+    <published>2023-02-14T19:32:23.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;居家办公&quot;&gt;&lt;a href=&quot;#居家办公&quot; class=&quot;headerlink&quot; title=&quot;居家办公&quot;&gt;&lt;/a&gt;居家办公&lt;/h1&gt;&lt;p&gt;WFH(Working From</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遗留代码的有效利用</title>
+    <link href="https://blankspaceplus.github.io/2023/02/14/ruan-jian-gong-cheng/yi-liu-dai-ma-de-you-xiao-li-yong/"/>
+    <id>https://blankspaceplus.github.io/2023/02/14/ruan-jian-gong-cheng/yi-liu-dai-ma-de-you-xiao-li-yong/</id>
+    <published>2023-02-14T19:32:23.000Z</published>
+    <updated>2023-07-25T02:48:02.607Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;遗留代码&quot;&gt;&lt;a href=&quot;#遗留代码&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件日志</title>
+    <link href="https://blankspaceplus.github.io/2023/02/10/ruan-jian-gong-cheng/ruan-jian-ri-zhi/"/>
+    <id>https://blankspaceplus.github.io/2023/02/10/ruan-jian-gong-cheng/ruan-jian-ri-zhi/</id>
+    <published>2023-02-10T12:56:11.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;日志&quot;&gt;&lt;a href=&quot;#日志&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>容器技术</title>
+    <link href="https://blankspaceplus.github.io/2023/02/06/ruan-jian-gong-cheng/rong-qi-ji-zhu/"/>
+    <id>https://blankspaceplus.github.io/2023/02/06/ruan-jian-gong-cheng/rong-qi-ji-zhu/</id>
+    <published>2023-02-06T16:05:25.000Z</published>
+    <updated>2023-07-25T02:48:02.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;容器&quot;&gt;&lt;a href=&quot;#容器&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>重载与重写</title>
     <link href="https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/"/>
     <id>https://blankspaceplus.github.io/2023/02/04/ruan-jian-gong-cheng/mian-xiang-dui-xiang/chong-zai-yu-chong-xie/</id>
     <published>2023-02-04T07:43:32.000Z</published>
-    <updated>2023-07-24T08:53:44.779Z</updated>
+    <updated>2023-07-25T02:48:02.607Z</updated>
     
     
       
@@ -164,369 +535,6 @@
     <category term="软件工程" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
     
     <category term="面向对象" scheme="https://blankspaceplus.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迭代和增量的开发周期</title>
-    <link href="https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/"/>
-    <id>https://blankspaceplus.github.io/2023/01/31/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-guan-li-ji-chu-lian-xi-ti/</id>
-    <published>2023-01-31T07:29:48.000Z</published>
-    <updated>2023-07-24T08:53:44.775Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;选择题-字典序&quot;&gt;&lt;a href=&quot;#选择题-字典序&quot; class=&quot;headerlink&quot; title=&quot;选择题(字典序)&quot;&gt;&lt;/a&gt;选择题(字典序)&lt;/h1&gt;&lt;p&gt;A difference between strategic and tactical</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件项目管理" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序的编译与运行</title>
-    <link href="https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/"/>
-    <id>https://blankspaceplus.github.io/2023/01/25/ji-suan-ji-ke-xue-ji-chu/cheng-xu-de-bian-yi-yu-yun-xing/</id>
-    <published>2023-01-25T16:39:11.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;编程&quot;&gt;&lt;a href=&quot;#编程&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="编译" scheme="https://blankspaceplus.github.io/tags/%E7%BC%96%E8%AF%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown核心语法</title>
-    <link href="https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/"/>
-    <id>https://blankspaceplus.github.io/2023/01/23/ji-suan-ji-ke-xue-ji-chu/markdown-he-xin-yu-fa/</id>
-    <published>2023-01-23T06:27:05.000Z</published>
-    <updated>2023-07-24T08:53:44.767Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Markdown</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="Markdown" scheme="https://blankspaceplus.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>策略和机制分离</title>
-    <link href="https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/"/>
-    <id>https://blankspaceplus.github.io/2023/01/22/ji-suan-ji-ke-xue-ji-chu/ce-lue-he-ji-zhi-fen-chi/</id>
-    <published>2023-01-22T10:19:53.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;策略和机制&quot;&gt;&lt;a href=&quot;#策略和机制&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>度量前缀与性能指标</title>
-    <link href="https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/"/>
-    <id>https://blankspaceplus.github.io/2023/01/18/ji-suan-ji-ke-xue-ji-chu/du-liang-qian-zhui-yu-xing-neng-zhi-biao/</id>
-    <published>2023-01-18T18:09:11.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;度量前缀&quot;&gt;&lt;a href=&quot;#度量前缀&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="性能" scheme="https://blankspaceplus.github.io/tags/%E6%80%A7%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分治算法解决树的遍历问题</title>
-    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/"/>
-    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/fen-zhi-suan-fa-jie-jue-shu-de-bian-li-wen-ti/</id>
-    <published>2023-01-14T11:44:33.000Z</published>
-    <updated>2023-07-24T08:53:44.763Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;树的遍历&quot;&gt;&lt;a href=&quot;#树的遍历&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>贪心算法解决合并果子问题</title>
-    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/"/>
-    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-he-bing-guo-zi-wen-ti/</id>
-    <published>2023-01-14T10:58:21.000Z</published>
-    <updated>2023-07-24T08:53:44.767Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>贪心算法解决部分背包问题</title>
-    <link href="https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/"/>
-    <id>https://blankspaceplus.github.io/2023/01/14/suan-fa-fen-xi-yu-she-ji/tan-xin-suan-fa-jie-jue-bu-fen-bei-bao-wen-ti/</id>
-    <published>2023-01-14T03:38:28.000Z</published>
-    <updated>2023-07-24T08:53:44.767Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;阿里巴巴走进了装满宝藏的藏宝洞。藏宝洞里面有 $N(N &#92;le 100)$ 堆金币，第 $i$</summary>
-        
-      
-    
-    
-    
-    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>正确利用Java解决OJ题目</title>
-    <link href="https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/"/>
-    <id>https://blankspaceplus.github.io/2023/01/13/suan-fa-fen-xi-yu-she-ji/zheng-que-li-yong-java-jie-jue-oj-ti-mu/</id>
-    <published>2023-01-13T13:35:09.000Z</published>
-    <updated>2023-07-24T08:53:44.767Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法分析与设计" scheme="https://blankspaceplus.github.io/categories/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="算法" scheme="https://blankspaceplus.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法</title>
-    <link href="https://blankspaceplus.github.io/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/"/>
-    <id>https://blankspaceplus.github.io/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/</id>
-    <published>2022-10-04T13:53:11.000Z</published>
-    <updated>2023-07-24T08:53:44.779Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Linux执行&lt;code&gt;curl&lt;/code&gt;命令报错：&lt;code&gt;curl: (23) Failure writing output to destination&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;系统：Ubuntu 20.04</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="Linux" scheme="https://blankspaceplus.github.io/tags/Linux/"/>
-    
-    <category term="异常修复" scheme="https://blankspaceplus.github.io/tags/%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机专业实用网站</title>
-    <link href="https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/"/>
-    <id>https://blankspaceplus.github.io/2022/06/25/ji-suan-ji-ke-xue-ji-chu/ji-suan-ji-zhuan-ye-shi-yong-wang-zhan/</id>
-    <published>2022-06-25T13:50:11.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;算法OJ&quot;&gt;&lt;a href=&quot;#算法OJ&quot; class=&quot;headerlink&quot; title=&quot;算法OJ&quot;&gt;&lt;/a&gt;算法OJ&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="工具" scheme="https://blankspaceplus.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度学习</title>
-    <link href="https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/"/>
-    <id>https://blankspaceplus.github.io/2022/05/04/ji-suan-ji-ke-xue-ji-chu/shen-du-xue-xi/</id>
-    <published>2022-05-04T09:52:32.000Z</published>
-    <updated>2023-07-24T08:53:44.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;深度学习用到的常用术语&quot;&gt;&lt;a href=&quot;#深度学习用到的常用术语&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学基础" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="人工智能" scheme="https://blankspaceplus.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="深度学习" scheme="https://blankspaceplus.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目成本管理</title>
-    <link href="https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-cheng-ben-guan-li/"/>
-    <id>https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-cheng-ben-guan-li/</id>
-    <published>2022-03-17T19:36:06.000Z</published>
-    <updated>2023-07-24T08:53:44.775Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;成本&quot;&gt;&lt;a href=&quot;#成本&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件项目管理" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目进度管理</title>
-    <link href="https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-jin-du-guan-li/"/>
-    <id>https://blankspaceplus.github.io/2022/03/17/ruan-jian-gong-cheng/ruan-jian-xiang-mu-guan-li/xiang-mu-jin-du-guan-li/</id>
-    <published>2022-03-17T19:34:49.000Z</published>
-    <updated>2023-07-24T08:53:44.775Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;甘特图&quot;&gt;&lt;a href=&quot;#甘特图&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工程" scheme="https://blankspaceplus.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="软件项目管理" scheme="https://blankspaceplus.github.io/tags/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   

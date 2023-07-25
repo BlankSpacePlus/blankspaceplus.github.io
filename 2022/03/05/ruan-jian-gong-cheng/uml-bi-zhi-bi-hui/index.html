@@ -1,0 +1,1376 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="UML必知必会, 空白格">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>UML必知必会 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">UML必知必会</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                                <span class="chip bg-color">软件工程</span>
+                            </a>
+                        
+                            <a href="/tags/UML/">
+                                <span class="chip bg-color">UML</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                软件工程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h1><p>UML是一种为面向对象开发系统的产品进行说明、可视化、和编制文档的标准语言。</p>
+<p>UML作为一种模型语言，它使开发人员专注于建立产品的模型和结构，而不是选用什么程序语言和算法实现。UML不是一种编程语言，但工具可用于生成各种语言的代码中使用UML图。</p>
+<p>UML并不是一个方法学，也不要求使用一个方法学，但是UML对于Rational统一过程来说是必不可少的。</p>
+<p>UML系统开发中有三个主要的模型：</p>
+<ul>
+<li>功能模型：从用户的角度展示系统的功能，包括用例图</li>
+<li>对象模型：采用对象，属性，操作，关联等概念展示系统的结构和基础，包括类图、对象图</li>
+<li>动态模型：展现系统的内部行为，包括序列图、活动图、状态图</li>
+</ul>
+<p>UML元素：</p>
+<ul>
+<li>基本模块：<ul>
+<li>事物(Things)：UML模型中最基本的构成元素，是具有代表性的成分的静态抽象<ul>
+<li>结构事物：<ul>
+<li>类(Class)：具有相同属性、方法、关系和语义的对象的集合</li>
+<li>接口(Interface)：类或组件所提供的服务(操作)，描述了类或组件对外可见的动作</li>
+<li>协作(Collaboration)：元素之间的相互作用</li>
+<li>用例(Use Case)：执行者(在系统外部和系统交互的人)和被考虑的系统之间的交互来实现的一个业务目标</li>
+<li>组件(Component)：物理系统的一部分，存在于运行阶段</li>
+<li>节点(Node)：运行时存在的物理元素</li>
+</ul>
+</li>
+<li>行为事物：模型里随着时空不断变化的部分<ul>
+<li>交互(Interaction)：一种行为，包括一组元素之间的消息交换来完成特定的任务</li>
+<li>状态机(State Machine)：由一系列对象的状态组成</li>
+</ul>
+</li>
+<li>分组事物：可以分解模型的容器<ul>
+<li>包(Package)：可收集结构和行为，结构事物、动作事物甚至分组事物都有可能放在一个包中，只存在于开发阶段</li>
+</ul>
+</li>
+<li>注释事物：捕捉UML模型元素的言论、说明和注释<ul>
+<li>注释(Annotation)：渲染意见、约束等UML元素</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关系(Relationships)：关系把事物紧密联系在一起<ul>
+<li>依赖：两件事物之间的语义联系，其中一个事物的变化也影响到另一个事物</li>
+<li>关联(协作)：一组对象之间连接的结构关系，如聚合关系(描述了整体和部分间的结构关系)</li>
+<li>实现</li>
+<li>泛化：一种一般化-特殊化的关系，描述了对象世界中的继承关系</li>
+</ul>
+</li>
+<li>图(Diagrams)：图是事物和关系的可视化表示<ul>
+<li><a href="#%E7%94%A8%E4%BE%8B%E5%9B%BE">用例图</a>：从用户的角度出发描述系统的功能、需求，展示系统外部的各类角色与系统内部的各种用例之间的关系</li>
+<li><a href="#%E7%B1%BB%E5%9B%BE">类图</a>：描述系统所包含的类、类的内部结构及类之间的关系</li>
+<li><a href="#%E5%AF%B9%E8%B1%A1%E5%9B%BE">对象图</a>：类图的一个具体实例</li>
+<li><a href="#%E5%8C%85%E5%9B%BE">包图</a>：描述的模型中的包及其包含的元素组合</li>
+<li><a href="#%E9%83%A8%E7%BD%B2%E5%9B%BE">部署图</a>：定义系统中软硬件的物理体系结构</li>
+<li><a href="#%E6%B4%BB%E5%8A%A8%E5%9B%BE">活动图</a>：描述系统中各种活动的执行顺序</li>
+<li><a href="#%E7%8A%B6%E6%80%81%E5%9B%BE">状态图</a>：描述一类对象的所有可能的状态以及事件发生时状态的转移条件</li>
+<li><a href="#%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a>：表示对象之间动态合作的关系</li>
+<li><a href="#%E5%8D%8F%E4%BD%9C%E5%9B%BE">协作图</a>：描述对象之间的协作关系</li>
+<li><a href="#%E7%BB%84%E4%BB%B6%E5%9B%BE">组件图</a>：描述代码部件的物理结构以及各部件之间的依赖关系</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>UML特点：</p>
+<ul>
+<li>面向对象</li>
+<li>可视化，表达能力强</li>
+<li>独立于过程</li>
+<li>独立于程序设计</li>
+<li>容易掌握使用</li>
+</ul>
+<p>UML的作用：</p>
+<ul>
+<li>为软件系统建立可视化模型</li>
+<li>为软件系统建立构件 </li>
+<li>为软件系统建立文档</li>
+</ul>
+<p>参考书目：</p>
+<ul>
+<li>《面向对象分析与设计》</li>
+<li>《编程的逻辑-如何用面向对象的方法实现复杂业务需求》</li>
+<li>《需求分析与系统设计》</li>
+</ul>
+<h2 id="UML图"><a href="#UML图" class="headerlink" title="UML图"></a>UML图</h2><ul>
+<li><a href="#%E7%94%A8%E4%BE%8B%E5%9B%BE">用例图</a></li>
+<li><a href="#%E7%B1%BB%E5%9B%BE">类图</a></li>
+<li><a href="#%E5%AF%B9%E8%B1%A1%E5%9B%BE">对象图</a></li>
+<li><a href="#%E5%8C%85%E5%9B%BE">包图</a></li>
+<li><a href="#%E9%83%A8%E7%BD%B2%E5%9B%BE">部署图</a></li>
+<li><a href="#%E6%B4%BB%E5%8A%A8%E5%9B%BE">活动图</a></li>
+<li><a href="#%E7%8A%B6%E6%80%81%E5%9B%BE">状态图</a></li>
+<li><a href="#%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a></li>
+<li><a href="#%E5%8D%8F%E4%BD%9C%E5%9B%BE">协作图</a></li>
+<li><a href="#%E7%BB%84%E4%BB%B6%E5%9B%BE">组件图</a></li>
+</ul>
+<h3 id="用例图"><a href="#用例图" class="headerlink" title="用例图"></a>用例图</h3><p>用例图描述角色以及角色与用例之间的连接关系，说明是谁要使用系统，以及他们使用该系统可以做些什么。</p>
+<p>一个用例图包含了多个模型元素，如系统、参与者和用例，并且显示了这些元素之间的各种关系，如泛化、关联和依赖。</p>
+<p>用例：</p>
+<ul>
+<li>描述系统行为，所有用例都直接或间接的对某一个或几个参与者相关联</li>
+<li>是参与者从外部可以看到的业务功能，完整的功能单元</li>
+<li>用例定义主题所提供的行为，而不需要引用主题的内部结构</li>
+<li>在很多情况下，一个功能性需求可以直接映射到一个用例</li>
+<li>用例驱动整个软件开发的生命周期，是大多数开发活动的焦点和参照</li>
+<li>在UML中使用椭圆表示，名字放在椭圆的里面或下面</li>
+</ul>
+<p>参与者：</p>
+<ul>
+<li>主题外部的人或事物针对用例所扮演的角色，即与用例进行交互的人或事物<ul>
+<li>参与者并不是某人或者某事的特定实例，而是描述一类角色（人、事物）</li>
+<li>参与者通过诸如交换信号和数据的方式与主题交流信息，接收有用的结果</li>
+</ul>
+</li>
+<li>在UML中使用“木头人”表示参与者，名字放在图标下侧，具有属性和操作</li>
+</ul>
+<p><code>&lt;&lt;include&gt;&gt;</code>和<code>&lt;&lt;extend&gt;&gt;</code>是两种主要用于组织用例模型的关系，这些关系常在用例之间：<br><br>当一个用例被另一个用例执行时，它在用例规格说明中就体现为一个包含点，包含点指明了在外层用例的什么位置执行被包含的实例。</p>
+<h3 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h3><p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-t1qJGlB0-1675016164294)(images/类图-美味咖啡.png)]</p>
+<p>类图是描述系统中的类，表示类、接口和它们之间的协作关系，以及各个类之间的关系的静态视图，能够让我们在正确编写代码以前对系统有一个全面的认识。</p>
+<p>类图是一种静态模型类型。</p>
+<p>类间关系：</p>
+<ul>
+<li>关联(Association)：用关联线表示</li>
+<li>聚合(Aggregation)：关联的一种形式，用一端带有钻石装饰的关联线(聚合：<code>◇</code>，复合：<code>◆</code>)</li>
+<li>泛化(Generalization)：关联的一种形式，用带有大的空三角形的实现表示泛化，大的空三角形附在超类一端</li>
+</ul>
+<h3 id="对象图"><a href="#对象图" class="headerlink" title="对象图"></a>对象图</h3><p>对象图与类图极为相似，是类图的实例。对象图显示类的多个对象实例，而不是实际的类，它描述的不是类之间的关系，而是对象之间的关系。</p>
+<p>对象图用于说明系统的逻辑设计中存在的对象以及对象之间的关系。换言之，对象图代表了时间上的一张快照，记录了一组特定配置的对象上的瞬时事件流。因此，对象图是原型化的——每张对象图都代表了结构上的关系，这些关系可能发生在一组给定的类实例上。单张对象图代表了系统对象结构的一张视图。</p>
+<p>在分析过程中，对象图常用于说明主要场景和次要场景的语义，提供对系统行为的跟踪。<br><br>在设计过程中，对象图常用于说明逻辑系统设计中各种机制的语义。<br><br>不论在哪个阶段，对象图都能提供一些具体的例子，帮助实现关联类图的可视化。</p>
+<p>对象图的两个基本元素是对象和它们之间的关系。</p>
+<p>对象的名称可以采用下面三种格式之一：</p>
+<ul>
+<li><code>objectName</code> : 只有对象名</li>
+<li><code>:ClassName</code> : 只有类名</li>
+<li><code>objectName :ClassName</code> : 对象名和类名</li>
+</ul>
+<p>两个对象之间有关联则表明，两个类的实例之间存在着一条通信路径(即链接)，一个对象可以通过它向另一个发送消息。<br><br>所有的类都隐式地有到自己的关联，因此对象可以向自己发送消息。</p>
+<h3 id="包图"><a href="#包图" class="headerlink" title="包图"></a>包图</h3><p>导入是一种共有的包导入；访问是一种私有的包导入。</p>
+<p>导入和访问的区分可以让我们通过限定名称引用其它命名空间的公有元素。</p>
+<p>包元素的导入可以是广泛或集中的，即导入所有元素或者只导入选定的元素。</p>
+<h3 id="部署图"><a href="#部署图" class="headerlink" title="部署图"></a>部署图</h3><p>部署图建模系统的物理部署，用于展示在系统的物理设计中工件在节点上分布的情况。例如，计算机和设备，以及它们之间是如何连接的。</p>
+<p>部署图用于表示一组物理节点的集合及节点间的相互关系，从而建立了系统物理层面的模型。</p>
+<p>单张部署视图代表了一种系统工件结构的视图。</p>
+<p>在开发中，可以使用部署图来说明节点的物理集合，这些节点是系统执行的平台。</p>
+<p>部署图的使用者是开发人员、系统集成人员和测试人员。</p>
+<p>部署图有三个基本元素：工件、节点和它们的连接。</p>
+<p>可执行程序与依赖的组件之间用<code>&lt;&lt;manifest&gt;&gt;</code>标签连接，意味着它是这个组件的物理实现，连接起来实现与设计。</p>
+<p>节点是一种计算资源，通常包含存储盒处理能力，工件部署在它上面执行。节点可以包含其他结点，以表示复杂的执行能力，这种情况是通过嵌套或利用组合关系来体现的。</p>
+<p>节点有两种类型：</p>
+<ul>
+<li>设备：一个提供了计算能力的硬件，如一台计算机、一个调制解调器或者一个传感器。</li>
+<li>执行环境：一种用于部署特定类型的执行工件的软件，常以一个设备为宿主，如<code>&lt;&lt;database&gt;&gt;</code>、<code>&lt;&lt;J2EE server&gt;&gt;</code>。</li>
+</ul>
+<p>节点之间会通过消息和信号进行通信，可通过一条实线来表示通信路径，可以是单向的或是双向的。每条通信路径可以包含一个可选的关键词标签，如<code>&lt;&lt;http&gt;&gt;</code>或<code>&lt;&lt;TCP/IP&gt;&gt;</code>，它提供了连接有关的信息，也可以为通信路径连接的节点指定多重性。</p>
+<h3 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h3><p>活动图描述用例要求所要进行的活动，以及活动间的约束关系，有利于识别并行活动。</p>
+<p>活动图本质是带有并发功能的程序流程图，描述哪些步骤可以顺序执行、哪些步骤可以并行执行，并显示计算的步骤。</p>
+<p>活动图能够演示出系统中哪些地方存在功能，以及这些功能和系统中其他组件的功能如何共同满足前面使用用例图建模的商务需求。</p>
+<p>活动图显示连接动作和其他节点(如决策、分叉、连接、合并和对象节点)的流。</p>
+<ul>
+<li>分支(branch)及合并(merge)：产生可选的计算线程。</li>
+<li>分叉(fork/bifurcation)及交汇(rejoin/intersection)：产生并发的计算线程从一个动作到下一个动作控制的流程称为控制流。</li>
+</ul>
+<p>活动图的结构：</p>
+<ul>
+<li>实心圆<code>●</code>表示活动的开始</li>
+<li>钻石框<code>◆</code>表示分支条件，出口由事件(如Yes，No)或守卫条件(如[green light])控制</li>
+<li>短线<code>－</code>表示流的分叉或连接</li>
+<li>牛眼<code>◉</code>表示活动的结束</li>
+</ul>
+<h3 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h3><p>状态图用于设计和理解时间关键的系统，它将行为表示为一系列的状态转换，由事件触发，并与可能发生的动作相关联。</p>
+<p>状态图描述类的对象所有可能的状态，以及事件(如消息的接收、时间的流逝、错误、条件变为真等)发生时状态的转移条件，可以捕获对象、子系统和系统的生命周期。</p>
+<p>状态图常用于描述单个对象的行为，也可以用于描述系统中更大元素的行为(复杂系统中选择抽象的层次与观察者的意图有关)。</p>
+<p>状态图与活动图有关，但状态图关注的是状态以及状态之间的转换，而不是活动的流程。</p>
+<p>状态图描述某一个类或一个对象不同状态的改变，是对类图的补充。并非每个类都有重要的、时序性的行为，这时只为表现出这些行为的类提供状态图即可。一个状态图应该连接到所有具有清晰的可标识状态和复杂行为的类，状态图可以确定类的行为，以及该行为如何根据当前的状态变化，也可以展示哪些事件将会改变类的对象的状态。</p>
+<p>状态图是状态和由事件引起的转换的偶图。</p>
+<p>状态图是业务规则模型(在一段时期内是保持不变的，相对独立于特定的用例)。</p>
+<p>状态图组成元素：</p>
+<ul>
+<li>实心圆<code>●</code>：表示活动的开始</li>
+<li>圆角矩形：一个状态</li>
+<li>箭头<code>→</code>：状态的转换</li>
+<li>转换语言：<code>Event (parameters) [guards] / action</code></li>
+<li>守卫和事件的区别：在事件的处理点上估算守卫条件来决定是否将被触发</li>
+<li>牛眼<code>◉</code>：表示活动的结束</li>
+</ul>
+<h3 id="序列图"><a href="#序列图" class="headerlink" title="序列图"></a>序列图</h3><p>序列图是用来显示参与者如何以一系列顺序的步骤与系统的对象交互的模型，可以用来展示对象之间是如何进行交互的。</p>
+<p>序列图将显示的重点放在消息序列上，即强调消息是如何在对象之间被发送和接收的。</p>
+<p>序列图要素：</p>
+<ul>
+<li>水平维度：角色(对象、类、接口等)</li>
+<li>垂直维度：消息序列，显示消息的顺序</li>
+<li>垂直虚线：对象的生命线</li>
+<li>垂直的高矩形：激活(或执行规格说明)，在生命线上被激活的方法</li>
+<li>箭头：表示一条消息，从调用对象发给被调用对象，每条消息实际是被调用对象的一个方法</li>
+<li>星号：迭代标记，标记在消息标签前，表示在收集上的迭代</li>
+</ul>
+<h3 id="协作图"><a href="#协作图" class="headerlink" title="协作图"></a>协作图</h3><p>通信图在UML2.0以前被称为协作图，是一种类型的交互图，它关注对象在参与具体的交互时，对象之间如何链接以及传递什么消息。一般来说，消息的发出者知道接收者，但接收者不一定知道发出者。</p>
+<p>通信图(协作图)可以通过一条或多条消息来修饰一个链接。通过一条指向目标对象的有向线段，可以说明消息的方向。</p>
+<p>操作调用是最常见的一种消息类型(另一种是信号)，它可以包含实际的参数，这些参数与操作的签名相符。</p>
+<p>协作图可以看作类图和序列图的交集，协作图建模对象或者角色，以及它们彼此之间是如何通信的。</p>
+<p>协作图和序列图相似，用于显示对象间的动态合作关系，序列图和协作图合称为交互图。如果强调时间和顺序，则使用序列图；如果强调上下级关系，则选择协作图。</p>
+<p>交互图中的主要元素是框、控制流元素和交互图元素。</p>
+<p>交互图中的控制流是由活动图元素的组合来实现的，提供了可选路径和并行路径：</p>
+<ul>
+<li>可选路径控制是由判断节点的组合来实现的，控制流在判断节点选择合适的路径，对应的合并结点(如果需要)将所有可选路径重新会聚在一起</li>
+<li>并行路径控制是通过组合分叉节点和结合节点来实现的，分叉节点将控制流分成并行的路径，结合节点将并行的路径会聚在一起。来自所有路径的控制必须到达结合节点，控制流才能继续下去。如果存在交互约束条件可能导致一条路径阻塞，一定要有另一条可选路径能让控制流继续下去</li>
+</ul>
+<h3 id="组件图"><a href="#组件图" class="headerlink" title="组件图"></a>组件图</h3><p>组件图描述代码组件的物理结构以及各种组件之间的依赖关系，建模软件的组件及其相互之间的关系，由组件标记符和组件之间的关系构成。</p>
+<p>在组件图，组件是软件单个组成部分，它可以是一个文件，产品、可执行文件和脚本等。</p>
+<p>组件图的组件包含关键词标签<code>&lt;&lt;component&gt;&gt;</code>和分类器矩形框右上角显示的组件图标。</p>
+<p>组件图中接口定义了组件交互的细节，接口显示为小球和球窝的样子。提供接口的一方使用小球，请求接口使用球窝表示。端口和接口不一定是一对一的关系，端口可以用来对接口分组。</p>
+<p>组件的内部结构可以通过内部结构图表示。子系统的内部结构图可以用<code>&lt;&lt;subsystem&gt;&gt;</code>表示。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2022/03/05/ruan-jian-gong-cheng/uml-bi-zhi-bi-hui/">https://blankspaceplus.github.io/2022/03/05/ruan-jian-gong-cheng/uml-bi-zhi-bi-hui/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                                    <span class="chip bg-color">软件工程</span>
+                                </a>
+                            
+                                <a href="/tags/UML/">
+                                    <span class="chip bg-color">UML</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/03/05/ruan-jian-gong-cheng/ruan-jian-ban-ben-he-pei-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="软件版本和配置">
+                        
+                        <span class="card-title">软件版本和配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文介绍软件工程中的版本和配置。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                    软件工程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/04/ruan-jian-gong-cheng/ruan-jian-xu-qiu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="软件需求">
+                        
+                        <span class="card-title">软件需求</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分享软件需求的基础理论。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                    软件工程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82/">
+                        <span class="chip bg-color">软件需求</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">366.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
