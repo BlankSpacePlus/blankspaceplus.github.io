@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="开源软件, 空白格">
+    <meta name="keywords" content="开源软件, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -470,7 +483,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -715,19 +728,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/02/16/ruan-jian-gong-cheng/ruan-jian-zhi-liang/ruan-jian-ke-kao-xing/">
+                <a href="/2023/02/16/ruan-jian-gong-cheng/ruan-jian-ce-shi/min-jie-fang-fa-yu-ce-shi-zuo-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="软件可靠性">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="敏捷方法与测试左移">
                         
-                        <span class="card-title">软件可靠性</span>
+                        <span class="card-title">敏捷方法与测试左移</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享软件可靠性的相关内容。
+                            本文讨论敏捷方法与测试左移的相关内容。
                         
                     </div>
                     <div class="publish-info">
@@ -753,8 +766,8 @@
                         <span class="chip bg-color">软件工程</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F/">
-                        <span class="chip bg-color">软件质量</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -996,7 +1009,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             

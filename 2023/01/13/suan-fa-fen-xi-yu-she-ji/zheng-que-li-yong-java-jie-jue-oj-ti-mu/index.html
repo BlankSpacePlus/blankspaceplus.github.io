@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="正确利用Java解决OJ题目, 空白格">
+    <meta name="keywords" content="正确利用Java解决OJ题目, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -466,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -1033,24 +1046,24 @@ br<span class="token punctuation">.</span><span class="token function">close</sp
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/10/04/ruan-jian-kai-fa/linux/ubuntu-20.04-bao-cuo-curl-23-failure-writing-output-to-destination-de-jie-jue-fang-fa/">
+                <a href="/2023/01/10/ruan-jian-gong-cheng/ruan-jian-ce-shi/bian-jie-zhi-fen-xi-fa-ce-shi-yong-li-she-ji-shi-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="边界值分析法测试用例设计实例">
                         
-                        <span class="card-title">Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法</span>
+                        <span class="card-title">边界值分析法测试用例设计实例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享 Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法。
+                            边界值分析法是黑盒测试的重要方法，本文以一道数位DP算法题为例，自主测试黑盒测试用例，并采用JUnit5完成单元测试。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-10
                             </span>
                         <span class="publish-author">
                             
@@ -1067,12 +1080,12 @@ br<span class="token punctuation">.</span><span class="token function">close</sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
                     </a>
                     
-                    <a href="/tags/%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D/">
-                        <span class="chip bg-color">异常修复</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -1321,7 +1334,7 @@ br<span class="token punctuation">.</span><span class="token function">close</sp
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             

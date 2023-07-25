@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="计算理论基础, 空白格">
+    <meta name="keywords" content="计算理论基础, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -466,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -740,19 +753,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/03/21/ruan-jian-gong-cheng/ruan-jian-zhi-liang/ruan-jian-zhi-liang-kong-zhi-yu-ruan-jian-zhi-liang-bao-zheng/">
+                <a href="/2021/03/21/ruan-jian-gong-cheng/ruan-jian-ce-shi/xing-neng-ce-shi-fu-zai-ce-shi-ya-li-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="软件质量控制与软件质量保证">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="性能测试、负载测试、压力测试">
                         
-                        <span class="card-title">软件质量控制与软件质量保证</span>
+                        <span class="card-title">性能测试、负载测试、压力测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享软件质量控制SQC与软件质量保证SQA的相关内容。
+                            本文分享性能测试、负载测试、压力测试的概念，它们都属于系统测试的范畴。
                         
                     </div>
                     <div class="publish-info">
@@ -776,10 +789,6 @@
                     
                     <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
                         <span class="chip bg-color">软件工程</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F/">
-                        <span class="chip bg-color">软件质量</span>
                     </a>
                     
                     <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
@@ -1085,7 +1094,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             

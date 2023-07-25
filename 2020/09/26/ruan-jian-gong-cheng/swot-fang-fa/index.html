@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SWOT方法, 空白格">
+    <meta name="keywords" content="SWOT方法, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -466,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -718,19 +731,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/26/ruan-jian-gong-cheng/mian-xiang-dui-xiang/mian-xiang-dui-xiang-cheng-xu-she-ji-java-yu-yan-castle-dai-ma-xiu-gai-zheng-li/">
+                <a href="/2020/09/26/ruan-jian-gong-cheng/ruan-jian-ce-shi/ruan-jian-ce-shi-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="面向对象程序设计Java语言Castle代码修改整理">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="软件测试方法">
                         
-                        <span class="card-title">面向对象程序设计Java语言Castle代码修改整理</span>
+                        <span class="card-title">软件测试方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享面向对象程序设计Java语言课程的Castle代码修改整理。
+                            本文分享软件测试方法的分类。
                         
                     </div>
                     <div class="publish-info">
@@ -756,8 +769,8 @@
                         <span class="chip bg-color">软件工程</span>
                     </a>
                     
-                    <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-                        <span class="chip bg-color">面向对象</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -999,7 +1012,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             

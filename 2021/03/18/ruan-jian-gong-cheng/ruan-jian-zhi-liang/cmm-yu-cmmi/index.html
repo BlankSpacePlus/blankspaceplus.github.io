@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CMM与CMMI, 空白格">
+    <meta name="keywords" content="CMM与CMMI, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -470,7 +483,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -798,19 +811,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/03/19/ji-suan-ji-ke-xue-ji-chu/yun-fu-wu-an-li-fen-xi-quiz/">
+                <a href="/2021/03/19/ruan-jian-gong-cheng/ruan-jian-ce-shi/ruan-jian-ce-shi-ji-hua-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="云服务案例分析Quiz">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="软件测试计划书">
                         
-                        <span class="card-title">云服务案例分析Quiz</span>
+                        <span class="card-title">软件测试计划书</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文整理分享云服务案例分析Quiz。
+                            本文分享软件测试计划书模板及说明。
                         
                     </div>
                     <div class="publish-info">
@@ -821,8 +834,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    计算机科学基础
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                    软件工程
                                 </a>
                             
                             
@@ -832,8 +845,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/">
-                        <span class="chip bg-color">云计算</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -847,19 +864,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/18/ruan-jian-gong-cheng/ruan-jian-ti-xi-jie-gou/">
+                <a href="/2021/03/18/ruan-jian-gong-cheng/ruan-jian-ce-shi/ruan-jian-ce-shi-xu-qiu-fen-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="软件体系结构">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="软件测试需求分析">
                         
-                        <span class="card-title">软件体系结构</span>
+                        <span class="card-title">软件测试需求分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文分享软件体系结构的相关知识。
+                            本文分享软件测试需求分析的相关内容。
                         
                     </div>
                     <div class="publish-info">
@@ -885,8 +902,8 @@
                         <span class="chip bg-color">软件工程</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/">
-                        <span class="chip bg-color">软件架构</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -1128,7 +1145,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             

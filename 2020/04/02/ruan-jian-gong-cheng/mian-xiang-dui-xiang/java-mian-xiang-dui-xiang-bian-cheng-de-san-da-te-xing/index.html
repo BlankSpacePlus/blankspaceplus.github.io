@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java面向对象编程的三大特性, 空白格">
+    <meta name="keywords" content="Java面向对象编程的三大特性, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -470,7 +483,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-25
+                    2023-07-26
                 </div>
                 
 
@@ -651,24 +664,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/26/ruan-jian-gong-cheng/ruan-jian-jia-gou-she-ji-chang-yong-gai-nian-yuan-ze-yu-si-xiang/">
+                <a href="/2020/04/09/ruan-jian-gong-cheng/ruan-jian-ce-shi/bai-he-ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="软件架构设计常用概念、原则与思想">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="白盒测试">
                         
-                        <span class="card-title">软件架构设计常用概念、原则与思想</span>
+                        <span class="card-title">白盒测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结软件架构设计常用概念、原则与思想，包括面向对象六大原则，DID原则，ACID、CAP、BASE理论，中间层思想，缓存思想等。
+                            本文以结构化分支和循环语句为例分享白盒测试的相关内容。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-10
                         </span>
                         <span class="publish-author">
                             
@@ -689,8 +702,8 @@
                         <span class="chip bg-color">软件工程</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/">
-                        <span class="chip bg-color">软件架构</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
                     </a>
                     
                 </div>
@@ -985,7 +998,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">402.4k</span>&nbsp;字
+                class="white-color">450.4k</span>&nbsp;字
             
             
             
