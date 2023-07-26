@@ -1,0 +1,1502 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="变量与类型, 星拱北辰">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>变量与类型 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">变量与类型</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                                <span class="chip bg-color">程序设计</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                程序设计
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-02-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-26
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    18 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量在所有计算机程序中都用得到，是程序设计中非常重要的概念。</p>
+<p>当我们写一个程序的时候，大多数情况下，我们不知道程序执行时用户将会输入的实际数字或其他数据，因此我们把输入数据赋值给程序中的变量。</p>
+<p>在程序运行的过程中，变量是一个数值可变的量。<br><br>随后的程序语句中，我们需要使用到那个数据时，只需要使用它的变量名。这时，变量的取值会应用到用到它的那条语句中。</p>
+<p>程序变量是计算机内存中存储地址的名称，而变量的取值是那个地址中的内容。</p>
+<p>变量在不同类型编程语言中的使用是不同的。<br><br>在静态类型语言中，变量类型不可变(Java等语言支持数值类型的自动类型转换)；在动态类型语言中，变量类型可变。<br><br>在强类型语言中，变量需要先定义再使用；在弱类型语言中，变量不需要先定义再使用。[1]</p>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>在程序运行的过程中，常量是一个数值不可变的量。</p>
+<p>常量和变量一样，都需要一个命名。</p>
+<p>常量的存在，可以尽可能地避免“魔法数”问题，避免一处修改处处修改且容易漏改错改的问题。</p>
+<p>以Java为例，常量被定义为final的。对于基本类型，常量的内存地址直接存的就是值，值不能赋值修改；对于引用类型，常量的内存地址存的是引用(指针)，不能直接赋值修改，但可以赋值修改属性值。[1]</p>
+<h2 id="变量的命名"><a href="#变量的命名" class="headerlink" title="变量的命名"></a>变量的命名</h2><p>变量命名的原则：</p>
+<ol>
+<li>所有的变量名必须是一个词。</li>
+<li>可以使用下划线，通常也可以使用连字符，但不能使用空格。</li>
+<li>变量名可以很长，事实上许多语言允许名字长度超过200个字符。只是，名字太会增加程序出错的机会。</li>
+<li>大多数语言允许数字作为变量名的一部分，但变量名不能以数字开头。</li>
+<li>命名分为驼峰式命名和下划线式命名。</li>
+<li>变量名应该要有实际意义且易于理解。</li>
+</ol>
+<p>变量的命名具体是驼峰式命名还是下划线式命名，往往取决于具体语言的约定俗成。</p>
+<p>常量的命名通常是全大写字母，用下划线连接。[2]</p>
+<h2 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h2><p>在程序模块中，当一个变量的值由用户输入、被程序处理或者被输出处理时，我们称为该变量在这个模块中被引用了。在特定情况下，在一个模块中声明的变量不能在另一个模块中被引用。试图在一个模块中使用其他模块中声明的变量将得到编译器给出的“未知变量”的错误信息。一个给变量能够在程序中被引用的代码范围称为<strong>变量的作用域</strong>。</p>
+<p>对大多数编程语言来说，在特定模块中声明的变量，其作用域包含该模块本身以及所有它的子模块。</p>
+<p>全局变量的作用域为整个程序范围；另外在一些编程语言中，如果一个变量在所有程序模块之外（包括主程序）或者前面进行了声明，那么该变量就是全局变量。</p>
+<p>在某一子程序中声明的变量被称为局部变量，具有如下特点：</p>
+<ul>
+<li>当子程序中，局部变量的值更改时，在子程序外部同这些局部变量名相同的变量的值不会跟着改变。</li>
+<li>当程序中一个变量的值更改时，在子程序中同该变量名称相同的局部变量的值不会跟着改变。</li>
+</ul>
+<p>有时，局部变量和全局变量会发生冲突的情况，为了解决冲突应采用局部声明优先原则，即子程序变量的值更改时主程序变量的值不会跟着改变。</p>
+<p>除了计数器以外，在一个程序中将两个变量名同名不是好的编程习惯，例如PyCharm就会给这种情况标警告。</p>
+<p>局部变量是必然会支持的，有些编程语言完全不支持全局变量。[3]</p>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>Java 语言是强类型语言：</p>
+<ul>
+<li>所有的变量必须先声明后使用。</li>
+<li>指定类型的变量只能接受类型与之匹配的值。</li>
+</ul>
+<p>强类型意味着每个变量和每个表达式都有一个在编译时就确定的类型。类型限制了一个变量能被赋的值，限制了一个表达式可以产生的值，限制了在这些值上可以进行的操作，并确定了这些操作的含义。</p>
+<p>强类型语言可以在编译时进行更严格的语法检查，从而减少编程错误。</p>
+<p>声明变量的语法非常简单，只要指定变量的类型和变量名即可：<code>type varName;</code>，也可以直接赋初值：<code>type varName = 初始值;</code>。</p>
+<p>Java 语言支持的类型包括：</p>
+<ul>
+<li>基本类型<ul>
+<li>数值类型<ul>
+<li>整数类型<ul>
+<li><strong>byte</strong></li>
+<li><strong>short</strong></li>
+<li><strong>int</strong></li>
+<li><strong>long</strong></li>
+<li><strong>char</strong></li>
+</ul>
+</li>
+<li>浮点数类型<ul>
+<li><strong>float</strong></li>
+<li><strong>double</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>布尔类型</li>
+</ul>
+</li>
+<li>引用类型</li>
+</ul>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java语言提供了 8 种基本类型，包括 6 种数值类型（4 种整型，2 种浮点型），1 种字符类型，还有 1 种布尔型。[4]<br><br>某种意义上，char 类型也可以视作数值类型。</p>
+<ul>
+<li>数值类型<ul>
+<li>整数类型<ul>
+<li><strong>byte</strong></li>
+<li><strong>short</strong></li>
+<li><strong>int</strong></li>
+<li><strong>long</strong></li>
+</ul>
+</li>
+<li>浮点类型<ul>
+<li><strong>float</strong></li>
+<li><strong>double</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字符类型<ul>
+<li><strong>char</strong></li>
+</ul>
+</li>
+<li>布尔类型<ul>
+<li><strong>boolean</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="byte类型"><a href="#byte类型" class="headerlink" title="byte类型"></a>byte类型</h3><p>byte 数据类型是 8 位、有符号的、以二进制补码表示的整数，用在大型数组中可节约空间，主要代替整数，因为 byte 变量占用的空间只有 int 类型的四分之一，占 1 个字节。</p>
+<ul>
+<li>最小值：$-128$（$-2^7$）</li>
+<li>最大值：$127$（$2^7-1$）</li>
+<li>默认值：$0$</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">byte</span> a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token keyword">byte</span> b <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">30</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="short类型"><a href="#short类型" class="headerlink" title="short类型"></a>short类型</h3><p>short 数据类型是 16 位、有符号的以二进制补码表示的整数，也可以像 byte 那样节省空间，一个short变量是int型变量所占空间的二分之一，占 2 个字节。</p>
+<ul>
+<li>最小值：$-32768$（$-2^{15}$）</li>
+<li>最大值：$32767$（$2^{15}-1$）</li>
+<li>默认值：$0$</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">short</span> a <span class="token operator">=</span> <span class="token number">30000</span><span class="token punctuation">;</span>
+<span class="token keyword">short</span> b <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">200</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="int类型"><a href="#int类型" class="headerlink" title="int类型"></a>int类型</h3><p>int 数据类型是32位、有符号的以二进制补码表示的整数，整型变量默认为 int 类型，占 4 个字节。</p>
+<ul>
+<li>最小值：$-2147483648$（$-2^{31}$）</li>
+<li>最大值：$2147483647$（$2^{31}-1$）</li>
+<li>默认值：$0$</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1000000</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">2000000</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>如果直接将一个较小（范围内）的整数值赋给 byte 或者 short 变量，Java会自动把该数值当做 byte 或 short 类型处理。</p>
+<p>如果直接使用一个较大（超出 int 范围，但不超过 long 范围）的数值时，Java 不会把该数值当做 long 来处理，必须加上 l 或者 L，推荐使用 L。</p>
+<p>Java 整数存在 4 种表示形式：十进制、二进制、八进制、十六进制。二进制以 0b 或 0B 开头，八进制以 0 开头，十六进制以 0x 或 0X 开头。</p>
+<h3 id="long类型"><a href="#long类型" class="headerlink" title="long类型"></a>long类型</h3><p>long 数据类型是 64 位、有符号的以二进制补码表示的整数，这种类型主要使用在需要比较大整数的系统上（真正巨大的数据要用 <code>java.math.BigInteger</code>），占 8 个字节。</p>
+<p>需要强调的是：<code>long a = 9_223_372_036_854_775_807;</code> 是不对的，必须写成<code>long a = 9_223_372_036_854_775_807L;</code>，因为默认的整数数值就是int类型的。<br><br>“L”不分大小写，但是若写成”l”容易与数字”1”混淆，不容易分辨，所以应该大写。</p>
+<ul>
+<li>最小值：$-9223372036854775808$（$-2^{63}$）</li>
+<li>最大值：$9223372036854775807$（$2^{63}-1$）</li>
+<li>默认值：$0$</li>
+</ul>
+<p>说明：Java支持数值类型直接量以下划线划分，增加可读性，防止出错。</p>
+<p>Example： </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">long</span> a <span class="token operator">=</span> <span class="token number">9_223_372_036_854_775_807L</span><span class="token punctuation">;</span>
+<span class="token keyword">long</span> b <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">2000000L</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="float类型"><a href="#float类型" class="headerlink" title="float类型"></a>float类型</h3><p>float 数据类型是单精度、32 位、符合 IEEE 754 标准的浮点数，1 位符号位，8 位指数位，23 位尾数位。</p>
+<p>float 在储存大型浮点数组的时候可节省内存空间，占 4 个字节。</p>
+<p>浮点数必须带小数点，否则会被当做 int 处理。</p>
+<p>浮点数不能用来表示精确的值，Java 高精运算要用 <code>java.math.BigDecimal</code>。</p>
+<ul>
+<li>最小值：$1.4×10^{-45}$</li>
+<li>最大值：$3.4028235×10^{38}$</li>
+<li>默认值：$0.0$（0.0f）</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">float</span> a <span class="token operator">=</span> <span class="token number">123.4f</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="double类型"><a href="#double类型" class="headerlink" title="double类型"></a>double类型</h3><p>double 数据类型是双精度、64 位、符合 IEEE 754 标准的浮点数，1 位符号位，11 位指数位，52 位尾数位。</p>
+<p>浮点数的默认类型为 double 类型，占 8 个字节。</p>
+<p>double 类型同样不能表示精确的值，Java 高精运算要用 <code>java.math.BigDecimal</code>。</p>
+<ul>
+<li>最小值：$4.9×10^{-324}$</li>
+<li>最大值：$1.7976931348623157×10^{308}$</li>
+<li>默认值：$0.0$（0.0d）</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">double</span> a <span class="token operator">=</span> <span class="token number">123.4</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h3><p>char 类型是一个单一的 16 位 Unicode 字符，char 数据类型理论上可以储存任何 Unicode 字符，占 2 个字节。</p>
+<p>char相当于 16 位无符号整数，用单引号 <code>''</code>括起来。</p>
+<ul>
+<li>最小值：<code>\u000</code>（即为数值 0，相当于’’）</li>
+<li>最大值：<code>\uffff</code>（即为数值 65535）</li>
+<li>默认值：<code>\u000</code>（即为数值 0，相当于’’）</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token char">'A'</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> b <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="boolean类型"><a href="#boolean类型" class="headerlink" title="boolean类型"></a>boolean类型</h3><p>boolean 数据类型表示一位的信息，只有两个取值：true 和 false。这种类型只作为一种标志来记录 true / false 情况。但 boolean 的开销比 byte 大，byte 显然是更节省一些的。</p>
+<p>boolean 类型的值或变量主要用做旗标来进行流程控制</p>
+<ul>
+<li>默认值：false</li>
+</ul>
+<p>Example：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> a <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> b <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h2><p>引用类型包括类、接口和数组类型，还有null。</p>
+<p>引用类型变量包括实例和数组，本质是一个指针。<br><br>变量的指针就是变量的存储地址，指针变量就是存储指针的变量。</p>
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p>java.lang.Object类是所有类的超类，是Java语言中唯一一个没有父类的类。 [5]</p>
+<p>一个类可以不是Object类的直接子类，但一定是Object类的子类，Java中的每一个类都是从Object扩展来的。<br>在Object类中定义的方法，在所有类中都可以使用：<br><br><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%8F%98%E9%87%8F%E4%B8%8E%E7%B1%BB%E5%9E%8B/1.png"></p>
+<p>Java实现对象克隆的方法：</p>
+<ul>
+<li>实现 Cloneable 接口并重写 Object 类中的 clone() 方法，这是一种浅拷贝，对每一层的每个对象都进行浅拷贝就实现了深拷贝。</li>
+<li>实现 Serializable 接口，通过对象的序列化和反序列化实现克隆，可以实现真正的深拷贝。</li>
+</ul>
+<p>在哈希结构里，hashCode() 相等意味着哈希码相同，意味着冲突，但不意味着键值对相等，因为衡量键值对是否相同的其实是 equals()。</p>
+<ol>
+<li>如果两个对象相等，则 hashCode 一定也是相同的。</li>
+<li>两个对象相等，对两个对象分别调用 equals 方法都返回 true。</li>
+<li>两个对象有相同的 hashCode 值，它们也不一定是相等的。</li>
+<li>如果 equals 方法被覆盖过，则 hashCode 方法也必须被覆盖。</li>
+<li>hashCode() 的默认行为是对堆上的对象产生独特值。如果没有重写 hashCode()，则该 class 的两个对象无论如何都不会相等（即使这两个对象指向相同的数据）。</li>
+</ol>
+<p>java.util.Objects是JDK1.7新增的工具类：<br><br><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%8F%98%E9%87%8F%E4%B8%8E%E7%B1%BB%E5%9E%8B/2.png"></p>
+<h3 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h3><p>Java是一门面向对象的编程语言，为简便设计了八种基本数据类型。但Java不把基本数据类型看作对象，而是提供包装类来将基本数据类型看作对象。 </p>
+<p>基本数据类型不是对象层次结构的组成部分。有时需要像处理对象一样处理这些基本数据类型，可通过相应的“包装类”来将其“包装”后使用。 </p>
+<p>包装类中包含了对应基本数据类型的值，封装了String和基本数据类型之间相互转换的方法，还有一些处理这些基本数据类型时 非常有用的属性和方法。 [6]</p>
+<table>
+<thead>
+<tr>
+<th align="center">基本数据类型</th>
+<th align="center">对应的包装类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">byte</td>
+<td align="center">java.lang.Byte</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">java.lang.Short</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">java.lang.Integer</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">java.lang.Long</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center">java.lang.Character</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">java.lang.Float</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">java.lang.Double</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">java.lang.Boolean</td>
+</tr>
+</tbody></table>
+<p>包装类的常量池存储：</p>
+<ul>
+<li>Boolean：true 和 false 全部存储</li>
+<li>Byte：$-128\sim{}127$ 全部存储</li>
+<li>Character：$0\sim{}127$ 存储</li>
+<li>Short：$-128\sim{}127$ 存储</li>
+<li>Long：$-128\sim{}127$ 存储</li>
+<li>Integer：$-128\sim{}127$ 存储</li>
+<li>Float：没有存储</li>
+<li>Double：没有存储</li>
+</ul>
+<p>字符串与基本数据类型、包装类型转换图如下：<br><br><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%8F%98%E9%87%8F%E4%B8%8E%E7%B1%BB%E5%9E%8B/3.png"></p>
+<p>JDK自从5.0版本后引入自动装箱和自动拆箱机制，在进行基本数据类型和对应的包装类转换时，系统将自动进行，可方便程序的编写。</p>
+<ul>
+<li>所谓自动装箱，就是直接把一个基本类型的变量赋值给其对应的包装类型。</li>
+<li>所谓自动拆箱，就是直接把一个包装类型的变量赋值给其对应的基本类型。</li>
+</ul>
+<p>基本操作：</p>
+<ul>
+<li>预定义：<code>int pInt = 500;</code></li>
+<li>自动装箱：<code>Integer  wInt = pInt;</code></li>
+<li>自动拆箱：<code>int n = wInt;</code></li>
+</ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数组是<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/123163101">变量</a>的集合，这些变量有相同的类型，使用相同的名字，连续顺序存储，支持按索引访问。</p>
+<p>使用数组，不仅使大量数据的加载变得更简单，而且也使数据的处理变得更简洁和更高效。</p>
+<p>一维数组是一系列相互有关联的数据，它们类型相同，由单个变量名来引用，用索引值来区分每个元素。程序设计语言把下标用括号括起来跟在数组名后面，用来指明某个特定的元素。</p>
+<p>数组下标索引通常从$0$开始，长度为$n$的数组的下标取值范围是$[0,n-1]$，是离散的整数值。</p>
+<p>数组名和变量名非常类似，数组名后跟括号和索引可以表示数组元素普通变量。</p>
+<p>数组存放在计算机内存的一串连续的存储区域中。当声明变量时，要明确数组元素类型和数组长度，然后计算机会为数组分配相应的连续内存空间。</p>
+<p>数组一旦创建，内存区域就已经确定，不能更改长度。值得一提的是，<code>java.util.ArrayList</code>这样的数据结构只是基于数组实现的顺序表，所谓“动态数组”，并不是严格意义上的数组结构。</p>
+<p>不同的编程语言对于数组有不同的使用方法，C/C++存在指针的概念所以更接近数组的本质，Java等语言并没有自己实现数组，Python等语言的数组更是直接呈现出“动态数组”的特性。</p>
+<p>C/C++更能揭示数组的本质，变量的指针其实就是变量的地址，数组变量是指针变量，指向数组首地址，通过指针加减法也可以实现下标访问同样的效果(随机访问)。</p>
+<p>一个数组可以取代一系列简单变量，可以帮助设计出更加简单高效的程序。一旦数据进入一个数组，它可以被处理许多次而不需要重新输入。<br>创建数组还可以让我们创建的程序更通用，因为我们不必用完数组声明时分配给数组的所有元素，数组能给我们更大的灵活性。</p>
+<p>有一位数组，就有二维数组、三维数组、……一维数组好比列表，二维数组就好比表格。</p>
+<p>一维数组基于单下标访问，二维数组基于双下标访问，以此类推。<br><br>遍历一维数组需要一层循环结构，遍历二维数组需要二层循环结构嵌套，以此类推。</p>
+<p>尽管存在高维数组，但一般至多使用二维数组，只有少数算法题会使用到高维数组。[7]</p>
+<p>Java基本类型对象构成的数组类型是：</p>
+<ul>
+<li>long[]的类型是：<code>class [J</code></li>
+<li>int[]的类型是：<code>class [I</code></li>
+<li>short[]的类型是：<code>class [S</code></li>
+<li>byte[]的类型是：<code>class [B</code></li>
+<li>char[]的类型是：<code>class [C</code></li>
+<li>double[]的类型是：<code>class [D</code></li>
+<li>float[]的类型是：<code>class [F</code></li>
+<li>boolean[]的类型是：<code>class [Z</code></li>
+</ul>
+<p>Java引用类型对象构成的数组类型是：</p>
+<ul>
+<li>String[]的类型是：<code>class [Ljava.lang.String</code></li>
+<li>Arrays[]的类型是：<code>class [Ljava.util.Arrays</code></li>
+<li>BigInteger[]的类型是：<code>class [Ljava.math.BigInteger</code>[8]</li>
+</ul>
+<p>Java数组初始化：</p>
+<ul>
+<li>静态初始化：初始化时显式指定每个数组元素的初始值，由系统决定数组长度。<br><code>Type[] arrayName = new Type[] {element1, element2, element3, element4, ...};</code></li>
+<li>动态初始化：初始化只至指定数组长度，由系统为数组元素分配初始值。对于动态初始化，初始化的值都是默认值，C语言新建数组若不指定初值则可能出现脏数据。<br><code>Type[] arrayName = new Type[length];</code></li>
+</ul>
+<p>Java数组的输出：</p>
+<ul>
+<li>数组引用的输出：<code>arrayVar</code></li>
+<li>Java一维数组内容的输出：<code>Arrays.toString(arrayVar)</code></li>
+<li>Java二维以上数组内容的输出：<code>Arrays.deepToString(arrayVar)</code></li>
+</ul>
+<p>Java数组的拷贝：</p>
+<ul>
+<li><code>System.arraycopy()</code></li>
+<li><code>Arrays.copyOf()</code></li>
+<li><code>arrayObj.clone()</code><ul>
+<li>一维数组的clone()是深拷贝</li>
+<li>二维数组乃至多维数组的clone()是浅拷贝</li>
+</ul>
+</li>
+<li>for循环为数组逐一赋值</li>
+</ul>
+<p><code>java.util.Arrays</code>包含一些static方法可操作数组。</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串是一连串的字符序列，C语言字符串以字符数组的形式表示，C++、Java等语言对字符串进行了封装。</p>
+<p>Java提供了String、StringBuffer、StringBuilder三个类来封装字符串，并提供了一系列方法来操作字符串。<br><br>String是不可变的，StringBuilder和StringBuffer都支持直接对对象本身操作，而不是生成新的对象。</p>
+<p>String的直接定义和new创建存在区别。String直接定义后会被放进字符串常量池，String被new出来会创建两个对象放在堆里。</p>
+<p>Java字符串<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/122808973">不可变</a>的原因：</p>
+<ol>
+<li>字符串常量池的需要：字符串常量池是 Java 堆内存中一个特殊的存储区域，当创建一个 String 对象时，假如此字符串值已经存在于常量池中，则不会创建一个新的对象，而是引用已经存在的对象。 </li>
+<li>允许 String 对象缓存 HashCode：Java 中 String 对象的哈希码被频繁地使用，比如在 HashMap 等容器中。字符串不变性保证了 hash 码的唯一性，因此可以放心地进行缓存。这也是一种性能优化手段，意味着不必每次都去计算新的哈希码。</li>
+<li>String 被许多的 Java 类(库)用来当做参数，例如网络连接地址 URL、文件路径 path、还有反射机制所需要的 String 参数等，假若 String 不是固定不变的，将会引起各种安全隐患。</li>
+</ol>
+<p>StringBuilder和StringBuffer也存在区别，主要区别在：StringBuilder是线程不安全的，StringBuffer是线程安全的。</p>
+<ul>
+<li>单线程的情况下使用StringBuilder效率更高。</li>
+<li>StringBuffer的关键的方法，诸如length()、append()，都是加了synchronized的，同时刻只能有一个线程去执行一个方法，所以StringBuffer是线程安全的。</li>
+</ul>
+<p><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E5%8F%98%E9%87%8F%E4%B8%8E%E7%B1%BB%E5%9E%8B/4.png"></p>
+<h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>null是一个特殊的值，表示值未知或不存在。</p>
+<p>任何引用类型变量都可以被赋值null，其初始化值也是null。</p>
+<p>由于null本身的含义，所以<code>varName.function()</code>调用时，若变量值为null，则会报空指针异常<code>java.lang.NullPointerException</code>，要注意。</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p>本文参考文章均为本人原创发表于CSDN的文章，内容如下：<br>[1]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/123163101">变量和常量</a><br>[2]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/123131585">变量名的命名原则</a><br>[3]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/123168942">变量的作用域</a><br>[4]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104545979">浅析八种基本类型</a><br>[5]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104711521">Object基类</a><br>[6]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104715326">浅析八种基本类型和包装类型</a><br>[7]<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43896318/article/details/123165634">数组</a><br>[8]<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104083129">探究Java数组的本质</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/bian-liang-yu-lei-xing/">https://blankspaceplus.github.io/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/bian-liang-yu-lei-xing/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                                    <span class="chip bg-color">程序设计</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/guan-jian-ci/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="关键词">
+                        
+                        <span class="card-title">关键词</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文归纳常用编程语言的关键词，目前包括Java、C、Python。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/02/01/ruan-jian-gong-cheng/cheng-xu-she-ji/zhu-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="注释">
+                        
+                        <span class="card-title">注释</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文探讨对代码注释的一些思考。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">543.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
