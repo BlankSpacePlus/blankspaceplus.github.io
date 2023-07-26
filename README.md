@@ -42,6 +42,7 @@ hexo s
 
 - [GitHub: blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)
     - [文章摘要的问题](https://github.com/blinkfox/hexo-theme-matery/issues/99)
+    - [文章嵌入HTML代码](https://github.com/hexojs/hexo/issues/1692)
 - [GitHub: fluid-dev/hexo-theme-fluid](https://github.com/fluid-dev/hexo-theme-fluid)
     - [Fluid用户指南](https://hexo.fluid-dev.com/docs/guide)
 
