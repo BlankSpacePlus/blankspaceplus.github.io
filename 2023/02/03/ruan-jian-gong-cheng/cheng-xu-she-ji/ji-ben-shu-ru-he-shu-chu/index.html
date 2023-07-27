@@ -1,0 +1,1905 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="基本输入和输出, 星拱北辰">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>基本输入和输出 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">基本输入和输出</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                                <span class="chip bg-color">程序设计</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                程序设计
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-02-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    12 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Java的基本输入输出"><a href="#Java的基本输入输出" class="headerlink" title="Java的基本输入输出"></a>Java的基本输入输出</h1><p>本节内容摘自本人文章：<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/104216294">深入剖析Java输入输出的那些细节</a></p>
+<p>同样分享于本人文章：<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/128678452">用Java解决OJ题目</a></p>
+<h2 id="Java的基本输入"><a href="#Java的基本输入" class="headerlink" title="Java的基本输入"></a>Java的基本输入</h2><p><strong>java.util.Scanner</strong>类可以直接读取特定类型的数据：</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">方法说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>public String next()</strong></td>
+<td align="center">读取下一个字符串（默认分隔符为Space or Tab or Enter）</td>
+</tr>
+<tr>
+<td align="center"><strong>public String next​(String pattern)</strong></td>
+<td align="center">读取下一个字符串（匹配到的串符合指定的正则表达式）</td>
+</tr>
+<tr>
+<td align="center"><strong>public String next​(Pattern pattern)</strong></td>
+<td align="center">读取下一个字符串（匹配到的串符合指定的正则表达式）</td>
+</tr>
+<tr>
+<td align="center"><strong>public BigDecimal nextBigDecimal(</strong>)</td>
+<td align="center">读取下一个高精小数（默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public BigInteger nextBigInteger()</strong></td>
+<td align="center">读取下一个高精整数（默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public BigInteger nextBigInteger​(int radix)</strong></td>
+<td align="center">读取下一个高精整数（指定进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public boolean nextBoolean()</strong></td>
+<td align="center">读取下一个布尔值</td>
+</tr>
+<tr>
+<td align="center"><strong>public byte nextByte()</strong></td>
+<td align="center">读取下一个byte整型数值（超容会报错，默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public byte nextByte​(int radix)</strong></td>
+<td align="center">读取下一个byte整型数值（超容会报错，指定进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public double nextDouble()</strong></td>
+<td align="center">读取下一个双精度浮点数值（默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public float nextFloat()</strong></td>
+<td align="center">读取下一个单精度浮点数值（默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public int nextInt()</strong></td>
+<td align="center">读取下一个int整型数值（超容会报错，默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public int nextInt​(int radix)</strong></td>
+<td align="center">读取下一个int整型数值（超容会报错，指定进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public String nextLine()</strong></td>
+<td align="center">读取下一行内容以字符串类型返回（分隔符为Enter）</td>
+</tr>
+<tr>
+<td align="center"><strong>public long nextLong()</strong></td>
+<td align="center">读取下一个long整型数值（超容会报错，默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public long nextLong​(int radix)</strong></td>
+<td align="center">读取下一个long整型数值（超容会报错，指定进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public short nextShort()</strong></td>
+<td align="center">读取下一个short整型数值（超容会报错，默认十进制）</td>
+</tr>
+<tr>
+<td align="center"><strong>public short nextShort​(int radix)</strong></td>
+<td align="center">读取下一个short整型数值（超容会报错，指定进制）</td>
+</tr>
+</tbody></table>
+<p>案例代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Scanner</span> sc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> x <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> y <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// do something</span>
+<span class="token punctuation">}</span>
+sc<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Scanner之所以能如此全能，依赖于Java支持的正则表达式。<strong>反反复复的IO操作，每次都要判断和处理，会拉低效率。</strong></p>
+<p>比如说在洛谷刷算法题的时候，博主一般是用Java，但很多次都TLE，不管怎么优化也不行。最后发现问题就在Scanner身上，此时可以换java.io.BufferedReader，性能大幅提升。</p>
+<p>案例代码(方法声明throws java.io.IOException)：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">BufferedReader</span> br <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">InputStreamReader</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> num <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>br<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> record <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>num<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums <span class="token operator">=</span> br<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\s+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    record<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+br<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>更极端的情况，需要手写快读代码。其实，此时已经可以考虑放弃Java改用C++了。</p>
+<p>说明：</p>
+<ol>
+<li>性能实在不达标，看不对就换BufferedReader，再不行就手写快读或换更快的语言。</li>
+<li>切记scanner.nextInt()之后没换行，此时如果读一行scanner.nextLine()可能只读到空字符串<code>""</code>，导致后续RE或WA。所以遇到单行单个数值+单行多数值的情况，就直接先用<code>Integer.parseInt(scanner.nextLine())</code>再用<code>String[] array = scanner.nextLine().split("\\s+")</code>，把String[]转成int[]即可（切记不可直接强转，二者毫无关系）。</li>
+<li>I/O非常慢，要减少I/O次数。</li>
+<li>使用完输入流后记得关闭，这是一个好习惯。用scanner，就写<code>scanner.close()</code>，用reader，就写<code>reader.close()</code>。</li>
+<li>输入流关闭之后就不能再用了，这点要注意，在最后用完之后关闭就好。</li>
+<li>java.util.Scanner不需要处理异常，java.io.BufferedReader需要处理java.io.IOException，要么try…catch…finally，要么throws，不处理是不能通过编译的。当然啦，自动关闭资源的try语句也挺好的。</li>
+</ol>
+<h2 id="Java的基本输出"><a href="#Java的基本输出" class="headerlink" title="Java的基本输出"></a>Java的基本输出</h2><p><strong>普通输出流</strong>有<strong>三种</strong>输出方式：</p>
+<p>第一种是<strong>不换行输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>第二种是<strong>换行输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>第三种是<strong>格式化输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>还有<strong>错误输出流</strong>，与上述内容类似：</p>
+<p>第一种是<strong>不换行输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>err<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>第二种是<strong>换行输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>err<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>第三种是<strong>格式化输出</strong>：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>err<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>说明：</p>
+<ol>
+<li>如果<code>printf()</code>的格式化不正确，就会爆<code>java.util.IllegalFormatConversionException</code>异常。</li>
+<li>为什么Eclipse/IDEA这样的IDE在爆异常的时候都可能红字和普通字混合？<br>异常是err错误流，普通输出是out普通输出流，可能会在IDE里由于线程的问题而混合在一起。</li>
+<li>System.in/System.out/System.err是什么？<br>根据下面的源码（java.lang.System），可知分别是InputStream、PrintStream对象，err流和out流是同一个类的不同对象。<pre class="line-numbers language-java" data-language="java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">InputStream</span> in<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">PrintStream</span> out<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">PrintStream</span> err<span class="token punctuation">;</span>`
+<span class="token number">4.</span> 打印输出的时候会启动<span class="token class-name">I</span><span class="token operator">/</span><span class="token class-name">O</span>，所以不建议直接输出，可以用<span class="token class-name">StringBuilder</span>把答案“组织好”再统一输出。
+<span class="token number">5.</span> 循环里每次都cout的时候能不输出最后的空格，不需要额外的调整，但<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span>输出的时候没有这种考虑，必须自己处理最后一次的结果。我建议可以用`builder<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span>`和`builder<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span>`，最后消去末尾的一个空格，即可完成所需要的输出。
+<span class="token number">6.</span> 格式化打印指定位数小数是常见操作，可用<span class="token function">printf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>完成任务目标。比如，如果<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.5f"</span><span class="token punctuation">)</span>如果就是保留五位小数打印浮点数。
+
+# <span class="token class-name">C</span>语言的输入输出
+
+首先要引入头文件stdio：
+
+```c
+#include <span class="token generics"><span class="token punctuation">&lt;</span>stdio<span class="token punctuation">.</span>h<span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h2 id="C语言的基本输入"><a href="#C语言的基本输入" class="headerlink" title="C语言的基本输入"></a>C语言的基本输入</h2><p><code>int scanf(const char *format, ...)</code>函数从标准输入流stdin读取输入，并根据提供的format来浏览输入。</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> n<span class="token punctuation">;</span>
+<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><code>int getchar(void)</code>函数从屏幕读取下一个可用的字符，并把它返回为一个整数。这个函数在同一个时间内只会读取一个单一的字符。您可以在循环内使用这个方法，以便从屏幕上读取多个字符。</p>
+<p><code>char *gets(char *s)</code>函数从stdin读取一行到s所指向的缓冲区，直到一个终止符或EOF。</p>
+<h2 id="C语言的基本输出"><a href="#C语言的基本输出" class="headerlink" title="C语言的基本输出"></a>C语言的基本输出</h2><p><code>int printf(const char *format, ...)</code>函数把输出写入到标准输出流stdout，并根据提供的格式产生输出。</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>int putchar(int c)</code>函数把字符输出到屏幕上，并返回相同的字符。这个函数在同一个时间内只会输出一个单一的字符。您可以在循环内使用这个方法，以便在屏幕上输出多个字符。</p>
+<p><code>int puts(const char *s)</code>函数把字符串s和一个尾随的换行符写入到stdout。</p>
+<h2 id="C语言基本输入输出格式"><a href="#C语言基本输入输出格式" class="headerlink" title="C语言基本输入输出格式"></a>C语言基本输入输出格式</h2><table>
+<thead>
+<tr>
+<th align="center">输出格式</th>
+<th align="center">数据类型</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>%d</code></td>
+<td align="center">有符号十进制整数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%u</code></td>
+<td align="center">无符号十进制整数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%o</code></td>
+<td align="center">无符号八进制整数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%i</code></td>
+<td align="center">八进制/十进制/十六进制整数</td>
+<td align="center">用于scanf()，根据实际输入决定</td>
+</tr>
+<tr>
+<td align="center"><code>%x</code></td>
+<td align="center">无符号十六进制整数</td>
+<td align="center">$0\sim{}f$</td>
+</tr>
+<tr>
+<td align="center"><code>%X</code></td>
+<td align="center">无符号十六进制整数</td>
+<td align="center">$0\sim{}F$</td>
+</tr>
+<tr>
+<td align="center"><code>%a</code></td>
+<td align="center">十六进制p计数法浮点数</td>
+<td align="center">$0\sim{}f$ &amp;nbsp;  $p$</td>
+</tr>
+<tr>
+<td align="center"><code>%A</code></td>
+<td align="center">十六进制p计数法浮点数</td>
+<td align="center">$0\sim{}F$ &amp;nbsp;  $P$</td>
+</tr>
+<tr>
+<td align="center"><code>%e</code></td>
+<td align="center">十进制e计数法浮点数</td>
+<td align="center">$e$ &amp;nbsp;  含后缀0</td>
+</tr>
+<tr>
+<td align="center"><code>%E</code></td>
+<td align="center">十进制e计数法浮点数</td>
+<td align="center">$E$ &amp;nbsp;  含后缀0</td>
+</tr>
+<tr>
+<td align="center"><code>%g</code></td>
+<td align="center">十进制e计数法浮点数</td>
+<td align="center">$e$ &amp;nbsp;  不含后缀0</td>
+</tr>
+<tr>
+<td align="center"><code>%G</code></td>
+<td align="center">十进制e计数法浮点数</td>
+<td align="center">$E$ &amp;nbsp;  不含后缀0</td>
+</tr>
+<tr>
+<td align="center"><code>%f</code></td>
+<td align="center">十进制浮点数</td>
+<td align="center">含后缀0</td>
+</tr>
+<tr>
+<td align="center"><code>%c</code></td>
+<td align="center">字符</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%s</code></td>
+<td align="center">字符串</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%p</code></td>
+<td align="center">指针</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>%%</code></td>
+<td align="center">%</td>
+<td align="center">转义%</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">数据长度类型</th>
+<th align="center">说明</th>
+<th align="center">用法示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">h</td>
+<td align="center">表示以短整型输出整数或以单精度输出浮点数</td>
+<td align="center"><code>%hd</code></td>
+</tr>
+<tr>
+<td align="center">l</td>
+<td align="center">表示以长整型输出整数或以双精度输出浮点数</td>
+<td align="center"><code>%lf</code></td>
+</tr>
+<tr>
+<td align="center">ll</td>
+<td align="center">表示以64位长整型输出整数</td>
+<td align="center"><code>%lld</code></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">输出格式前缀</th>
+<th align="center">前缀符号</th>
+<th align="center">说明</th>
+<th align="center">用法示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>%-</code></td>
+<td align="center">-</td>
+<td align="center">左侧对齐，右侧补位空格</td>
+<td align="center"><code>%-5d</code></td>
+</tr>
+<tr>
+<td align="center"><code>%+</code></td>
+<td align="center">+</td>
+<td align="center">右侧对齐，左侧补位空格，加正负号</td>
+<td align="center"><code>%+5d</code></td>
+</tr>
+<tr>
+<td align="center"><code>%#</code></td>
+<td align="center">#</td>
+<td align="center">用于scanf()，八进制含前缀0，十六进制含前缀0x</td>
+<td align="center"><code>%#x</code></td>
+</tr>
+<tr>
+<td align="center"><code>% </code></td>
+<td align="center">空格</td>
+<td align="center">正数加先导空格，数加先导负号(-)，用于d和f</td>
+<td align="center"><code>% d</code></td>
+</tr>
+<tr>
+<td align="center"><code>%0</code></td>
+<td align="center">0</td>
+<td align="center">当实际位数少于最小宽度时在前面补0</td>
+<td align="center"><code>%05d</code></td>
+</tr>
+</tbody></table>
+<h1 id="C-的输入输出"><a href="#C-的输入输出" class="headerlink" title="C++的输入输出"></a>C++的输入输出</h1><p>C++一样可以采用传统C的输入输出：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>或</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="center">头文件</th>
+<th align="center">函数和描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&lt;iostream&gt;</code></td>
+<td align="center">定义了cin、cout、cerr、clog<br>分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;iomanip&gt;</code></td>
+<td align="center">支持参数化的流操纵器，例如setw和setprecision</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;fstream&gt;</code></td>
+<td align="center">用于用户控制的文件处理</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iomanip&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="C-的基本输入"><a href="#C-的基本输入" class="headerlink" title="C++的基本输入"></a>C++的基本输入</h2><p><code>cin</code>要与流获取运算符<code>&gt;&gt;</code>一起使用：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x<span class="token punctuation">;</span>
+cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>可以获取整型、浮点型、字符串等数据类型，比scanf()用起来简单。</p>
+<h2 id="C-的基本输出"><a href="#C-的基本输出" class="headerlink" title="C++的基本输出"></a>C++的基本输出</h2><p><code>cout</code>要与流插入运算符<code>&lt;&lt;</code>一起使用：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+cin <span class="token operator">&lt;&lt;</span> x <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><code>endl</code>表示换行符，相当于<code>"\n"</code>。</p>
+<h2 id="C-基本输入输出格式"><a href="#C-基本输入输出格式" class="headerlink" title="C++基本输入输出格式"></a>C++基本输入输出格式</h2><p><code>&lt;iomanip&gt;</code>支持的函数如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">描述</th>
+<th align="center">输入</th>
+<th align="center">输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">resetiosflags(long f)</td>
+<td align="center">关闭被指定为f的标志，与cout.unsetf等效</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">setbase(int base)</td>
+<td align="center">设置数值的基本数为base</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">setfill(int ch)</td>
+<td align="center">设置填充字符为ch</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">setiosflags(long f)</td>
+<td align="center">启用指定为f的标志，与cout.setf等效</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">setprecision(int p)</td>
+<td align="center">设置数值的精度(四舍五入)，与cout.precision等效</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">setw(int w)</td>
+<td align="center">设置域宽度为w</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+</tbody></table>
+<p>与输入输出的结合方法：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cout<span class="token operator">&lt;&lt;</span><span class="token function">setiosflags</span><span class="token punctuation">(</span>ios<span class="token double-colon punctuation">::</span>left<span class="token operator">|</span>ios<span class="token double-colon punctuation">::</span>showpoint<span class="token punctuation">)</span><span class="token punctuation">;</span>
+cout<span class="token punctuation">.</span><span class="token function">precision</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>setiosflags支持的设置：</p>
+<table>
+<thead>
+<tr>
+<th align="center">设置项</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">boolalpha</td>
+<td align="center">可以使用单词”true”和”false”进行输入/输出的布尔值</td>
+</tr>
+<tr>
+<td align="center">oct</td>
+<td align="center">用八进制格式显示数值</td>
+</tr>
+<tr>
+<td align="center">dec</td>
+<td align="center">用十进制格式显示数值</td>
+</tr>
+<tr>
+<td align="center">hex</td>
+<td align="center">用十六进制格式显示数值</td>
+</tr>
+<tr>
+<td align="center">left</td>
+<td align="center">输出调整为左对齐</td>
+</tr>
+<tr>
+<td align="center">right</td>
+<td align="center">输出调整为右对齐</td>
+</tr>
+<tr>
+<td align="center">scientific</td>
+<td align="center">用科学记数法显示浮点数</td>
+</tr>
+<tr>
+<td align="center">fixed</td>
+<td align="center">用正常的记数方法显示浮点数(与科学计数法相对应)</td>
+</tr>
+<tr>
+<td align="center">showbase</td>
+<td align="center">输出时显示所有数值的基数</td>
+</tr>
+<tr>
+<td align="center">showpoint</td>
+<td align="center">显示小数点和额外的零，即使不需要</td>
+</tr>
+<tr>
+<td align="center">showpos</td>
+<td align="center">在非负数值前面显示”+”</td>
+</tr>
+<tr>
+<td align="center">skipws</td>
+<td align="center">当从一个流进行读取时，跳过空白字符(spaces, tabs, newlines)</td>
+</tr>
+<tr>
+<td align="center">unitbuf</td>
+<td align="center">在每次插入以后，清空缓冲区</td>
+</tr>
+<tr>
+<td align="center">internal</td>
+<td align="center">将填充字符回到符号和数值之间</td>
+</tr>
+<tr>
+<td align="center">uppercase</td>
+<td align="center">以大写的形式显示科学记数法中的”e”和十六进制格式的”x”</td>
+</tr>
+</tbody></table>
+<p><code>&lt;iostream&gt;</code>支持的函数如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">描述</th>
+<th align="center">输入</th>
+<th align="center">输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">boolalpha</td>
+<td align="center">启用boolalpha标志</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">dec</td>
+<td align="center">启用dec标志</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">endl</td>
+<td align="center">输出换行标示，并清空缓冲区</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">ends</td>
+<td align="center">输出空字符</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">fixed</td>
+<td align="center">启用fixed标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">flush</td>
+<td align="center">清空流</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">hex</td>
+<td align="center">启用 hex 标志</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">internal</td>
+<td align="center">启用 internal 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">left</td>
+<td align="center">启用 left 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">noboolalpha</td>
+<td align="center">关闭boolalpha 标志</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">noshowbase</td>
+<td align="center">关闭showbase 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">noshowpoint</td>
+<td align="center">关闭showpoint 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">noshowpos</td>
+<td align="center">关闭showpos 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">noskipws</td>
+<td align="center">关闭skipws 标志</td>
+<td align="center">√</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">nounitbuf</td>
+<td align="center">关闭unitbuf 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">nouppercase</td>
+<td align="center">关闭uppercase 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">oct</td>
+<td align="center">启用 oct 标志</td>
+<td align="center">√</td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">right</td>
+<td align="center">启用 right 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">scientific</td>
+<td align="center">启用 scientific 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">showbase</td>
+<td align="center">启用 showbase 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">showpoint</td>
+<td align="center">启用 showpoint 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">showpos</td>
+<td align="center">启用 showpos 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">skipws</td>
+<td align="center">启用 skipws 标志</td>
+<td align="center">√</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">unitbuf</td>
+<td align="center">启用 unitbuf 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">uppercase</td>
+<td align="center">启用 uppercase 标志</td>
+<td align="center"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">ws</td>
+<td align="center">跳过所有前导空白字符</td>
+<td align="center">√</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h1 id="Python的输入输出"><a href="#Python的输入输出" class="headerlink" title="Python的输入输出"></a>Python的输入输出</h1><p>推荐阅读：<a target="_blank" rel="noopener" href="https://blankspace.blog.csdn.net/article/details/118464267">类型转换</a></p>
+<h2 id="Python的基本输入"><a href="#Python的基本输入" class="headerlink" title="Python的基本输入"></a>Python的基本输入</h2><p>Python通过input()获取一行输入，获取的数据是字符串类型。</p>
+<p>对于获取的一行输入，可以类型转换为目标类型，例如：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取的一行数据可能包括多个数据，明确少量的输入可以这样处理：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>对于较多或不明确数量的输入，可以这样处理：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">nums <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 后续操作</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> nums<span class="token punctuation">:</span>
+    <span class="token comment"># 后续操作</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>对于有终止标志(例如0)的多组输入，可以这样处理：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+    <span class="token comment"># 后续操作</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>对于没有终止标志的多组输入，可以这样处理：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment"># 后续操作</span>
+    <span class="token keyword">except</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Python的基本输出"><a href="#Python的基本输出" class="headerlink" title="Python的基本输出"></a>Python的基本输出</h2><p>Python通过print()进行格式化输出，有三种格式：</p>
+<ul>
+<li><code>f'...'</code>，例如<code>f'售价是：{price}'</code></li>
+<li><code>'...%...' % a</code>，例如<code>print('售价是：%s' % price)</code></li>
+<li><code>print('...{}...'.format(a))</code>，例如<code>print('售价是：{:.2f}'.format(price))</code></li>
+</ul>
+<p>例如华氏温度转摄氏温度：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">f <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"fahrenheit={:.6f}, celsius={:.6f}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> <span class="token punctuation">(</span>f<span class="token operator">-</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">1.8</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>format格式化规则：</p>
+<table>
+<thead>
+<tr>
+<th align="center">规则</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>{:a&lt;3}</code></td>
+<td align="center">用a填充满长度为3的字符串且右侧对齐左侧补位</td>
+</tr>
+<tr>
+<td align="center"><code>{:f}</code></td>
+<td align="center">浮点数，默认保留小数点后6位</td>
+</tr>
+<tr>
+<td align="center"><code>{:.a}</code></td>
+<td align="center">浮点数，保留a位小数</td>
+</tr>
+<tr>
+<td align="center"><code>{:+}</code></td>
+<td align="center">显示数值的正负号</td>
+</tr>
+<tr>
+<td align="center"><code>{:e}</code></td>
+<td align="center">科学计数法表示数值</td>
+</tr>
+<tr>
+<td align="center"><code>{:%}</code></td>
+<td align="center">百分制表示数值</td>
+</tr>
+<tr>
+<td align="center"><code>{:b}</code></td>
+<td align="center">二进制整数</td>
+</tr>
+<tr>
+<td align="center"><code>{:o}</code></td>
+<td align="center">八进制整数</td>
+</tr>
+<tr>
+<td align="center"><code>{:d}</code></td>
+<td align="center">十进制整数</td>
+</tr>
+<tr>
+<td align="center"><code>{:x}</code></td>
+<td align="center">十六进制整数</td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/ji-ben-shu-ru-he-shu-chu/">https://blankspaceplus.github.io/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/ji-ben-shu-ru-he-shu-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                                    <span class="chip bg-color">程序设计</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/ri-qi-he-shi-jian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="日期和时间">
+                        
+                        <span class="card-title">日期和时间</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分享程序设计中日期和时间的相关内容，以Java、C/C++、Python为例。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/02/03/ruan-jian-gong-cheng/cheng-xu-she-ji/main-han-shu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="main函数">
+                        
+                        <span class="card-title">main函数</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分析主流编程语言中main函数的用法细节，以Java、Python、C/C++为例。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">615.1k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
