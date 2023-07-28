@@ -1,0 +1,398 @@
+﻿---
+title: Linux目录结构
+date: 2023-04-18 20:35:11
+summary: 本文分享Linux目录结构的相关内容。
+tags:
+- Linux
+categories:
+- Linux
+---
+
+# UNIX文件系统数据结构
+
+UNIX文件系统的数据结构包括：
+- super block：存储文件系统整体信息，比如文件系统大小(具体内容要看具体操作系统实现)
+- inode：存储文件的所有信息(除了名称存储在文件夹中)
+    - data block：存储文件的全部数据(一个文件可能有多个数据块，但数量有限，更多的数据块需要通过指针实现)
+    - directory block：目录条目的集合(目录条目由文件名和代表文件的inode编号组成)
+    - indirection block：一种特殊的数据块，用于存储用于指向动态分配的外部数据块的指针
+
+# Linux文件系统
+
+Linux文件系统迭代：
+- [MINIX](https://zh.m.wikipedia.org/zh-hans/MINIX%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
+    - [EXT1](https://zh.m.wikipedia.org/zh-hans/%E5%BB%B6%E4%BC%B8%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1)
+        - [EXT2](https://zh.m.wikipedia.org/zh-hans/Ext2)
+            - [EXT3](https:/OiHQZzomxHnr/zh.m.wikipedia.org/zh-hans/Ext3)
+                - [EXT4](https://zh.m.wikipedia.org/zh-hans/Ext4)
+        - [XFS](https://zh.m.wikipedia.org/zh-hans/XFS)
+
+# Linux系统目录
+
+Linux采用UNIX标准的`/`而不是Windows习惯的`\`来划分目录。
+
+Linux的挂载(mount)就是利用一个目录当成进入点，将磁盘分区的数据放到该目录下，进入该目录就可以读取该分区，该目录称为挂载点。
+
+Linux系统目录：
+- `/bin`：存储基本命令二进制文件(root和普通用户都可用)
+    - `/bin/cat`：将文件连接到标准输出
+    - `/bin/chgrp`：更改文件组所有权
+    - `/bin/chmod`：更改文件访问权限
+    - `/bin/chown`：更改文件所有者和组
+    - `/bin/cp`：复制文件和目录
+    - `/bin/date`：打印或设置系统数据和时间
+    - `/bin/dd`：转换和复制文件
+    - `/bin/df`：报告文件系统磁盘空间使用情况
+    - `/bin/dmesg`：打印或控制内核消息缓冲区
+    - `/bin/echo`：显示一行文本
+    - `/bin/false`：表示不成功(不执行任何操作)
+    - `/bin/hostname`：显示或设置系统主机名
+    - `/bin/kill`：向进程发送信号
+    - `/bin/ln`：在文件之间建立链接
+    - `/bin/login`：在系统上开始会话
+    - `/bin/ls`：列出目录内容
+    - `/bin/mkdir`：创建目录
+    - `/bin/mknod`：制作块或字符特殊文件
+    - `/bin/more`：翻阅文本
+    - `/bin/mount`：挂载文件系统
+    - `/bin/mv`：移动/重命名文件
+    - `/bin/ps`：报告进程状态
+    - `/bin/pwd`：打印当前工作目录的名称
+    - `/bin/rm`：删除文件或目录
+    - `/bin/rmdir`：删除空目录
+    - `/bin/sed`：sed流编辑器
+    - `/bin/sh`：Bourne命令外壳
+    - `/bin/stty`：更改和打印终端线路设置
+    - `/bin/su`：更改用户ID
+    - `/bin/sync`：刷新文件系统缓冲区
+    - `/bin/true`：表示成功(不执行任何操作)
+    - `/bin/umount`：卸载文件系统
+    - `/bin/uname`：打印系统信息
+    - `/bin/csh`：C Shell(可选)
+    - `/bin/ed`：ed编辑器(可选)
+    - `/bin/tar`：tar归档(可选)
+    - `/bin/cpio`：cpio归档(可选)
+    - `/bin/gzip`：GNU压缩(可选)
+    - `/bin/gunzip`：GNU解压(可选)
+    - `/bin/zcat`：GNU解压(可选)
+    - `/bin/netstat`：网络统计(可选)
+    - `/bin/ping`：ICMP网络测试(可选)
+- `/boot`：存储引导加载程序的静态文件
+    - `/boot/boot.0300`：备份主引导记录
+    - `/boot/boot.b`：基本引导扇区，实际上是以下四个文件之一的符号链接
+         - `/boot/boot-bmp.b`：启动屏幕
+         - `/boot/boot-menu.b`：启动简单菜单
+         - `/boot/boot-text.b`：启动基于文本的界面
+         - `/boot/boot-compat.b`：启动最小启动加载程序
+    - `/boot/chain.b`：引导非Linux操作系统
+    - `/boot/config-kernel-version`：安装内核配置
+    - `/boot/os2_d.b`：用于引导至OS/2操作系统
+    - `/boot/map`：包含内核的位置
+    - `/boot/vmlinuz`：通常是内核或内核的符号链接
+    - `/boot/vmlinuz-kernel-version`：通常是内核或内核的符号链接
+    - `/boot/grub`：包含GRUB(GNU GRand Unified Bootloader)配置文件
+        - `/boot/grub/device.map`：将`/dev`中的设备映射到Grub使用的设备
+        - `/boot/grub/grub.conf`：Grub配置文件
+        - `/boot/grub/menu.lst`：Grub配置文件
+        - `/boot/grub/messages`：Grub启动欢迎消息
+        - `/boot/grub/splash.xpm.gz`：Grub启动背景图像
+- `/dev`：存储设备文件
+    - `/dev/ttyS0`：第一个串行端口(鼠标、调制解调器)
+    - `/dev/psaux`：PS/2鼠标连接(鼠标、键盘)
+    - `/dev/lp0`：第一个并行端口(打印机、扫描仪等)
+    - `/dev/dsp`：针对数字信号分析进行优化的专用处理器芯片DSP
+    - `/dev/usb`：包含大部分USB设备节点
+    - `/dev/sda`：第一个SCSI设备(HDD、记忆棒、外部大容量存储设备，如笔记本电脑上的CD-ROM驱动器等)
+    - `/dev/scd`：第一个SCSI CD-ROM设备
+    - `/dev/js0`：第一个(游戏)操纵杆设备
+- `/etc`：存储主机特定的系统配置
+    - `/etc/X11`：
+        - `/etc/X11/XF86Config`：
+        - `/etc/X11/XF86Config-4`：
+        - `/etc/X11/Xmodmap`：
+        - `/etc/X11/xkb`：
+        - `/etc/X11/lbxproxy`：
+        - `/etc/X11/proxymngr`：
+        - `/etc/X11/xdm`：
+            - `/etc/X11/xdm/xdm-config`：
+        - `/etc/X11/gdm`：
+            - `/etc/X11/gdm/gdm.conf`：
+        - `/etc/X11/fonts`：
+        - `/etc/X11/fs`：
+            - `/etc/X11/fs/config`：
+        - `/etc/X11/twm`：
+        - `/etc/X11/xinit`：
+            - `/etc/X11/xinit/xinitrc`：
+    - `/etc/adduser.conf`：
+    - `/etc/adjtime`：
+    - `/etc/aliases`：
+    - `/etc/alternatives`：
+    - `/etc/apt`：
+        - `/etc/apt/sources.list`：
+    - `/etc/asound.conf`：
+    - `/etc/at.deny`：
+    - `/etc/autoconf`：
+    - `/etc/bash.bashrc`：
+    - `/etc/bash_completion`：
+    - `/etc/chatscripts/provider`：
+    - `/etc/cron.d`：
+    - `/etc/cron.daily`：
+    - `/etc/cron.weekly`：
+    - `/etc/cron.monthly`：
+    - `/etc/crontab`：
+    - `/etc/csh.login`：
+    - `/etc/csh.logout`：
+    - `/etc/csh.cshrc`：
+    - `/etc/cups`：
+    - `/etc/deluser.conf`：
+    - `/etc/devfs`：
+        - `/etc/devfs/conf.d`：
+    - `/etc/dhclient.conf`：
+    - `/etc/dhclient-script`：
+    - `/etc/dict.conf`：
+    - `/etc/dosemu.conf`：
+    - `/etc/email-addresses`：
+    - `/etc/esound.conf`：
+    - `/etc/exports`：
+    - `/etc/fdprm`：
+    - `/etc/fstab`：
+    - `/etc/ftpaccess`：
+    - `/etc/ftpchroot`：
+    - `/etc/ftpuser`：
+    - `/etc/gateways`：
+    - `/etc/gettydefs`：
+    - `/etc/gnome-vfs-mime-magic`：
+    - `/etc/group`：
+    - `/etc/group-`：
+    - `/etc/gshadow`：
+    - `/etc/gshadow-`：
+    - `/etc/hostname`：
+    - `/etc/host.conf`：
+    - `/etc/hosts`：
+    - `/etc/hosts.allow`：
+    - `/etc/hosts.deny`：
+    - `/etc/httpd`：
+    - `/etc/identd.conf`：
+    - `/etc/inetd.conf`：
+    - `/etc/init.d`：
+    - `/etc/inittab`：
+    - `/etc/inputrc`：
+    - `/etc/isapnp.conf`：
+    - `/etc/isdn`：
+    - `/etc/issue`：
+    - `/etc/issue.net`：
+    - `/etc/kde`：
+        - `/etc/kde/kdm`：
+    - `/etc/kderc`：
+    - `/etc/ld.so.conf`：
+    - `/etc/ld.so.cache`：
+    - `/etc/lilo.conf`：
+    - `/etc/local.gen`：
+    - `/etc/locale.alias`：
+    - `/etc/login.defs`：
+    - `/etc/logrotate.conf`：
+    - `/etc/ltrace.conf`：
+    - `/etc/magic`：
+    - `/etc/mail.rc`：
+    - `/etc/mailcap`：
+    - `/etc/mailcap.order`：
+    - `/etc/mailname`：
+    - `/etc/menu`：
+    - `/etc/menu-methods`：
+    - `/etc/mgetty+sendfax`：
+    - `/etc/mime.types`：
+    - `/etc/minicom`：
+    - `/etc/modules`：
+    - `/etc/modules.conf`：
+    - `/etc/modutils`：
+    - `/etc/mtools`：
+    - `/etc/manpath.conf`：
+    - `/etc/mediaprm`：
+    - `/etc/motd`：
+    - `/etc/mtab`：
+    - `/etc/networks`：
+    - `/etc/nsswitch.conf`：
+    - `/etc/opt`：特定于主机的第三方附加应用软件包配置文件
+    - `/etc/oss.conf`：
+    - `/etc/pam.d`：
+    - `/etc/postfix`：
+    - `/etc/ppp`：
+    - `/etc/pam.conf`：
+    - `/etc/paper.config`：
+    - `/etc/papersize`：
+    - `/etc/passwd`：
+    - `/etc/passwd-`：
+    - `/etc/printcap`：
+    - `/etc/profile`：
+    - `/etc/profile.d`：
+    - `/etc/protocols`：
+    - `/etc/pcmcia`：
+    - `/etc/reportbug.conf`：
+    - `/etc/rc.boot`：
+    - `/etc/rc?.d`：
+    - `/etc/rcS.d`：
+    - `/etc/resolv.conf`：
+    - `/etc/rmt`：
+    - `/etc/rpc`：
+    - `/etc/samba`：
+    - `/etc/sane.d`：
+    - `/etc/securetty`：
+    - `/etc/sensors.conf`：
+    - `/etc/sudoers`：
+    - `/etc/shadow`：
+    - `/etc/shadow-`：
+    - `/etc/sysctl.conf`：
+    - `/etc/security`：
+    - `/etc/serial.conf`：
+    - `/etc/services`：
+    - `/etc/shells`：
+    - `/etc/skel`：
+    - `/etc/sysconfig`：
+    - `/etc/slip`：
+    - `/etc/screenrc`：
+    - `/etc/scrollkeeper.conf`：
+    - `/etc/ssh`：
+    - `/etc/syslog.conf`：
+    - `/etc/termcap`：
+    - `/etc/timezone`：
+    - `/etc/updatedb.conf`：
+    - `/etc/vga`：
+    - `/etc/vim`：
+    - `/etc/xinetd.d`：
+    - `/etc/zlogin`：
+    - `/etc/zlogout`：
+    - `/etc/zprofile`：
+    - `/etc/zshenv`：
+    - `/etc/zshrc`：
+- `/home`：存储用户目录的根目录，当前用户根目录可记作`~`
+    - `/home/blankspace`：blankspace的个人目录
+- `/initrd`：通过引导加载程序加载RAM磁盘的能力
+- `/lib`：存储基本共享库和内核模块
+    - `/lib/'machine-architecture'`：
+    - `/lib/iptables`：
+    - `/lib/kbd`：
+    - `/lib/modules/`
+        - `/lib/modules/'kernel-version'`：
+            - `/lib/modules/'kernel-version'/isapnpmap.dep`：
+            - `/lib/modules/'kernel-version'/modules.dep`：
+            - `/lib/modules/'kernel-version'/pcimap`：
+            - `/lib/modules/'kernel-version'/usbmap`：
+    - `/lib/oss`：
+    - `/lib/security`：
+- `/lost+found`：存储系统意外崩溃退出后尝试恢复的已损坏的文件
+- `/media`：存储可移动媒体的挂载点
+    - `/media/floppy`：软盘驱动器(可选)
+    - `/media/cdrom`：CD-ROM驱动器(可选)
+    - `/media/cdrecorder`：CD刻录机(可选)
+    - `/media/zip`：邮编驱动器(可选)
+- `/mnt`：存储临时挂载文件系统的挂载点
+- `/opt`：存储第三方附加应用软件包
+    - `/opt/'package'`：第三方附加应用软件包
+        - `/opt/'package'/bin`：第三方附加应用软件包可供用户调用的部分
+        - `/opt/'package'/man`：第三方附加应用软件包的UNIX用户手册
+- `root`：系统管理员root的主目录
+- `/sbin`：存储用于系统维护和/或管理任务的二进制文件
+    - `/sbin/fastboot`：在不检查磁盘的情况下重新启动系统(可选)
+    - `/sbin/fasthalt`：停止系统而不检查磁盘(可选)
+    - `/sbin/fdisk`：操纵分区表(可选)
+    - `/sbin/fsck`：文件系统检查和修复(可选)
+    - `/sbin/fsck.*`：特定文件系统的文件系统检查和修复(可选)
+    - `/sbin/getty`：getty程序(可选)
+    - `/sbin/halt`：停止系统(可选)
+    - `/sbin/ifconfig`：配置网络接口(可选)
+    - `/sbin/init`：初始化进程(可选)
+    - `/sbin/mkfs`：构建文件系统(可选)
+    - `/sbin/mkfs.*`：构建特定文件系统(可选)
+    - `/sbin/mkswap`：设置交换区(可选)
+    - `/sbin/reboot`：重启系统(可选)
+    - `/sbin/route`：配置IP路由表(可选)
+    - `/sbin/swapon`：启用分页和交换(可选)
+    - `/sbin/swapoff`：禁用分页和交换(可选)
+    - `/sbin/update`：定期刷新文件系统缓冲区的守护进程(可选)
+- `/srv`：存储此系统提供的服务的数据(只读数据、可写数据和脚本)，让用户可以找到特定服务的数据文件的位置，命名`/srv`子目录的方法未达成共识
+- `/tmp`：存储临时文件(锁定文件和临时存储数据)，其中许多文件对于当前正在运行的程序很重要，删除它们可能会导致系统崩溃，多数系统会在启动或关闭时清除此目录
+- `/usr`：存储二级层次结构
+    - `/usr/X11R6`：
+        - `/usr/X11R6/bin`：
+        - `/usr/X11R6/include`：
+        - `/usr/X11R6/lib`：
+            - `/usr/X11R6/lib/modules`：
+            - `/usr/X11R6/lib/X11/fonts`：
+    - `/usr/bin`：
+    - `/usr/doc`：
+    - `/usr/etc`：
+    - `/usr/games`：
+    - `/usr/include`：
+    - `/usr/include/'package-name'`：
+    - `/usr/info`：
+    - `/usr/lib`：
+    - `/usr/local`：
+        - `/usr/local/lib`：本地库
+    - `/usr/man`：
+    - `/usr/sbin`：
+    - `/usr/share`：
+    - `/usr/share/doc`：
+    - `/usr/share/info`：
+    - `/usr/share/man`：
+    - `/usr/src`：
+    - `/usr/src/RPM`：
+    - `/usr/src/RPM/BUILD`：
+    - `/usr/src/RPM/RPMS/athlon`：
+    - `/usr/src/RPM/RPMS/i386`：
+    - `/usr/src/RPM/RPMS/i486`：
+    - `/usr/src/RPM/RPMS/i586`：
+    - `/usr/src/RPM/RPMS/i686`：
+    - `/usr/src/RPM/RPMS/noarch`：
+    - `/usr/src/RPM/SOURCES`：
+    - `/usr/src/RPM/SPECS`：
+    - `/usr/src/RPM/SRPMS`：
+    - `/usr/src/linux`：
+    - `/usr/src/linux/.config`：
+    - `/usr/src/linux/.depend`：
+    - `/usr/src/linux/.hdepend`：
+    - `/usr/src/linux/COPYING`：
+    - `/usr/src/linux/CREDITS`：
+    - `/usr/src/linux/MAINTAINERS`：
+    - `/usr/src/linux/Makefile`：
+    - `/usr/src/linux/README`：
+    - `/usr/src/linux/REPORTING-BUGS`：
+    - `/usr/src/linux/Rules.make`：
+    - `/usr/src/linux/Documentation`：
+    - `/usr/tmp`：
+- `/var`：存储可变数据，如系统日志文件、邮件和打印机假脱机目录以及临时文件和临时文件
+    - `/var/backups`：存储各种关键系统文件的备份
+    - `/var/cache`：存储来自应用程序的缓存数据，可以删除而不会丢失数据
+        - `/var/cache/fonts`：存储本地生成的字体
+        - `/var/cache/man`：缓存格式化的man手册
+        - `/var/cache/'package-name'`：打包特定的缓存数据
+        - `/var/cache/www`：存储www代理或缓存数据
+    - `/var/crash`：存储系统故障转储
+    - `/var/db`：数据库
+    - `/var/games`：存储`/usr`中与游戏相关的任何变量数据
+    - `/var/lib`：存储动态数据库或文件(如rpm/dpkg数据库和游戏分数)，存储与应用程序或系统有关的状态信息
+    - `/var/local`：存储`/usr/local`中的本地程序的可变数据
+    - `/var/lock`：存储那些锁定文件(对于某些设备)，这意味着程序正在使用特定的设备或文件，希望其他程序会注意到锁定文件并且不会尝试使用该设备或文件
+    - `/var/log`：
+        - `/var/log/auth.log`：记录普通用户和系统进程的所有登录和注销
+        - `/var/log/btmp`：所有尝试错误登录系统的日志，通过lastb命令访问
+        - `/var/log/debug`：调试各种包的输出
+        - `/var/log/dmesg`：内核环形缓冲区，通过dmesg命令访问
+        - `/var/log/gdm`：GDM(GNOME显示环境的管理器)日志文件
+        - `/var/log/kdm.log`：KDM日志文件
+        - `/var/log/messages`：系统日志
+        - `/var/log/pacct`：存储流程活动的原始数据，可以通过dump-acct、sa和lastcomm来访问
+        - `/var/log/utmp`：活跃的用户会话，是数据文件，无法直接查看
+        - `/var/log/wtmp`：登录和退出系统的所有用户的日志
+        - `/var/log/xdm.log`：XDM日志文件
+        - `/var/log/XFree86.?.log`：X启动日志文件，根据上次使用的时间进行编号
+        - `/var/log/syslog`：存储系统日志文件，内容通过syslogd守护进程(通常负责大多数系统上的所有日志操作)进行管理
+    - `/var/mail`：存储标准UNIX邮箱格式的用户邮箱文件
+        - `/var/mail/'username'`存储具体用户的邮箱文件
+    - `/var/opt`：存储程序包结构
+        - `/var/opt/'package-name'`：存储特定的程序包数据
+    - `/var/run`：存储系统服务的进程标识文件(pid)和其他有关系统的信息，这些信息在系统下次引导之前有效
+        - `/var/run/utmp`：存储有关当前登录用户的信息
+    - `/var/spool`：存储假脱机文件，例如用于邮件、新闻和打印(lpd)以及其他排队工作的文件
+    - `/var/tmp`：存储较大或需要存在的时间超过`/tmp`所允许的时间的临时文件
+    - `/var/named`：BIND数据库
+    - `/var/yp`：NIS(网络信息服务)数据库
