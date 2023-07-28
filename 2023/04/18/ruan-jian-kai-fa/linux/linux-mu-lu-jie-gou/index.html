@@ -1,0 +1,1631 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Linux目录结构, 星拱北辰">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Linux目录结构 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Linux目录结构</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-18
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-28
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    13 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="UNIX文件系统数据结构"><a href="#UNIX文件系统数据结构" class="headerlink" title="UNIX文件系统数据结构"></a>UNIX文件系统数据结构</h1><p>UNIX文件系统的数据结构包括：</p>
+<ul>
+<li>super block：存储文件系统整体信息，比如文件系统大小(具体内容要看具体操作系统实现)</li>
+<li>inode：存储文件的所有信息(除了名称存储在文件夹中)<ul>
+<li>data block：存储文件的全部数据(一个文件可能有多个数据块，但数量有限，更多的数据块需要通过指针实现)</li>
+<li>directory block：目录条目的集合(目录条目由文件名和代表文件的inode编号组成)</li>
+<li>indirection block：一种特殊的数据块，用于存储用于指向动态分配的外部数据块的指针</li>
+</ul>
+</li>
+</ul>
+<h1 id="Linux文件系统"><a href="#Linux文件系统" class="headerlink" title="Linux文件系统"></a>Linux文件系统</h1><p>Linux文件系统迭代：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/MINIX%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F">MINIX</a><ul>
+<li><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/%E5%BB%B6%E4%BC%B8%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1">EXT1</a><ul>
+<li><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/Ext2">EXT2</a><ul>
+<li><a target="_blank" rel="noopener" href="https://oihqzzomxhnr/zh.m.wikipedia.org/zh-hans/Ext3">EXT3</a><ul>
+<li><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/Ext4">EXT4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/XFS">XFS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="Linux系统目录"><a href="#Linux系统目录" class="headerlink" title="Linux系统目录"></a>Linux系统目录</h1><p>Linux采用UNIX标准的<code>/</code>而不是Windows习惯的<code>\</code>来划分目录。</p>
+<p>Linux的挂载(mount)就是利用一个目录当成进入点，将磁盘分区的数据放到该目录下，进入该目录就可以读取该分区，该目录称为挂载点。</p>
+<p>Linux系统目录：</p>
+<ul>
+<li><code>/bin</code>：存储基本命令二进制文件(root和普通用户都可用)<ul>
+<li><code>/bin/cat</code>：将文件连接到标准输出</li>
+<li><code>/bin/chgrp</code>：更改文件组所有权</li>
+<li><code>/bin/chmod</code>：更改文件访问权限</li>
+<li><code>/bin/chown</code>：更改文件所有者和组</li>
+<li><code>/bin/cp</code>：复制文件和目录</li>
+<li><code>/bin/date</code>：打印或设置系统数据和时间</li>
+<li><code>/bin/dd</code>：转换和复制文件</li>
+<li><code>/bin/df</code>：报告文件系统磁盘空间使用情况</li>
+<li><code>/bin/dmesg</code>：打印或控制内核消息缓冲区</li>
+<li><code>/bin/echo</code>：显示一行文本</li>
+<li><code>/bin/false</code>：表示不成功(不执行任何操作)</li>
+<li><code>/bin/hostname</code>：显示或设置系统主机名</li>
+<li><code>/bin/kill</code>：向进程发送信号</li>
+<li><code>/bin/ln</code>：在文件之间建立链接</li>
+<li><code>/bin/login</code>：在系统上开始会话</li>
+<li><code>/bin/ls</code>：列出目录内容</li>
+<li><code>/bin/mkdir</code>：创建目录</li>
+<li><code>/bin/mknod</code>：制作块或字符特殊文件</li>
+<li><code>/bin/more</code>：翻阅文本</li>
+<li><code>/bin/mount</code>：挂载文件系统</li>
+<li><code>/bin/mv</code>：移动/重命名文件</li>
+<li><code>/bin/ps</code>：报告进程状态</li>
+<li><code>/bin/pwd</code>：打印当前工作目录的名称</li>
+<li><code>/bin/rm</code>：删除文件或目录</li>
+<li><code>/bin/rmdir</code>：删除空目录</li>
+<li><code>/bin/sed</code>：sed流编辑器</li>
+<li><code>/bin/sh</code>：Bourne命令外壳</li>
+<li><code>/bin/stty</code>：更改和打印终端线路设置</li>
+<li><code>/bin/su</code>：更改用户ID</li>
+<li><code>/bin/sync</code>：刷新文件系统缓冲区</li>
+<li><code>/bin/true</code>：表示成功(不执行任何操作)</li>
+<li><code>/bin/umount</code>：卸载文件系统</li>
+<li><code>/bin/uname</code>：打印系统信息</li>
+<li><code>/bin/csh</code>：C Shell(可选)</li>
+<li><code>/bin/ed</code>：ed编辑器(可选)</li>
+<li><code>/bin/tar</code>：tar归档(可选)</li>
+<li><code>/bin/cpio</code>：cpio归档(可选)</li>
+<li><code>/bin/gzip</code>：GNU压缩(可选)</li>
+<li><code>/bin/gunzip</code>：GNU解压(可选)</li>
+<li><code>/bin/zcat</code>：GNU解压(可选)</li>
+<li><code>/bin/netstat</code>：网络统计(可选)</li>
+<li><code>/bin/ping</code>：ICMP网络测试(可选)</li>
+</ul>
+</li>
+<li><code>/boot</code>：存储引导加载程序的静态文件<ul>
+<li><code>/boot/boot.0300</code>：备份主引导记录</li>
+<li><code>/boot/boot.b</code>：基本引导扇区，实际上是以下四个文件之一的符号链接<ul>
+<li><code>/boot/boot-bmp.b</code>：启动屏幕</li>
+<li><code>/boot/boot-menu.b</code>：启动简单菜单</li>
+<li><code>/boot/boot-text.b</code>：启动基于文本的界面</li>
+<li><code>/boot/boot-compat.b</code>：启动最小启动加载程序</li>
+</ul>
+</li>
+<li><code>/boot/chain.b</code>：引导非Linux操作系统</li>
+<li><code>/boot/config-kernel-version</code>：安装内核配置</li>
+<li><code>/boot/os2_d.b</code>：用于引导至OS/2操作系统</li>
+<li><code>/boot/map</code>：包含内核的位置</li>
+<li><code>/boot/vmlinuz</code>：通常是内核或内核的符号链接</li>
+<li><code>/boot/vmlinuz-kernel-version</code>：通常是内核或内核的符号链接</li>
+<li><code>/boot/grub</code>：包含GRUB(GNU GRand Unified Bootloader)配置文件<ul>
+<li><code>/boot/grub/device.map</code>：将<code>/dev</code>中的设备映射到Grub使用的设备</li>
+<li><code>/boot/grub/grub.conf</code>：Grub配置文件</li>
+<li><code>/boot/grub/menu.lst</code>：Grub配置文件</li>
+<li><code>/boot/grub/messages</code>：Grub启动欢迎消息</li>
+<li><code>/boot/grub/splash.xpm.gz</code>：Grub启动背景图像</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>/dev</code>：存储设备文件<ul>
+<li><code>/dev/ttyS0</code>：第一个串行端口(鼠标、调制解调器)</li>
+<li><code>/dev/psaux</code>：PS/2鼠标连接(鼠标、键盘)</li>
+<li><code>/dev/lp0</code>：第一个并行端口(打印机、扫描仪等)</li>
+<li><code>/dev/dsp</code>：针对数字信号分析进行优化的专用处理器芯片DSP</li>
+<li><code>/dev/usb</code>：包含大部分USB设备节点</li>
+<li><code>/dev/sda</code>：第一个SCSI设备(HDD、记忆棒、外部大容量存储设备，如笔记本电脑上的CD-ROM驱动器等)</li>
+<li><code>/dev/scd</code>：第一个SCSI CD-ROM设备</li>
+<li><code>/dev/js0</code>：第一个(游戏)操纵杆设备</li>
+</ul>
+</li>
+<li><code>/etc</code>：存储主机特定的系统配置<ul>
+<li><code>/etc/X11</code>：<ul>
+<li><code>/etc/X11/XF86Config</code>：</li>
+<li><code>/etc/X11/XF86Config-4</code>：</li>
+<li><code>/etc/X11/Xmodmap</code>：</li>
+<li><code>/etc/X11/xkb</code>：</li>
+<li><code>/etc/X11/lbxproxy</code>：</li>
+<li><code>/etc/X11/proxymngr</code>：</li>
+<li><code>/etc/X11/xdm</code>：<ul>
+<li><code>/etc/X11/xdm/xdm-config</code>：</li>
+</ul>
+</li>
+<li><code>/etc/X11/gdm</code>：<ul>
+<li><code>/etc/X11/gdm/gdm.conf</code>：</li>
+</ul>
+</li>
+<li><code>/etc/X11/fonts</code>：</li>
+<li><code>/etc/X11/fs</code>：<ul>
+<li><code>/etc/X11/fs/config</code>：</li>
+</ul>
+</li>
+<li><code>/etc/X11/twm</code>：</li>
+<li><code>/etc/X11/xinit</code>：<ul>
+<li><code>/etc/X11/xinit/xinitrc</code>：</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>/etc/adduser.conf</code>：</li>
+<li><code>/etc/adjtime</code>：</li>
+<li><code>/etc/aliases</code>：</li>
+<li><code>/etc/alternatives</code>：</li>
+<li><code>/etc/apt</code>：<ul>
+<li><code>/etc/apt/sources.list</code>：</li>
+</ul>
+</li>
+<li><code>/etc/asound.conf</code>：</li>
+<li><code>/etc/at.deny</code>：</li>
+<li><code>/etc/autoconf</code>：</li>
+<li><code>/etc/bash.bashrc</code>：</li>
+<li><code>/etc/bash_completion</code>：</li>
+<li><code>/etc/chatscripts/provider</code>：</li>
+<li><code>/etc/cron.d</code>：</li>
+<li><code>/etc/cron.daily</code>：</li>
+<li><code>/etc/cron.weekly</code>：</li>
+<li><code>/etc/cron.monthly</code>：</li>
+<li><code>/etc/crontab</code>：</li>
+<li><code>/etc/csh.login</code>：</li>
+<li><code>/etc/csh.logout</code>：</li>
+<li><code>/etc/csh.cshrc</code>：</li>
+<li><code>/etc/cups</code>：</li>
+<li><code>/etc/deluser.conf</code>：</li>
+<li><code>/etc/devfs</code>：<ul>
+<li><code>/etc/devfs/conf.d</code>：</li>
+</ul>
+</li>
+<li><code>/etc/dhclient.conf</code>：</li>
+<li><code>/etc/dhclient-script</code>：</li>
+<li><code>/etc/dict.conf</code>：</li>
+<li><code>/etc/dosemu.conf</code>：</li>
+<li><code>/etc/email-addresses</code>：</li>
+<li><code>/etc/esound.conf</code>：</li>
+<li><code>/etc/exports</code>：</li>
+<li><code>/etc/fdprm</code>：</li>
+<li><code>/etc/fstab</code>：</li>
+<li><code>/etc/ftpaccess</code>：</li>
+<li><code>/etc/ftpchroot</code>：</li>
+<li><code>/etc/ftpuser</code>：</li>
+<li><code>/etc/gateways</code>：</li>
+<li><code>/etc/gettydefs</code>：</li>
+<li><code>/etc/gnome-vfs-mime-magic</code>：</li>
+<li><code>/etc/group</code>：</li>
+<li><code>/etc/group-</code>：</li>
+<li><code>/etc/gshadow</code>：</li>
+<li><code>/etc/gshadow-</code>：</li>
+<li><code>/etc/hostname</code>：</li>
+<li><code>/etc/host.conf</code>：</li>
+<li><code>/etc/hosts</code>：</li>
+<li><code>/etc/hosts.allow</code>：</li>
+<li><code>/etc/hosts.deny</code>：</li>
+<li><code>/etc/httpd</code>：</li>
+<li><code>/etc/identd.conf</code>：</li>
+<li><code>/etc/inetd.conf</code>：</li>
+<li><code>/etc/init.d</code>：</li>
+<li><code>/etc/inittab</code>：</li>
+<li><code>/etc/inputrc</code>：</li>
+<li><code>/etc/isapnp.conf</code>：</li>
+<li><code>/etc/isdn</code>：</li>
+<li><code>/etc/issue</code>：</li>
+<li><code>/etc/issue.net</code>：</li>
+<li><code>/etc/kde</code>：<ul>
+<li><code>/etc/kde/kdm</code>：</li>
+</ul>
+</li>
+<li><code>/etc/kderc</code>：</li>
+<li><code>/etc/ld.so.conf</code>：</li>
+<li><code>/etc/ld.so.cache</code>：</li>
+<li><code>/etc/lilo.conf</code>：</li>
+<li><code>/etc/local.gen</code>：</li>
+<li><code>/etc/locale.alias</code>：</li>
+<li><code>/etc/login.defs</code>：</li>
+<li><code>/etc/logrotate.conf</code>：</li>
+<li><code>/etc/ltrace.conf</code>：</li>
+<li><code>/etc/magic</code>：</li>
+<li><code>/etc/mail.rc</code>：</li>
+<li><code>/etc/mailcap</code>：</li>
+<li><code>/etc/mailcap.order</code>：</li>
+<li><code>/etc/mailname</code>：</li>
+<li><code>/etc/menu</code>：</li>
+<li><code>/etc/menu-methods</code>：</li>
+<li><code>/etc/mgetty+sendfax</code>：</li>
+<li><code>/etc/mime.types</code>：</li>
+<li><code>/etc/minicom</code>：</li>
+<li><code>/etc/modules</code>：</li>
+<li><code>/etc/modules.conf</code>：</li>
+<li><code>/etc/modutils</code>：</li>
+<li><code>/etc/mtools</code>：</li>
+<li><code>/etc/manpath.conf</code>：</li>
+<li><code>/etc/mediaprm</code>：</li>
+<li><code>/etc/motd</code>：</li>
+<li><code>/etc/mtab</code>：</li>
+<li><code>/etc/networks</code>：</li>
+<li><code>/etc/nsswitch.conf</code>：</li>
+<li><code>/etc/opt</code>：特定于主机的第三方附加应用软件包配置文件</li>
+<li><code>/etc/oss.conf</code>：</li>
+<li><code>/etc/pam.d</code>：</li>
+<li><code>/etc/postfix</code>：</li>
+<li><code>/etc/ppp</code>：</li>
+<li><code>/etc/pam.conf</code>：</li>
+<li><code>/etc/paper.config</code>：</li>
+<li><code>/etc/papersize</code>：</li>
+<li><code>/etc/passwd</code>：</li>
+<li><code>/etc/passwd-</code>：</li>
+<li><code>/etc/printcap</code>：</li>
+<li><code>/etc/profile</code>：</li>
+<li><code>/etc/profile.d</code>：</li>
+<li><code>/etc/protocols</code>：</li>
+<li><code>/etc/pcmcia</code>：</li>
+<li><code>/etc/reportbug.conf</code>：</li>
+<li><code>/etc/rc.boot</code>：</li>
+<li><code>/etc/rc?.d</code>：</li>
+<li><code>/etc/rcS.d</code>：</li>
+<li><code>/etc/resolv.conf</code>：</li>
+<li><code>/etc/rmt</code>：</li>
+<li><code>/etc/rpc</code>：</li>
+<li><code>/etc/samba</code>：</li>
+<li><code>/etc/sane.d</code>：</li>
+<li><code>/etc/securetty</code>：</li>
+<li><code>/etc/sensors.conf</code>：</li>
+<li><code>/etc/sudoers</code>：</li>
+<li><code>/etc/shadow</code>：</li>
+<li><code>/etc/shadow-</code>：</li>
+<li><code>/etc/sysctl.conf</code>：</li>
+<li><code>/etc/security</code>：</li>
+<li><code>/etc/serial.conf</code>：</li>
+<li><code>/etc/services</code>：</li>
+<li><code>/etc/shells</code>：</li>
+<li><code>/etc/skel</code>：</li>
+<li><code>/etc/sysconfig</code>：</li>
+<li><code>/etc/slip</code>：</li>
+<li><code>/etc/screenrc</code>：</li>
+<li><code>/etc/scrollkeeper.conf</code>：</li>
+<li><code>/etc/ssh</code>：</li>
+<li><code>/etc/syslog.conf</code>：</li>
+<li><code>/etc/termcap</code>：</li>
+<li><code>/etc/timezone</code>：</li>
+<li><code>/etc/updatedb.conf</code>：</li>
+<li><code>/etc/vga</code>：</li>
+<li><code>/etc/vim</code>：</li>
+<li><code>/etc/xinetd.d</code>：</li>
+<li><code>/etc/zlogin</code>：</li>
+<li><code>/etc/zlogout</code>：</li>
+<li><code>/etc/zprofile</code>：</li>
+<li><code>/etc/zshenv</code>：</li>
+<li><code>/etc/zshrc</code>：</li>
+</ul>
+</li>
+<li><code>/home</code>：存储用户目录的根目录，当前用户根目录可记作<code>~</code><ul>
+<li><code>/home/blankspace</code>：blankspace的个人目录</li>
+</ul>
+</li>
+<li><code>/initrd</code>：通过引导加载程序加载RAM磁盘的能力</li>
+<li><code>/lib</code>：存储基本共享库和内核模块<ul>
+<li><code>/lib/'machine-architecture'</code>：</li>
+<li><code>/lib/iptables</code>：</li>
+<li><code>/lib/kbd</code>：</li>
+<li><code>/lib/modules/</code><ul>
+<li><code>/lib/modules/'kernel-version'</code>：<ul>
+<li><code>/lib/modules/'kernel-version'/isapnpmap.dep</code>：</li>
+<li><code>/lib/modules/'kernel-version'/modules.dep</code>：</li>
+<li><code>/lib/modules/'kernel-version'/pcimap</code>：</li>
+<li><code>/lib/modules/'kernel-version'/usbmap</code>：</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>/lib/oss</code>：</li>
+<li><code>/lib/security</code>：</li>
+</ul>
+</li>
+<li><code>/lost+found</code>：存储系统意外崩溃退出后尝试恢复的已损坏的文件</li>
+<li><code>/media</code>：存储可移动媒体的挂载点<ul>
+<li><code>/media/floppy</code>：软盘驱动器(可选)</li>
+<li><code>/media/cdrom</code>：CD-ROM驱动器(可选)</li>
+<li><code>/media/cdrecorder</code>：CD刻录机(可选)</li>
+<li><code>/media/zip</code>：邮编驱动器(可选)</li>
+</ul>
+</li>
+<li><code>/mnt</code>：存储临时挂载文件系统的挂载点</li>
+<li><code>/opt</code>：存储第三方附加应用软件包<ul>
+<li><code>/opt/'package'</code>：第三方附加应用软件包<ul>
+<li><code>/opt/'package'/bin</code>：第三方附加应用软件包可供用户调用的部分</li>
+<li><code>/opt/'package'/man</code>：第三方附加应用软件包的UNIX用户手册</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>root</code>：系统管理员root的主目录</li>
+<li><code>/sbin</code>：存储用于系统维护和/或管理任务的二进制文件<ul>
+<li><code>/sbin/fastboot</code>：在不检查磁盘的情况下重新启动系统(可选)</li>
+<li><code>/sbin/fasthalt</code>：停止系统而不检查磁盘(可选)</li>
+<li><code>/sbin/fdisk</code>：操纵分区表(可选)</li>
+<li><code>/sbin/fsck</code>：文件系统检查和修复(可选)</li>
+<li><code>/sbin/fsck.*</code>：特定文件系统的文件系统检查和修复(可选)</li>
+<li><code>/sbin/getty</code>：getty程序(可选)</li>
+<li><code>/sbin/halt</code>：停止系统(可选)</li>
+<li><code>/sbin/ifconfig</code>：配置网络接口(可选)</li>
+<li><code>/sbin/init</code>：初始化进程(可选)</li>
+<li><code>/sbin/mkfs</code>：构建文件系统(可选)</li>
+<li><code>/sbin/mkfs.*</code>：构建特定文件系统(可选)</li>
+<li><code>/sbin/mkswap</code>：设置交换区(可选)</li>
+<li><code>/sbin/reboot</code>：重启系统(可选)</li>
+<li><code>/sbin/route</code>：配置IP路由表(可选)</li>
+<li><code>/sbin/swapon</code>：启用分页和交换(可选)</li>
+<li><code>/sbin/swapoff</code>：禁用分页和交换(可选)</li>
+<li><code>/sbin/update</code>：定期刷新文件系统缓冲区的守护进程(可选)</li>
+</ul>
+</li>
+<li><code>/srv</code>：存储此系统提供的服务的数据(只读数据、可写数据和脚本)，让用户可以找到特定服务的数据文件的位置，命名<code>/srv</code>子目录的方法未达成共识</li>
+<li><code>/tmp</code>：存储临时文件(锁定文件和临时存储数据)，其中许多文件对于当前正在运行的程序很重要，删除它们可能会导致系统崩溃，多数系统会在启动或关闭时清除此目录</li>
+<li><code>/usr</code>：存储二级层次结构<ul>
+<li><code>/usr/X11R6</code>：<ul>
+<li><code>/usr/X11R6/bin</code>：</li>
+<li><code>/usr/X11R6/include</code>：</li>
+<li><code>/usr/X11R6/lib</code>：<ul>
+<li><code>/usr/X11R6/lib/modules</code>：</li>
+<li><code>/usr/X11R6/lib/X11/fonts</code>：</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>/usr/bin</code>：</li>
+<li><code>/usr/doc</code>：</li>
+<li><code>/usr/etc</code>：</li>
+<li><code>/usr/games</code>：</li>
+<li><code>/usr/include</code>：</li>
+<li><code>/usr/include/'package-name'</code>：</li>
+<li><code>/usr/info</code>：</li>
+<li><code>/usr/lib</code>：</li>
+<li><code>/usr/local</code>：<ul>
+<li><code>/usr/local/lib</code>：本地库</li>
+</ul>
+</li>
+<li><code>/usr/man</code>：</li>
+<li><code>/usr/sbin</code>：</li>
+<li><code>/usr/share</code>：</li>
+<li><code>/usr/share/doc</code>：</li>
+<li><code>/usr/share/info</code>：</li>
+<li><code>/usr/share/man</code>：</li>
+<li><code>/usr/src</code>：</li>
+<li><code>/usr/src/RPM</code>：</li>
+<li><code>/usr/src/RPM/BUILD</code>：</li>
+<li><code>/usr/src/RPM/RPMS/athlon</code>：</li>
+<li><code>/usr/src/RPM/RPMS/i386</code>：</li>
+<li><code>/usr/src/RPM/RPMS/i486</code>：</li>
+<li><code>/usr/src/RPM/RPMS/i586</code>：</li>
+<li><code>/usr/src/RPM/RPMS/i686</code>：</li>
+<li><code>/usr/src/RPM/RPMS/noarch</code>：</li>
+<li><code>/usr/src/RPM/SOURCES</code>：</li>
+<li><code>/usr/src/RPM/SPECS</code>：</li>
+<li><code>/usr/src/RPM/SRPMS</code>：</li>
+<li><code>/usr/src/linux</code>：</li>
+<li><code>/usr/src/linux/.config</code>：</li>
+<li><code>/usr/src/linux/.depend</code>：</li>
+<li><code>/usr/src/linux/.hdepend</code>：</li>
+<li><code>/usr/src/linux/COPYING</code>：</li>
+<li><code>/usr/src/linux/CREDITS</code>：</li>
+<li><code>/usr/src/linux/MAINTAINERS</code>：</li>
+<li><code>/usr/src/linux/Makefile</code>：</li>
+<li><code>/usr/src/linux/README</code>：</li>
+<li><code>/usr/src/linux/REPORTING-BUGS</code>：</li>
+<li><code>/usr/src/linux/Rules.make</code>：</li>
+<li><code>/usr/src/linux/Documentation</code>：</li>
+<li><code>/usr/tmp</code>：</li>
+</ul>
+</li>
+<li><code>/var</code>：存储可变数据，如系统日志文件、邮件和打印机假脱机目录以及临时文件和临时文件<ul>
+<li><code>/var/backups</code>：存储各种关键系统文件的备份</li>
+<li><code>/var/cache</code>：存储来自应用程序的缓存数据，可以删除而不会丢失数据<ul>
+<li><code>/var/cache/fonts</code>：存储本地生成的字体</li>
+<li><code>/var/cache/man</code>：缓存格式化的man手册</li>
+<li><code>/var/cache/'package-name'</code>：打包特定的缓存数据</li>
+<li><code>/var/cache/www</code>：存储www代理或缓存数据</li>
+</ul>
+</li>
+<li><code>/var/crash</code>：存储系统故障转储</li>
+<li><code>/var/db</code>：数据库</li>
+<li><code>/var/games</code>：存储<code>/usr</code>中与游戏相关的任何变量数据</li>
+<li><code>/var/lib</code>：存储动态数据库或文件(如rpm/dpkg数据库和游戏分数)，存储与应用程序或系统有关的状态信息</li>
+<li><code>/var/local</code>：存储<code>/usr/local</code>中的本地程序的可变数据</li>
+<li><code>/var/lock</code>：存储那些锁定文件(对于某些设备)，这意味着程序正在使用特定的设备或文件，希望其他程序会注意到锁定文件并且不会尝试使用该设备或文件</li>
+<li><code>/var/log</code>：<ul>
+<li><code>/var/log/auth.log</code>：记录普通用户和系统进程的所有登录和注销</li>
+<li><code>/var/log/btmp</code>：所有尝试错误登录系统的日志，通过lastb命令访问</li>
+<li><code>/var/log/debug</code>：调试各种包的输出</li>
+<li><code>/var/log/dmesg</code>：内核环形缓冲区，通过dmesg命令访问</li>
+<li><code>/var/log/gdm</code>：GDM(GNOME显示环境的管理器)日志文件</li>
+<li><code>/var/log/kdm.log</code>：KDM日志文件</li>
+<li><code>/var/log/messages</code>：系统日志</li>
+<li><code>/var/log/pacct</code>：存储流程活动的原始数据，可以通过dump-acct、sa和lastcomm来访问</li>
+<li><code>/var/log/utmp</code>：活跃的用户会话，是数据文件，无法直接查看</li>
+<li><code>/var/log/wtmp</code>：登录和退出系统的所有用户的日志</li>
+<li><code>/var/log/xdm.log</code>：XDM日志文件</li>
+<li><code>/var/log/XFree86.?.log</code>：X启动日志文件，根据上次使用的时间进行编号</li>
+<li><code>/var/log/syslog</code>：存储系统日志文件，内容通过syslogd守护进程(通常负责大多数系统上的所有日志操作)进行管理</li>
+</ul>
+</li>
+<li><code>/var/mail</code>：存储标准UNIX邮箱格式的用户邮箱文件<ul>
+<li><code>/var/mail/'username'</code>存储具体用户的邮箱文件</li>
+</ul>
+</li>
+<li><code>/var/opt</code>：存储程序包结构<ul>
+<li><code>/var/opt/'package-name'</code>：存储特定的程序包数据</li>
+</ul>
+</li>
+<li><code>/var/run</code>：存储系统服务的进程标识文件(pid)和其他有关系统的信息，这些信息在系统下次引导之前有效<ul>
+<li><code>/var/run/utmp</code>：存储有关当前登录用户的信息</li>
+</ul>
+</li>
+<li><code>/var/spool</code>：存储假脱机文件，例如用于邮件、新闻和打印(lpd)以及其他排队工作的文件</li>
+<li><code>/var/tmp</code>：存储较大或需要存在的时间超过<code>/tmp</code>所允许的时间的临时文件</li>
+<li><code>/var/named</code>：BIND数据库</li>
+<li><code>/var/yp</code>：NIS(网络信息服务)数据库</li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2023/04/18/ruan-jian-kai-fa/linux/linux-mu-lu-jie-gou/">https://blankspaceplus.github.io/2023/04/18/ruan-jian-kai-fa/linux/linux-mu-lu-jie-gou/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/05/01/ruan-jian-gong-cheng/cheng-xu-she-ji/yu-fa-tang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="语法糖">
+                        
+                        <span class="card-title">语法糖</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分享一些对语法糖的理解思考。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/04/08/ruan-jian-gong-cheng/cheng-xu-she-ji/cookie-yu-session/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Cookie与Session">
+                        
+                        <span class="card-title">Cookie与Session</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文分享Cookie和Session这两种Web开发中常用的状态管理机制。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Cookie/">
+                        <span class="chip bg-color">Cookie</span>
+                    </a>
+                    
+                    <a href="/tags/Session/">
+                        <span class="chip bg-color">Session</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">688.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
