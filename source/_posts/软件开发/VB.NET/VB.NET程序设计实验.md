@@ -5,7 +5,7 @@ summary: 本文分享两个VB.NET程序设计实验题。
 tags:
 - VB.NET
 categories:
-- VB.NET
+- 开发技术
 ---
 
 # VB.NET控件综合运用

@@ -4,8 +4,9 @@ date: 2022-11-09 11:10:08
 summary: 本文介绍各种工具连接远程Linux服务器的方法。
 tags:
 - Linux
+- 操作系统
 categories:
-- Linux
+- 开发技术
 ---
 
 # Linux修改初始密码

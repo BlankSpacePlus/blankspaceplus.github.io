@@ -4,8 +4,9 @@ date: 2023-03-23 23:18:08
 summary: 本文分享科研民工远程操作Linux服务器的常用命令。
 tags:
 - Linux
+- 操作系统
 categories:
-- Linux
+- 开发技术
 ---
 
 # 系统说明

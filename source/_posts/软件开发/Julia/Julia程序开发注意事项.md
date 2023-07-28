@@ -5,7 +5,7 @@ summary: 本文分享一些Julia程序开发的注意事项。
 tags:
 - Julia
 categories:
-- Julia
+- 开发技术
 ---
 
 # Julia更改Pkg存放位置

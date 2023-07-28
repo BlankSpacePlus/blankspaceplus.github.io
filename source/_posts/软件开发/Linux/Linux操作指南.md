@@ -4,8 +4,9 @@ date: 2022-10-04 23:12:04
 summary: 本文分享一些Linux的使用心得。
 tags:
 - Linux
+- 操作系统
 categories:
-- Linux
+- 开发技术
 ---
 
 # Linux

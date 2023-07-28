@@ -5,7 +5,7 @@ summary: 本文分享VB.NET程序设计的测验内容。
 tags:
 - VB.NET
 categories:
-- VB.NET
+- 开发技术
 ---
 
 # Quiz1

@@ -5,7 +5,7 @@ summary: 本文分享一款整活儿向VisualBasicScript表白程序。
 tags:
 - VBScript
 categories:
-- VBScript
+- 开发技术
 ---
 
 # 完整代码

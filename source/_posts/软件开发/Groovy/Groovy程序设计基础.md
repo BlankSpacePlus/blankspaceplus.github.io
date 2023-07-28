@@ -5,7 +5,7 @@ summary: 本文分享Groovy程序设计的基本内容。
 tags:
 - Groovy
 categories:
-- Groovy
+- 开发技术
 ---
 
 # Groovy

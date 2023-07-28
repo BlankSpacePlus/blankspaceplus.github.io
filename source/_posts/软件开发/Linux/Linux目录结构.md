@@ -4,8 +4,9 @@ date: 2023-04-18 20:35:11
 summary: 本文分享Linux目录结构的相关内容。
 tags:
 - Linux
+- 操作系统
 categories:
-- Linux
+- 开发技术
 ---
 
 # UNIX文件系统数据结构

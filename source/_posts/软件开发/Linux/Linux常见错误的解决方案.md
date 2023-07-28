@@ -4,8 +4,9 @@ date: 2020-03-19 00:52:36
 summary: 本文分享一些Linux常见错误的解决方案。
 tags:
 - Linux
+- 操作系统
 categories:
-- Linux
+- 开发技术
 ---
 
 # XXX is not in the sudoers file ……

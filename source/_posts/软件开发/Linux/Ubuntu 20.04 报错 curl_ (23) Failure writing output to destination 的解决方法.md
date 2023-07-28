@@ -4,9 +4,10 @@ date: 2022-10-04 21:53:11
 summary: 本文分享 Ubuntu 20.04 报错 curl_ (23) Failure writing output to destination 的解决方法。
 tags:
 - Linux
+- 操作系统
 - 异常修复
 categories:
-- Linux
+- 开发技术
 ---
 
 Linux执行`curl`命令报错：`curl: (23) Failure writing output to destination`

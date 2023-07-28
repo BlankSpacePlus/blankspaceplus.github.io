@@ -4,8 +4,9 @@ date: 2020-04-29 20:02:56
 summary: 本文分享基于MySQL的SQL核心语法实战演练教程。
 tags:
 - MySQL
+- 数据库系统
 categories:
-- MySQL
+- 开发技术
 ---
 
 # 基于MySQL的SQL核心语法实战演练

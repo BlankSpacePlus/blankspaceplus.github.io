@@ -4,8 +4,9 @@ date: 2021-03-25 01:41:37
 summary: 本文分享MySQL基础理论学习笔记。
 tags:
 - MySQL
+- 数据库系统
 categories:
-- MySQL
+- 开发技术
 ---
 
 1. 修改配置文件请去mysql的路径下找`\conf\my.ini`。

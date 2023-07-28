@@ -5,7 +5,7 @@ summary: 本文分享VB.NET程序设计学习指南。
 tags:
 - VB.NET
 categories:
-- VB.NET
+- 开发技术
 ---
 
 # 疑难解答

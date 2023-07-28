@@ -6,7 +6,7 @@ tags:
 - Rust
 - Cargo
 categories:
-- Rust
+- 开发技术
 ---
 
 # Rust学习资料

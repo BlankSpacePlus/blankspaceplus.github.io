@@ -5,7 +5,7 @@ summary: 本文分享VisualBasic的分支结构、循环结构、内置函数。
 tags:
 - VBScript
 categories:
-- VBScript
+- 开发技术
 ---
 
 # 分支结构
