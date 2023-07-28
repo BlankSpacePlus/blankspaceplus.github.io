@@ -6,7 +6,7 @@ tags:
 - Linux
 - 异常修复
 categories:
-- 软件工程
+- Linux
 ---
 
 Linux执行`curl`命令报错：`curl: (23) Failure writing output to destination`
