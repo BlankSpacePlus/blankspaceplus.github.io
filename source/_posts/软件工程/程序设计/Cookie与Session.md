@@ -3,7 +3,8 @@ title: Cookie与Session
 date: 2023-04-09 00:13:28
 summary: 本文分享Cookie和Session这两种Web开发中常用的状态管理机制。
 tags:
-- 程序设计
+- Cookie
+- Session
 categories:
 - 程序设计
 ---
