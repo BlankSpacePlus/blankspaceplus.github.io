@@ -5,7 +5,7 @@ summary: 本文介绍简易Nginx文件服务器搭建过程。
 tags:
 - Nginx
 categories:
-- Nginx
+- 开发技术
 ---
 
 # Nginx

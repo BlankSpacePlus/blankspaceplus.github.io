@@ -5,6 +5,7 @@ summary: 本文分享一些Linux常见错误的解决方案。
 tags:
 - Linux
 - 操作系统
+- 异常修复
 categories:
 - 开发技术
 ---
