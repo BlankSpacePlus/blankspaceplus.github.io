@@ -5,7 +5,7 @@ summary: 本文归纳总结java.lang.Object转换为java.lang.String的三种方
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Object → String

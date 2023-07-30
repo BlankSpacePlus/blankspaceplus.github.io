@@ -5,7 +5,7 @@ summary: 本文分享一些Java程序设计基础语法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Java程序设计

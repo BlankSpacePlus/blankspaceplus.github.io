@@ -5,7 +5,7 @@ summary: 本文分享java.math.BigInteger与java.math.MutableBigInteger的相关
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # java.math.BigInteger

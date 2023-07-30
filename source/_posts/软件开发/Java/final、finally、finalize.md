@@ -5,7 +5,7 @@ summary: 本文分享Java基础语法中的final、finally、finalize的区别�
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # final、finally、finalize()

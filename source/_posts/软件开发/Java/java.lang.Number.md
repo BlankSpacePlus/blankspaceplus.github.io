@@ -5,7 +5,7 @@ summary: 本文分享Java数值类型体系，以java.lang.Number为核心，扩
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # java.lang.Number

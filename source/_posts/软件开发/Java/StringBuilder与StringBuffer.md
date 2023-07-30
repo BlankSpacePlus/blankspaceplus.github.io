@@ -5,7 +5,7 @@ summary: 本文剖析java.lang.StringBuilder与java.lang.StringBuffer的关系�
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # StringBuilder与StringBuffer的关系

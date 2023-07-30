@@ -5,7 +5,7 @@ summary: 本文深入解读Java关键词strictfp的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # strictfp与Java

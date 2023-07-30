@@ -5,7 +5,7 @@ summary: 本文分享java.lang.String的核心知识。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # String的创建和初始化

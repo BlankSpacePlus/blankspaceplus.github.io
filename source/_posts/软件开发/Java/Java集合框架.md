@@ -5,7 +5,7 @@ summary: 本文分享Java集合框架最基本的体系结构图。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 下图列出了Java内置集合框架的体系结构：

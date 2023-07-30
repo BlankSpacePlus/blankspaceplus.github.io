@@ -5,7 +5,7 @@ summary: 本文分享Java格式化处理体系的相关内容，以java.text.For
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 格式化继承关系

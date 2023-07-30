@@ -5,7 +5,7 @@ summary: 本文分享java.util.Arrays的equals()与deepEquals()。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # equals()

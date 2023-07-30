@@ -5,7 +5,7 @@ summary: 本文分享Array、List的类型转换，主要剖析Arrays.asList()�
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Arrays.asList()

@@ -5,7 +5,7 @@ summary: 本文介绍Java进制转换的相关内容，尤其是八进制。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 八进制

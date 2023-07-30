@@ -5,7 +5,7 @@ summary: 本文归纳Java数值计算容易出现的错误。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 错误1：整数除法得整数

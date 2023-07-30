@@ -5,7 +5,7 @@ summary: 本文分享Java语境下浅拷贝与深拷贝的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 浅拷贝与深拷贝

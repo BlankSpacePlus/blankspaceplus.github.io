@@ -5,7 +5,7 @@ summary: 本文介绍java.math.RoundingMode的舍入模式，以及java.math.Rou
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 java.math.RoundingMode是Java中一个枚举类，用于指定数字舍入的方式。它定义了一组枚举值，每个枚举值表示一种不同的舍入模式。java.math.RoundingMode提供了灵活的舍入选项，以满足不同的数值计算需求。

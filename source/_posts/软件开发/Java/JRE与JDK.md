@@ -5,7 +5,7 @@ summary: 本文分享JRE与JDK的相关内容，并解析JDK的目录结构。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # JRE

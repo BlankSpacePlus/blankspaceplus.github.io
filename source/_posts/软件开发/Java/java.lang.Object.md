@@ -5,7 +5,7 @@ summary: 本文分享java.lang.Object的相关知识。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # java.lang.Object核心要点

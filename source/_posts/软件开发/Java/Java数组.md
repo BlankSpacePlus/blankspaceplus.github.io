@@ -5,7 +5,7 @@ summary: 本文浅析Java数组使用时的注意事项。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 数组

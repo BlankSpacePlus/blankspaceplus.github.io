@@ -5,7 +5,7 @@ summary: 本文介绍Java随机数的内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 随机数

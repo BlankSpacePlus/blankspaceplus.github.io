@@ -5,7 +5,7 @@ summary: 本文分享四种Java数组的拷贝方法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 数组拷贝

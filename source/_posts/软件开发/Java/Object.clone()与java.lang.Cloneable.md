@@ -5,7 +5,7 @@ summary: 本文分享Java对对象克隆的支持，主要内容包括java.lang.
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Object.clone()

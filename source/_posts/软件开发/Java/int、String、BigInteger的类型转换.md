@@ -5,7 +5,7 @@ summary: 本文分享int、String、BigInteger之间的类型转换方法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # int、Integer、String的类型转换

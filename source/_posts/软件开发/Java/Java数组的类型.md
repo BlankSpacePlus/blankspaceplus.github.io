@@ -5,7 +5,7 @@ summary: 本文探究Java数组的类型。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 数组是一种引用类型

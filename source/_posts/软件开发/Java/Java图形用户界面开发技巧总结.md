@@ -6,7 +6,7 @@ tags:
 - Java
 - GUI
 categories:
-- 开发技术
+- Java
 ---
 
 # 开发技巧

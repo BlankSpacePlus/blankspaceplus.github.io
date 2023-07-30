@@ -5,7 +5,7 @@ summary: 本文分享三种java.lang.String的分割方法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # String

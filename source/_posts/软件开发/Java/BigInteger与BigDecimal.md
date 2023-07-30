@@ -5,7 +5,7 @@ summary: 本文分享BigInteger与BigDecimal的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # java.math.BigInteger

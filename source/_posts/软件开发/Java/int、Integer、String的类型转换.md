@@ -5,7 +5,7 @@ summary: 本文分享int、Integer、String之间的类型转换方法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # int → String

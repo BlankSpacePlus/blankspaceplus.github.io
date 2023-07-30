@@ -5,7 +5,7 @@ summary: 本文分享java.lang.Math和java.lang.StrictMath的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Math与StrictMath

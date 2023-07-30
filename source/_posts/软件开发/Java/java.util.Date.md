@@ -5,7 +5,7 @@ summary: 本文探讨java.util.Date的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # java.util.Date

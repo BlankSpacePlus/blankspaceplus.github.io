@@ -5,7 +5,7 @@ summary: 本文详细梳理Java支持的Keywords和ReservedWords。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # Java关键词

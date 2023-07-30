@@ -5,7 +5,7 @@ summary: 本文整合自早期的五篇博客，为初学者提供了一些Java�
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 本文说明

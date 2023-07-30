@@ -5,7 +5,7 @@ summary: 本文分享java.util.Arrays的copyOf()与copyOfRange()。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 java.util.Arrays的copyOf()与copyOfRange()方法都用于实现数组拷贝，前者用于完整数组的拷贝，后者用于数组区间的拷贝。

@@ -5,7 +5,7 @@ summary: 以List为例，细说遍历时如何优雅地删除Java集合元素。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 实体类

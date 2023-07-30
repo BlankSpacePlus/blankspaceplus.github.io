@@ -5,7 +5,7 @@ summary: 本文通过一个案例带领读者完成一个简单的JNI应用Demo�
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 前言

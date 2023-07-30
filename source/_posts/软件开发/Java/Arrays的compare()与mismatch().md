@@ -5,7 +5,7 @@ summary: 本文分享java.util.Arrays的compare()与mismatch()方法的实现机
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # mismatch()

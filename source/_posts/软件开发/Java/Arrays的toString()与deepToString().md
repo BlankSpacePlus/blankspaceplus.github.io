@@ -5,7 +5,7 @@ summary: 本文分享java.util.Arrays的toString()与deepToString()。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # toString()

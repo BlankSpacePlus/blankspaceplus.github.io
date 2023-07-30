@@ -5,7 +5,7 @@ summary: 本文分享七种java.lang.String的倒置方法。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 字符串倒置

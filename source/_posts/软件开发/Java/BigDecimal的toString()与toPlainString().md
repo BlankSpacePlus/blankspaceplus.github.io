@@ -5,7 +5,7 @@ summary: 本文比较java.math.BigDecimal的toString()与toPlainString()。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # toString()与toPlainString()

@@ -5,7 +5,7 @@ summary: 本文深入剖析Java八种基本类型，包括byte、short、int、l
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 基本数据类型

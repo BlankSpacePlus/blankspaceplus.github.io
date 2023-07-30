@@ -5,7 +5,7 @@ summary: 本文记录菜鸟教程的Java基础测试笔记。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 错题

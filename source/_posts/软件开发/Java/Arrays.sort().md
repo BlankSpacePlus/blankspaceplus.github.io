@@ -5,7 +5,7 @@ summary: 本文深入解读Java内置的数组排序算法java.util.Arrays.sort(
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # API定义

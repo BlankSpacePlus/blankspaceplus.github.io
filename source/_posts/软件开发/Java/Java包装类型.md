@@ -5,7 +5,7 @@ summary: 本文分享Java基本类型与包装类型的相关内容。
 tags:
 - Java
 categories:
-- 开发技术
+- Java
 ---
 
 # 基本类型
