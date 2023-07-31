@@ -301,8 +301,8 @@ public void quickSortByName(List<PatientInfo> list, int low, int high) {
 如果我们查询到的信息可以被用户任意篡改，那么会比较麻烦，所以我认为应该做控制，制止用户修改权限。
 
 这个所谓的“权限”，其实主要通过下面两个方法实现的：
-- <code> setEditable() </code>
-- <code> setText() </code>
+- ` setEditable() `
+- ` setText() `
 
 第一个是set文本是否可编辑的，第二个是改文本内容的。
 
@@ -490,7 +490,7 @@ java.lang.NullPointerException
 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)s
 ```
 
-博主查了做了很多尝试，也思考了很久如何处理这个路径的问题。诸如<code>src</code>这种，都不能读取icon。
+博主查了做了很多尝试，也思考了很久如何处理这个路径的问题。诸如`src`这种，都不能读取icon。
 
 我怀疑是Eclipse和IDEA存在差异，决定在Eclipse里模拟这种包结构：
 ![](../../../images/软件开发/Java/Java图形用户界面开发技巧总结/16.png)

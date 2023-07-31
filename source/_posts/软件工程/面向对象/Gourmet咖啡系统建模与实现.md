@@ -1339,7 +1339,7 @@ public class GourmetCoffee  {
 	}
 
 	/**
-	 * Constructs a <code>GourmetCoffee</code> object and
+	 * Constructs a `GourmetCoffee` object and
 	 * initializes the catalog and sales data.
 	 *
 	 * @param initialCatalog a product catalog
@@ -1572,7 +1572,7 @@ The Gourmet Coffee System sells three types of products: coffee, coffee brewers,
 
 Every line in catalog.dat contains exactly one product. 
 A line for a coffee product has the following format:
-<code>Coffee_code_description_price_origin_roast_flavor_aroma_acidity_body</code>
+`Coffee_code_description_price_origin_roast_flavor_aroma_acidity_body`
 
 **where:**
 - "**Coffee**" is a prefix that indicates the line type. 
@@ -1588,7 +1588,7 @@ A line for a coffee product has the following format:
 
 The fields are delimited by an underscore ( _ ). You can assume that the fields themselves do not contain any underscores.
 A line for a coffee brewer has the following format:
-<code>Brewer_code_description_price_model_waterSupply_numberOfCups</code>
+`Brewer_code_description_price_model_waterSupply_numberOfCups`
 
 **where:**
 - "**Brewer**" is a prefix that indicates the line type. 
@@ -1601,7 +1601,7 @@ A line for a coffee brewer has the following format:
 
 The fields are delimited by an underscore ( _ ). You can assume that the fields themselves do not contain any underscores.
 A line for a coffee accessory has the following format:
-<code>Product_code_description_price</code>
+`Product_code_description_price`
 
 **where:**
 - "**Product**" is a prefix that indicates the line type. 
@@ -1831,7 +1831,7 @@ public class DataFormatException extends Exception  {
     private static final long serialVersionUID = 1L;
 
     /**
-     * Constructs a <code>DataFormatException</code> with no detail
+     * Constructs a `DataFormatException` with no detail
      * message.
      */
     public DataFormatException() {
@@ -1839,7 +1839,7 @@ public class DataFormatException extends Exception  {
     }
 
     /**
-     * Constructs a <code>DataFormatException</code> with the
+     * Constructs a `DataFormatException` with the
      * specified detail message.
      *
      * @param message  the malformed data
@@ -2021,7 +2021,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Tests the class <code>FileCatalogLoader</code>
+ * Tests the class `FileCatalogLoader`
  *
  * @author BlankSpace
  * @version 1.0.0
@@ -2052,11 +2052,11 @@ public class  TestFileCatalogLoader  {
 
     /**
      * Displays a message in the standard error stream if the value specified
-     * by parameter <code>condition<code> is <code>false</code>.
+     * by parameter `condition` is `false`.
      *
      * @param message  the error message.
      * @param condition  the test condition.
-     * @return the value of <code>condition</code>
+     * @return the value of `condition`
      */
     public static void assertTrue(String message, boolean condition) {
         if (!condition) {
@@ -2070,7 +2070,7 @@ public class  TestFileCatalogLoader  {
      * Displays a message in the standard error stream.
      *
      * @param message  the error message.
-     * @return <code>false</code>;
+     * @return `false`;
      */
     public static void fail(String message) {
         stdErr.print("** Test failure ");
@@ -2079,10 +2079,10 @@ public class  TestFileCatalogLoader  {
     }
 
     /**
-     * Tests the method <code>loadCatalog</code>.
+     * Tests the method `loadCatalog`.
      *
-     * @return <code>true</code> if all test passed; otherwise returns
-     *         <code>false</code>.
+     * @return `true` if all test passed; otherwise returns
+     *         `false`.
      * @throws IOException  if an I/O error occurs.
      */
     public void testLoadCatalog() throws IOException {
@@ -2228,7 +2228,7 @@ public class GourmetCoffee  {
     }
 
     /**
-     * Constructs a <code>GourmetCoffee</code> object.
+     * Constructs a `GourmetCoffee` object.
      * Initializes the catalog data with the value specified
      * in the parameter.
      *

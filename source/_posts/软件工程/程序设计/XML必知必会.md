@@ -33,7 +33,7 @@ categories:
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -41,7 +41,7 @@ categories:
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A002</CODE>
+                `A002`
                 <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -51,7 +51,7 @@ categories:
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -59,7 +59,7 @@ categories:
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A004</CODE>
+                `A004`
                 <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -67,7 +67,7 @@ categories:
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A006</CODE>
+                `A006`
                 <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
                 <PRICE>18.0</PRICE>
             </PRODUCT>
@@ -77,7 +77,7 @@ categories:
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A009</CODE>
+                `A009`
                 <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
                 <PRICE>45.0</PRICE>
             </PRODUCT>
@@ -93,7 +93,7 @@ categories:
 <ORDER>
     <ORDERITEM>
         <PRODUCT>
-            <CODE>A001</CODE>
+            `A001`
             <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
             <PRICE>9.0</PRICE>
         </PRODUCT>
@@ -101,7 +101,7 @@ categories:
     </ORDERITEM>
     <ORDERITEM>
         <PRODUCT>
-            <CODE>A002</CODE>
+            `A002`
             <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
             <PRICE>9.0</PRICE>
         </PRODUCT>
@@ -111,7 +111,7 @@ categories:
 <ORDER>
     <ORDERITEM>
         <PRODUCT>
-            <CODE>A001</CODE>
+            `A001`
             <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
             <PRICE>9.0</PRICE>
         </PRODUCT>
@@ -119,7 +119,7 @@ categories:
     </ORDERITEM>
     <ORDERITEM>
         <PRODUCT>
-            <CODE>A004</CODE>
+            `A004`
             <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
             <PRICE>9.0</PRICE>
         </PRODUCT>
@@ -127,7 +127,7 @@ categories:
     </ORDERITEM>
     <ORDERITEM>
         <PRODUCT>
-            <CODE>A006</CODE>
+            `A006`
             <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
             <PRICE>18.0</PRICE>
         </PRODUCT>
@@ -137,7 +137,7 @@ categories:
 <ORDER>
    <ORDERITEM>
         <PRODUCT>
-            <CODE>A009</CODE>
+            `A009`
             <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
             <PRICE>45.0</PRICE>
         </PRODUCT>
@@ -219,7 +219,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -227,7 +227,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A002</CODE>
+                `A002`
                 <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -237,7 +237,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -245,7 +245,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A004</CODE>
+                `A004`
                 <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -253,7 +253,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A006</CODE>
+                `A006`
                 <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
                 <PRICE>18.0</PRICE>
             </PRODUCT>
@@ -263,7 +263,7 @@ XML不管属性值是不是数值，反正必须加引号！！！
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A009</CODE>
+                `A009`
                 <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
                 <PRICE>45.0</PRICE>
             </PRODUCT>
@@ -288,7 +288,7 @@ XML 文档中的元素形成了一棵**文档树**。这棵树从根部开始，
   - **\<ORDER>**
     - **\<ORDERITEM>**
       - **\<PRODUCT>**
-        - **\<CODE>**
+        - **\`**
         - **\<DESCRIPTION>**
         - **\<PRICE>**
       - **\<QUANTITY>**
@@ -311,7 +311,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -319,7 +319,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A002</CODE>
+                `A002`
                 <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -329,7 +329,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -337,7 +337,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A004</CODE>
+                `A004`
                 <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -345,7 +345,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A006</CODE>
+                `A006`
                 <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
                 <PRICE>18.0</PRICE>
             </PRODUCT>
@@ -355,7 +355,7 @@ XML也可以指定属性的，比如[下面的代码](https://blankspace.blog.cs
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A009</CODE>
+                `A009`
                 <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
                 <PRICE>45.0</PRICE>
             </PRODUCT>
@@ -442,7 +442,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
     <ORDER>
         <ORDERITEM>
             <PRODUCT id="202003010001">
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -450,7 +450,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT id="202003010002">
-                <CODE>A002</CODE>
+                `A002`
                 <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -460,7 +460,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
     <ORDER>
         <ORDERITEM>
             <PRODUCT id="202003010003">
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -468,7 +468,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT id="202003010004">
-                <CODE>A004</CODE>
+                `A004`
                 <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -476,7 +476,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT id="202003010005">
-                <CODE>A006</CODE>
+                `A006`
                 <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
                 <PRICE>18.0</PRICE>
             </PRODUCT>
@@ -486,7 +486,7 @@ XML具有扩展性好的优点，但属性的滥用会带来XML文档的低可�
     <ORDER>
         <ORDERITEM>
             <PRODUCT id="202003010006">
-                <CODE>A009</CODE>
+                `A009`
                 <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
                 <PRICE>45.0</PRICE>
             </PRODUCT>

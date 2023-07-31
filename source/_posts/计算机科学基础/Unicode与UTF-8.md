@@ -48,10 +48,10 @@ UTF-8 编码将像这样存储“hello”（二进制）：01101000 01100101 011
 
 UTF-8 的编码规则如下（U+ 后面的数字代表 Unicode 字符代码）：
 
-U+&nbsp;&nbsp;0000 ~ U+&nbsp;&nbsp;007F: <code>0XXXXXXX</code>
-U+&nbsp;&nbsp;0080 ~ U+&nbsp;&nbsp;07FF: <code>110XXXXX 10XXXXXX</code>
-U+&nbsp;&nbsp;0800 ~ U+&nbsp;&nbsp;FFFF: <code>1110XXXX 10XXXXXX 10XXXXXX</code>
-U+10000 ~ U+1FFFF: <code>11110XXX 10XXXXXX 10XXXXXX 10XXXXXX</code>
+U+&nbsp;&nbsp;0000 ~ U+&nbsp;&nbsp;007F: `0XXXXXXX`
+U+&nbsp;&nbsp;0080 ~ U+&nbsp;&nbsp;07FF: `110XXXXX 10XXXXXX`
+U+&nbsp;&nbsp;0800 ~ U+&nbsp;&nbsp;FFFF: `1110XXXX 10XXXXXX 10XXXXXX`
+U+10000 ~ U+1FFFF: `11110XXX 10XXXXXX 10XXXXXX 10XXXXXX`
 
 可以看到，UTF-8 通过开头的标志位位数实现了变长。对于单字节字符，只占用一个字节，实现了向下兼容 ASCII，并且能和 UTF-32 一样，包含 Unicode 中的所有字符，又能有效减少存储传输过程中占用的空间。
 

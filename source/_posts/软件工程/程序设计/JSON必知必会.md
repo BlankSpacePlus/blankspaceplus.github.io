@@ -500,7 +500,7 @@ XML格式的数据：
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -508,7 +508,7 @@ XML格式的数据：
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A002</CODE>
+                `A002`
                 <DESCRIPTION>Irish Creme Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -518,7 +518,7 @@ XML格式的数据：
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A001</CODE>
+                `A001`
                 <DESCRIPTION>Almond Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -526,7 +526,7 @@ XML格式的数据：
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A004</CODE>
+                `A004`
                 <DESCRIPTION>Caramel Flavored Syrup</DESCRIPTION>
                 <PRICE>9.0</PRICE>
             </PRODUCT>
@@ -534,7 +534,7 @@ XML格式的数据：
         </ORDERITEM>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A006</CODE>
+                `A006`
                 <DESCRIPTION>Gourmet Coffee Travel Thermo</DESCRIPTION>
                 <PRICE>18.0</PRICE>
             </PRODUCT>
@@ -544,7 +544,7 @@ XML格式的数据：
     <ORDER>
         <ORDERITEM>
             <PRODUCT>
-                <CODE>A009</CODE>
+                `A009`
                 <DESCRIPTION>Gourmet Coffee 36 Cup Filters</DESCRIPTION>
                 <PRICE>45.0</PRICE>
             </PRODUCT>

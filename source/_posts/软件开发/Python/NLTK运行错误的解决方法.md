@@ -64,7 +64,7 @@ LookupError:
 ![](../../../images/软件开发/Python/NLTK运行错误的解决方法/2.png)
 下载完毕的是一个zip压缩包，处理方式是解压，在可能被搜索到的路径下安置这个文件夹。
 我选择的是工程里面的venv文件夹。
-不论选择哪个路径，注意的是：在安装之前，必须新建两层文件夹：<code>nltk_data</code>、<code>tokenizers</code>：
+不论选择哪个路径，注意的是：在安装之前，必须新建两层文件夹：`nltk_data`、`tokenizers`：
 ![](../../../images/软件开发/Python/NLTK运行错误的解决方法/3.png)
 ![](../../../images/软件开发/Python/NLTK运行错误的解决方法/4.png)
 ![](../../../images/软件开发/Python/NLTK运行错误的解决方法/5.png)

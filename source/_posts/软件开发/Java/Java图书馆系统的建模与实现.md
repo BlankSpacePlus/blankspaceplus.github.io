@@ -91,10 +91,10 @@ categories:
  * following information:
  * </p>
  * <ol>
- * <li>the code of the item, a <code>String</code></li>
- * <li>the title of the item, a <code>String</code></li>
- * <li>the year the item was published, an <code>int</code></li>
- * <li>a <code>boolean</code> value that indicates if the item is
+ * <li>the code of the item, a `String`</li>
+ * <li>the title of the item, a `String`</li>
+ * <li>the year the item was published, an `int`</li>
+ * <li>a `boolean` value that indicates if the item is
  *     available</li>
  * </ol>
  *
@@ -116,10 +116,10 @@ public class CatalogItem {
 	private boolean  available;
 
 	/**
-	 * Constructs a <code>CatalogItem</code> object.
+	 * Constructs a `CatalogItem` object.
 	 * <p>
-	 * Sets the instance variable <code>available</code>
-	 * to <code>true</code>.
+	 * Sets the instance variable `available`
+	 * to `true`.
 	 * <p>
 	 *
 	 * @param initialCode  the code of the item.
@@ -166,7 +166,7 @@ public class CatalogItem {
 	}
 
 	/**
-	 * Sets the value of instance variable <code>available</code>.
+	 * Sets the value of instance variable `available`.
 	 *
 	 * @param value  the new value.
 	 */
@@ -176,10 +176,10 @@ public class CatalogItem {
 	}
 
 	/**
-	 * Returns <code>true</code> if the item is available.
+	 * Returns `true` if the item is available.
 	 *
-	 * @return  <code>true</code> if the item is available;
-	 *          <code>false</code> otherwise.
+	 * @return  `true` if the item is available;
+	 *          `false` otherwise.
 	 */
 	public boolean  isAvailable()  {
 
@@ -187,12 +187,12 @@ public class CatalogItem {
 	}
 
 	/**
-	 * Returns <code>true</code> if the code of this catalog item is
+	 * Returns `true` if the code of this catalog item is
 	 * equal to the code of the argument
 	 *
 	 * @param object  object with which this catalog item is compared.
-	 * @return  <code>true</code> if the code of this catalog item is
-	 *          equal to the code of the argument; <code>false</code>
+	 * @return  `true` if the code of this catalog item is
+	 *          equal to the code of the argument; `false`
 	 *          otherwise.
 	 */
 	public boolean  equals(Object  object)  {
@@ -223,8 +223,8 @@ public class CatalogItem {
  * This class models a recording. It extends {@link CatalogItem} and
  * adds the following information:
  * <ol>
- * <li>the performer of the recording, a <code>String</code></li>
- * <li>the format of the recording, a <code>String</code></li>
+ * <li>the performer of the recording, a `String`</li>
+ * <li>the format of the recording, a `String`</li>
  * </ol>
  *
  * @author BlankSpace
@@ -240,7 +240,7 @@ public class Recording extends CatalogItem  {
 	private String  format;
 
 	/**
-	 * Constructs an <code>Recording</code> object.
+	 * Constructs an `Recording` object.
 	 *
 	 * @param initialCode  the code of the catalog item.
 	 * @param initialTitle  the title of the catalog item.
@@ -300,8 +300,8 @@ public class Recording extends CatalogItem  {
  * This class models a book. It extends {@link CatalogItem} and
  * adds the following information:
  * <ol>
- * <li>the author of the book, a <code>String</code></li>
- * <li>the number of pages in the book, an <code>int</code></li>
+ * <li>the author of the book, a `String`</li>
+ * <li>the number of pages in the book, an `int`</li>
  * </ol>
  *
  * @author BlankSpace
@@ -317,7 +317,7 @@ public class Book extends CatalogItem  {
 	private int  numberOfPages;
 
 	/**
-	 * Constructs a <code>Book</code> object.
+	 * Constructs a `Book` object.
 	 *
 	 * @param initialCode  the code of the book.
 	 * @param initialTitle  the title of the book.
@@ -385,7 +385,7 @@ import java.text.*;
  */
 public class BorrowerDatabase implements Iterable<Borrower> {
 
-	/* Collection of <code>Borrower</code> objects.*/
+	/* Collection of `Borrower` objects.*/
 	private ArrayList<Borrower>  borrowers;
 
 	/**
@@ -419,11 +419,11 @@ public class BorrowerDatabase implements Iterable<Borrower> {
 
 	/**
 	 * Returns the {@link Borrower} object with the specified
-	 * <code>id</code>.
+	 * `id`.
 	 *
 	 * @param id  the id of the borrower.
 	 * @return  The {@link Borrower} object with the specified id.
-	 *          Returns <code>null</code> if the object with the
+	 *          Returns `null` if the object with the
 	 *          id is not found.
 	 */
 	public Borrower  getBorrower(String id)  {
@@ -468,7 +468,7 @@ import java.io.*;
  */
 public class Catalog implements Iterable<CatalogItem>  {
 
-	/* Collection of <code>CatalogItem</code> objects.*/
+	/* Collection of `CatalogItem` objects.*/
 	private ArrayList<CatalogItem>  items;
 
 	/**
@@ -501,11 +501,11 @@ public class Catalog implements Iterable<CatalogItem>  {
 
 	/**
 	 * Returns the {@link CatalogItem} object with the specified
-	 * <code>code</code>.
+	 * `code`.
 	 *
 	 * @param code  the code of an item.
 	 * @return  The {@link CatalogItem} object with the specified
-	 *          code. Returns <code>null</code> if the object with
+	 *          code. Returns `null` if the object with
 	 *          the code is not found.
 	 */
 	public CatalogItem  getItem(String code)  {
@@ -596,11 +596,11 @@ public class BorrowedItems implements Iterable<CatalogItem>  {
 
 	/**
 	 * Returns the {@link CatalogItem} object with the specified
-	 * <code>code</code>.
+	 * `code`.
 	 *
 	 * @param code  the code of an item.
 	 * @return  The {@link CatalogItem} object with the specified
-	 *          code. Returns <code>null</code> if the object with
+	 *          code. Returns `null` if the object with
 	 *          the code is not found.
 	 */
 	public CatalogItem  getItem(String code)  {
@@ -637,10 +637,10 @@ public class BorrowedItems implements Iterable<CatalogItem>  {
  * This class models a library user. It contains the following
  * information:
  * <ol>
- * <li>The id of the borrower, a <code>String</code></li>
- * <li>The name of the borrower, a <code>String</code></li>
+ * <li>The id of the borrower, a `String`</li>
+ * <li>The name of the borrower, a `String`</li>
  * <li>The items checked out by the borrower,
- *     a <code>BorrowedItems</code> object</li>
+ *     a `BorrowedItems` object</li>
  * </ol>
  *
  * @author BlankSpace
@@ -660,7 +660,7 @@ public class Borrower {
 	private BorrowedItems  borrowedItems;
 
 	/**
-	 * Constructs a <code>Borrower</code> object.
+	 * Constructs a `Borrower` object.
 	 * <p>
 	 * The collection of the borrowed items is initially empty.
 	 * </p>
@@ -706,12 +706,12 @@ public class Borrower {
 	}
 
 	/**
-	 * Returns <code>true</code> if the id of this borrower is
+	 * Returns `true` if the id of this borrower is
 	 * equal to the id of the argument.
 	 *
 	 * @param object  object with which this borrower is compared.
-	 * @return  <code>true</code> if the id of this borrower is
-	 *          equal to the id of the argument; <code>false</code>
+	 * @return  `true` if the id of this borrower is
+	 *          equal to the id of the argument; `false`
 	 *          otherwise.
 	 */
 	public boolean  equals(Object  object)  {
@@ -887,7 +887,7 @@ public class LibrarySystem  {
 	}
 
 	/*
-	 * Constructs a <code>LibrarySystem</code> object.
+	 * Constructs a `LibrarySystem` object.
 	 * Initialize the catalog and the borrower database with
 	 * the values specified in the parameters.
 	 */

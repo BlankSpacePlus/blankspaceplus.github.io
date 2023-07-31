@@ -45,13 +45,13 @@ Web静态网页后缀名常见htm(超文本标记)和html(超文本标记语言)
 ## URL通用格式
 
 大多数URL方案的URL语法都建立在这个由9部分构成的通用格式上:
-<kbd><font color="red">\<scheme>://\<user>:\<password>@\<host>:\<port>/\<path>;\<params>?\<query>#\<frag></font></kbd>
+<font color="red">\<scheme>://\<user>:\<password>@\<host>:\<port>/\<path>;\<params>?\<query>#\<frag></font>
 
 然而，几乎没有哪个URL中包含了所有这些组件。
 
-URL最重要的三个部分是scheme、host、path，例如：<kbd>https://www.baidu.com/index.html</kbd>。
+URL最重要的三个部分是scheme、host、path，例如：https://www.baidu.com/index.html。
 
-有时，URL不以文件名结尾，而以一个目录结尾（可以包含一个结尾的斜杠， 也可以不包含）。在这种情况下，URL指的是路径中最后一个目录中的默认文件，通常为index.html。例如：<kbd>https://leetcode.cn/problem-list/xb9nqhhg/</kbd>
+有时，URL不以文件名结尾，而以一个目录结尾（可以包含一个结尾的斜杠， 也可以不包含）。在这种情况下，URL指的是路径中最后一个目录中的默认文件，通常为index.html。例如：https://leetcode.cn/problem-list/xb9nqhhg/
 
 ## URL通用组件总结
 

@@ -67,8 +67,8 @@ String str2 = String.valueOf(obj); // str2为"null"
 - **String.valueOf(Object data): String**
 - **String.valueOf(char[] data, int start, int length): String**
 
-使用的时候特殊情况是<code>String.valueOf(null)</code>，
-这时调用的是：<code>String.valueOf(Object data)</code>。
+使用的时候特殊情况是`String.valueOf(null)`，
+这时调用的是：`String.valueOf(Object data)`。
 （IDE中按住Ctrl就可以追溯引用了）
 
 String.valueOf(Object data)的源码如下：
@@ -78,6 +78,6 @@ public static String valueOf(Object obj) {
 }
 ```
 
-最终并不会空指针，而是返回<code>"null"</code>！
+最终并不会空指针，而是返回`"null"`！
 
 如果传入的参数为null，此方法不会抛出java.lang.NullPointerException的，而是返回"null"字符串，值得注意。

@@ -256,7 +256,7 @@ public void showPrompt() {
 再细说一下这里的封装问题：Room和Game都有大量代码和出口相关，尤其是Room的四大属性，这样的设计大大加强了耦合度，不利于维护。
 
 那是不是用“初学OOP经典大法”——[private]属性+[public]getter方法？
-比如说<code>public Room northExit;</code>改成：
+比如说`public Room northExit;`改成：
 
 ```java
 public Room getNorth() {

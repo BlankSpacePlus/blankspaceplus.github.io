@@ -39,7 +39,7 @@ private static void changeInteger(Integer data) {
 对于基本类型，打印地址也能看出地址改了，是值传递。
 对于包装类型，打印地址能看出地址没改，是引用传递。
 
-由于hashCode()被重写了，所以可以用<code>System.out.println(System.identityHashCode(data));</code>来看虚拟地址（当然不是真的地址啦）。
+由于hashCode()被重写了，所以可以用`System.out.println(System.identityHashCode(data));`来看虚拟地址（当然不是真的地址啦）。
 
 # 普通类参数传递
 

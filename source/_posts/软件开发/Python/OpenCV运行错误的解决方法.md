@@ -19,7 +19,7 @@ No matching distribution found for cv2</font>
 ![](../../../images/软件开发/Python/OpenCV运行错误的解决方法/1.png)
 
 解决方案：
-修改pip语句为：<code>pip install opencv-python</code>，下载完毕后再<code>import cv2</code>就可以正常使用了。
+修改pip语句为：`pip install opencv-python`，下载完毕后再`import cv2`就可以正常使用了。
 
 ![](../../../images/软件开发/Python/OpenCV运行错误的解决方法/2.png)
 

@@ -24,7 +24,7 @@ FutureWarning: Pass threshold=18 as keyword args. From version 0.25 passing thes
 binarizer = Binarizer(18)
 ```
 
-追着去看了看<code>sklearn\utils\validation.py:71</code>，基本确定了是应该这么写：
+追着去看了看`sklearn\utils\validation.py:71`，基本确定了是应该这么写：
 
 ```python
 # 创建二值化器

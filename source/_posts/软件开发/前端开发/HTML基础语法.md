@@ -343,13 +343,13 @@ HelloWorld的运行结果：
     </table>
     <p>
       下面代码定义了一个Java类<br>
-      <code>
+      `
         public class Dalao {<br>
           public static void main(String[] args) {<br>
             System.out.println("\u5927\u4f6c\u000d\u000a");<br>
           }<br>
         }<br>
-      </code>
+      `
     </p>
     <!--pre元素包含的是“预格式化”文本-->
     <pre>
@@ -364,7 +364,7 @@ HelloWorld的运行结果：
     </p>
     <p>
       可以输入如下命令：<br>
-      <kbd>rm -rf / *</kbd><br>
+      rm -rf / *<br>
       在Linux下体会“人生至乐”</p>
     <!--使用var定义变量-->
     <var>i</var>、<var>j</var>、<var>k</var>通常用于作为循环计数器变量。<br>

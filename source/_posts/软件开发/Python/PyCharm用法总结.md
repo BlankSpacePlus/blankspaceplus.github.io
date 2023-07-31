@@ -61,7 +61,7 @@ categories:
 2. 创建PyCharm项目
 3. 顶部菜单栏选择VCS，选Git，再选Remotes...
 4. 点击+，将复制的URL粘贴到URL栏中，确定
-5. Pull项目到本地，项目文件夹开GitBash，输入<code>git pull origin master --allow-unrelated-histories</code>，防止README.md等文件导致提交失败
+5. Pull项目到本地，项目文件夹开GitBash，输入`git pull origin master --allow-unrelated-histories`，防止README.md等文件导致提交失败
 6. VCS选择Add
 7. VCS选择Commit，在文本栏中输入-m以后的提交注释内容
 8. VCS选择Git，再选Push，看一下是origin master，然后确认提交，等待成功提示
