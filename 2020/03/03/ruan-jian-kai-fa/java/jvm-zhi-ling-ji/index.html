@@ -1,0 +1,2918 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="JVM指令集, 星拱北辰">
+    <meta name="description" content="空白格的个人博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>JVM指令集 | 空白格</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="空白格" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">空白格</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">空白格</div>
+        <div class="logo-desc">
+            
+            空白格的个人博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlankSpacePlus" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Follow Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlankSpacePlus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Follow Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">JVM指令集</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/JVM/">
+                                <span class="chip bg-color">JVM</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-31
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    18 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数据存取"><a href="#数据存取" class="headerlink" title="数据存取"></a>数据存取</h1><h2 id="从常量池取值并入栈"><a href="#从常量池取值并入栈" class="headerlink" title="从常量池取值并入栈"></a>从常量池取值并入栈</h2><p>JVM的const系列指令是用于将常量值从常量池中加载到操作数栈中的指令。常量池是一个与类或接口相关联的表，其中包含各种常量值、符号引用等信息。在编译Java代码时，常量值通常会直接嵌入到代码中，而符号引用则会转化为对应的常量池索引。</p>
+<p>这些指令可以用于直接操作常量值，从而方便地进行数值计算、字符串操作等。值得注意的是，const系列指令只能加载常量值，不能加载局部变量或数组元素等非常量值。</p>
+<table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>aconst_null</code></td>
+<td align="center">将null对象引用压入栈</td>
+<td align="center"><code>ACONST_NULL</code></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_m1</code></td>
+<td align="center">将int类型常量-1压入栈</td>
+<td align="center"><code>ICONST_M1</code></td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_0</code></td>
+<td align="center">将int类型常量0压入栈</td>
+<td align="center"><code>ICONST_0</code></td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_1</code></td>
+<td align="center">将int类型常量1压入栈</td>
+<td align="center"><code>ICONST_1</code></td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_2</code></td>
+<td align="center">将int类型常量2压入栈</td>
+<td align="center"><code>ICONST_2</code></td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_3</code></td>
+<td align="center">将int类型常量3压入栈</td>
+<td align="center"><code>ICONST_3</code></td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_4</code></td>
+<td align="center">将int类型常量4压入栈</td>
+<td align="center"><code>ICONST_4</code></td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center"><code>iconst_5</code></td>
+<td align="center">将int类型常量5压入栈</td>
+<td align="center"><code>ICONST_5</code></td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center"><code>lconst_0</code></td>
+<td align="center">将long类型常量0压入栈</td>
+<td align="center"><code>LCONST_0</code></td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center"><code>lconst_1</code></td>
+<td align="center">将long类型常量1压入栈</td>
+<td align="center"><code>LCONST_1</code></td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center"><code>fconst_0</code></td>
+<td align="center">将float类型常量0压入栈</td>
+<td align="center"><code>FCONST_0</code></td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center"><code>fconst_1</code></td>
+<td align="center">将float类型常量1压入栈</td>
+<td align="center"><code>FCONST_1</code></td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center"><code>fconst_2</code></td>
+<td align="center">将float类型常量2压入栈</td>
+<td align="center"><code>FCONST_2</code></td>
+<td align="center">13</td>
+</tr>
+<tr>
+<td align="center"><code>dconst_0</code></td>
+<td align="center">将double类型常量0压入栈</td>
+<td align="center"><code>DCONST_0</code></td>
+<td align="center">14</td>
+</tr>
+<tr>
+<td align="center"><code>dconst_1</code></td>
+<td align="center">将double类型常量1压入栈</td>
+<td align="center"><code>DCONST_1</code></td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center"><code>bipush</code></td>
+<td align="center">将一个8位带符号整数压入栈</td>
+<td align="center"><code>BIPUSH</code></td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center"><code>sipush</code></td>
+<td align="center">将16位带符号整数压入栈</td>
+<td align="center"><code>SIPUSH</code></td>
+<td align="center">17</td>
+</tr>
+<tr>
+<td align="center"><code>ldc</code></td>
+<td align="center">把常量池中的项压入栈</td>
+<td align="center"><code>LDC</code></td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center"><code>ldc_w</code></td>
+<td align="center">把常量池中的项压入栈（使用宽索引）</td>
+<td align="center"><code>LDC_W</code></td>
+<td align="center">19</td>
+</tr>
+<tr>
+<td align="center"><code>ldc2_w</code></td>
+<td align="center">把常量池中long类型或者double类型的项压入栈（使用宽索引）</td>
+<td align="center"><code>LDC2_W</code></td>
+<td align="center">20</td>
+</tr>
+</tbody></table>
+<h2 id="从局部变量取值并入栈"><a href="#从局部变量取值并入栈" class="headerlink" title="从局部变量取值并入栈"></a>从局部变量取值并入栈</h2><p>在JVM中，局部变量是一段被分配给方法的栈内存。JVM会将方法参数、临时变量、方法返回值等存储在局部变量中。当JVM需要使用一个局部变量的值时，它需要进行load操作，将该值从局部变量表中加载到操作数栈中。</p>
+<p>load操作是根据局部变量的类型来执行的，例如load操作可以是iload、fload、aload等。这些操作指令对应了不同类型的局部变量，比如iload对应int类型的局部变量，fload对应float类型的局部变量，aload对应引用类型的局部变量等。</p>
+<p>在load操作中，JVM会使用索引来访问局部变量表中的某个变量，并将其压入操作数栈中。这个索引是一个从0开始的整数，表示局部变量表中的第几个位置。需要注意的是，JVM在load操作之前需要先检查该变量是否已经被正确初始化，如果变量没有被初始化或者该索引超出了局部变量表的范围，JVM将会抛出一个异常。</p>
+<table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>iload</code></td>
+<td align="center">从局部变量中装载int类型值</td>
+<td align="center"><code>ILOAD</code></td>
+<td align="center">21</td>
+</tr>
+<tr>
+<td align="center"><code>lload</code></td>
+<td align="center">从局部变量中装载long类型值</td>
+<td align="center"><code>LLOAD</code></td>
+<td align="center">22</td>
+</tr>
+<tr>
+<td align="center"><code>fload</code></td>
+<td align="center">从局部变量中装载float类型值</td>
+<td align="center"><code>FLOAD</code></td>
+<td align="center">23</td>
+</tr>
+<tr>
+<td align="center"><code>dload</code></td>
+<td align="center">从局部变量中装载double类型值</td>
+<td align="center"><code>DLOAD</code></td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center"><code>aload</code></td>
+<td align="center">从局部变量中装载引用类型值</td>
+<td align="center"><code>ALOAD</code></td>
+<td align="center">25</td>
+</tr>
+<tr>
+<td align="center"><code>iload_0</code></td>
+<td align="center">从局部变量0中装载int类型值</td>
+<td align="center"><code>ILOAD_0</code></td>
+<td align="center">26</td>
+</tr>
+<tr>
+<td align="center"><code>iload_1</code></td>
+<td align="center">从局部变量1中装载int类型值</td>
+<td align="center"><code>ILOAD_1</code></td>
+<td align="center">27</td>
+</tr>
+<tr>
+<td align="center"><code>iload_2</code></td>
+<td align="center">从局部变量2中装载int类型值</td>
+<td align="center"><code>ILOAD_2</code></td>
+<td align="center">28</td>
+</tr>
+<tr>
+<td align="center"><code>iload_3</code></td>
+<td align="center">从局部变量3中装载int类型值</td>
+<td align="center"><code>ILOAD_3</code></td>
+<td align="center">29</td>
+</tr>
+<tr>
+<td align="center"><code>lload_0</code></td>
+<td align="center">从局部变量0中装载long类型值</td>
+<td align="center"><code>LLOAD_0</code></td>
+<td align="center">30</td>
+</tr>
+<tr>
+<td align="center"><code>lload_1</code></td>
+<td align="center">从局部变量1中装载long类型值</td>
+<td align="center"><code>LLOAD_1</code></td>
+<td align="center">31</td>
+</tr>
+<tr>
+<td align="center"><code>lload_2</code></td>
+<td align="center">从局部变量2中装载long类型值</td>
+<td align="center"><code>LLOAD_2</code></td>
+<td align="center">32</td>
+</tr>
+<tr>
+<td align="center"><code>lload_3</code></td>
+<td align="center">从局部变量3中装载long类型值</td>
+<td align="center"><code>LLOAD_3</code></td>
+<td align="center">33</td>
+</tr>
+<tr>
+<td align="center"><code>fload_0</code></td>
+<td align="center">从局部变量0中装载float类型值</td>
+<td align="center"><code>FLOAD_0</code></td>
+<td align="center">34</td>
+</tr>
+<tr>
+<td align="center"><code>fload_1</code></td>
+<td align="center">从局部变量1中装载float类型值</td>
+<td align="center"><code>FLOAD_1</code></td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center"><code>fload_2</code></td>
+<td align="center">从局部变量2中装载float类型值</td>
+<td align="center"><code>FLOAD_2</code></td>
+<td align="center">36</td>
+</tr>
+<tr>
+<td align="center"><code>fload_3</code></td>
+<td align="center">从局部变量3中装载float类型值</td>
+<td align="center"><code>FLOAD_3</code></td>
+<td align="center">37</td>
+</tr>
+<tr>
+<td align="center"><code>dload_0</code></td>
+<td align="center">从局部变量0中装载double类型值</td>
+<td align="center"><code>DLOAD_0</code></td>
+<td align="center">38</td>
+</tr>
+<tr>
+<td align="center"><code>dload_1</code></td>
+<td align="center">从局部变量1中装载double类型值</td>
+<td align="center"><code>DLOAD_1</code></td>
+<td align="center">39</td>
+</tr>
+<tr>
+<td align="center"><code>dload_2</code></td>
+<td align="center">从局部变量2中装载double类型值</td>
+<td align="center"><code>DLOAD_2</code></td>
+<td align="center">40</td>
+</tr>
+<tr>
+<td align="center"><code>dload_3</code></td>
+<td align="center">从局部变量3中装载double类型值</td>
+<td align="center"><code>DLOAD_3</code></td>
+<td align="center">41</td>
+</tr>
+<tr>
+<td align="center"><code>aload_0</code></td>
+<td align="center">从局部变量0中装载引用类型值</td>
+<td align="center"><code>ALOAD_0</code></td>
+<td align="center">42</td>
+</tr>
+<tr>
+<td align="center"><code>aload_1</code></td>
+<td align="center">从局部变量1中装载引用类型值</td>
+<td align="center"><code>ALOAD_1</code></td>
+<td align="center">43</td>
+</tr>
+<tr>
+<td align="center"><code>aload_2</code></td>
+<td align="center">从局部变量2中装载引用类型值</td>
+<td align="center"><code>ALOAD_2</code></td>
+<td align="center">44</td>
+</tr>
+<tr>
+<td align="center"><code>aload_3</code></td>
+<td align="center">从局部变量3中装载引用类型值</td>
+<td align="center"><code>ALOAD_3</code></td>
+<td align="center">45</td>
+</tr>
+<tr>
+<td align="center"><code>iaload</code></td>
+<td align="center">从数组中装载int类型值</td>
+<td align="center"><code>IALOAD</code></td>
+<td align="center">46</td>
+</tr>
+<tr>
+<td align="center"><code>laload</code></td>
+<td align="center">从数组中装载long类型值</td>
+<td align="center"><code>LALOAD</code></td>
+<td align="center">47</td>
+</tr>
+<tr>
+<td align="center"><code>faload</code></td>
+<td align="center">从数组中装载float类型值</td>
+<td align="center"><code>FALOAD</code></td>
+<td align="center">48</td>
+</tr>
+<tr>
+<td align="center"><code>daload</code></td>
+<td align="center">从数组中装载double类型值</td>
+<td align="center"><code>DALOAD</code></td>
+<td align="center">49</td>
+</tr>
+<tr>
+<td align="center"><code>aaload</code></td>
+<td align="center">从数组中装载引用类型值</td>
+<td align="center"><code>AALOAD</code></td>
+<td align="center">50</td>
+</tr>
+<tr>
+<td align="center"><code>baload</code></td>
+<td align="center">从数组中装载byte类型或boolean类型值</td>
+<td align="center"><code>BALOAD</code></td>
+<td align="center">51</td>
+</tr>
+<tr>
+<td align="center"><code>caload</code></td>
+<td align="center">从数组中装载char类型值</td>
+<td align="center"><code>CALOAD</code></td>
+<td align="center">52</td>
+</tr>
+<tr>
+<td align="center"><code>saload</code></td>
+<td align="center">从数组中装载short类型值</td>
+<td align="center"><code>SALOAD</code></td>
+<td align="center">53</td>
+</tr>
+</tbody></table>
+<h2 id="从栈取值并存入局部变量"><a href="#从栈取值并存入局部变量" class="headerlink" title="从栈取值并存入局部变量"></a>从栈取值并存入局部变量</h2><p>JVM支持将栈顶的值存储到当前方法的局部变量表中的某个位置上。这个过程需要指定存储到哪个位置，以及该位置所需的数据类型。</p>
+<p>在JVM中，局部变量表是用来存储方法中的参数和局部变量的表格，每个局部变量表的位置都有一个编号，从0开始递增。在执行方法时，JVM会为方法分配一个局部变量表，并根据方法的参数和局部变量数量确定表格的大小。</p>
+<p>当JVM需要从栈中store值到局部变量表时，需要指定存储到哪个位置，通常是通过局部变量表中的位置编号来指定。</p>
+<p>JVM在执行store指令时，会将栈顶的值弹出，存储到指定的局部变量表位置上，并将该位置上的值的类型标记为已初始化。如果存储到的位置上已经存在一个值，该值将被覆盖。同时，如果指定的位置在局部变量表范围之外，或者存储的值与指定的位置所需的数据类型不匹配，将会抛出相应的异常。</p>
+<table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>istore</code></td>
+<td align="center">将int类型值存入局部变量</td>
+<td align="center"><code>ISTORE</code></td>
+<td align="center">54</td>
+</tr>
+<tr>
+<td align="center"><code>lstore</code></td>
+<td align="center">将long类型值存入局部变量</td>
+<td align="center"><code>LSTORE</code></td>
+<td align="center">55</td>
+</tr>
+<tr>
+<td align="center"><code>fstore</code></td>
+<td align="center">将float类型值存入局部变量</td>
+<td align="center"><code>FSTORE</code></td>
+<td align="center">56</td>
+</tr>
+<tr>
+<td align="center"><code>dstore</code></td>
+<td align="center">将double类型值存入局部变量</td>
+<td align="center"><code>DSTORE</code></td>
+<td align="center">57</td>
+</tr>
+<tr>
+<td align="center"><code>astore</code></td>
+<td align="center">将引用类型或returnAddress类型值存入局部变量</td>
+<td align="center"><code>ASTORE</code></td>
+<td align="center">58</td>
+</tr>
+<tr>
+<td align="center"><code>istore_0</code></td>
+<td align="center">将int类型值存入局部变量0</td>
+<td align="center"><code>ISTORE_0</code></td>
+<td align="center">59</td>
+</tr>
+<tr>
+<td align="center"><code>istore_1</code></td>
+<td align="center">将int类型值存入局部变量1</td>
+<td align="center"><code>ISTORE_1</code></td>
+<td align="center">60</td>
+</tr>
+<tr>
+<td align="center"><code>istore_2</code></td>
+<td align="center">将int类型值存入局部变量2</td>
+<td align="center"><code>ISTORE_2</code></td>
+<td align="center">61</td>
+</tr>
+<tr>
+<td align="center"><code>istore_3</code></td>
+<td align="center">将int类型值存入局部变量3</td>
+<td align="center"><code>ISTORE_3</code></td>
+<td align="center">62</td>
+</tr>
+<tr>
+<td align="center"><code>lstore_0</code></td>
+<td align="center">将long类型值存入局部变量0</td>
+<td align="center"><code>LSTORE_0</code></td>
+<td align="center">63</td>
+</tr>
+<tr>
+<td align="center"><code>lstore_1</code></td>
+<td align="center">将long类型值存入局部变量1</td>
+<td align="center"><code>LSTORE_1</code></td>
+<td align="center">64</td>
+</tr>
+<tr>
+<td align="center"><code>lstore_2</code></td>
+<td align="center">将long类型值存入局部变量2</td>
+<td align="center"><code>LSTORE_2</code></td>
+<td align="center">65</td>
+</tr>
+<tr>
+<td align="center"><code>lstore_3</code></td>
+<td align="center">将long类型值存入局部变量3</td>
+<td align="center"><code>LSTORE_3</code></td>
+<td align="center">66</td>
+</tr>
+<tr>
+<td align="center"><code>fstore_0</code></td>
+<td align="center">将float类型值存入局部变量0</td>
+<td align="center"><code>FSTORE_0</code></td>
+<td align="center">67</td>
+</tr>
+<tr>
+<td align="center"><code>fstore_1</code></td>
+<td align="center">将float类型值存入局部变量1</td>
+<td align="center"><code>FSTORE_1</code></td>
+<td align="center">68</td>
+</tr>
+<tr>
+<td align="center"><code>fstore_2</code></td>
+<td align="center">将float类型值存入局部变量2</td>
+<td align="center"><code>FSTORE_2</code></td>
+<td align="center">69</td>
+</tr>
+<tr>
+<td align="center"><code>fstore_3</code></td>
+<td align="center">将float类型值存入局部变量3</td>
+<td align="center"><code>FSTORE_3</code></td>
+<td align="center">70</td>
+</tr>
+<tr>
+<td align="center"><code>dstore_0</code></td>
+<td align="center">将double类型值存入局部变量0</td>
+<td align="center"><code>DSTORE_0</code></td>
+<td align="center">71</td>
+</tr>
+<tr>
+<td align="center"><code>dstore_1</code></td>
+<td align="center">将double类型值存入局部变量1</td>
+<td align="center"><code>DSTORE_1</code></td>
+<td align="center">72</td>
+</tr>
+<tr>
+<td align="center"><code>dstore_2</code></td>
+<td align="center">将double类型值存入局部变量2</td>
+<td align="center"><code>DSTORE_2</code></td>
+<td align="center">73</td>
+</tr>
+<tr>
+<td align="center"><code>dstore_3</code></td>
+<td align="center">将double类型值存入局部变量3</td>
+<td align="center"><code>DSTORE_3</code></td>
+<td align="center">74</td>
+</tr>
+<tr>
+<td align="center"><code>astore_0</code></td>
+<td align="center">将引用类型或returnAddress类型值存入局部变量0</td>
+<td align="center"><code>ASTORE_0</code></td>
+<td align="center">75</td>
+</tr>
+<tr>
+<td align="center"><code>astore_1</code></td>
+<td align="center">将引用类型或returnAddress类型值存入局部变量1</td>
+<td align="center"><code>ASTORE_1</code></td>
+<td align="center">76</td>
+</tr>
+<tr>
+<td align="center"><code>astore_2</code></td>
+<td align="center">将引用类型或returnAddress类型值存入局部变量2</td>
+<td align="center"><code>ASTORE_2</code></td>
+<td align="center">77</td>
+</tr>
+<tr>
+<td align="center"><code>astore_3</code></td>
+<td align="center">将引用类型或returnAddress类型值存入局部变量3</td>
+<td align="center"><code>ASTORE_3</code></td>
+<td align="center">78</td>
+</tr>
+<tr>
+<td align="center"><code>iastore</code></td>
+<td align="center">将int类型值存入数组中</td>
+<td align="center"><code>IASTORE</code></td>
+<td align="center">79</td>
+</tr>
+<tr>
+<td align="center"><code>lastore</code></td>
+<td align="center">将long类型值存入数组中</td>
+<td align="center"><code>LASTORE</code></td>
+<td align="center">80</td>
+</tr>
+<tr>
+<td align="center"><code>fastore</code></td>
+<td align="center">将float类型值存入数组中</td>
+<td align="center"><code>FASTORE</code></td>
+<td align="center">81</td>
+</tr>
+<tr>
+<td align="center"><code>dastore</code></td>
+<td align="center">将double类型值存入数组中</td>
+<td align="center"><code>DASTORE</code></td>
+<td align="center">82</td>
+</tr>
+<tr>
+<td align="center"><code>aastore</code></td>
+<td align="center">将引用类型值存入数组中</td>
+<td align="center"><code>AASTORE</code></td>
+<td align="center">83</td>
+</tr>
+<tr>
+<td align="center"><code>bastore</code></td>
+<td align="center">将byte类型或者boolean类型值存入数组中</td>
+<td align="center"><code>BASTORE</code></td>
+<td align="center">84</td>
+</tr>
+<tr>
+<td align="center"><code>castore</code></td>
+<td align="center">将char类型值存入数组中</td>
+<td align="center"><code>CASTORE</code></td>
+<td align="center">85</td>
+</tr>
+<tr>
+<td align="center"><code>sastore</code></td>
+<td align="center">将short类型值存入数组中</td>
+<td align="center"><code>SASTORE</code></td>
+<td align="center">86</td>
+</tr>
+</tbody></table>
+<h2 id="栈基本操作"><a href="#栈基本操作" class="headerlink" title="栈基本操作"></a>栈基本操作</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>nop</code></td>
+<td align="center">不做任何操作</td>
+<td align="center"><code>NOP</code></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><code>pop</code></td>
+<td align="center">弹出栈顶端1个字长的内容</td>
+<td align="center"><code>POP</code></td>
+<td align="center">87</td>
+</tr>
+<tr>
+<td align="center"><code>pop2</code></td>
+<td align="center">弹出栈顶端2个字长的内容</td>
+<td align="center"><code>POP2</code></td>
+<td align="center">88</td>
+</tr>
+<tr>
+<td align="center"><code>dup</code></td>
+<td align="center">复制栈顶部1个字长内容</td>
+<td align="center"><code>DUP</code></td>
+<td align="center">89</td>
+</tr>
+<tr>
+<td align="center"><code>dup_x1</code></td>
+<td align="center">复制栈顶部1个字长的内容，然后将复制内容及原来弹出的2个字长的内容压入栈</td>
+<td align="center"><code>DUP_X1</code></td>
+<td align="center">90</td>
+</tr>
+<tr>
+<td align="center"><code>dup_x2</code></td>
+<td align="center">复制栈顶部1个字长的内容，然后将复制内容及原来弹出的3个字长的内容压入栈</td>
+<td align="center"><code>DUP_X2</code></td>
+<td align="center">91</td>
+</tr>
+<tr>
+<td align="center"><code>dup2</code></td>
+<td align="center">复制栈顶部2个字长内容</td>
+<td align="center"><code>DUP2</code></td>
+<td align="center">92</td>
+</tr>
+<tr>
+<td align="center"><code>dup2_x1</code></td>
+<td align="center">复制栈顶部2个字长的内容，然后将复制内容及原来弹出的3个字长的内容压入栈</td>
+<td align="center"><code>DUP2_X1</code></td>
+<td align="center">93</td>
+</tr>
+<tr>
+<td align="center"><code>dup2_x1</code></td>
+<td align="center">复制栈顶部2个字长的内容，然后将复制内容及原来弹出的4个字长的内容压入栈</td>
+<td align="center"><code>DUP2_X2</code></td>
+<td align="center">94</td>
+</tr>
+<tr>
+<td align="center"><code>swap</code></td>
+<td align="center">交换栈顶部两个字长内容</td>
+<td align="center"><code>SWAP</code></td>
+<td align="center">95</td>
+</tr>
+</tbody></table>
+<h1 id="数值类型操作"><a href="#数值类型操作" class="headerlink" title="数值类型操作"></a>数值类型操作</h1><h2 id="数值运算"><a href="#数值运算" class="headerlink" title="数值运算"></a>数值运算</h2><h3 id="数值算术运算"><a href="#数值算术运算" class="headerlink" title="数值算术运算"></a>数值算术运算</h3><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>iadd</code></td>
+<td align="center">执行int类型的加法</td>
+<td align="center"><code>IADD</code></td>
+<td align="center">96</td>
+</tr>
+<tr>
+<td align="center"><code>ladd</code></td>
+<td align="center">执行long类型的加法</td>
+<td align="center"><code>LADD</code></td>
+<td align="center">97</td>
+</tr>
+<tr>
+<td align="center"><code>fadd</code></td>
+<td align="center">执行float类型的加法</td>
+<td align="center"><code>FADD</code></td>
+<td align="center">98</td>
+</tr>
+<tr>
+<td align="center"><code>dadd</code></td>
+<td align="center">执行double类型的加法</td>
+<td align="center"><code>DADD</code></td>
+<td align="center">99</td>
+</tr>
+<tr>
+<td align="center"><code>isub</code></td>
+<td align="center">执行int类型的减法</td>
+<td align="center"><code>ISUB</code></td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td align="center"><code>lsub</code></td>
+<td align="center">执行long类型的减法</td>
+<td align="center"><code>LSUB</code></td>
+<td align="center">101</td>
+</tr>
+<tr>
+<td align="center"><code>fsub</code></td>
+<td align="center">执行float类型的减法</td>
+<td align="center"><code>FSUB</code></td>
+<td align="center">102</td>
+</tr>
+<tr>
+<td align="center"><code>dsub</code></td>
+<td align="center">执行double类型的减法</td>
+<td align="center"><code>DSUB</code></td>
+<td align="center">103</td>
+</tr>
+<tr>
+<td align="center"><code>imul</code></td>
+<td align="center">执行int类型的乘法</td>
+<td align="center"><code>IMUL</code></td>
+<td align="center">104</td>
+</tr>
+<tr>
+<td align="center"><code>lmul</code></td>
+<td align="center">执行long类型的乘法</td>
+<td align="center"><code>LMUL</code></td>
+<td align="center">105</td>
+</tr>
+<tr>
+<td align="center"><code>fmul</code></td>
+<td align="center">执行float类型的乘法</td>
+<td align="center"><code>FMUL</code></td>
+<td align="center">106</td>
+</tr>
+<tr>
+<td align="center"><code>dmul</code></td>
+<td align="center">执行double类型的乘法</td>
+<td align="center"><code>DMUL</code></td>
+<td align="center">107</td>
+</tr>
+<tr>
+<td align="center"><code>idiv</code></td>
+<td align="center">执行int类型的除法</td>
+<td align="center"><code>IDIV</code></td>
+<td align="center">108</td>
+</tr>
+<tr>
+<td align="center"><code>ldiv</code></td>
+<td align="center">执行long类型的除法</td>
+<td align="center"><code>LDIV</code></td>
+<td align="center">109</td>
+</tr>
+<tr>
+<td align="center"><code>fdiv</code></td>
+<td align="center">执行float类型的除法</td>
+<td align="center"><code>FDIV</code></td>
+<td align="center">110</td>
+</tr>
+<tr>
+<td align="center"><code>ddiv</code></td>
+<td align="center">执行double类型的除法</td>
+<td align="center"><code>DDIV</code></td>
+<td align="center">111</td>
+</tr>
+<tr>
+<td align="center"><code>irem</code></td>
+<td align="center">计算int类型除法的余数</td>
+<td align="center"><code>IREM</code></td>
+<td align="center">112</td>
+</tr>
+<tr>
+<td align="center"><code>lrem</code></td>
+<td align="center">计算long类型除法的余数</td>
+<td align="center"><code>LREM</code></td>
+<td align="center">113</td>
+</tr>
+<tr>
+<td align="center"><code>frem</code></td>
+<td align="center">计算float类型除法的余数</td>
+<td align="center"><code>FREM</code></td>
+<td align="center">114</td>
+</tr>
+<tr>
+<td align="center"><code>drem</code></td>
+<td align="center">计算double类型除法的余数</td>
+<td align="center"><code>DREM</code></td>
+<td align="center">115</td>
+</tr>
+<tr>
+<td align="center"><code>ineg</code></td>
+<td align="center">对一个int类型值进行取反操作</td>
+<td align="center"><code>INEG</code></td>
+<td align="center">116</td>
+</tr>
+<tr>
+<td align="center"><code>lneg</code></td>
+<td align="center">对一个long类型值进行取反操作</td>
+<td align="center"><code>LNEG</code></td>
+<td align="center">117</td>
+</tr>
+<tr>
+<td align="center"><code>fneg</code></td>
+<td align="center">将一个float类型的数值取反</td>
+<td align="center"><code>FNEG</code></td>
+<td align="center">118</td>
+</tr>
+<tr>
+<td align="center"><code>dneg</code></td>
+<td align="center">将一个double类型的数值取反</td>
+<td align="center"><code>DNEG</code></td>
+<td align="center">119</td>
+</tr>
+<tr>
+<td align="center"><code>iinc</code></td>
+<td align="center">把一个常量值加到一个int类型的局部变量上</td>
+<td align="center"><code>IINC</code></td>
+<td align="center">132</td>
+</tr>
+</tbody></table>
+<h3 id="数值移位运算"><a href="#数值移位运算" class="headerlink" title="数值移位运算"></a>数值移位运算</h3><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>ishl</code></td>
+<td align="center">执行int类型的向左移位操作</td>
+<td align="center"><code>ISHL</code></td>
+<td align="center">120</td>
+</tr>
+<tr>
+<td align="center"><code>lshl</code></td>
+<td align="center">执行long类型的向左移位操作</td>
+<td align="center"><code>LSHL</code></td>
+<td align="center">121</td>
+</tr>
+<tr>
+<td align="center"><code>ishr</code></td>
+<td align="center">执行int类型的向右移位操作</td>
+<td align="center"><code>ISHR</code></td>
+<td align="center">122</td>
+</tr>
+<tr>
+<td align="center"><code>lshr</code></td>
+<td align="center">执行long类型的向右移位操作</td>
+<td align="center"><code>LSHR</code></td>
+<td align="center">123</td>
+</tr>
+<tr>
+<td align="center"><code>iushr</code></td>
+<td align="center">执行int类型的向右逻辑移位操作</td>
+<td align="center"><code>IUSHR</code></td>
+<td align="center">124</td>
+</tr>
+<tr>
+<td align="center"><code>lushr</code></td>
+<td align="center">执行long类型的向右逻辑移位操作</td>
+<td align="center"><code>LUSHR</code></td>
+<td align="center">125</td>
+</tr>
+</tbody></table>
+<h3 id="数值逻辑运算"><a href="#数值逻辑运算" class="headerlink" title="数值逻辑运算"></a>数值逻辑运算</h3><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>iand</code></td>
+<td align="center">对int类型值进行“逻辑与”操作</td>
+<td align="center"><code>IAND</code></td>
+<td align="center">126</td>
+</tr>
+<tr>
+<td align="center"><code>land</code></td>
+<td align="center">对long类型值进行“逻辑与”操作</td>
+<td align="center"><code>LAND</code></td>
+<td align="center">127</td>
+</tr>
+<tr>
+<td align="center"><code>ior</code></td>
+<td align="center">对int类型值进行“逻辑或”操作</td>
+<td align="center"><code>IOR</code></td>
+<td align="center">128</td>
+</tr>
+<tr>
+<td align="center"><code>lor</code></td>
+<td align="center">对long类型值进行“逻辑或”操作</td>
+<td align="center"><code>LOR</code></td>
+<td align="center">129</td>
+</tr>
+<tr>
+<td align="center"><code>ixor</code></td>
+<td align="center">对int类型值进行“逻辑异或”操作</td>
+<td align="center"><code>IXOR</code></td>
+<td align="center">130</td>
+</tr>
+<tr>
+<td align="center"><code>lxor</code></td>
+<td align="center">对long类型值进行“逻辑异或”操作</td>
+<td align="center"><code>LXOR</code></td>
+<td align="center">131</td>
+</tr>
+</tbody></table>
+<h3 id="数值比较运算"><a href="#数值比较运算" class="headerlink" title="数值比较运算"></a>数值比较运算</h3><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>lcmp</code></td>
+<td align="center">比较long类型值</td>
+<td align="center"><code>LCMP</code></td>
+<td align="center">148</td>
+</tr>
+<tr>
+<td align="center"><code>fcmpl</code></td>
+<td align="center">比较float类型值（当遇到NaN时，返回-1）</td>
+<td align="center"><code>FCMPL</code></td>
+<td align="center">149</td>
+</tr>
+<tr>
+<td align="center"><code>fcmpg</code></td>
+<td align="center">比较float类型值（当遇到NaN时，返回1）</td>
+<td align="center"><code>FCMPG</code></td>
+<td align="center">150</td>
+</tr>
+<tr>
+<td align="center"><code>dcmpl</code></td>
+<td align="center">比较double类型值（当遇到NaN时，返回-1）</td>
+<td align="center"><code>DCMPL</code></td>
+<td align="center">151</td>
+</tr>
+<tr>
+<td align="center"><code>dcmpg</code></td>
+<td align="center">比较double类型值（当遇到NaN时，返回1）</td>
+<td align="center"><code>DCMPG</code></td>
+<td align="center">152</td>
+</tr>
+</tbody></table>
+<h2 id="数值类型转换"><a href="#数值类型转换" class="headerlink" title="数值类型转换"></a>数值类型转换</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>i2l</code></td>
+<td align="center">把int类型的数据转化为long类型</td>
+<td align="center"><code>I2L</code></td>
+<td align="center">133</td>
+</tr>
+<tr>
+<td align="center"><code>i2f</code></td>
+<td align="center">把int类型的数据转化为float类型</td>
+<td align="center"><code>I2F</code></td>
+<td align="center">134</td>
+</tr>
+<tr>
+<td align="center"><code>i2d</code></td>
+<td align="center">把int类型的数据转化为double类型</td>
+<td align="center"><code>I2D</code></td>
+<td align="center">135</td>
+</tr>
+<tr>
+<td align="center"><code>l2i</code></td>
+<td align="center">把long类型的数据转化为int类型</td>
+<td align="center"><code>L2I</code></td>
+<td align="center">136</td>
+</tr>
+<tr>
+<td align="center"><code>l2f</code></td>
+<td align="center">把long类型的数据转化为float类型</td>
+<td align="center"><code>L2F</code></td>
+<td align="center">137</td>
+</tr>
+<tr>
+<td align="center"><code>l2d</code></td>
+<td align="center">把long类型的数据转化为double类型</td>
+<td align="center"><code>L2D</code></td>
+<td align="center">138</td>
+</tr>
+<tr>
+<td align="center"><code>f2i</code></td>
+<td align="center">把float类型的数据转化为int类型</td>
+<td align="center"><code>F2I</code></td>
+<td align="center">139</td>
+</tr>
+<tr>
+<td align="center"><code>f2l</code></td>
+<td align="center">把float类型的数据转化为long类型</td>
+<td align="center"><code>F2L</code></td>
+<td align="center">140</td>
+</tr>
+<tr>
+<td align="center"><code>f2d</code></td>
+<td align="center">把float类型的数据转化为double类型</td>
+<td align="center"><code>F2D</code></td>
+<td align="center">141</td>
+</tr>
+<tr>
+<td align="center"><code>d2i</code></td>
+<td align="center">把double类型的数据转化为int类型</td>
+<td align="center"><code>D2I</code></td>
+<td align="center">142</td>
+</tr>
+<tr>
+<td align="center"><code>d2l</code></td>
+<td align="center">把double类型的数据转化为long类型</td>
+<td align="center"><code>D2L</code></td>
+<td align="center">143</td>
+</tr>
+<tr>
+<td align="center"><code>d2f</code></td>
+<td align="center">把double类型的数据转化为float类型</td>
+<td align="center"><code>D2F</code></td>
+<td align="center">144</td>
+</tr>
+<tr>
+<td align="center"><code>i2b</code></td>
+<td align="center">把int类型的数据转化为byte类型</td>
+<td align="center"><code>I2B</code></td>
+<td align="center">145</td>
+</tr>
+<tr>
+<td align="center"><code>i2c</code></td>
+<td align="center">把int类型的数据转化为char类型</td>
+<td align="center"><code>I2C</code></td>
+<td align="center">146</td>
+</tr>
+<tr>
+<td align="center"><code>i2s</code></td>
+<td align="center">把int类型的数据转化为short类型</td>
+<td align="center"><code>I2S</code></td>
+<td align="center">147</td>
+</tr>
+</tbody></table>
+<h1 id="对象类型操作"><a href="#对象类型操作" class="headerlink" title="对象类型操作"></a>对象类型操作</h1><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>new</code></td>
+<td align="center">创建一个新对象</td>
+<td align="center"><code>NEW</code></td>
+<td align="center">187</td>
+</tr>
+<tr>
+<td align="center"><code>getstatic</code></td>
+<td align="center">从类中获取静态字段</td>
+<td align="center"><code>GETSTATIC</code></td>
+<td align="center">178</td>
+</tr>
+<tr>
+<td align="center"><code>putstatic</code></td>
+<td align="center">设置类中静态字段的值</td>
+<td align="center"><code>PUTSTATIC</code></td>
+<td align="center">179</td>
+</tr>
+<tr>
+<td align="center"><code>getfield</code></td>
+<td align="center">从对象中获取字段</td>
+<td align="center"><code>GETFIELD</code></td>
+<td align="center">180</td>
+</tr>
+<tr>
+<td align="center"><code>putfield</code></td>
+<td align="center">设置对象中字段的值</td>
+<td align="center"><code>PUTFIELD</code></td>
+<td align="center">181</td>
+</tr>
+<tr>
+<td align="center"><code>checkcast</code></td>
+<td align="center">确定对象为所给定的类型</td>
+<td align="center"><code>CHECKCAST</code></td>
+<td align="center">192</td>
+</tr>
+<tr>
+<td align="center"><code>instanceof</code></td>
+<td align="center">判断对象是否为给定的类型</td>
+<td align="center"><code>INSTANCEOF</code></td>
+<td align="center">193</td>
+</tr>
+</tbody></table>
+<h1 id="数组类型操作"><a href="#数组类型操作" class="headerlink" title="数组类型操作"></a>数组类型操作</h1><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>newarray</code></td>
+<td align="center">分配数据成员类型为基本上数据类型的新数组</td>
+<td align="center"><code>NEWARRAY</code></td>
+<td align="center">188</td>
+</tr>
+<tr>
+<td align="center"><code>anewarray</code></td>
+<td align="center">分配数据成员类型为引用类型的新数组</td>
+<td align="center"><code>ANEWARRAY</code></td>
+<td align="center">189</td>
+</tr>
+<tr>
+<td align="center"><code>arraylength</code></td>
+<td align="center">获取数组长度</td>
+<td align="center"><code>ARRAYLENGTH</code></td>
+<td align="center">190</td>
+</tr>
+<tr>
+<td align="center"><code>multianewarray</code></td>
+<td align="center">分配新的多维数组</td>
+<td align="center"><code>MULTIANEWARRAY</code></td>
+<td align="center">197</td>
+</tr>
+</tbody></table>
+<h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><h2 id="条件比较判断"><a href="#条件比较判断" class="headerlink" title="条件比较判断"></a>条件比较判断</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>ifeq</code></td>
+<td align="center">如果等于0，则跳转</td>
+<td align="center"><code>IFEQ</code></td>
+<td align="center">153</td>
+</tr>
+<tr>
+<td align="center"><code>ifne</code></td>
+<td align="center">如果不等于0，则跳转</td>
+<td align="center"><code>IFNE</code></td>
+<td align="center">154</td>
+</tr>
+<tr>
+<td align="center"><code>iflt</code></td>
+<td align="center">如果小于0，则跳转</td>
+<td align="center"><code>IFLT</code></td>
+<td align="center">155</td>
+</tr>
+<tr>
+<td align="center"><code>ifge</code></td>
+<td align="center">如果大于等于0，则跳转</td>
+<td align="center"><code>IFGE</code></td>
+<td align="center">156</td>
+</tr>
+<tr>
+<td align="center"><code>ifgt</code></td>
+<td align="center">如果大于0，则跳转</td>
+<td align="center"><code>IFGT</code></td>
+<td align="center">157</td>
+</tr>
+<tr>
+<td align="center"><code>ifle</code></td>
+<td align="center">如果小于等于0，则跳转</td>
+<td align="center"><code>IFLE</code></td>
+<td align="center">158</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmpeq</code></td>
+<td align="center">如果两个int值相等，则跳转</td>
+<td align="center"><code>IF_ICMPEQ</code></td>
+<td align="center">159</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmpne</code></td>
+<td align="center">如果两个int类型值不相等，则跳转</td>
+<td align="center"><code>IF_ICMPNE</code></td>
+<td align="center">160</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmplt</code></td>
+<td align="center">如果一个int类型值小于另外一个int类型值，则跳转</td>
+<td align="center"><code>IF_ICMPLT</code></td>
+<td align="center">161</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmpge</code></td>
+<td align="center">如果一个int类型值大于或者等于另外一个int类型值，则跳转</td>
+<td align="center"><code>IF_ICMPGE</code></td>
+<td align="center">162</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmpgt</code></td>
+<td align="center">如果一个int类型值大于另外一个int类型值，则跳转</td>
+<td align="center"><code>IF_ICMPGT</code></td>
+<td align="center">163</td>
+</tr>
+<tr>
+<td align="center"><code>if_icmple</code></td>
+<td align="center">如果一个int类型值小于或者等于另外一个int类型值，则跳转</td>
+<td align="center"><code>IF_ICMPLE</code></td>
+<td align="center">164</td>
+</tr>
+<tr>
+<td align="center"><code>if_acmpeq</code></td>
+<td align="center">如果两个对象引用相等，则跳转</td>
+<td align="center"><code>IF_ACMPEQ</code></td>
+<td align="center">165</td>
+</tr>
+<tr>
+<td align="center"><code>if_acmpnc</code></td>
+<td align="center">如果两个对象引用不相等，则跳转</td>
+<td align="center"><code>IF_ACMPNE</code></td>
+<td align="center">166</td>
+</tr>
+<tr>
+<td align="center"><code>ifnull</code></td>
+<td align="center">如果等于null，则跳转</td>
+<td align="center"><code>IFNULL</code></td>
+<td align="center">198</td>
+</tr>
+<tr>
+<td align="center"><code>ifnonnull</code></td>
+<td align="center">如果不等于null，则跳转</td>
+<td align="center"><code>IFNONNULL</code></td>
+<td align="center">199</td>
+</tr>
+</tbody></table>
+<h2 id="无条件跳转"><a href="#无条件跳转" class="headerlink" title="无条件跳转"></a>无条件跳转</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>goto</code></td>
+<td align="center">无条件跳转</td>
+<td align="center"><code>GOTO</code></td>
+<td align="center">167</td>
+</tr>
+<tr>
+<td align="center"><code>goto_w</code></td>
+<td align="center">无条件跳转（宽索引）</td>
+<td align="center"><code>GOTO_W</code></td>
+<td align="center">200</td>
+</tr>
+</tbody></table>
+<h2 id="跳转表跳转"><a href="#跳转表跳转" class="headerlink" title="跳转表跳转"></a>跳转表跳转</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>tableswitch</code></td>
+<td align="center">通过索引访问跳转表，并跳转</td>
+<td align="center"><code>TABLESWITCH</code></td>
+<td align="center">170</td>
+</tr>
+<tr>
+<td align="center"><code>lookupswitch</code></td>
+<td align="center">通过键值匹配访问跳转表，并执行跳转操作</td>
+<td align="center"><code>LOOKUPSWITCH</code></td>
+<td align="center">171</td>
+</tr>
+</tbody></table>
+<h1 id="方法执行"><a href="#方法执行" class="headerlink" title="方法执行"></a>方法执行</h1><h2 id="方法调用"><a href="#方法调用" class="headerlink" title="方法调用"></a>方法调用</h2><p>JVM提供invoke指令用于方法调用。这些指令的调用会导致操作数栈和局部变量表的改变，具体的改变取决于调用的方法的返回值和参数类型。这些指令的使用要遵循特定的规则，包括参数类型和数量的匹配，访问权限等。在JVM执行过程中，这些规则的违反将导致指令无法正常执行并抛出异常。</p>
+<table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>invokevirtual</code></td>
+<td align="center">运行时按照对象的类来调用实例方法</td>
+<td align="center"><code>INVOKEVIRTUAL</code></td>
+<td align="center">182</td>
+</tr>
+<tr>
+<td align="center"><code>invokespecial</code></td>
+<td align="center">根据编译时类型来调用实例方法</td>
+<td align="center"><code>INVOKESPECIAL</code></td>
+<td align="center">183</td>
+</tr>
+<tr>
+<td align="center"><code>invokestatic</code></td>
+<td align="center">调用静态方法</td>
+<td align="center"><code>INVOKESTATIC</code></td>
+<td align="center">184</td>
+</tr>
+<tr>
+<td align="center"><code>invokeinterface</code></td>
+<td align="center">调用接口方法</td>
+<td align="center"><code>INVOKEINTERFACE</code></td>
+<td align="center">185</td>
+</tr>
+<tr>
+<td align="center"><code>invokedynamic</code></td>
+<td align="center">调用运行时动态绑定方法</td>
+<td align="center"><code>INVOKEDYNAMIC</code></td>
+<td align="center">186</td>
+</tr>
+</tbody></table>
+<h2 id="方法返回"><a href="#方法返回" class="headerlink" title="方法返回"></a>方法返回</h2><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>ireturn</code></td>
+<td align="center">从方法中返回int类型的数据</td>
+<td align="center"><code>IRETURN</code></td>
+<td align="center">172</td>
+</tr>
+<tr>
+<td align="center"><code>lreturn</code></td>
+<td align="center">从方法中返回long类型的数据</td>
+<td align="center"><code>LRETURN</code></td>
+<td align="center">173</td>
+</tr>
+<tr>
+<td align="center"><code>freturn</code></td>
+<td align="center">从方法中返回float类型的数据</td>
+<td align="center"><code>FRETURN</code></td>
+<td align="center">174</td>
+</tr>
+<tr>
+<td align="center"><code>dreturn</code></td>
+<td align="center">从方法中返回double类型的数据</td>
+<td align="center"><code>DRETURN</code></td>
+<td align="center">175</td>
+</tr>
+<tr>
+<td align="center"><code>areturn</code></td>
+<td align="center">从方法中返回引用类型的数据</td>
+<td align="center"><code>ARETURN</code></td>
+<td align="center">176</td>
+</tr>
+<tr>
+<td align="center"><code>return</code></td>
+<td align="center">从方法中返回，返回值为void</td>
+<td align="center"><code>RETURN</code></td>
+<td align="center">177</td>
+</tr>
+</tbody></table>
+<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>jsr</code></td>
+<td align="center">跳转到子例程</td>
+<td align="center"><code>JSR</code></td>
+<td align="center">168</td>
+</tr>
+<tr>
+<td align="center"><code>ret</code></td>
+<td align="center">从子例程返回</td>
+<td align="center"><code>RET</code></td>
+<td align="center">169</td>
+</tr>
+<tr>
+<td align="center"><code>athrow</code></td>
+<td align="center">抛出异常或错误</td>
+<td align="center"><code>ATHROW</code></td>
+<td align="center">191</td>
+</tr>
+<tr>
+<td align="center"><code>jsr_w</code></td>
+<td align="center">跳转到子例程（宽索引）</td>
+<td align="center"><code>JSR_W</code></td>
+<td align="center">201</td>
+</tr>
+</tbody></table>
+<h1 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h1><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>montiorenter</code></td>
+<td align="center">进入并获取对象监视器</td>
+<td align="center"><code>MONITORENTER</code></td>
+<td align="center">194</td>
+</tr>
+<tr>
+<td align="center"><code>monitorexit</code></td>
+<td align="center">释放并退出对象监视器</td>
+<td align="center"><code>MONITOREXIT</code></td>
+<td align="center">195</td>
+</tr>
+</tbody></table>
+<h1 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h1><table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">指令操作</th>
+<th align="center">Classfile常量</th>
+<th align="center">Classfile指令编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>wide</code></td>
+<td align="center">使用附加字节扩展局部变量索引</td>
+<td align="center"><code>WIDE</code></td>
+<td align="center">196</td>
+</tr>
+</tbody></table>
+<h1 id="指令总结"><a href="#指令总结" class="headerlink" title="指令总结"></a>指令总结</h1><p>下表总结了JVM指令集中的类型支持。通过用类型列中的字母替换操作码列中指令模板中的<code>T</code>来构建具有类型信息的特定指令。如果某些指令模板和类型的类型列为空白，则不存在支持该类型操作的指令。比如int类型有加载指令<code>iload</code>，而byte类型没有加载指令。</p>
+<table>
+<thead>
+<tr>
+<th align="center">JVM指令</th>
+<th align="center">byte</th>
+<th align="center">short</th>
+<th align="center">int</th>
+<th align="center">long</th>
+<th align="center">float</th>
+<th align="center">double</th>
+<th align="center">char</th>
+<th align="center">reference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tipush</td>
+<td align="center">bipush</td>
+<td align="center">sipush</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tconst</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iconst</td>
+<td align="center">lconst</td>
+<td align="center">fconst</td>
+<td align="center">dconst</td>
+<td align="center"></td>
+<td align="center">aconst</td>
+</tr>
+<tr>
+<td align="center">Tload</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iload</td>
+<td align="center">lload</td>
+<td align="center">fload</td>
+<td align="center">dload</td>
+<td align="center"></td>
+<td align="center">aload</td>
+</tr>
+<tr>
+<td align="center">Tstore</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">istore</td>
+<td align="center">lstore</td>
+<td align="center">fstore</td>
+<td align="center">dstore</td>
+<td align="center"></td>
+<td align="center">astore</td>
+</tr>
+<tr>
+<td align="center">Tinc</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iinc</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Taload</td>
+<td align="center">baload</td>
+<td align="center">saload</td>
+<td align="center">iaload</td>
+<td align="center">laload</td>
+<td align="center">faload</td>
+<td align="center">daload</td>
+<td align="center">caload</td>
+<td align="center">aaload</td>
+</tr>
+<tr>
+<td align="center">Tastore</td>
+<td align="center">bastore</td>
+<td align="center">sastore</td>
+<td align="center">iastore</td>
+<td align="center">lastore</td>
+<td align="center">fastore</td>
+<td align="center">dastore</td>
+<td align="center">castore</td>
+<td align="center">aastore</td>
+</tr>
+<tr>
+<td align="center">Tadd</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iadd</td>
+<td align="center">ladd</td>
+<td align="center">fadd</td>
+<td align="center">dadd</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tsub</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">isub</td>
+<td align="center">lsub</td>
+<td align="center">fsub</td>
+<td align="center">dsub</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tmul</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">imul</td>
+<td align="center">lmul</td>
+<td align="center">fmul</td>
+<td align="center">dmul</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tdiv</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">idiv</td>
+<td align="center">ldiv</td>
+<td align="center">fdiv</td>
+<td align="center">ddiv</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Trem</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">irem</td>
+<td align="center">lrem</td>
+<td align="center">frem</td>
+<td align="center">drem</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tneg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ineg</td>
+<td align="center">lneg</td>
+<td align="center">fneg</td>
+<td align="center">dneg</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tshl</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ishl</td>
+<td align="center">lshl</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tshr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ishr</td>
+<td align="center">lshr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tushr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iushr</td>
+<td align="center">lushr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tand</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iand</td>
+<td align="center">land</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ior</td>
+<td align="center">lor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Txor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ixor</td>
+<td align="center">lxor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">i2T</td>
+<td align="center">i2b</td>
+<td align="center">i2s</td>
+<td align="center"></td>
+<td align="center">i2l</td>
+<td align="center">i2f</td>
+<td align="center">i2d</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">l2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">l2i</td>
+<td align="center"></td>
+<td align="center">l2f</td>
+<td align="center">l2d</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">f2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">f2i</td>
+<td align="center">f2l</td>
+<td align="center"></td>
+<td align="center">f2d</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">d2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">d2i</td>
+<td align="center">d2l</td>
+<td align="center">d2f</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tcmp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">lcmp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tcmpl</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">fcmpl</td>
+<td align="center">dcmpl</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tcmpg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">fcmpg</td>
+<td align="center">dcmpg</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">if_TcmpOP</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">if_icmpOP</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">if_acmpOP</td>
+</tr>
+<tr>
+<td align="center">Treturn</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ireturn</td>
+<td align="center">lreturn</td>
+<td align="center">freturn</td>
+<td align="center">dreturn</td>
+<td align="center"></td>
+<td align="center">areturn</td>
+</tr>
+</tbody></table>
+<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p>推荐阅读：<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/jvms/se20/html/jvms-6.html">JDK20官方文档-JVM指令集</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlankSpacePlus</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://blankspaceplus.github.io/2020/03/03/ruan-jian-kai-fa/java/jvm-zhi-ling-ji/">https://blankspaceplus.github.io/2020/03/03/ruan-jian-kai-fa/java/jvm-zhi-ling-ji/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlankSpacePlus</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/JVM/">
+                                    <span class="chip bg-color">JVM</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/03/03/ruan-jian-gong-cheng/ruan-jian-zhi-liang/ruan-jian-rong-cuo-gao-ke-yong-zai-bei/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="软件容错、高可用、灾备">
+                        
+                        <span class="card-title">软件容错、高可用、灾备</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文集成转载了三篇文章，用于辨析三个概念：容错、高可用、灾备。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="post-category">
+                                    软件工程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F/">
+                        <span class="chip bg-color">软件质量</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/03/ruan-jian-kai-fa/java/bigdecimal-de-tostring-yu-toplainstring/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="BigDecimal的toString()与toPlainString()">
+                        
+                        <span class="card-title">BigDecimal的toString()与toPlainString()</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本文比较java.math.BigDecimal的toString()与toPlainString()。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 空白格<br />'
+            + '文章作者: BlankSpacePlus<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '版权声明：本文为博主「BlankSpacePlus」的原创文章，遵循CC 4.0 BY-SA版权协议，任何形式的转载均请附上原文出处链接及本声明。<br>主页链接：https://blankspaceplus.github.io';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<script src="js/line.js"></script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8153102324"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2023</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlankSpacePlus</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">919.8k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlankSpacePlus" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:blankspaceplus@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
