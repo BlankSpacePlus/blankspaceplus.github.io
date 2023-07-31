@@ -486,14 +486,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    22 分
+                    21 分
                 </div>
                 
 
@@ -596,10 +596,10 @@
  * following information:
  * &lt;/p&gt;
  * &lt;ol&gt;
- * &lt;li&gt;the code of the item, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;the title of the item, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;the year the item was published, an &lt;code&gt;int&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;a &lt;code&gt;boolean&lt;/code&gt; value that indicates if the item is
+ * &lt;li&gt;the code of the item, a `String`&lt;/li&gt;
+ * &lt;li&gt;the title of the item, a `String`&lt;/li&gt;
+ * &lt;li&gt;the year the item was published, an `int`&lt;/li&gt;
+ * &lt;li&gt;a `boolean` value that indicates if the item is
  *     available&lt;/li&gt;
  * &lt;/ol&gt;
  *
@@ -621,10 +621,10 @@
 	<span class="token keyword">private</span> <span class="token keyword">boolean</span>  available<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
-	 * Constructs a &lt;code&gt;CatalogItem&lt;/code&gt; object.
+	 * Constructs a `CatalogItem` object.
 	 * &lt;p&gt;
-	 * Sets the instance variable &lt;code&gt;available&lt;/code&gt;
-	 * to &lt;code&gt;true&lt;/code&gt;.
+	 * Sets the instance variable `available`
+	 * to `true`.
 	 * &lt;p&gt;
 	 *
 	 * @param initialCode  the code of the item.
@@ -671,7 +671,7 @@
 	<span class="token punctuation">}</span>
 
 	<span class="token comment">/**
-	 * Sets the value of instance variable &lt;code&gt;available&lt;/code&gt;.
+	 * Sets the value of instance variable `available`.
 	 *
 	 * @param value  the new value.
 	 */</span>
@@ -681,10 +681,10 @@
 	<span class="token punctuation">}</span>
 
 	<span class="token comment">/**
-	 * Returns &lt;code&gt;true&lt;/code&gt; if the item is available.
+	 * Returns `true` if the item is available.
 	 *
-	 * @return  &lt;code&gt;true&lt;/code&gt; if the item is available;
-	 *          &lt;code&gt;false&lt;/code&gt; otherwise.
+	 * @return  `true` if the item is available;
+	 *          `false` otherwise.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token keyword">boolean</span>  <span class="token function">isAvailable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
 
@@ -692,12 +692,12 @@
 	<span class="token punctuation">}</span>
 
 	<span class="token comment">/**
-	 * Returns &lt;code&gt;true&lt;/code&gt; if the code of this catalog item is
+	 * Returns `true` if the code of this catalog item is
 	 * equal to the code of the argument
 	 *
 	 * @param object  object with which this catalog item is compared.
-	 * @return  &lt;code&gt;true&lt;/code&gt; if the code of this catalog item is
-	 *          equal to the code of the argument; &lt;code&gt;false&lt;/code&gt;
+	 * @return  `true` if the code of this catalog item is
+	 *          equal to the code of the argument; `false`
 	 *          otherwise.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token keyword">boolean</span>  <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span>  object<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
@@ -724,8 +724,8 @@
  * This class models a recording. It extends {@link CatalogItem} and
  * adds the following information:
  * &lt;ol&gt;
- * &lt;li&gt;the performer of the recording, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;the format of the recording, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
+ * &lt;li&gt;the performer of the recording, a `String`&lt;/li&gt;
+ * &lt;li&gt;the format of the recording, a `String`&lt;/li&gt;
  * &lt;/ol&gt;
  *
  * @author BlankSpace
@@ -741,7 +741,7 @@
 	<span class="token keyword">private</span> <span class="token class-name">String</span>  format<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
-	 * Constructs an &lt;code&gt;Recording&lt;/code&gt; object.
+	 * Constructs an `Recording` object.
 	 *
 	 * @param initialCode  the code of the catalog item.
 	 * @param initialTitle  the title of the catalog item.
@@ -797,8 +797,8 @@
  * This class models a book. It extends {@link CatalogItem} and
  * adds the following information:
  * &lt;ol&gt;
- * &lt;li&gt;the author of the book, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;the number of pages in the book, an &lt;code&gt;int&lt;/code&gt;&lt;/li&gt;
+ * &lt;li&gt;the author of the book, a `String`&lt;/li&gt;
+ * &lt;li&gt;the number of pages in the book, an `int`&lt;/li&gt;
  * &lt;/ol&gt;
  *
  * @author BlankSpace
@@ -814,7 +814,7 @@
 	<span class="token keyword">private</span> <span class="token keyword">int</span>  numberOfPages<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
-	 * Constructs a &lt;code&gt;Book&lt;/code&gt; object.
+	 * Constructs a `Book` object.
 	 *
 	 * @param initialCode  the code of the book.
 	 * @param initialTitle  the title of the book.
@@ -878,7 +878,7 @@
  */</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BorrowerDatabase</span> <span class="token keyword">implements</span> <span class="token class-name">Iterable</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Borrower</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
 
-	<span class="token comment">/* Collection of &lt;code&gt;Borrower&lt;/code&gt; objects.*/</span>
+	<span class="token comment">/* Collection of `Borrower` objects.*/</span>
 	<span class="token keyword">private</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Borrower</span><span class="token punctuation">&gt;</span></span>  borrowers<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
@@ -912,11 +912,11 @@
 
 	<span class="token comment">/**
 	 * Returns the {@link Borrower} object with the specified
-	 * &lt;code&gt;id&lt;/code&gt;.
+	 * `id`.
 	 *
 	 * @param id  the id of the borrower.
 	 * @return  The {@link Borrower} object with the specified id.
-	 *          Returns &lt;code&gt;null&lt;/code&gt; if the object with the
+	 *          Returns `null` if the object with the
 	 *          id is not found.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token class-name">Borrower</span>  <span class="token function">getBorrower</span><span class="token punctuation">(</span><span class="token class-name">String</span> id<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
@@ -957,7 +957,7 @@
  */</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Catalog</span> <span class="token keyword">implements</span> <span class="token class-name">Iterable</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">CatalogItem</span><span class="token punctuation">&gt;</span></span>  <span class="token punctuation">{</span>
 
-	<span class="token comment">/* Collection of &lt;code&gt;CatalogItem&lt;/code&gt; objects.*/</span>
+	<span class="token comment">/* Collection of `CatalogItem` objects.*/</span>
 	<span class="token keyword">private</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">CatalogItem</span><span class="token punctuation">&gt;</span></span>  items<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
@@ -990,11 +990,11 @@
 
 	<span class="token comment">/**
 	 * Returns the {@link CatalogItem} object with the specified
-	 * &lt;code&gt;code&lt;/code&gt;.
+	 * `code`.
 	 *
 	 * @param code  the code of an item.
 	 * @return  The {@link CatalogItem} object with the specified
-	 *          code. Returns &lt;code&gt;null&lt;/code&gt; if the object with
+	 *          code. Returns `null` if the object with
 	 *          the code is not found.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token class-name">CatalogItem</span>  <span class="token function">getItem</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
@@ -1081,11 +1081,11 @@
 
 	<span class="token comment">/**
 	 * Returns the {@link CatalogItem} object with the specified
-	 * &lt;code&gt;code&lt;/code&gt;.
+	 * `code`.
 	 *
 	 * @param code  the code of an item.
 	 * @return  The {@link CatalogItem} object with the specified
-	 *          code. Returns &lt;code&gt;null&lt;/code&gt; if the object with
+	 *          code. Returns `null` if the object with
 	 *          the code is not found.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token class-name">CatalogItem</span>  <span class="token function">getItem</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
@@ -1118,10 +1118,10 @@
  * This class models a library user. It contains the following
  * information:
  * &lt;ol&gt;
- * &lt;li&gt;The id of the borrower, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
- * &lt;li&gt;The name of the borrower, a &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
+ * &lt;li&gt;The id of the borrower, a `String`&lt;/li&gt;
+ * &lt;li&gt;The name of the borrower, a `String`&lt;/li&gt;
  * &lt;li&gt;The items checked out by the borrower,
- *     a &lt;code&gt;BorrowedItems&lt;/code&gt; object&lt;/li&gt;
+ *     a `BorrowedItems` object&lt;/li&gt;
  * &lt;/ol&gt;
  *
  * @author BlankSpace
@@ -1141,7 +1141,7 @@
 	<span class="token keyword">private</span> <span class="token class-name">BorrowedItems</span>  borrowedItems<span class="token punctuation">;</span>
 
 	<span class="token comment">/**
-	 * Constructs a &lt;code&gt;Borrower&lt;/code&gt; object.
+	 * Constructs a `Borrower` object.
 	 * &lt;p&gt;
 	 * The collection of the borrowed items is initially empty.
 	 * &lt;/p&gt;
@@ -1187,12 +1187,12 @@
 	<span class="token punctuation">}</span>
 
 	<span class="token comment">/**
-	 * Returns &lt;code&gt;true&lt;/code&gt; if the id of this borrower is
+	 * Returns `true` if the id of this borrower is
 	 * equal to the id of the argument.
 	 *
 	 * @param object  object with which this borrower is compared.
-	 * @return  &lt;code&gt;true&lt;/code&gt; if the id of this borrower is
-	 *          equal to the id of the argument; &lt;code&gt;false&lt;/code&gt;
+	 * @return  `true` if the id of this borrower is
+	 *          equal to the id of the argument; `false`
 	 *          otherwise.
 	 */</span>
 	<span class="token keyword">public</span> <span class="token keyword">boolean</span>  <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span>  object<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
@@ -1364,7 +1364,7 @@
 	<span class="token punctuation">}</span>
 
 	<span class="token comment">/*
-	 * Constructs a &lt;code&gt;LibrarySystem&lt;/code&gt; object.
+	 * Constructs a `LibrarySystem` object.
 	 * Initialize the catalog and the borrower database with
 	 * the values specified in the parameters.
 	 */</span>
@@ -2039,7 +2039,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">953k</span>&nbsp;字
+                class="white-color">973.7k</span>&nbsp;字
             
             
             

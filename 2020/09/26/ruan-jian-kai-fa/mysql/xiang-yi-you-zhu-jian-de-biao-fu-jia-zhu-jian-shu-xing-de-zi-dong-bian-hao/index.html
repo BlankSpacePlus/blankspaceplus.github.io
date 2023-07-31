@@ -526,7 +526,7 @@
 <p>那我们可以考虑加入auto_increment：<code>alter table user_login auto_increment=1;</code>，执行后得到<code>Query OK, 0 rows affected</code>，但还是不能解决问题，有和没有一样。</p>
 <p>当然了，我们稍加分析可知default与primary_key是不兼容的，所以要去掉，此时使用<code>desc user_login;</code>命令查询表结构，如下图：</p>
 <p><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/MySQL/%E5%90%91%E5%B7%B2%E6%9C%89%E4%B8%BB%E9%94%AE%E7%9A%84%E8%A1%A8%E9%99%84%E5%8A%A0%E4%B8%BB%E9%94%AE%E5%B1%9E%E6%80%A7%E7%9A%84%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7/1.png"></p>
-<p>果然是因为auto_increment看似加进去实则没加进去导致的。<br>那问题就在于怎么加这个auto_increment？<br>我们直接alter是无效的，而删表并重建，是不现实的。<br>似乎很纠结、很困难，下面说一下怎么写命令：<br><code>alter table user_login modify column `user_id` int not null auto_increment;</code><br>如果我们这么处理的话，除了主键以外把整列重新指定，就能解决问题：</p>
+<p>果然是因为auto_increment看似加进去实则没加进去导致的。<br>那问题就在于怎么加这个auto_increment？<br>我们直接alter是无效的，而删表并重建，是不现实的。<br>似乎很纠结、很困难，下面说一下怎么写命令：<br><code>alter table user_login modify column \</code>user_id` int not null auto_increment;`<br>如果我们这么处理的话，除了主键以外把整列重新指定，就能解决问题：</p>
 <p><img src="/../../../images/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/MySQL/%E5%90%91%E5%B7%B2%E6%9C%89%E4%B8%BB%E9%94%AE%E7%9A%84%E8%A1%A8%E9%99%84%E5%8A%A0%E4%B8%BB%E9%94%AE%E5%B1%9E%E6%80%A7%E7%9A%84%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7/2.png"></p>
 <p>一定不要再附带primary_key，只因为主键已经被指定。</p>
 <p>验证：</p>
@@ -986,7 +986,7 @@ Query OK<span class="token punctuation">,</span> <span class="token number">1</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">953k</span>&nbsp;字
+                class="white-color">973.7k</span>&nbsp;字
             
             
             
