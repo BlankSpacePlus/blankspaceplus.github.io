@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2023-07-31T15:24:49.890Z</updated>
+  <updated>2023-08-16T20:10:22.576Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2023/07/31/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2023/07/31/huan-ying-shi-yong-hexo/</id>
-    <published>2023-07-31T15:24:49.890Z</published>
-    <updated>2023-07-31T15:24:49.890Z</updated>
+    <link href="https://blankspaceplus.github.io/2023/08/16/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2023/08/16/huan-ying-shi-yong-hexo/</id>
+    <published>2023-08-16T20:10:22.576Z</published>
+    <updated>2023-08-16T20:10:22.576Z</updated>
     
     
       
@@ -40,11 +40,40 @@
   </entry>
   
   <entry>
+    <title>SPECjvm2008必知必会</title>
+    <link href="https://blankspaceplus.github.io/2023/08/13/ruan-jian-kai-fa/java/specjvm2008-bi-zhi-bi-hui/"/>
+    <id>https://blankspaceplus.github.io/2023/08/13/ruan-jian-kai-fa/java/specjvm2008-bi-zhi-bi-hui/</id>
+    <published>2023-08-13T03:11:04.000Z</published>
+    <updated>2023-08-16T20:10:22.612Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基本信息&quot;&gt;&lt;a href=&quot;#基本信息&quot; class=&quot;headerlink&quot; title=&quot;基本信息&quot;&gt;&lt;/a&gt;基本信息&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
+    
+    <category term="SPECjvm2008" scheme="https://blankspaceplus.github.io/tags/SPECjvm2008/"/>
+    
+    <category term="Benchmark" scheme="https://blankspaceplus.github.io/tags/Benchmark/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Redis必知必会</title>
     <link href="https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/redis/redis-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/redis/redis-bi-zhi-bi-hui/</id>
     <published>2023-07-28T13:30:00.000Z</published>
-    <updated>2023-07-31T15:24:49.942Z</updated>
+    <updated>2023-08-16T20:10:22.620Z</updated>
     
     
       
@@ -71,7 +100,7 @@
     <link href="https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/gradle/gradle-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/gradle/gradle-bi-zhi-bi-hui/</id>
     <published>2023-07-28T12:34:55.000Z</published>
-    <updated>2023-07-31T15:24:49.922Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -104,7 +133,7 @@
     <link href="https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/"/>
     <id>https://blankspaceplus.github.io/2023/07/24/ji-suan-ji-ke-xue-ji-chu/zhi-shi-tu-pu-ru-men-lu-xian/</id>
     <published>2023-07-24T08:51:15.000Z</published>
-    <updated>2023-07-31T15:24:49.894Z</updated>
+    <updated>2023-08-16T20:10:22.580Z</updated>
     
     
       
@@ -129,7 +158,7 @@
     <link href="https://blankspaceplus.github.io/2023/06/03/ruan-jian-kai-fa/java/hotspot-de-san-lie-ji-zhi/"/>
     <id>https://blankspaceplus.github.io/2023/06/03/ruan-jian-kai-fa/java/hotspot-de-san-lie-ji-zhi/</id>
     <published>2023-06-03T17:51:21.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -158,7 +187,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/15/ruan-jian-kai-fa/java/java-lei-chu-shi-hua/"/>
     <id>https://blankspaceplus.github.io/2023/05/15/ruan-jian-kai-fa/java/java-lei-chu-shi-hua/</id>
     <published>2023-05-15T12:55:39.000Z</published>
-    <updated>2023-07-31T15:24:49.930Z</updated>
+    <updated>2023-08-16T20:10:22.608Z</updated>
     
     
       
@@ -183,7 +212,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/14/ruan-jian-kai-fa/java/jvm-yi-chang/"/>
     <id>https://blankspaceplus.github.io/2023/05/14/ruan-jian-kai-fa/java/jvm-yi-chang/</id>
     <published>2023-05-14T16:58:21.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -210,7 +239,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/09/ruan-jian-kai-fa/java/jdbctype-yu-types/"/>
     <id>https://blankspaceplus.github.io/2023/05/09/ruan-jian-kai-fa/java/jdbctype-yu-types/</id>
     <published>2023-05-09T16:51:59.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -235,7 +264,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-zhan-zheng/"/>
     <id>https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-zhan-zheng/</id>
     <published>2023-05-08T17:52:51.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.608Z</updated>
     
     
       
@@ -263,7 +292,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-shu-ju-lei-xing/"/>
     <id>https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-shu-ju-lei-xing/</id>
     <published>2023-05-08T15:24:50.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.608Z</updated>
     
     
       
@@ -290,7 +319,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-yun-xing-shi-shu-ju-qu-yu/"/>
     <id>https://blankspaceplus.github.io/2023/05/08/ruan-jian-kai-fa/java/jvm-yun-xing-shi-shu-ju-qu-yu/</id>
     <published>2023-05-08T14:01:25.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.608Z</updated>
     
     
       
@@ -317,7 +346,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/02/ruan-jian-kai-fa/java/arrays-de-compare-yu-mismatch/"/>
     <id>https://blankspaceplus.github.io/2023/05/02/ruan-jian-kai-fa/java/arrays-de-compare-yu-mismatch/</id>
     <published>2023-05-02T17:55:58.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -342,7 +371,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/02/ruan-jian-kai-fa/java/arrays.sort/"/>
     <id>https://blankspaceplus.github.io/2023/05/02/ruan-jian-kai-fa/java/arrays.sort/</id>
     <published>2023-05-02T11:37:36.000Z</published>
-    <updated>2023-07-31T15:24:49.926Z</updated>
+    <updated>2023-08-16T20:10:22.604Z</updated>
     
     
       
@@ -367,7 +396,7 @@
     <link href="https://blankspaceplus.github.io/2023/05/01/ruan-jian-gong-cheng/cheng-xu-she-ji/yu-fa-tang/"/>
     <id>https://blankspaceplus.github.io/2023/05/01/ruan-jian-gong-cheng/cheng-xu-she-ji/yu-fa-tang/</id>
     <published>2023-05-01T11:44:46.000Z</published>
-    <updated>2023-07-31T15:24:49.910Z</updated>
+    <updated>2023-08-16T20:10:22.592Z</updated>
     
     
       
@@ -392,7 +421,7 @@
     <link href="https://blankspaceplus.github.io/2023/04/30/ruan-jian-kai-fa/java/simpledateformat-yu-datetimeformatter/"/>
     <id>https://blankspaceplus.github.io/2023/04/30/ruan-jian-kai-fa/java/simpledateformat-yu-datetimeformatter/</id>
     <published>2023-04-30T03:49:05.000Z</published>
-    <updated>2023-07-31T15:24:49.934Z</updated>
+    <updated>2023-08-16T20:10:22.612Z</updated>
     
     
       
@@ -417,7 +446,7 @@
     <link href="https://blankspaceplus.github.io/2023/04/28/ruan-jian-kai-fa/java/java.util.doublesummarystatistics/"/>
     <id>https://blankspaceplus.github.io/2023/04/28/ruan-jian-kai-fa/java/java.util.doublesummarystatistics/</id>
     <published>2023-04-28T14:06:24.000Z</published>
-    <updated>2023-07-31T15:24:49.934Z</updated>
+    <updated>2023-08-16T20:10:22.612Z</updated>
     
     
       
@@ -442,7 +471,7 @@
     <link href="https://blankspaceplus.github.io/2023/04/27/ruan-jian-kai-fa/java/final-finally-finalize/"/>
     <id>https://blankspaceplus.github.io/2023/04/27/ruan-jian-kai-fa/java/final-finally-finalize/</id>
     <published>2023-04-27T07:36:55.000Z</published>
-    <updated>2023-07-31T15:24:49.934Z</updated>
+    <updated>2023-08-16T20:10:22.612Z</updated>
     
     
       
@@ -467,7 +496,7 @@
     <link href="https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/java-chang-jian-yi-chang-yu-cuo-wu/"/>
     <id>https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/java-chang-jian-yi-chang-yu-cuo-wu/</id>
     <published>2023-04-26T17:34:26.000Z</published>
-    <updated>2023-07-31T15:24:49.930Z</updated>
+    <updated>2023-08-16T20:10:22.608Z</updated>
     
     
       
@@ -492,7 +521,7 @@
     <link href="https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/java.lang.string/"/>
     <id>https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/java.lang.string/</id>
     <published>2023-04-26T14:28:35.000Z</published>
-    <updated>2023-07-31T15:24:49.934Z</updated>
+    <updated>2023-08-16T20:10:22.612Z</updated>
     
     
       
@@ -500,31 +529,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;String的创建和初始化&quot;&gt;&lt;a href=&quot;#String的创建和初始化&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://blankspaceplus.github.io/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://blankspaceplus.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>int、String、BigInteger的类型转换</title>
-    <link href="https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/int-string-biginteger-de-lei-xing-zhuan-huan/"/>
-    <id>https://blankspaceplus.github.io/2023/04/26/ruan-jian-kai-fa/java/int-string-biginteger-de-lei-xing-zhuan-huan/</id>
-    <published>2023-04-26T13:25:47.000Z</published>
-    <updated>2023-07-31T15:24:49.934Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;int、Integer、String的类型转换&quot;&gt;&lt;a href=&quot;#int、Integer、String的类型转换&quot; class=&quot;headerlink&quot;</summary>
         
       
     
