@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎使用Hexo, 星拱北辰">
+    <meta name="keywords" content="Kubernetes常见错误的解决方案, 星拱北辰">
     <meta name="description" content="空白格的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎使用Hexo | 空白格</title>
+    <title>Kubernetes常见错误的解决方案 | 空白格</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎使用Hexo</h1>
+                    <h1 class="description center-align post-title">Kubernetes常见错误的解决方案</h1>
                 </div>
             </div>
         </div>
@@ -447,14 +447,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/Kubernetes/">
+                                <span class="chip bg-color">Kubernetes</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/" class="post-category">
+                                开发技术
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -463,21 +472,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-10-08
+                    2023-10-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-10-08
+                    2023-10-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    275
                 </div>
                 
 
@@ -507,19 +516,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="detected-that-the-sandbox-image-“registry-aliyuncs-com-x2F-google-containers-x2F-pause-3-6”-of-the-container-runtime-is-inconsistent-with-that-used-by-kubeadm"><a href="#detected-that-the-sandbox-image-“registry-aliyuncs-com-x2F-google-containers-x2F-pause-3-6”-of-the-container-runtime-is-inconsistent-with-that-used-by-kubeadm" class="headerlink" title="detected that the sandbox image “registry.aliyuncs.com/google_containers/pause:3.6” of the container runtime is inconsistent with that used by kubeadm."></a>detected that the sandbox image “registry.aliyuncs.com/google_containers/pause:3.6” of the container runtime is inconsistent with that used by kubeadm.</h1><p><code>kubeadm</code>初始化master的时候有如下错误：<br><font color="red"><br>detected that the sandbox image “registry.aliyuncs.com/google_containers/pause:3.6” of the container runtime is inconsistent with that used by kubeadm. It is recommended that using “registry.aliyuncs.com/google_containers/pause:3.9” as the CRI sandbox image.<br></font></p>
+<p>解决方法：<br><br>修改运行时containerd配置文件<code>/etc/containerd/config.toml</code>，把<code>sandbox_image = "registry.k8s.io/pause:3.6"</code>改成<code>sandbox_image = "registry.aliyuncs.com/google_containers/pause:3.9"</code>。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>plugins.<span class="token string">"io.containerd.grpc.v1.cri"</span><span class="token punctuation">]</span>
+restrict_oom_score_adj <span class="token operator">=</span> <span class="token boolean">false</span>
+sandbox_image <span class="token operator">=</span> <span class="token string">"registry.aliyuncs.com/google_containers/pause:3.9"</span>
+selinux_category_range <span class="token operator">=</span> <span class="token number">1024</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists"><a href="#ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists" class="headerlink" title="[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists"></a>[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists</h1><font color="red">
+[ERROR FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists
+[ERROR FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml]: /etc/kubernetes/manifests/kube-controller-manager.yaml already exists
+[ERROR FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml]: /etc/kubernetes/manifests/kube-scheduler.yaml already exists
+[ERROR FileAvailable--etc-kubernetes-manifests-etcd.yaml]: /etc/kubernetes/manifests/etcd.yaml already exists
+[ERROR Port-10250]: Port 10250 is in use
+[ERROR Port-2379]: Port 2379 is in use
+[ERROR Port-2380]: Port 2380 is in use
+[ERROR DirAvailable--var-lib-etcd]: /var/lib/etcd is not empty
+</font>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>解决方法：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubeadm reset<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="WARNING-Swap-swap-is-enabled-production-deployments-should-disable-swap-unless-testing-the-NodeSwap-feature-gate-of-the-kubelet"><a href="#WARNING-Swap-swap-is-enabled-production-deployments-should-disable-swap-unless-testing-the-NodeSwap-feature-gate-of-the-kubelet" class="headerlink" title="[WARNING Swap]: swap is enabled; production deployments should disable swap unless testing the NodeSwap feature gate of the kubelet"></a>[WARNING Swap]: swap is enabled; production deployments should disable swap unless testing the NodeSwap feature gate of the kubelet</h1><p>禁用Linux上的swap：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">swapoff -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -546,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blankspaceplus.github.io/2023/10/07/huan-ying-shi-yong-hexo/">https://blankspaceplus.github.io/2023/10/07/huan-ying-shi-yong-hexo/</a>
+                    <a href="https://blankspaceplus.github.io/2023/10/16/ruan-jian-kai-fa/kubernetes/kubernetes-chang-jian-cuo-wu-de-jie-jue-fang-an/">https://blankspaceplus.github.io/2023/10/16/ruan-jian-kai-fa/kubernetes/kubernetes-chang-jian-cuo-wu-de-jie-jue-fang-an/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -584,8 +603,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/Kubernetes/">
+                                    <span class="chip bg-color">Kubernetes</span>
                                 </a>
                             
                         </div>
@@ -626,44 +645,46 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/10/07/huan-ying-shi-yong-hexo/">
+                <a href="/2023/10/17/ruan-jian-kai-fa/kubernetes/kubernetes-an-zhuang-pei-zhi-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="欢迎使用Hexo">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Kubernetes安装配置方法">
                         
-                        <span class="card-title">欢迎使用Hexo</span>
+                        <span class="card-title">Kubernetes安装配置方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本文分享Kubernetes的安装配置方法。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-17
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            BlankSpacePlus
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    开发技术
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/Kubernetes/">
+                        <span class="chip bg-color">Kubernetes</span>
                     </a>
                     
                 </div>
@@ -954,7 +975,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1025.1k</span>&nbsp;字
+                class="white-color">1026.6k</span>&nbsp;字
             
             
             
