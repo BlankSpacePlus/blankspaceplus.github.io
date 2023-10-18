@@ -1,5 +1,5 @@
 ---
-title: Kubernetes常见错误的解决方案 
+title: Kubernetes常见错误的解决方案
 date: 2023-10-16 23:44:44
 summary: 本文分享一些Kubernetes常见错误的解决方案。
 tags:
