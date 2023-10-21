@@ -5,6 +5,7 @@ summary: 本文分享NLTK运行错误的解决方法。
 tags:
 - Python
 - NLTK
+- 异常修复
 categories:
 - Python
 ---
