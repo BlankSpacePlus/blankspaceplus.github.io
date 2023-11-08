@@ -479,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-10-21
+                    2023-11-08
                 </div>
                 
 
@@ -493,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -526,6 +526,9 @@
 <p>解决方法是：在文件头添加一行：<code># -*- coding: utf-8 -*-</code>，即可正常运行。</p>
 <p>如果解决不了，你要看看自己的编码，让二者匹配即可。有的时候应该这么写：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># coding:gbk</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="JMeter乱码"><a href="#JMeter乱码" class="headerlink" title="JMeter乱码"></a>JMeter乱码</h1><p><code>/bin/jmeter.properties</code>文件搜到<code>sampleresult.default.encoding=ISO-8859-1</code>，更换成：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sampleresult.default.encoding<span class="token operator">=</span>UTF-8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h1 id="BeautifulSoup解析数据乱码"><a href="#BeautifulSoup解析数据乱码" class="headerlink" title="BeautifulSoup解析数据乱码"></a>BeautifulSoup解析数据乱码</h1><p><font color="red">Traceback (most recent call last):<br>  File “XXX.py”, line 6, in &lt;module&gt;<br>    lines = f.readlines()<br>UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0xa2 in position 216: illegal multibyte sequence</font></p>
 <p>遇到此情况，就是编码格式的问题了，我们应该设置编码格式为UTF-8：<br><code>with open('test.html', 'r', encoding='UTF-8') as f:</code></p>
@@ -803,12 +806,12 @@ mpl<span class="token punctuation">.</span>rcParams<span class="token punctuatio
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/">
-                        <span class="chip bg-color">人机交互</span>
-                    </a>
-                    
                     <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
                         <span class="chip bg-color">软件工程</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/">
+                        <span class="chip bg-color">人机交互</span>
                     </a>
                     
                 </div>
