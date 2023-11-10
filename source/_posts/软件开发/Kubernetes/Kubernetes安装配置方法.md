@@ -290,16 +290,38 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
+# 访问pod内部
+
+获取所有namespace下的运行的所有pod：
+```shell
+kubectl get pod --all-namespaces
+```
+
+获取指定namespace下运行的的所有pod：
+```shell
+kubectl get pod -n <namespace>
+```
+
+访问指定名称的pod内部：
+```shell
+kubectl exec -it <pod_name> bash -n <namespace>
+```
+
+拷贝pod内部的文件至本地：
+```shell
+kubectl cp <namespace>/<pod_name>:<source_path> <destination_path>
+```
+
 # kubectl常用命令
 
 获取所有namespace下的运行的所有pod：
 ```shell
-kubectl get po --all-namespaces
+kubectl get pod --all-namespaces
 ```
 
 获取所有namespace下的运行的所有pod的标签：
 ```shell
-kubectl get po --show-labels
+kubectl get pod --show-labels
 ```
 
 获取该节点的所有namespace：
