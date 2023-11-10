@@ -479,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-11-08
+                    2023-11-10
                 </div>
                 
 
@@ -493,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -699,11 +699,23 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
 <span class="token function">sudo</span> <span class="token function">cp</span> -i /etc/kubernetes/admin.conf <span class="token environment constant">$HOME</span>/.kube/config
 <span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
+<h1 id="访问pod内部"><a href="#访问pod内部" class="headerlink" title="访问pod内部"></a>访问pod内部</h1><p>获取所有namespace下的运行的所有pod：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod --all-namespaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取指定namespace下运行的的所有pod：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>访问指定名称的pod内部：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token builtin class-name">exec</span> -it <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span> <span class="token function">bash</span> -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>拷贝pod内部的文件至本地：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token function">cp</span> <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>source_path<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>destination_path<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <h1 id="kubectl常用命令"><a href="#kubectl常用命令" class="headerlink" title="kubectl常用命令"></a>kubectl常用命令</h1><p>获取所有namespace下的运行的所有pod：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get po --all-namespaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod --all-namespaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>获取所有namespace下的运行的所有pod的标签：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get po --show-labels<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod --show-labels<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>获取该节点的所有namespace：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get namespace<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1150,7 +1162,7 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1079.5k</span>&nbsp;字
+                class="white-color">1079.6k</span>&nbsp;字
             
             
             
