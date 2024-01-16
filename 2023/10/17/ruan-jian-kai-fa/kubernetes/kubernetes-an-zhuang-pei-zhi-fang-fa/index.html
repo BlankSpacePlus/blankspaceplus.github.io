@@ -479,21 +479,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-11-12
+                    2024-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -711,7 +711,13 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
 <p>拷贝pod内部的文件至本地：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token function">cp</span> <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>source_path<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>destination_path<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h1 id="kubectl常用命令"><a href="#kubectl常用命令" class="headerlink" title="kubectl常用命令"></a>kubectl常用命令</h1><p>获取所有namespace下的运行的所有pod：</p>
+<h1 id="kubectl常用命令"><a href="#kubectl常用命令" class="headerlink" title="kubectl常用命令"></a>kubectl常用命令</h1><p>创建namespace：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl create namespace <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>删除namespace：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl delete namespace <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取所有namespace下的运行的所有pod：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod --all-namespaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>获取所有namespace下的运行的所有pod的标签：</p>
@@ -722,6 +728,25 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
 
 <p>查看节点：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get nodes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="pending状态分析"><a href="#pending状态分析" class="headerlink" title="pending状态分析"></a>pending状态分析</h1><p>查看处于Pending状态挂起的pod：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl -n troubleshooting get pods<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>查看处于Pending状态挂起的pod的故障原因：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl -n troubleshooting describe pod <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>查看pod请求的资源量和实际资源限制：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl describe po -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="错误解决"><a href="#错误解决" class="headerlink" title="错误解决"></a>错误解决</h1><h2 id="The-connection-to-the-server-10-0-2-15-6443-was-refused-did-you-specify-the-right-host-or-port"><a href="#The-connection-to-the-server-10-0-2-15-6443-was-refused-did-you-specify-the-right-host-or-port" class="headerlink" title="The connection to the server 10.0.2.15:6443 was refused - did you specify the right host or port?"></a>The connection to the server 10.0.2.15:6443 was refused - did you specify the right host or port?</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> -i
+swapoff -a
+<span class="token builtin class-name">exit</span>
+<span class="token function">strace</span> -eopenat kubectl version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists"><a href="#ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists" class="headerlink" title="[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists"></a>[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/kubernetes/kubeadm/issues/1616">https://github.com/kubernetes/kubeadm/issues/1616</a></p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -1153,7 +1178,7 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2020-2023</span>
+                <span id="year">2020-2024</span>
             
             <span id="year">2020</span>
             <a href="/about" target="_blank">BlankSpacePlus</a>
@@ -1162,7 +1187,7 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1086.5k</span>&nbsp;字
+                class="white-color">1086.8k</span>&nbsp;字
             
             
             

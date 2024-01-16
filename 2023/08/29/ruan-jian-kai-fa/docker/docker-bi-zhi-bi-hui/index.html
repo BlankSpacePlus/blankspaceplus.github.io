@@ -479,21 +479,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-11-12
+                    2024-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    9 分
                 </div>
                 
 
@@ -767,6 +767,35 @@ Total reclaimed space: ...<span aria-hidden="true" class="line-numbers-rows"><sp
 
 <p>退出DockerHub账号：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">docker</span> <span class="token builtin class-name">logout</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="Docker故障修复"><a href="#Docker故障修复" class="headerlink" title="Docker故障修复"></a>Docker故障修复</h1><h2 id="Cannot-connect-to-the-Docker-daemon-at-unix-x2F-x2F-x2F-var-x2F-run-x2F-docker-sock-Is-the-docker-daemon-running"><a href="#Cannot-connect-to-the-Docker-daemon-at-unix-x2F-x2F-x2F-var-x2F-run-x2F-docker-sock-Is-the-docker-daemon-running" class="headerlink" title="Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"></a>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</h2><p>运行：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">docker</span> <span class="token function">ps</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>报错：</p>
+<pre class="line-numbers language-none"><code class="language-none">Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>解决方法：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">groupadd</span> <span class="token operator">&lt;</span>username<span class="token operator">&gt;</span>
+getent group <span class="token function">docker</span>
+<span class="token function">awk</span> -F<span class="token string">':'</span> <span class="token string">'/docker/{print $4}'</span> /etc/group
+<span class="token function">sudo</span> <span class="token function">usermod</span> -aG <span class="token function">docker</span> <span class="token operator">&lt;</span>username<span class="token operator">&gt;</span>
+getent group <span class="token function">docker</span>
+<span class="token function">awk</span> -F<span class="token string">':'</span> <span class="token string">'/docker/{print $4}'</span> /etc/group
+<span class="token function">sudo</span> systemctl restart docker.service
+<span class="token function">sudo</span> systemctl status docker.service<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Job-for-docker-service-failed-because-the-control-process-exited-with-error-code"><a href="#Job-for-docker-service-failed-because-the-control-process-exited-with-error-code" class="headerlink" title="Job for docker.service failed because the control process exited with error code."></a>Job for docker.service failed because the control process exited with error code.</h2><p>运行：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl restart docker.service<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>报错：</p>
+<pre class="line-numbers language-none"><code class="language-none">Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>解决方法：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> dockerd --debug<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后酌情分析</p>
+<p>最好解决方法：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -1198,7 +1227,7 @@ Total reclaimed space: ...<span aria-hidden="true" class="line-numbers-rows"><sp
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2020-2023</span>
+                <span id="year">2020-2024</span>
             
             <span id="year">2020</span>
             <a href="/about" target="_blank">BlankSpacePlus</a>
@@ -1207,7 +1236,7 @@ Total reclaimed space: ...<span aria-hidden="true" class="line-numbers-rows"><sp
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1086.5k</span>&nbsp;字
+                class="white-color">1086.8k</span>&nbsp;字
             
             
             
