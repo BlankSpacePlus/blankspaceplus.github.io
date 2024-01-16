@@ -314,6 +314,16 @@ kubectl cp <namespace>/<pod_name>:<source_path> <destination_path>
 
 # kubectl常用命令
 
+创建namespace：
+```shell
+kubectl create namespace <namespace>
+```
+
+删除namespace：
+```shell
+kubectl delete namespace <namespace>
+```
+
 获取所有namespace下的运行的所有pod：
 ```shell
 kubectl get pod --all-namespaces
@@ -332,4 +342,40 @@ kubectl get namespace
 查看节点：
 ```shell
 kubectl get nodes
+```
+
+# pending状态分析
+
+查看处于Pending状态挂起的pod：
+```shell
+kubectl -n troubleshooting get pods
+```
+
+查看处于Pending状态挂起的pod的故障原因：
+```shell
+kubectl -n troubleshooting describe pod <pod_name>
+```
+
+查看pod请求的资源量和实际资源限制：
+```shell
+kubectl describe po -n <namespace> <pod_name>
+```
+
+# 错误解决
+
+## The connection to the server 10.0.2.15:6443 was refused - did you specify the right host or port?
+
+```shell
+sudo -i
+swapoff -a
+exit
+strace -eopenat kubectl version
+```
+
+## [ERROR FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists
+
+> https://github.com/kubernetes/kubeadm/issues/1616
+
+```shell
+kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock
 ```

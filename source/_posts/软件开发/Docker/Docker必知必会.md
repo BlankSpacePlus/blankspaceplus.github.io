@@ -351,3 +351,53 @@ docker login
 ```shell
 docker logout
 ```
+
+# Docker故障修复
+
+## Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+运行：
+```shell
+docker ps
+```
+
+报错：
+```
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+
+解决方法：
+```shell
+sudo groupadd <username>
+getent group docker
+awk -F':' '/docker/{print $4}' /etc/group
+sudo usermod -aG docker <username>
+getent group docker
+awk -F':' '/docker/{print $4}' /etc/group
+sudo systemctl restart docker.service
+sudo systemctl status docker.service
+```
+
+## Job for docker.service failed because the control process exited with error code.
+
+运行：
+```shell
+sudo systemctl restart docker.service
+```
+
+报错：
+```
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+```
+
+解决方法：
+```shell
+sudo dockerd --debug
+```
+然后酌情分析
+
+最好解决方法：
+```shell
+sudo reboot
+```
