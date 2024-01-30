@@ -479,14 +479,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-01-17
+                    2024-01-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.5k
                 </div>
                 
 
@@ -680,9 +680,12 @@ scheduler: <span class="token punctuation">{</span><span class="token punctuatio
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> kubeadm init --config<span class="token operator">=</span>kubeadm.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>配置kubectl：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> -p <span class="token environment constant">$HOME</span>/.kube
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> -rf <span class="token environment constant">$HOME</span>/.kube
+<span class="token function">mkdir</span> -p <span class="token environment constant">$HOME</span>/.kube
 <span class="token function">sudo</span> <span class="token function">cp</span> -i /etc/kubernetes/admin.conf <span class="token environment constant">$HOME</span>/.kube/config
-<span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token function">vim</span> <span class="token environment constant">$HOME</span>/.kube/config
+<span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">KUBECONFIG</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/.kube/config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="master配置网络"><a href="#master配置网络" class="headerlink" title="master配置网络"></a>master配置网络</h1><p>在master节点，添加网络插件fannel：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">​kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -699,14 +702,30 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
 <span class="token function">sudo</span> <span class="token function">cp</span> -i /etc/kubernetes/admin.conf <span class="token environment constant">$HOME</span>/.kube/config
 <span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
+<h1 id="创建pod"><a href="#创建pod" class="headerlink" title="创建pod"></a>创建pod</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> ubuntu-pod.yaml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Pod
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> &lt;pod_name<span class="token punctuation">&gt;</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> &lt;namespace<span class="token punctuation">&gt;</span>
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>container
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> ubuntu
+    <span class="token key atrule">command</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"sleep"</span><span class="token punctuation">,</span> <span class="token string">"infinity"</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl apply -f ubuntu-pod.yaml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <h1 id="访问pod内部"><a href="#访问pod内部" class="headerlink" title="访问pod内部"></a>访问pod内部</h1><p>获取所有namespace下的运行的所有pod：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod --all-namespaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>获取指定namespace下运行的的所有pod：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get pod -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>访问指定名称的pod内部：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token builtin class-name">exec</span> -it <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span> <span class="token function">bash</span> -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>访问指定名称的pod内部（推荐后者）：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token builtin class-name">exec</span> -it <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span> <span class="token function">bash</span> -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span>
+kubectl <span class="token builtin class-name">exec</span> -it <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span> -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span> -- /bin/bash<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>拷贝pod内部的文件至本地：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl <span class="token function">cp</span> <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>source_path<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>destination_path<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -729,6 +748,9 @@ kubectl apply -f kube-flannel.yml<span aria-hidden="true" class="line-numbers-ro
 <p>查看节点：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl get nodes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>查看pod日志：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl logs --tail<span class="token operator">=</span><span class="token number">100</span> -n <span class="token operator">&lt;</span>namespace<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>pod_name<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <h1 id="pending状态分析"><a href="#pending状态分析" class="headerlink" title="pending状态分析"></a>pending状态分析</h1><p>查看处于Pending状态挂起的pod：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl -n troubleshooting get pods<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -746,7 +768,11 @@ swapoff -a
 <h2 id="ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists"><a href="#ERROR-FileAvailable–etc-kubernetes-manifests-kube-apiserver-yaml-x2F-etc-x2F-kubernetes-x2F-manifests-x2F-kube-apiserver-yaml-already-exists" class="headerlink" title="[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists"></a>[ERROR FileAvailable–etc-kubernetes-manifests-kube-apiserver.yaml]: /etc/kubernetes/manifests/kube-apiserver.yaml already exists</h2><blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/kubernetes/kubeadm/issues/1616">https://github.com/kubernetes/kubeadm/issues/1616</a></p>
 </blockquote>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="kubelet-network-is-not-ready-container-runtime-network-not-ready-NetworkReady-x3D-false-reason-NetworkPluginNotReady-message-Network-plugin-returns-error-cni-plugin-not-initialized"><a href="#kubelet-network-is-not-ready-container-runtime-network-not-ready-NetworkReady-x3D-false-reason-NetworkPluginNotReady-message-Network-plugin-returns-error-cni-plugin-not-initialized" class="headerlink" title="kubelet  network is not ready: container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:Network plugin returns error: cni plugin not initialized"></a>kubelet  network is not ready: container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:Network plugin returns error: cni plugin not initialized</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl stop apparmor
+<span class="token function">sudo</span> systemctl disable apparmor 
+<span class="token function">sudo</span> systemctl restart containerd.service<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1187,7 +1213,7 @@ swapoff -a
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1086.8k</span>&nbsp;字
+                class="white-color">1086.9k</span>&nbsp;字
             
             
             
