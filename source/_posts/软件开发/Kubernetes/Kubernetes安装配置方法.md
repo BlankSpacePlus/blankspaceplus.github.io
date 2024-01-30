@@ -258,9 +258,12 @@ sudo kubeadm init --config=kubeadm.conf
 
 配置kubectl：
 ```shell
+rm -rf $HOME/.kube
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+vim $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+export KUBECONFIG=$HOME/.kube/config
 ```
 
 # master配置网络
@@ -290,6 +293,29 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
+# 创建pod
+
+```shell
+vim ubuntu-pod.yaml
+```
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <pod_name>
+  namespace: <namespace>
+spec:
+  containers:
+  - name: ubuntu-container
+    image: ubuntu
+    command: ["sleep", "infinity"]
+```
+
+```shell
+kubectl apply -f ubuntu-pod.yaml
+```
+
 # 访问pod内部
 
 获取所有namespace下的运行的所有pod：
@@ -302,9 +328,10 @@ kubectl get pod --all-namespaces
 kubectl get pod -n <namespace>
 ```
 
-访问指定名称的pod内部：
+访问指定名称的pod内部（推荐后者）：
 ```shell
 kubectl exec -it <pod_name> bash -n <namespace>
+kubectl exec -it <pod_name> -n <namespace> -- /bin/bash
 ```
 
 拷贝pod内部的文件至本地：
@@ -344,6 +371,11 @@ kubectl get namespace
 kubectl get nodes
 ```
 
+查看pod日志：
+```shell
+kubectl logs --tail=100 -n <namespace> <pod_name>
+```
+
 # pending状态分析
 
 查看处于Pending状态挂起的pod：
@@ -377,5 +409,13 @@ strace -eopenat kubectl version
 > https://github.com/kubernetes/kubeadm/issues/1616
 
 ```shell
-kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock
+sudo kubeadm reset --cri-socket unix:///var/run/containerd/containerd.sock
+```
+
+## kubelet  network is not ready: container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:Network plugin returns error: cni plugin not initialized
+
+```shell
+sudo systemctl stop apparmor
+sudo systemctl disable apparmor 
+sudo systemctl restart containerd.service
 ```
