@@ -6,7 +6,7 @@
   <link href="https://blankspaceplus.github.io/atom.xml" rel="self"/>
   
   <link href="https://blankspaceplus.github.io/"/>
-  <updated>2024-01-30T12:58:34.920Z</updated>
+  <updated>2024-02-23T08:20:22.546Z</updated>
   <id>https://blankspaceplus.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎使用Hexo</title>
-    <link href="https://blankspaceplus.github.io/2024/01/30/huan-ying-shi-yong-hexo/"/>
-    <id>https://blankspaceplus.github.io/2024/01/30/huan-ying-shi-yong-hexo/</id>
-    <published>2024-01-30T12:58:34.920Z</published>
-    <updated>2024-01-30T12:58:34.920Z</updated>
+    <link href="https://blankspaceplus.github.io/2024/02/23/huan-ying-shi-yong-hexo/"/>
+    <id>https://blankspaceplus.github.io/2024/02/23/huan-ying-shi-yong-hexo/</id>
+    <published>2024-02-23T08:20:22.546Z</published>
+    <updated>2024-02-23T08:20:22.546Z</updated>
     
     
       
@@ -40,11 +40,36 @@
   </entry>
   
   <entry>
+    <title>移动硬盘分区合并</title>
+    <link href="https://blankspaceplus.github.io/2024/02/23/ji-suan-ji-ying-yong/yi-dong-ying-pan-fen-qu-he-bing/"/>
+    <id>https://blankspaceplus.github.io/2024/02/23/ji-suan-ji-ying-yong/yi-dong-ying-pan-fen-qu-he-bing/</id>
+    <published>2024-02-23T07:32:06.000Z</published>
+    <updated>2024-02-23T08:20:22.550Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;移动硬盘分区合并&quot;&gt;&lt;a href=&quot;#移动硬盘分区合并&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机应用" scheme="https://blankspaceplus.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="计算机应用" scheme="https://blankspaceplus.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>十二要素应用程序</title>
     <link href="https://blankspaceplus.github.io/2023/11/11/ruan-jian-gong-cheng/shi-er-yao-su-ying-yong-cheng-xu/"/>
     <id>https://blankspaceplus.github.io/2023/11/11/ruan-jian-gong-cheng/shi-er-yao-su-ying-yong-cheng-xu/</id>
     <published>2023-11-11T14:23:06.000Z</published>
-    <updated>2024-01-30T12:58:34.928Z</updated>
+    <updated>2024-02-23T08:20:22.554Z</updated>
     
     
       
@@ -71,7 +96,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/21/ren-gong-zhi-neng/ji-qi-xue-xi-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/10/21/ren-gong-zhi-neng/ji-qi-xue-xi-bi-zhi-bi-hui/</id>
     <published>2023-10-21T15:30:04.000Z</published>
-    <updated>2024-01-30T12:58:34.916Z</updated>
+    <updated>2024-02-23T08:20:22.546Z</updated>
     
     
       
@@ -98,7 +123,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/21/ruan-jian-kai-fa/python/opencv-tu-xiang-chu-li/"/>
     <id>https://blankspaceplus.github.io/2023/10/21/ruan-jian-kai-fa/python/opencv-tu-xiang-chu-li/</id>
     <published>2023-10-21T09:59:14.000Z</published>
-    <updated>2024-01-30T12:58:34.960Z</updated>
+    <updated>2024-02-23T08:20:22.586Z</updated>
     
     
       
@@ -125,7 +150,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/21/ruan-jian-kai-fa/python/nltk-wen-ben-chu-li/"/>
     <id>https://blankspaceplus.github.io/2023/10/21/ruan-jian-kai-fa/python/nltk-wen-ben-chu-li/</id>
     <published>2023-10-21T09:45:33.000Z</published>
-    <updated>2024-01-30T12:58:34.960Z</updated>
+    <updated>2024-02-23T08:20:22.586Z</updated>
     
     
       
@@ -152,7 +177,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/18/ren-gong-zhi-neng/dataset-yu-benchmark/"/>
     <id>https://blankspaceplus.github.io/2023/10/18/ren-gong-zhi-neng/dataset-yu-benchmark/</id>
     <published>2023-10-18T13:00:51.000Z</published>
-    <updated>2024-01-30T12:58:34.916Z</updated>
+    <updated>2024-02-23T08:20:22.546Z</updated>
     
     
       
@@ -179,7 +204,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/17/ruan-jian-kai-fa/kubernetes/kubernetes-an-zhuang-pei-zhi-fang-fa/"/>
     <id>https://blankspaceplus.github.io/2023/10/17/ruan-jian-kai-fa/kubernetes/kubernetes-an-zhuang-pei-zhi-fang-fa/</id>
     <published>2023-10-17T05:22:30.000Z</published>
-    <updated>2024-01-30T12:58:34.956Z</updated>
+    <updated>2024-02-23T08:20:22.582Z</updated>
     
     
       
@@ -205,7 +230,7 @@
     <link href="https://blankspaceplus.github.io/2023/10/16/ruan-jian-kai-fa/kubernetes/kubernetes-chang-jian-cuo-wu-de-jie-jue-fang-an/"/>
     <id>https://blankspaceplus.github.io/2023/10/16/ruan-jian-kai-fa/kubernetes/kubernetes-chang-jian-cuo-wu-de-jie-jue-fang-an/</id>
     <published>2023-10-16T15:44:44.000Z</published>
-    <updated>2024-01-30T12:58:34.956Z</updated>
+    <updated>2024-02-23T08:20:22.582Z</updated>
     
     
       
@@ -230,7 +255,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/27/ruan-jian-kai-fa/java/fatjar-he-thinjar/"/>
     <id>https://blankspaceplus.github.io/2023/09/27/ruan-jian-kai-fa/java/fatjar-he-thinjar/</id>
     <published>2023-09-27T06:52:34.000Z</published>
-    <updated>2024-01-30T12:58:34.948Z</updated>
+    <updated>2024-02-23T08:20:22.574Z</updated>
     
     
       
@@ -255,7 +280,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/12/ruan-jian-kai-fa/linux/linux-yuan-cheng-kao-bei-python-kai-fa-huan-jing/"/>
     <id>https://blankspaceplus.github.io/2023/09/12/ruan-jian-kai-fa/linux/linux-yuan-cheng-kao-bei-python-kai-fa-huan-jing/</id>
     <published>2023-09-12T13:12:30.000Z</published>
-    <updated>2024-01-30T12:58:34.956Z</updated>
+    <updated>2024-02-23T08:20:22.586Z</updated>
     
     
       
@@ -271,9 +296,9 @@
     <category term="开发技术" scheme="https://blankspaceplus.github.io/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://blankspaceplus.github.io/tags/Linux/"/>
-    
     <category term="Python" scheme="https://blankspaceplus.github.io/tags/Python/"/>
+    
+    <category term="Linux" scheme="https://blankspaceplus.github.io/tags/Linux/"/>
     
     <category term="Anaconda" scheme="https://blankspaceplus.github.io/tags/Anaconda/"/>
     
@@ -284,7 +309,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/12/ruan-jian-kai-fa/linux/linux-an-zhuang-glibc-he-make/"/>
     <id>https://blankspaceplus.github.io/2023/09/12/ruan-jian-kai-fa/linux/linux-an-zhuang-glibc-he-make/</id>
     <published>2023-09-12T13:02:15.000Z</published>
-    <updated>2024-01-30T12:58:34.956Z</updated>
+    <updated>2024-02-23T08:20:22.582Z</updated>
     
     
       
@@ -312,7 +337,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/07/ruan-jian-kai-fa/java/slf4j-chang-jian-wen-ti-de-jie-jue-fang-fa/"/>
     <id>https://blankspaceplus.github.io/2023/09/07/ruan-jian-kai-fa/java/slf4j-chang-jian-wen-ti-de-jie-jue-fang-fa/</id>
     <published>2023-09-07T14:36:00.000Z</published>
-    <updated>2024-01-30T12:58:34.952Z</updated>
+    <updated>2024-02-23T08:20:22.582Z</updated>
     
     
       
@@ -341,7 +366,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/05/ruan-jian-kai-fa/python/conda-huan-jing-xia-ying-yong-pip/"/>
     <id>https://blankspaceplus.github.io/2023/09/05/ruan-jian-kai-fa/python/conda-huan-jing-xia-ying-yong-pip/</id>
     <published>2023-09-05T17:45:35.000Z</published>
-    <updated>2024-01-30T12:58:34.956Z</updated>
+    <updated>2024-02-23T08:20:22.586Z</updated>
     
     
       
@@ -368,7 +393,7 @@
     <link href="https://blankspaceplus.github.io/2023/09/01/ji-suan-ji-ke-xue-ji-chu/chatgpt-chang-jian-cuo-wu-de-jie-jue-fang-fa/"/>
     <id>https://blankspaceplus.github.io/2023/09/01/ji-suan-ji-ke-xue-ji-chu/chatgpt-chang-jian-cuo-wu-de-jie-jue-fang-fa/</id>
     <published>2023-09-01T04:57:33.000Z</published>
-    <updated>2024-01-30T12:58:34.920Z</updated>
+    <updated>2024-02-23T08:20:22.550Z</updated>
     
     
       
@@ -397,7 +422,7 @@
     <link href="https://blankspaceplus.github.io/2023/08/31/ruan-jian-kai-fa/qian-duan-kai-fa/xpath-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/08/31/ruan-jian-kai-fa/qian-duan-kai-fa/xpath-bi-zhi-bi-hui/</id>
     <published>2023-08-31T07:05:40.000Z</published>
-    <updated>2024-01-30T12:58:34.964Z</updated>
+    <updated>2024-02-23T08:20:22.590Z</updated>
     
     
       
@@ -425,7 +450,7 @@
     <link href="https://blankspaceplus.github.io/2023/08/29/ruan-jian-kai-fa/docker/docker-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/08/29/ruan-jian-kai-fa/docker/docker-bi-zhi-bi-hui/</id>
     <published>2023-08-29T11:31:32.000Z</published>
-    <updated>2024-01-30T12:58:34.944Z</updated>
+    <updated>2024-02-23T08:20:22.574Z</updated>
     
     
       
@@ -450,7 +475,7 @@
     <link href="https://blankspaceplus.github.io/2023/08/22/ruan-jian-kai-fa/git/git-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/08/22/ruan-jian-kai-fa/git/git-bi-zhi-bi-hui/</id>
     <published>2023-08-22T15:38:33.000Z</published>
-    <updated>2024-01-30T12:58:34.944Z</updated>
+    <updated>2024-02-23T08:20:22.574Z</updated>
     
     
       
@@ -475,7 +500,7 @@
     <link href="https://blankspaceplus.github.io/2023/08/13/ruan-jian-kai-fa/java/specjvm2008-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/08/13/ruan-jian-kai-fa/java/specjvm2008-bi-zhi-bi-hui/</id>
     <published>2023-08-13T03:11:04.000Z</published>
-    <updated>2024-01-30T12:58:34.952Z</updated>
+    <updated>2024-02-23T08:20:22.582Z</updated>
     
     
       
@@ -504,7 +529,7 @@
     <link href="https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/redis/redis-bi-zhi-bi-hui/"/>
     <id>https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/redis/redis-bi-zhi-bi-hui/</id>
     <published>2023-07-28T13:30:00.000Z</published>
-    <updated>2024-01-30T12:58:34.960Z</updated>
+    <updated>2024-02-23T08:20:22.590Z</updated>
     
     
       
@@ -523,39 +548,6 @@
     <category term="数据库系统" scheme="https://blankspaceplus.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Redis" scheme="https://blankspaceplus.github.io/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gradle必知必会</title>
-    <link href="https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/gradle/gradle-bi-zhi-bi-hui/"/>
-    <id>https://blankspaceplus.github.io/2023/07/28/ruan-jian-kai-fa/gradle/gradle-bi-zhi-bi-hui/</id>
-    <published>2023-07-28T12:34:55.000Z</published>
-    <updated>2024-01-30T12:58:34.944Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Gradle可以为Java项目提供以下功能：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通用的、标准化的项目目录结构&lt;/li&gt;
-&lt;li&gt;对jar文件进行依赖管理&lt;/li&gt;
-&lt;li&gt;统一的构建流程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Gradle项目中一些关键目录和文件：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="开发技术" scheme="https://blankspaceplus.github.io/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Gradle" scheme="https://blankspaceplus.github.io/tags/Gradle/"/>
     
   </entry>
   
